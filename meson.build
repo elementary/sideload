@@ -7,6 +7,7 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 
 executable(
     meson.project_name(),
+    'src/Views/ProgressView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',
     dependencies: [

@@ -77,14 +77,22 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         grid.attach (button_box, 0, 3, 2);
         grid.show_all ();
 
-        add (grid);
+        var progress_view = new ProgressView ();
+
+        var stack = new Gtk.Stack ();
+        stack.add (grid);
+        stack.add (progress_view);
+
+        add (stack);
         get_style_context ().add_class ("rounded");
         set_titlebar (titlebar);
 
 
         agree_check.bind_property ("active", install_button, "sensitive");
 
-        install_button.clicked.connect (() => destroy ());
+        install_button.clicked.connect (() => {
+            stack.visible_child = progress_view;
+        });
     }
 }
 
