@@ -5,17 +5,20 @@ i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
+vapi_dir = join_paths(meson.current_source_dir(), 'vapi')
+add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
+
 executable(
     meson.project_name(),
     'src/Views/ProgressView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',
     dependencies: [
-        # dependency('appstream'),
-        dependency('glib-2.0'),
-        dependency('gobject-2.0'),
-        dependency('granite', version: '>=0.5'),
-        dependency('gtk+-3.0'),
+        dependency ('flatpak'),
+        dependency ('glib-2.0'),
+        dependency ('gobject-2.0'),
+        dependency ('granite', version: '>=0.5'),
+        dependency ('gtk+-3.0'),
     ],
     install : true
 )
