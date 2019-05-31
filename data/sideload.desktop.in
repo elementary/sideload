@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Sideload
+Comment=Install apps downloaded from the Internet
+GenericName=Flatpak Installer
+Exec=io.elementary.sideload
+Icon=io.elementary.sideload
+Keywords=flatpak;
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=PackageManager;
+NoDisplay=true
