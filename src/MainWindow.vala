@@ -19,12 +19,19 @@
 */
 
 public class Sideload.MainWindow : Gtk.ApplicationWindow {
-    public MainWindow (Gtk.Application application) {
+    public File file { get; construct; }
+    private Cancellable? current_cancellable = null;
+
+    private Gtk.Stack stack;
+    private ProgressView progress_view;
+
+    public MainWindow (Gtk.Application application, File file) {
         Object (
             application: application,
             icon_name: "io.elementary.sideload",
             resizable: false,
-            title: _("Install Untrusted Software")
+            title: _("Install Untrusted Software"),
+            file: file
         );
     }
 
@@ -77,9 +84,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         grid.attach (button_box, 0, 3, 2);
         grid.show_all ();
 
-        var progress_view = new ProgressView ();
+        progress_view = new ProgressView ();
 
-        var stack = new Gtk.Stack ();
+        stack = new Gtk.Stack ();
         stack.add (grid);
         stack.add (progress_view);
 
@@ -87,12 +94,75 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         get_style_context ().add_class ("rounded");
         set_titlebar (titlebar);
 
-
         agree_check.bind_property ("active", install_button, "sensitive");
 
-        install_button.clicked.connect (() => {
-            stack.visible_child = progress_view;
+        install_button.clicked.connect (on_install_button_clicked);
+        cancel_button.clicked.connect (() => cancel ());
+    }
+
+    protected override bool delete_event (Gdk.EventAny event) {
+        return cancel ();
+    }
+
+    private bool cancel () {
+        if (current_cancellable != null) {
+            current_cancellable.cancel ();
+            return true;
+        }
+
+        return false;
+    }
+
+    private void on_install_button_clicked () {
+        current_cancellable = new Cancellable ();
+        install.begin (current_cancellable, (obj, res) => {
+            try {
+                install.end (res);
+            } catch (Error e) {
+                warning (e.message);
+            }
         });
+
+        stack.visible_child = progress_view;
+    }
+
+    private async void install (Cancellable cancellable) throws Error {
+        try {
+            var installations = Flatpak.get_system_installations (cancellable);
+            if (installations.length == 0) {
+                throw new IOError.FAILED (_("Did not find suitable Flatpak installation."));
+            }
+
+            unowned Flatpak.Installation installation = installations[0];
+            var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
+
+            var bytes = yield file.load_bytes_async (null, null);
+
+            transaction.add_install_flatpakref (bytes);
+            yield run_transaction_async (transaction, cancellable);
+        } catch (Error e) {
+            throw e;
+        }
+    }
+
+    private static async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) throws Error {
+        Error? transaction_error = null;
+        new Thread<void*> ("install-ref", () => {
+            try {
+                transaction.run (cancellable);
+            } catch (Error e) {
+                transaction_error = e;
+            }
+
+            Idle.add (run_transaction_async.callback);
+            return null;
+        });
+
+        yield;
+
+        if (transaction_error != null) {
+            throw transaction_error;
+        }
     }
 }
 

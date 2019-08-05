@@ -24,17 +24,22 @@ public class Sideload.Application : Gtk.Application {
     public Application () {
         Object (
             application_id: "io.elementary.sideload",
-            flags: ApplicationFlags.FLAGS_NONE
+            flags: ApplicationFlags.HANDLES_OPEN
         );
     }
 
-    protected override void activate () {
+    protected override void open (File[] files, string hint) {
+        if (files.length == 0) {
+            return;
+        }
+
+        var file = files[0];
         if (get_windows ().length () > 0) {
             get_windows ().data.present ();
             return;
         }
 
-        main_window = new MainWindow (this);
+        main_window = new MainWindow (this, file);
         main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
@@ -49,7 +54,16 @@ public class Sideload.Application : Gtk.Application {
         });
     }
 
+    protected override void activate () {
+
+    }
+
     public static int main (string[] args) {
+        if (args.length < 2) {
+            print ("Usage: %s /path/to/flatpakref\n", args[0]);
+            return 1;
+        }
+
         var app = new Application ();
         return app.run (args);
     }
