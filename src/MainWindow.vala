@@ -19,13 +19,13 @@
 */
 
 public class Sideload.MainWindow : Gtk.ApplicationWindow {
-    public File file { get; construct; }
+    public FlatpakRefFile file { get; construct; }
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
     private ProgressView progress_view;
 
-    public MainWindow (Gtk.Application application, File file) {
+    public MainWindow (Gtk.Application application, FlatpakRefFile file) {
         Object (
             application: application,
             icon_name: "io.elementary.sideload",
@@ -115,54 +115,15 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private void on_install_button_clicked () {
         current_cancellable = new Cancellable ();
-        install.begin (current_cancellable, (obj, res) => {
+        file.install.begin (current_cancellable, (obj, res) => {
             try {
-                install.end (res);
+                file.install.end (res);
             } catch (Error e) {
                 warning (e.message);
             }
         });
 
         stack.visible_child = progress_view;
-    }
-
-    private async void install (Cancellable cancellable) throws Error {
-        try {
-            var installations = Flatpak.get_system_installations (cancellable);
-            if (installations.length == 0) {
-                throw new IOError.FAILED (_("Did not find suitable Flatpak installation."));
-            }
-
-            unowned Flatpak.Installation installation = installations[0];
-            var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
-
-            var bytes = yield file.load_bytes_async (null, null);
-
-            transaction.add_install_flatpakref (bytes);
-            yield run_transaction_async (transaction, cancellable);
-        } catch (Error e) {
-            throw e;
-        }
-    }
-
-    private static async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) throws Error {
-        Error? transaction_error = null;
-        new Thread<void*> ("install-ref", () => {
-            try {
-                transaction.run (cancellable);
-            } catch (Error e) {
-                transaction_error = e;
-            }
-
-            Idle.add (run_transaction_async.callback);
-            return null;
-        });
-
-        yield;
-
-        if (transaction_error != null) {
-            throw transaction_error;
-        }
     }
 }
 
