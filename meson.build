@@ -13,6 +13,7 @@ executable(
     'src/Views/ProgressView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',
+    'src/FlatpakRefFile.vala',
     dependencies: [
         dependency ('flatpak'),
         dependency ('glib-2.0'),

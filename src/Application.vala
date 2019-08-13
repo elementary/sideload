@@ -39,7 +39,7 @@ public class Sideload.Application : Gtk.Application {
             return;
         }
 
-        main_window = new MainWindow (this, file);
+        main_window = new MainWindow (this, new FlatpakRefFile (file));
         main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
