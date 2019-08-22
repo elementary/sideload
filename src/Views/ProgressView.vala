@@ -22,13 +22,9 @@ public class Sideload.ProgressView : Gtk.Grid {
     private Gtk.Label primary_label;
     private Gtk.ProgressBar progressbar;
 
-    public string? app_name {
+    public string app_name {
         set {
-            if (value != null) {
-                primary_label.label = _("Installing “%s”").printf (value);
-            } else {
-                primary_label.label = _("Installing…");
-            }
+            primary_label.label = _("Installing “%s”").printf (value);
         }
     }
 
@@ -42,7 +38,7 @@ public class Sideload.ProgressView : Gtk.Grid {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        primary_label = new Gtk.Label (null);
+        primary_label = new Gtk.Label ("Installing…");
         primary_label.max_width_chars = 50;
         primary_label.selectable = true;
         primary_label.wrap = true;

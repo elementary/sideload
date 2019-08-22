@@ -117,7 +117,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private async void get_details () {
         string? name = yield file.get_name ();
-        progress_view.app_name = name;
+        if (name != null) {
+            progress_view.app_name = name;
+        }
     }
 
     private void on_install_button_clicked () {
