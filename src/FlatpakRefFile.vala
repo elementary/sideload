@@ -20,7 +20,12 @@
 
 public class Sideload.FlatpakRefFile : Object {
     public File file { get; construct; }
+    public signal void progress_changed (string description, double progress);
+
     private Bytes? bytes = null;
+    private KeyFile? key_file = null;
+
+    private const string REF_GROUP = "Flatpak Ref";
 
     private static Flatpak.Installation? installation;
 
@@ -49,6 +54,33 @@ public class Sideload.FlatpakRefFile : Object {
         return bytes;
     }
 
+    private async bool load_key_file () {
+        if (key_file == null) {
+            key_file = new KeyFile ();
+            try {
+                return key_file.load_from_bytes (yield get_bytes (), NONE);
+            } catch (Error e) {
+                warning (e.message);
+                return false;
+            }
+        } else {
+            return true;
+        }
+    }
+
+    public async string? get_name () {
+        if (!yield load_key_file ()) {
+            return null;
+        }
+
+        try {
+            return key_file.get_string (REF_GROUP, "Name");
+        } catch (Error e) {
+            warning (e.message);
+            return null;
+        }
+    }
+
     public async void install (Cancellable cancellable) throws Error {
         if (installation == null) {
             throw new IOError.FAILED (_("Did not find suitable Flatpak installation."));
@@ -58,10 +90,24 @@ public class Sideload.FlatpakRefFile : Object {
             var bytes = yield get_bytes ();
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_flatpakref (bytes);
+            transaction.new_operation.connect ((operation, progress) => on_new_operation (operation, progress, cancellable));
             yield run_transaction_async (transaction, cancellable);
         } catch (Error e) {
             throw e;
         }
+    }
+
+    private void on_new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress, Cancellable cancellable) {
+        progress.changed.connect (() => {
+            if (cancellable.is_cancelled ()) {
+                return;
+            }
+
+            Idle.add (() => {
+                progress_changed (progress.get_status (), (double)progress.get_progress () / 100.0f);
+                return false;
+            });
+        });
     }
 
     private static async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) throws Error {

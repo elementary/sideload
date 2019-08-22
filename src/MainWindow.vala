@@ -98,6 +98,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         install_button.clicked.connect (on_install_button_clicked);
         cancel_button.clicked.connect (() => cancel ());
+        file.progress_changed.connect (on_progress_changed);
+        get_details.begin ();
     }
 
     protected override bool delete_event (Gdk.EventAny event) {
@@ -113,6 +115,11 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         return false;
     }
 
+    private async void get_details () {
+        string? name = yield file.get_name ();
+        progress_view.app_name = name;
+    }
+
     private void on_install_button_clicked () {
         current_cancellable = new Cancellable ();
         file.install.begin (current_cancellable, (obj, res) => {
@@ -124,6 +131,10 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         });
 
         stack.visible_child = progress_view;
+    }
+
+    private void on_progress_changed (string description, double progress) {
+        progress_view.progress = progress;
     }
 }
 
