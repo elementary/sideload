@@ -4,6 +4,7 @@ Flatpak Installer
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
+* libflatpak-dev
 * libgranite-dev (>=5)
 * libgtk-3-dev
 * meson
