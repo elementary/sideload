@@ -19,19 +19,34 @@
 */
 
 public class Sideload.ProgressView : Gtk.Grid {
+    private Gtk.Label primary_label;
+    private Gtk.ProgressBar progressbar;
+
+    public string app_name {
+        set {
+            primary_label.label = _("Installing “%s”").printf (value);
+        }
+    }
+
+    public double progress {
+        set {
+            progressbar.fraction = value;
+        }
+    }
+
     construct {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var primary_label = new Gtk.Label (_("Installing “%s”").printf ("Example App"));
+        primary_label = new Gtk.Label ("Installing…");
         primary_label.max_width_chars = 50;
         primary_label.selectable = true;
         primary_label.wrap = true;
         primary_label.xalign = 0;
         primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
-        var progressbar = new Gtk.ProgressBar ();
-        progressbar.fraction = 0.1;
+        progressbar = new Gtk.ProgressBar ();
+        progressbar.fraction = 0.0;
         progressbar.hexpand = true;
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
