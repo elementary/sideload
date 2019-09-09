@@ -2,7 +2,7 @@
 Name=Sideload
 Comment=Install apps downloaded from the Internet
 GenericName=Flatpak Installer
-Exec=io.elementary.sideload
+Exec=io.elementary.sideload %u
 Icon=io.elementary.sideload
 Keywords=flatpak;
 Terminal=false
@@ -10,3 +10,4 @@ Type=Application
 StartupNotify=true
 Categories=PackageManager;
 NoDisplay=true
+
