@@ -128,5 +128,5 @@ public class Sideload.FlatpakRefFile : Object {
         if (transaction_error != null) {
             throw transaction_error;
         }
-    }    
+    }
 }
