@@ -139,4 +139,3 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         progress_view.progress = progress;
     }
 }
-
