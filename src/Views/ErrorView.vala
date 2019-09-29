@@ -114,9 +114,9 @@ public class Sideload.ErrorView : Gtk.Grid {
         }
 
         if (e is Flatpak.Error.INVALID_NAME) {
-            return _("The application, runtime or remote name is invalid");
+            return _("The application, runtime or remote name is invalid.");
         }
 
-        return _("An unknown error occured");
+        return _("An unknown error occured.");
     }
 }
