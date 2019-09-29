@@ -21,6 +21,7 @@
 public class Sideload.FlatpakRefFile : Object {
     public File file { get; construct; }
     public signal void progress_changed (string description, double progress);
+    public signal void installation_failed (GLib.Error details);
 
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
@@ -91,10 +92,22 @@ public class Sideload.FlatpakRefFile : Object {
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_flatpakref (bytes);
             transaction.new_operation.connect ((operation, progress) => on_new_operation (operation, progress, cancellable));
+            transaction.operation_error.connect (on_operation_error);
             yield run_transaction_async (transaction, cancellable);
         } catch (Error e) {
             throw e;
         }
+    }
+
+    private bool on_operation_error (Flatpak.TransactionOperation op, GLib.Error e, Flatpak.TransactionErrorDetails details) {
+        warning ("transaction error");
+
+        if (Flatpak.TransactionErrorDetails.NON_FATAL in details) {
+            return true;
+        }
+
+        installation_failed (e);
+        return false;
     }
 
     private void on_new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress, Cancellable cancellable) {
@@ -110,7 +123,7 @@ public class Sideload.FlatpakRefFile : Object {
         });
     }
 
-    private static async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) throws Error {
+    private async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) {
         Error? transaction_error = null;
         new Thread<void*> ("install-ref", () => {
             try {
@@ -126,7 +139,7 @@ public class Sideload.FlatpakRefFile : Object {
         yield;
 
         if (transaction_error != null) {
-            throw transaction_error;
+            installation_failed (transaction_error);
         }
     }
 }
