@@ -50,7 +50,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         primary_label.xalign = 0;
         primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
-        var secondary_label = new Gtk.Label (_("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration."));
+        var secondary_label = new Gtk.Label (_("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration. Installing this software may add a repository of other apps that will show up in AppCenter."));
         secondary_label.max_width_chars = 55;
         secondary_label.selectable = true;
         secondary_label.wrap = true;
