@@ -20,6 +20,7 @@
 
 public class Sideload.ProgressView : Gtk.Grid {
     private Gtk.Label primary_label;
+    private Gtk.Label secondary_label;
     private Gtk.ProgressBar progressbar;
 
     public string app_name {
@@ -31,6 +32,12 @@ public class Sideload.ProgressView : Gtk.Grid {
     public double progress {
         set {
             progressbar.fraction = value;
+        }
+    }
+
+    public string status {
+        set {
+            secondary_label.label = value;
         }
     }
 
@@ -48,6 +55,11 @@ public class Sideload.ProgressView : Gtk.Grid {
         progressbar = new Gtk.ProgressBar ();
         progressbar.fraction = 0.0;
         progressbar.hexpand = true;
+
+        secondary_label = new Gtk.Label (null);
+        secondary_label.max_width_chars = 50;
+        secondary_label.xalign = 0;
+        secondary_label.ellipsize = Pango.EllipsizeMode.END;
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
@@ -67,7 +79,8 @@ public class Sideload.ProgressView : Gtk.Grid {
         grid.attach (image, 0, 0, 1, 3);
         grid.attach (primary_label, 1, 0);
         grid.attach (progressbar, 1, 1);
-        grid.attach (button_box, 0, 3, 2);
+        grid.attach (secondary_label, 1, 2);
+        grid.attach (button_box, 0, 3, 3);
         grid.show_all ();
 
         add (grid);
