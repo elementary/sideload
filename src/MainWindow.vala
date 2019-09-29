@@ -84,6 +84,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         grid.attach (button_box, 0, 3, 2);
         grid.show_all ();
 
+        agree_check.grab_focus ();
+
         progress_view = new ProgressView ();
 
         stack = new Gtk.Stack ();
