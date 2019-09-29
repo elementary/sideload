@@ -22,6 +22,7 @@ public class Sideload.FlatpakRefFile : Object {
     public File file { get; construct; }
     public signal void progress_changed (string description, double progress);
     public signal void installation_failed (GLib.Error details);
+    public signal void installation_succeeded ();
 
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
@@ -147,6 +148,8 @@ public class Sideload.FlatpakRefFile : Object {
 
         if (transaction_error != null) {
             installation_failed (transaction_error);
+        } else {
+            installation_succeeded ();
         }
     }
 }
