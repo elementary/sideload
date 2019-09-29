@@ -10,7 +10,7 @@ add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
 
 executable(
     meson.project_name(),
-    'src/Dialogs/InstallFailDialog.vala',
+    'src/Views/ErrorView.vala',
     'src/Views/ProgressView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',

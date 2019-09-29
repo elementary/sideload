@@ -133,10 +133,10 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         progress_view.progress = progress;
     }
 
-    private void on_install_failed (GLib.Error e) {
-        var dialog = new InstallFailDialog (e);
-        dialog.destroy.connect (() => destroy ());
-        dialog.present ();
-        hide ();
+    private void on_install_failed (GLib.Error error) {
+        var error_view = new ErrorView (error);
+
+        stack.add (error_view);
+        stack.visible_child = error_view;
     }
 }
