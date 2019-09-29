@@ -99,6 +99,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         install_button.clicked.connect (on_install_button_clicked);
         cancel_button.clicked.connect (() => cancel ());
         file.progress_changed.connect (on_progress_changed);
+        file.installation_failed.connect (on_install_failed);
         get_details.begin ();
     }
 
@@ -124,18 +125,18 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private void on_install_button_clicked () {
         current_cancellable = new Cancellable ();
-        file.install.begin (current_cancellable, (obj, res) => {
-            try {
-                file.install.end (res);
-            } catch (Error e) {
-                warning (e.message);
-            }
-        });
-
+        file.install.begin (current_cancellable);
         stack.visible_child = progress_view;
     }
 
     private void on_progress_changed (string description, double progress) {
         progress_view.progress = progress;
+    }
+
+    private void on_install_failed (GLib.Error e) {
+        var dialog = new InstallFailDialog (e);
+        dialog.destroy.connect (() => destroy ());
+        dialog.present ();
+        hide ();
     }
 }
