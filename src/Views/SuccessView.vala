@@ -28,7 +28,7 @@ public class Sideload.SuccessView : Gtk.Grid {
         overlay.add (image);
         overlay.add_overlay (badge);
 
-        var primary_label = new Gtk.Label (_("Install succeeded"));
+        var primary_label = new Gtk.Label (_("The software has been installed"));
         primary_label.hexpand = true;
         primary_label.max_width_chars = 50;
         primary_label.selectable = true;
@@ -36,7 +36,7 @@ public class Sideload.SuccessView : Gtk.Grid {
         primary_label.xalign = 0;
         primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
-        var secondary_label = new Gtk.Label (_("The software was installed succesfully."));
+        var secondary_label = new Gtk.Label (_("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall."));
         secondary_label.use_markup = true;
         secondary_label.selectable = true;
         secondary_label.margin_bottom = 18;
