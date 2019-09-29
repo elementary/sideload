@@ -102,6 +102,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         cancel_button.clicked.connect (() => cancel ());
         file.progress_changed.connect (on_progress_changed);
         file.installation_failed.connect (on_install_failed);
+        file.installation_succeeded.connect (on_install_succeeded);
         get_details.begin ();
     }
 
@@ -140,5 +141,13 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         stack.add (error_view);
         stack.visible_child = error_view;
+    }
+
+
+    private void on_install_succeeded () {
+        var success_view = new SuccessView ();
+
+        stack.add (success_view);
+        stack.visible_child = success_view;
     }
 }

@@ -12,6 +12,7 @@ executable(
     meson.project_name(),
     'src/Views/ErrorView.vala',
     'src/Views/ProgressView.vala',
+    'src/Views/SuccessView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',
     'src/FlatpakRefFile.vala',
