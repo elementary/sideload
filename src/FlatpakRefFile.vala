@@ -92,6 +92,16 @@ public class Sideload.FlatpakRefFile : Object {
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_flatpakref (bytes);
             transaction.new_operation.connect ((operation, progress) => on_new_operation (operation, progress, cancellable));
+
+            transaction.add_new_remote.connect ((reason, from, name, url) => {
+                // If the flatpakref requests to add a new remote for dependencies, allow it
+                if (reason == Flatpak.TransactionRemoteReason.RUNTIME_DEPS) {
+                    return true;
+                }
+
+                return false;
+            });
+
             transaction.operation_error.connect (on_operation_error);
 
             // Automatically select the first available remote thas has the dependency we need to install
@@ -111,9 +121,8 @@ public class Sideload.FlatpakRefFile : Object {
     }
 
     private bool on_operation_error (Flatpak.TransactionOperation op, GLib.Error e, Flatpak.TransactionErrorDetails details) {
-        warning ("transaction error");
-
         if (Flatpak.TransactionErrorDetails.NON_FATAL in details) {
+            warning ("transaction warning: %s", e.message);
             return true;
         }
 
