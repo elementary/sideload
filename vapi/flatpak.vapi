@@ -241,7 +241,7 @@ namespace Flatpak {
 		public virtual signal void end_of_lifed (string @ref, string reason, string rebase);
 		public virtual signal void new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress);
 		public virtual signal void operation_done (Flatpak.TransactionOperation operation, string commit, int details);
-		public virtual signal bool operation_error (Flatpak.TransactionOperation operation, GLib.Error error, int detail);
+		public virtual signal bool operation_error (Flatpak.TransactionOperation operation, GLib.Error error, TransactionErrorDetails detail);
 		public virtual signal bool ready ();
 	}
 	[CCode (cheader_filename = "flatpak.h", type_id = "flatpak_transaction_operation_get_type ()")]
@@ -295,10 +295,10 @@ namespace Flatpak {
 		MMC,
 		NETWORK
 	}
-	[CCode (cheader_filename = "flatpak.h", cprefix = "FLATPAK_TRANSACTION_ERROR_DETAILS_NON_", type_id = "flatpak_transaction_error_details_get_type ()")]
+	[CCode (cheader_filename = "flatpak.h", cprefix = "FLATPAK_TRANSACTION_ERROR_DETAILS_", type_id = "flatpak_transaction_error_details_get_type ()")]
 	[Flags]
 	public enum TransactionErrorDetails {
-		FATAL
+		NON_FATAL
 	}
 	[CCode (cheader_filename = "flatpak.h", cprefix = "FLATPAK_TRANSACTION_OPERATION_", type_id = "flatpak_transaction_operation_type_get_type ()")]
 	public enum TransactionOperationType {
