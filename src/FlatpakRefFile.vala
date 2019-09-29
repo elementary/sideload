@@ -33,11 +33,7 @@ public class Sideload.FlatpakRefFile : Object {
 
     static construct {
         try {
-            var installations = Flatpak.get_system_installations (null);
-            if (installations.length > 0) {
-                installation = installations[0];
-            }
-
+            installation = new Flatpak.Installation.user ();
         } catch (Error e) {
             warning (e.message);
         }
