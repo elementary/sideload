@@ -90,15 +90,15 @@ public class Sideload.ErrorView : Gtk.Grid {
 
     private static string prettify_flatpak_error (GLib.Error e) {
         if (e is Flatpak.Error.ALREADY_INSTALLED) {
-            return _("This package is already installed.");
+            return _("This software is already installed.");
         }
 
         if (e is Flatpak.Error.NEED_NEW_FLATPAK) {
-            return _("A newer version of flatpak is needed to install this package.");
+            return _("A newer version of Flatpak is needed to install this software.");
         }
 
         if (e is Flatpak.Error.REMOTE_NOT_FOUND) {
-            return _("A required remote was not found.");
+            return _("A required Flatpak remote was not found.");
         }
 
         if (e is Flatpak.Error.RUNTIME_NOT_FOUND) {
@@ -110,11 +110,11 @@ public class Sideload.ErrorView : Gtk.Grid {
         }
 
         if (e is Flatpak.Error.UNTRUSTED) {
-            return _("The package is not signed with a trusted signature.");
+            return _("The software is not signed with a trusted signature.");
         }
 
         if (e is Flatpak.Error.INVALID_NAME) {
-            return _("The application, runtime or remote name is invalid.");
+            return _("The application, runtime, or remote name is invalid.");
         }
 
         return _("An unknown error occured.");
