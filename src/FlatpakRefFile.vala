@@ -93,6 +93,17 @@ public class Sideload.FlatpakRefFile : Object {
             transaction.add_install_flatpakref (bytes);
             transaction.new_operation.connect ((operation, progress) => on_new_operation (operation, progress, cancellable));
             transaction.operation_error.connect (on_operation_error);
+
+            // Automatically select the first available remote thas has the dependency we need to install
+            transaction.choose_remote_for_ref.connect ((@ref, runtime_ref, remotes) => {
+                // TODO: Possibly be more clever here, but this currently matches AppCenter & GNOME software
+                if (remotes.length > 0) {
+                    return 0;
+                } else {
+                    return -1;
+                }
+            });
+
             yield run_transaction_async (transaction, cancellable);
         } catch (Error e) {
             throw e;
