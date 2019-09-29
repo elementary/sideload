@@ -43,7 +43,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var primary_label = new Gtk.Label (_("Install Untrusted Software?"));
+        var primary_label = new Gtk.Label (_("Install untrusted software?"));
         primary_label.max_width_chars = 50;
         primary_label.selectable = true;
         primary_label.wrap = true;
