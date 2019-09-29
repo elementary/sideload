@@ -236,7 +236,7 @@ namespace Flatpak {
 		public void set_no_pull (bool no_pull);
 		public void set_reinstall (bool reinstall);
 		public Flatpak.Installation installation { owned get; construct; }
-		public virtual signal bool add_new_remote (int reason, string from_id, string remote_name, string url);
+		public virtual signal bool add_new_remote (TransactionRemoteReason reason, string from_id, string remote_name, string url);
 		public virtual signal int choose_remote_for_ref (string for_ref, string runtime_ref, [CCode (array_length = false, array_null_terminated = true)] string[] remotes);
 		public virtual signal void end_of_lifed (string @ref, string reason, string rebase);
 		public virtual signal void new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress);
