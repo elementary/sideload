@@ -29,7 +29,6 @@ public class Sideload.MainView : AbstractView {
         cancel_button.action_name = "app.quit";
 
         var install_button = new Gtk.Button.with_label (_("Install"));
-        install_button.sensitive = false;
         install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         content_area.add (agree_check);
@@ -39,7 +38,7 @@ public class Sideload.MainView : AbstractView {
 
         show_all ();
 
-        agree_check.bind_property ("active", install_button, "sensitive");
+        agree_check.bind_property ("active", install_button, "sensitive", GLib.BindingFlags.SYNC_CREATE);
         agree_check.grab_focus ();
 
         install_button.clicked.connect (() => {
