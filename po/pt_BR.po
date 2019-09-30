@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 10:15-0700\n"
+"POT-Creation-Date: 2019-09-30 16:21-0700\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -19,64 +19,87 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.7.1\n"
 
-#: src/Views/ErrorView.vala:37
+#: src/Views/ErrorView.vala:28
 msgid "Install failed"
 msgstr ""
 
-#: src/Views/ErrorView.vala:66
+#: src/Views/ErrorView.vala:45
 msgid "Details"
 msgstr "Detalhes"
 
-#: src/Views/ErrorView.vala:69 src/Views/SuccessView.vala:47
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:26
 msgid "Close"
 msgstr "Fechar"
 
-#: src/Views/ErrorView.vala:93
+#: src/Views/ErrorView.vala:60
 msgid "This software is already installed."
 msgstr ""
 
-#: src/Views/ErrorView.vala:97
+#: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this software."
 msgstr ""
 
-#: src/Views/ErrorView.vala:101
+#: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
 msgstr ""
 
-#: src/Views/ErrorView.vala:105
+#: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
 msgstr ""
 
-#: src/Views/ErrorView.vala:109
+#: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
 msgstr ""
 
-#: src/Views/ErrorView.vala:113
+#: src/Views/ErrorView.vala:80
 msgid "The software is not signed with a trusted signature."
 msgstr ""
 
-#: src/Views/ErrorView.vala:117
+#: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
 msgstr ""
 
-#: src/Views/ErrorView.vala:120
+#: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
 msgstr ""
 
-#: src/Views/ProgressView.vala:28
+#: src/Views/MainView.vala:22
+msgid "Install untrusted software?"
+msgstr ""
+
+#: src/Views/MainView.vala:24
+msgid ""
+"This software is provided solely by its developer and has not been reviewed "
+"for security, privacy, or system integration. Installing this software may "
+"add a repository of other apps that will show up in AppCenter."
+msgstr ""
+
+#: src/Views/MainView.vala:26
+msgid "I understand"
+msgstr ""
+
+#: src/Views/MainView.vala:28 src/Views/ProgressView.vala:49
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Views/MainView.vala:31
+msgid "Install Anyway"
+msgstr ""
+
+#: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
 msgstr ""
 
-#: src/Views/ProgressView.vala:64 src/MainWindow.vala:63
-msgid "Cancel"
-msgstr "Cancelar"
+#: src/Views/ProgressView.vala:43
+msgid "Preparing…"
+msgstr ""
 
-#: src/Views/SuccessView.vala:31
+#: src/Views/SuccessView.vala:22
 msgid "The software has been installed"
 msgstr ""
 
-#: src/Views/SuccessView.vala:39
+#: src/Views/SuccessView.vala:24
 msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
@@ -84,23 +107,4 @@ msgstr ""
 
 #: src/MainWindow.vala:33
 msgid "Install Untrusted Software"
-msgstr ""
-
-#: src/MainWindow.vala:46
-msgid "Install untrusted software?"
-msgstr ""
-
-#: src/MainWindow.vala:53
-msgid ""
-"This software is provided solely by its developer and has not been reviewed "
-"for security, privacy, or system integration. Installing this software may "
-"add a repository of other apps that will show up in AppCenter."
-msgstr ""
-
-#: src/MainWindow.vala:59
-msgid "I understand"
-msgstr ""
-
-#: src/MainWindow.vala:66
-msgid "Install"
 msgstr ""
