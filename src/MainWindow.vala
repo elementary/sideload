@@ -77,6 +77,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
         grid.margin = 12;
+        grid.row_spacing = 6;
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (primary_label, 1, 0);
         grid.attach (secondary_label, 1, 1);
