@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30 10:15-0700\n"
-"PO-Revision-Date: 2019-09-30 10:15-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-09-30 23:19+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: French (Canada) <https://l10n.elementary.io/projects/desktop/"
+"sideload/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: src/Views/ErrorView.vala:37
 msgid "Install failed"
@@ -27,7 +29,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:69 src/Views/SuccessView.vala:47
 msgid "Close"
-msgstr ""
+msgstr "Fermer"
 
 #: src/Views/ErrorView.vala:93
 msgid "This software is already installed."
