@@ -19,11 +19,11 @@
 */
 
 public abstract class AbstractView : Gtk.Grid {
-    internal Gtk.ButtonBox button_box;
-    internal Gtk.Grid content_area;
-    internal Gtk.Image badge;
-    internal Gtk.Label primary_label;
-    internal Gtk.Label secondary_label;
+    protected Gtk.ButtonBox button_box;
+    protected Gtk.Grid content_area;
+    protected Gtk.Image badge;
+    protected Gtk.Label primary_label;
+    protected Gtk.Label secondary_label;
 
     construct {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
