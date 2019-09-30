@@ -43,65 +43,20 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var primary_label = new Gtk.Label (_("Install untrusted software?"));
-        primary_label.max_width_chars = 50;
-        primary_label.selectable = true;
-        primary_label.wrap = true;
-        primary_label.xalign = 0;
-        primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
-
-        var secondary_label = new Gtk.Label (_("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration. Installing this software may add a repository of other apps that will show up in AppCenter."));
-        secondary_label.max_width_chars = 55;
-        secondary_label.selectable = true;
-        secondary_label.wrap = true;
-        secondary_label.xalign = 0;
-
-        var agree_check = new Gtk.CheckButton.with_label (_("I understand"));
-        agree_check.margin_bottom = 6;
-        agree_check.margin_top = 12;
-
-        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
-        cancel_button.action_name = "app.quit";
-
-        var install_button = new Gtk.Button.with_label (_("Install"));
-        install_button.sensitive = false;
-        install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin_top = 12;
-        button_box.spacing = 6;
-        button_box.add (cancel_button);
-        button_box.add (install_button);
-
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.margin = 12;
-        grid.row_spacing = 6;
-        grid.attach (image, 0, 0, 1, 2);
-        grid.attach (primary_label, 1, 0);
-        grid.attach (secondary_label, 1, 1);
-        grid.attach (agree_check, 1, 2);
-        grid.attach (button_box, 0, 3, 2);
-        grid.show_all ();
-
-        agree_check.grab_focus ();
+        var main_view = new MainView ();
 
         progress_view = new ProgressView ();
 
         stack = new Gtk.Stack ();
         stack.vhomogeneous = false;
-        stack.add (grid);
+        stack.add (main_view);
         stack.add (progress_view);
 
         add (stack);
         get_style_context ().add_class ("rounded");
         set_titlebar (titlebar);
 
-        agree_check.bind_property ("active", install_button, "sensitive");
-
-        install_button.clicked.connect (on_install_button_clicked);
-        cancel_button.clicked.connect (() => cancel ());
+        main_view.install_request.connect (on_install_button_clicked);
         file.progress_changed.connect (on_progress_changed);
         file.installation_failed.connect (on_install_failed);
         file.installation_succeeded.connect (on_install_succeeded);
