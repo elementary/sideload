@@ -28,7 +28,7 @@ public class Sideload.MainView : AbstractView {
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
 
-        var install_button = new Gtk.Button.with_label (_("Install"));
+        var install_button = new Gtk.Button.with_label (_("Install Anyway"));
         install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         content_area.add (agree_check);
