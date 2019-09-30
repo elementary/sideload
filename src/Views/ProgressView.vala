@@ -18,8 +18,7 @@
 *
 */
 
-public class Sideload.ProgressView : Gtk.Grid {
-    private Gtk.Label primary_label;
+public class Sideload.ProgressView : AbstractView {
     private Gtk.ProgressBar progressbar;
 
     public string app_name {
@@ -34,16 +33,14 @@ public class Sideload.ProgressView : Gtk.Grid {
         }
     }
 
-    construct {
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.START;
+    public string status {
+        set {
+            secondary_label.label = value;
+        }
+    }
 
-        primary_label = new Gtk.Label ("Installing…");
-        primary_label.max_width_chars = 50;
-        primary_label.selectable = true;
-        primary_label.wrap = true;
-        primary_label.xalign = 0;
-        primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
+    construct {
+        secondary_label.label = _("Preparing…");
 
         progressbar = new Gtk.ProgressBar ();
         progressbar.fraction = 0.0;
@@ -52,24 +49,8 @@ public class Sideload.ProgressView : Gtk.Grid {
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.expand = true;
-        button_box.valign = Gtk.Align.END;
-        button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin_top = 12;
-        button_box.spacing = 6;
+        content_area.add (progressbar);
         button_box.add (cancel_button);
-
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.row_spacing = 6;
-        grid.margin = 12;
-        grid.attach (image, 0, 0, 1, 3);
-        grid.attach (primary_label, 1, 0);
-        grid.attach (progressbar, 1, 1);
-        grid.attach (button_box, 0, 3, 2);
-        grid.show_all ();
-
-        add (grid);
+        show_all ();
     }
 }

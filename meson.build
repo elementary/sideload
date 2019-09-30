@@ -10,6 +10,7 @@ add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
 
 executable(
     meson.project_name(),
+    'src/Views/AbstractView.vala',
     'src/Views/ErrorView.vala',
     'src/Views/ProgressView.vala',
     'src/Views/SuccessView.vala',
@@ -27,7 +28,7 @@ executable(
 )
 
 subdir('data')
-# subdir('po')
+subdir('po')
 
 meson.add_install_script('meson/post_install.py')
 

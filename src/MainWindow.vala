@@ -77,6 +77,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
         grid.margin = 12;
+        grid.row_spacing = 6;
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (primary_label, 1, 0);
         grid.attach (secondary_label, 1, 1);
@@ -89,6 +90,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         progress_view = new ProgressView ();
 
         stack = new Gtk.Stack ();
+        stack.vhomogeneous = false;
         stack.add (grid);
         stack.add (progress_view);
 
@@ -133,6 +135,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private void on_progress_changed (string description, double progress) {
+        progress_view.status = description;
         progress_view.progress = progress;
     }
 
