@@ -1,4 +1,6 @@
 # Sideload
+[![Translation status](https://l10n.elementary.io/widgets/desktop/-/sideload/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
+
 Flatpak Installer
 
 ## Building, Testing, and Installation
