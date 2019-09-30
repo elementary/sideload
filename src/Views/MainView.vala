@@ -39,9 +39,8 @@ public class Sideload.MainView : AbstractView {
 
         show_all ();
 
-        agree_check.grab_focus ();
-
         agree_check.bind_property ("active", install_button, "sensitive");
+        agree_check.grab_focus ();
 
         install_button.clicked.connect (() => {
             install_request ();
