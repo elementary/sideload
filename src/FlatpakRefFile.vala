@@ -27,6 +27,9 @@ public class Sideload.FlatpakRefFile : Object {
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
 
+    private uint total_operations;
+    private int current_operation;
+
     private const string REF_GROUP = "Flatpak Ref";
 
     private static Flatpak.Installation? installation;
@@ -111,6 +114,12 @@ public class Sideload.FlatpakRefFile : Object {
                 }
             });
 
+            transaction.ready.connect (() => {
+                total_operations = transaction.get_operations ().length ();
+                return true;
+            });
+
+            current_operation = 0;
             yield run_transaction_async (transaction, cancellable);
         } catch (Error e) {
             throw e;
@@ -128,13 +137,17 @@ public class Sideload.FlatpakRefFile : Object {
     }
 
     private void on_new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress, Cancellable cancellable) {
+        current_operation++;
+
         progress.changed.connect (() => {
             if (cancellable.is_cancelled ()) {
                 return;
             }
 
             Idle.add (() => {
-                progress_changed (progress.get_status (), (double)progress.get_progress () / 100.0f);
+                double existing_progress = (double)(current_operation - 1) / (double)total_operations;
+                double this_op_progress = (double)progress.get_progress () / 100.0f / (double)total_operations;
+                progress_changed (progress.get_status (), existing_progress + this_op_progress);
                 return false;
             });
         });
