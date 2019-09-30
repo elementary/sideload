@@ -15,53 +15,19 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Sideload.SuccessView : Gtk.Grid {
+public class Sideload.SuccessView : AbstractView {
     construct {
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.START;
+        badge.gicon = new ThemedIcon ("process-completed");
 
-        var badge = new Gtk.Image.from_icon_name ("process-completed", Gtk.IconSize.LARGE_TOOLBAR);
-        badge.halign = badge.valign = Gtk.Align.END;
+        primary_label.label = _("The software has been installed");
 
-        var overlay = new Gtk.Overlay ();
-        overlay.valign = Gtk.Align.START;
-        overlay.add (image);
-        overlay.add_overlay (badge);
-
-        var primary_label = new Gtk.Label (_("The software has been installed"));
-        primary_label.hexpand = true;
-        primary_label.max_width_chars = 50;
-        primary_label.selectable = true;
-        primary_label.wrap = true;
-        primary_label.xalign = 0;
-        primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
-
-        var secondary_label = new Gtk.Label (_("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall."));
-        secondary_label.use_markup = true;
-        secondary_label.selectable = true;
-        secondary_label.margin_bottom = 18;
-        secondary_label.max_width_chars = 50;
-        secondary_label.wrap = true;
-        secondary_label.xalign = 0;
+        secondary_label.label = _("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall.");
 
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.expand = true;
-        button_box.valign = Gtk.Align.END;
-        button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin_top = 12;
-        button_box.spacing = 6;
         button_box.add (close_button);
 
-        column_spacing = 12;
-        row_spacing = 6;
-        margin = 12;
-        attach (overlay, 0, 0, 1, 2);
-        attach (primary_label, 1, 0);
-        attach (secondary_label, 1, 1);
-        attach (button_box, 0, 3, 2);
         show_all ();
     }
 }

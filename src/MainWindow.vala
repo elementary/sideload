@@ -90,6 +90,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         progress_view = new ProgressView ();
 
         stack = new Gtk.Stack ();
+        stack.vhomogeneous = false;
         stack.add (grid);
         stack.add (progress_view);
 

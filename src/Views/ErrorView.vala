@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Sideload.ErrorView : Gtk.Grid {
+public class Sideload.ErrorView : AbstractView {
     public GLib.Error error { get; construct; }
 
     public ErrorView ( GLib.Error error) {
@@ -23,32 +23,11 @@ public class Sideload.ErrorView : Gtk.Grid {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.START;
+        badge.gicon = new ThemedIcon ("dialog-error");
 
-        var badge = new Gtk.Image.from_icon_name ("dialog-error", Gtk.IconSize.LARGE_TOOLBAR);
-        badge.halign = badge.valign = Gtk.Align.END;
+        primary_label.label = _("Install failed");
 
-        var overlay = new Gtk.Overlay ();
-        overlay.valign = Gtk.Align.START;
-        overlay.add (image);
-        overlay.add_overlay (badge);
-
-        var primary_label = new Gtk.Label (_("Install failed"));
-        primary_label.hexpand = true;
-        primary_label.max_width_chars = 50;
-        primary_label.selectable = true;
-        primary_label.wrap = true;
-        primary_label.xalign = 0;
-        primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
-
-        var secondary_label = new Gtk.Label (prettify_flatpak_error (error));
-        secondary_label.use_markup = true;
-        secondary_label.selectable = true;
-        secondary_label.margin_bottom = 18;
-        secondary_label.max_width_chars = 50;
-        secondary_label.wrap = true;
-        secondary_label.xalign = 0;
+        secondary_label.label = prettify_flatpak_error (error);
 
         var details_view = new Gtk.TextView ();
         details_view.border_width = 6;
@@ -64,27 +43,15 @@ public class Sideload.ErrorView : Gtk.Grid {
         scroll_box.add (details_view);
 
         var expander = new Gtk.Expander (_("Details"));
+        expander.hexpand = true;
         expander.add (scroll_box);
 
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.expand = true;
-        button_box.valign = Gtk.Align.END;
-        button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin_top = 12;
-        button_box.spacing = 6;
+        content_area.add (expander);
         button_box.add (close_button);
 
-        column_spacing = 12;
-        row_spacing = 6;
-        margin = 12;
-        attach (overlay, 0, 0, 1, 2);
-        attach (primary_label, 1, 0);
-        attach (secondary_label, 1, 1);
-        attach (expander, 1, 2);
-        attach (button_box, 0, 3, 2);
         show_all ();
     }
 
