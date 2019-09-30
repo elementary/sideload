@@ -134,6 +134,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private void on_progress_changed (string description, double progress) {
+        progress_view.status = description;
         progress_view.progress = progress;
     }
 
