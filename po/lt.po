@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 16:21-0700\n"
+"POT-Creation-Date: 2019-09-30 19:07-0700\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
@@ -29,7 +29,7 @@ msgstr "Įdiegimas nepavyko"
 msgid "Details"
 msgstr "Išsamiau"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:26
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:41
 msgid "Close"
 msgstr "Užverti"
 
@@ -102,11 +102,11 @@ msgstr "Įdiegiama \"%s\""
 msgid "Preparing…"
 msgstr ""
 
-#: src/Views/SuccessView.vala:22
+#: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
 msgstr "Programinė įranga įdiegta"
 
-#: src/Views/SuccessView.vala:24
+#: src/Views/SuccessView.vala:35
 msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
@@ -115,6 +115,35 @@ msgstr ""
 "programos informaciją ar atnaujinimus, ar ją pašalinti, apsilankykite "
 "Programų centre."
 
-#: src/MainWindow.vala:33
+#: src/Views/SuccessView.vala:37
+#, fuzzy
+msgid "Software already installed"
+msgstr "Ši programinė įranga jau įdiegta."
+
+#: src/Views/SuccessView.vala:38
+#, fuzzy
+msgid ""
+"No changes were made. Visit AppCenter for app information, updates, and to "
+"uninstall."
+msgstr ""
+"Galite bet kuriuo metu ją atverti Programų meniu. Norėdami peržiūrėti "
+"programos informaciją ar atnaujinimus, ar ją pašalinti, apsilankykite "
+"Programų centre."
+
+#: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
 msgstr "Įdiegti nepatikimą programinę įrangą"
+
+#: src/MainWindow.vala:130
+#, fuzzy
+msgid "Software installed"
+msgstr "Programinė įranga įdiegta"
+
+#: src/MainWindow.vala:132
+#, fuzzy, c-format
+msgid "%s has been successfully installed"
+msgstr "Programinė įranga įdiegta"
+
+#: src/MainWindow.vala:134
+msgid "Flatpak installed successfully"
+msgstr ""

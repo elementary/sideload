@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 16:21-0700\n"
+"POT-Creation-Date: 2019-09-30 19:07-0700\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Details"
 msgstr ""
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:26
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:41
 msgid "Close"
 msgstr "Luk"
 
@@ -95,16 +95,39 @@ msgstr ""
 msgid "Preparing…"
 msgstr ""
 
-#: src/Views/SuccessView.vala:22
+#: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
 msgstr ""
 
-#: src/Views/SuccessView.vala:24
+#: src/Views/SuccessView.vala:35
 msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
 msgstr ""
 
-#: src/MainWindow.vala:33
+#: src/Views/SuccessView.vala:37
+msgid "Software already installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:38
+msgid ""
+"No changes were made. Visit AppCenter for app information, updates, and to "
+"uninstall."
+msgstr ""
+
+#: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
+msgstr ""
+
+#: src/MainWindow.vala:130
+msgid "Software installed"
+msgstr ""
+
+#: src/MainWindow.vala:132
+#, c-format
+msgid "%s has been successfully installed"
+msgstr ""
+
+#: src/MainWindow.vala:134
+msgid "Flatpak installed successfully"
 msgstr ""
