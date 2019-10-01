@@ -25,6 +25,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     private Gtk.Stack stack;
     private ProgressView progress_view;
 
+    private string? app_name = null;
+
     public MainWindow (Gtk.Application application, FlatpakRefFile file) {
         Object (
             application: application,
@@ -77,9 +79,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private async void get_details () {
-        string? name = yield file.get_name ();
-        if (name != null) {
-            progress_view.app_name = name;
+        app_name = yield file.get_name ();
+        if (app_name != null) {
+            progress_view.app_name = app_name;
         }
     }
 
@@ -87,11 +89,15 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         current_cancellable = new Cancellable ();
         file.install.begin (current_cancellable);
         stack.visible_child = progress_view;
+
+        Granite.Services.Application.set_progress_visible.begin (true);
     }
 
     private void on_progress_changed (string description, double progress) {
         progress_view.status = description;
         progress_view.progress = progress;
+
+        Granite.Services.Application.set_progress.begin (progress);
     }
 
     private void on_install_failed (GLib.Error error) {
@@ -116,5 +122,20 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         stack.add (success_view);
         stack.visible_child = success_view;
+
+        Granite.Services.Application.set_progress_visible.begin (false);
+
+        var win = get_window ();
+        if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {
+            var notification = new Notification (_("Software installed"));
+            if (app_name != null) {
+                notification.set_body (_("%s has been successfully installed").printf (app_name));
+            } else {
+                notification.set_body (_("Flatpak installed successfully"));
+            }
+
+            notification.set_icon (new ThemedIcon ("io.elementary.sideload"));
+            application.send_notification ("installed", notification);
+        }
     }
 }
