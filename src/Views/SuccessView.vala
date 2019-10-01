@@ -16,12 +16,27 @@
  */
 
 public class Sideload.SuccessView : AbstractView {
+    public enum SuccessType {
+        INSTALLED,
+        ALREADY_INSTALLED
+    }
+
+    public SuccessType view_type { get; construct; }
+
+    public SuccessView (SuccessType type = SuccessType.INSTALLED) {
+        Object (view_type: type);
+    }
+
     construct {
         badge.gicon = new ThemedIcon ("process-completed");
 
-        primary_label.label = _("The software has been installed");
-
-        secondary_label.label = _("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall.");
+        if (view_type == SuccessType.INSTALLED) {
+            primary_label.label = _("The software has been installed");
+            secondary_label.label = _("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall.");
+        } else if (view_type == SuccessType.ALREADY_INSTALLED) {
+            primary_label.label = _("Software already installed");
+            secondary_label.label = _("No changes were made. Visit AppCenter for app information, updates, and to uninstall.");
+        }
 
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";

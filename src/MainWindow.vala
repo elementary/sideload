@@ -101,10 +101,17 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private void on_install_failed (GLib.Error error) {
-        var error_view = new ErrorView (error);
+        if (error is Flatpak.Error.ALREADY_INSTALLED) {
+            var success_view = new SuccessView (SuccessView.SuccessType.ALREADY_INSTALLED);
 
-        stack.add (error_view);
-        stack.visible_child = error_view;
+            stack.add (success_view);
+            stack.visible_child = success_view;
+        } else {
+            var error_view = new ErrorView (error);
+
+            stack.add (error_view);
+            stack.visible_child = error_view;
+        }
 
         Granite.Services.Application.set_progress_visible.begin (false);
     }
