@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30 10:15-0700\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
 "ca/>\n"
 "Language: ca\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:37
 msgid "Install failed"
-msgstr ""
+msgstr "instal·lació fallida"
 
 #: src/Views/ErrorView.vala:66
 msgid "Details"
@@ -33,40 +33,40 @@ msgstr "Tanca"
 
 #: src/Views/ErrorView.vala:93
 msgid "This software is already installed."
-msgstr ""
+msgstr "Aquest programari ja està instal·lat."
 
 #: src/Views/ErrorView.vala:97
 msgid "A newer version of Flatpak is needed to install this software."
-msgstr ""
+msgstr "Per instal·lar aquest programari cal una versió més recent de Flatpak."
 
 #: src/Views/ErrorView.vala:101
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "No s'ha trobat un Flatpak remot necessari."
 
 #: src/Views/ErrorView.vala:105
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "No s'ha pogut trobar una dependència d'execució requerida."
 
 #: src/Views/ErrorView.vala:109
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Sembla que el fitxer .flatpakref subministrat no és vàlid."
 
 #: src/Views/ErrorView.vala:113
 msgid "The software is not signed with a trusted signature."
-msgstr ""
+msgstr "El programari no està signat amb una signatura de confiança."
 
 #: src/Views/ErrorView.vala:117
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "L’aplicació, l'entorn d’execució o el nom remot no són vàlids."
 
 #: src/Views/ErrorView.vala:120
 msgid "An unknown error occured."
-msgstr ""
+msgstr "S'ha produït un error desconegut."
 
 #: src/Views/ProgressView.vala:28
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "s'instal·la «%s»"
 
 #: src/Views/ProgressView.vala:64 src/MainWindow.vala:63
 msgid "Cancel"
@@ -74,21 +74,24 @@ msgstr "Cancel·la"
 
 #: src/Views/SuccessView.vala:31
 msgid "The software has been installed"
-msgstr ""
+msgstr "S'ha instal·lat el programari."
 
 #: src/Views/SuccessView.vala:39
 msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
 msgstr ""
+"Obriu-lo en qualsevol moment des del menú d'aplicacions. Visiteu el Centre "
+"d'aplicacions per obtenir informació sobre les aplicacions, les "
+"actualitzacions i desinstal·lar-les."
 
 #: src/MainWindow.vala:33
 msgid "Install Untrusted Software"
-msgstr ""
+msgstr "Instal·la programari de no confiança"
 
 #: src/MainWindow.vala:46
 msgid "Install untrusted software?"
-msgstr ""
+msgstr "Voleu instal·lar programari que no és de confiança?"
 
 #: src/MainWindow.vala:53
 msgid ""
@@ -96,11 +99,15 @@ msgid ""
 "for security, privacy, or system integration. Installing this software may "
 "add a repository of other apps that will show up in AppCenter."
 msgstr ""
+"Aquest programari és proporcionat exclusivament pel seu desenvolupador i no "
+"ha estat revisat quant a la seguretat, privadesa o integració del sistema. "
+"Instal·lar aquest programari pot afegir un repositori d’altres aplicacions "
+"que es mostraran al Centre d'aplicacions."
 
 #: src/MainWindow.vala:59
 msgid "I understand"
-msgstr ""
+msgstr "Ho entenc"
 
 #: src/MainWindow.vala:66
 msgid "Install"
-msgstr ""
+msgstr "Instal·la"
