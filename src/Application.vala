@@ -39,18 +39,25 @@ public class Sideload.Application : Gtk.Application {
             return;
         }
 
-        main_window = new MainWindow (this, new FlatpakRefFile (file));
+        var ref_file = new FlatpakRefFile (file);
+        main_window = new MainWindow (this, ref_file);
         main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
+        var launch_action = new SimpleAction ("launch-software", null);
 
         add_action (quit_action);
+        add_action (launch_action);
         set_accels_for_action ("app.quit", {"<Control>q"});
 
         quit_action.activate.connect (() => {
             if (main_window != null) {
                 main_window.destroy ();
             }
+        });
+
+        launch_action.activate.connect (() => {
+            ref_file.launch.begin ();
         });
     }
 
