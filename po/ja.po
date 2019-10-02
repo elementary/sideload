@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30 10:15-0700\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
 "Language: ja\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:37
 msgid "Install failed"
-msgstr ""
+msgstr "インストールに失敗しました"
 
 #: src/Views/ErrorView.vala:66
 msgid "Details"
@@ -33,62 +33,64 @@ msgstr "閉じる"
 
 #: src/Views/ErrorView.vala:93
 msgid "This software is already installed."
-msgstr ""
+msgstr "このソフトウェアはすでにインストールされています。"
 
 #: src/Views/ErrorView.vala:97
 msgid "A newer version of Flatpak is needed to install this software."
-msgstr ""
+msgstr "このソフトウェアをインストールするには、新しいバージョンの Flatpak が必要です。"
 
 #: src/Views/ErrorView.vala:101
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "要求された Flatpak リモートが見つかりませんでした。"
 
 #: src/Views/ErrorView.vala:105
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "要求された実行時に必要な依存関係が見つかりませんでした。"
 
 #: src/Views/ErrorView.vala:109
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "指定された .flatpakref ファイルは有効ではない可能性があります。"
 
 #: src/Views/ErrorView.vala:113
 msgid "The software is not signed with a trusted signature."
-msgstr ""
+msgstr "ソフトウェアには信頼できる署名が付与されていません。"
 
 #: src/Views/ErrorView.vala:117
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "アプリケーション名、ランタイム名、リモート名のいずれかが無効です。"
 
 #: src/Views/ErrorView.vala:120
 msgid "An unknown error occured."
-msgstr ""
+msgstr "不明なエラーが発生しました。"
 
 #: src/Views/ProgressView.vala:28
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "“%s”をインストールしています"
 
 #: src/Views/ProgressView.vala:64 src/MainWindow.vala:63
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: src/Views/SuccessView.vala:31
 msgid "The software has been installed"
-msgstr ""
+msgstr "ソフトウェアをインストールしました"
 
 #: src/Views/SuccessView.vala:39
 msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
 msgstr ""
+"アプリケーションは、アプリケーションメニューからいつでも開くことができます。アプリの情報、アップデートを参照したり、アプリをアンインストールしたりするには"
+"、AppCenter を開いてください。"
 
 #: src/MainWindow.vala:33
 msgid "Install Untrusted Software"
-msgstr ""
+msgstr "信頼されていないソフトウェアをインストール"
 
 #: src/MainWindow.vala:46
 msgid "Install untrusted software?"
-msgstr ""
+msgstr "信頼されていないソフトウェアをインストールしますか？"
 
 #: src/MainWindow.vala:53
 msgid ""
@@ -96,11 +98,13 @@ msgid ""
 "for security, privacy, or system integration. Installing this software may "
 "add a repository of other apps that will show up in AppCenter."
 msgstr ""
+"このソフトウェアは開発者により単独で提供されており、セキュリティー、プライバシー保護、およびシステムとの統合に関する審査が行われていません。このソフトウェ"
+"アをインストールすると、AppCenter で表示される他のアプリのリポジトリが追加される可能性があります。"
 
 #: src/MainWindow.vala:59
 msgid "I understand"
-msgstr ""
+msgstr "了解"
 
 #: src/MainWindow.vala:66
 msgid "Install"
-msgstr ""
+msgstr "インストール"
