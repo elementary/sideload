@@ -41,8 +41,15 @@ public class Sideload.SuccessView : AbstractView {
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";
 
+        var open_button = new Gtk.Button.with_label (_("Open Software"));
+        open_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        open_button.action_name = "app.launch-software";
+
         button_box.add (close_button);
+        button_box.add (open_button);
 
         show_all ();
+
+        open_button.grab_focus ();
     }
 }

@@ -26,6 +26,7 @@ public class Sideload.FlatpakRefFile : Object {
 
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
+    private Flatpak.Ref? parsed_ref = null;
 
     private uint total_operations;
     private int current_operation;
@@ -64,9 +65,57 @@ public class Sideload.FlatpakRefFile : Object {
                 warning (e.message);
                 return false;
             }
-        } else {
+        }
+
+        return true;
+    }
+
+    private async bool parse_ref () {
+        // Get a list of remote names that exist in the installation
+        Gee.HashSet<string> original_remote_names = new Gee.HashSet<string> ();
+        try {
+            var remotes = installation.list_remotes (null);
+            for (int i = 0; i < remotes.length; i++) {
+                original_remote_names.add (remotes[i].name);
+            }
+        } catch (Error e) {
+            warning ("Unable to list remotes: %s", e.message);
+        }
+
+        try {
+            var bytes = yield get_bytes ();
+            parsed_ref = installation.install_ref_file (bytes, null);
+        } catch (Error e) {
+            if (!(e is Flatpak.Error.ALREADY_INSTALLED)) {
+                warning ("Unable to load ref file: %s", e.message);
+            }
+        }
+
+        if (parsed_ref == null) {
+            bool app = yield is_application ();
+            var type = app ? Flatpak.RefKind.APP : Flatpak.RefKind.RUNTIME;
+            try {
+                parsed_ref = installation.get_installed_ref (type, yield get_name (), null, yield get_branch ());
+            } catch (Error e) {
+                warning ("unable to find already installed software: %s", e.message);
+                return false;
+            }
+
             return true;
         }
+
+        var remote_name = (parsed_ref as Flatpak.RemoteRef).get_remote_name ();
+
+        try {
+            // Cleanup the remote again if it wasn't there before, we only needed metadata
+            if (!(remote_name in original_remote_names)) {
+                installation.remove_remote (remote_name);
+            }
+        } catch (Error e) {
+            warning ("Error cleaning up remote used to fetch metadata: %s", e.message);
+        }
+
+        return true;
     }
 
     public async string? get_name () {
@@ -76,6 +125,32 @@ public class Sideload.FlatpakRefFile : Object {
 
         try {
             return key_file.get_string (REF_GROUP, "Name");
+        } catch (Error e) {
+            warning (e.message);
+            return null;
+        }
+    }
+
+    private async bool is_application () {
+        if (!yield load_key_file ()) {
+            return true;
+        }
+
+        try {
+            return !key_file.get_boolean (REF_GROUP, "IsRuntime");
+        } catch (Error e) {
+            warning (e.message);
+            return true;
+        }
+    }
+
+    private async string? get_branch () {
+        if (!yield load_key_file ()) {
+            return null;
+        }
+
+        try {
+            return key_file.get_string (REF_GROUP, "Branch");
         } catch (Error e) {
             warning (e.message);
             return null;
@@ -172,6 +247,18 @@ public class Sideload.FlatpakRefFile : Object {
             installation_failed (transaction_error);
         } else {
             installation_succeeded ();
+        }
+    }
+
+    public async void launch () {
+        if (parsed_ref == null && !yield parse_ref ()) {
+            return;
+        }
+
+        try {
+            installation.launch (parsed_ref.name, null, parsed_ref.branch, null, null);
+        } catch (Error e) {
+            warning ("Error launching software: %s", e.message);
         }
     }
 }
