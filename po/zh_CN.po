@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30 10:15-0700\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2019-10-05 03:23+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:37
 msgid "Install failed"
-msgstr ""
+msgstr "安装失败"
 
 #: src/Views/ErrorView.vala:66
 msgid "Details"
@@ -33,11 +33,11 @@ msgstr "关闭"
 
 #: src/Views/ErrorView.vala:93
 msgid "This software is already installed."
-msgstr ""
+msgstr "此软件已安装。"
 
 #: src/Views/ErrorView.vala:97
 msgid "A newer version of Flatpak is needed to install this software."
-msgstr ""
+msgstr "安装此软件需要更高版本的 Flatpak。"
 
 #: src/Views/ErrorView.vala:101
 msgid "A required Flatpak remote was not found."
@@ -61,20 +61,20 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:120
 msgid "An unknown error occured."
-msgstr ""
+msgstr "出现未知错误。"
 
 #: src/Views/ProgressView.vala:28
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "正在安装 “%s”"
 
 #: src/Views/ProgressView.vala:64 src/MainWindow.vala:63
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: src/Views/SuccessView.vala:31
 msgid "The software has been installed"
-msgstr ""
+msgstr "软件已安装"
 
 #: src/Views/SuccessView.vala:39
 msgid ""
@@ -99,8 +99,8 @@ msgstr ""
 
 #: src/MainWindow.vala:59
 msgid "I understand"
-msgstr ""
+msgstr "我接受"
 
 #: src/MainWindow.vala:66
 msgid "Install"
-msgstr ""
+msgstr "安装"
