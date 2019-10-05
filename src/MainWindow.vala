@@ -63,7 +63,11 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         file.installation_failed.connect (on_install_failed);
         file.installation_succeeded.connect (on_install_succeeded);
         file.notify["download-size"].connect (() => {
-            main_view.display_download_size (file.download_size);
+            Idle.add (() => {
+                main_view.display_download_size (file.download_size);
+
+                return false;
+            });
         });
 
         get_details.begin ();
