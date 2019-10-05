@@ -45,4 +45,11 @@ public class Sideload.MainView : AbstractView {
             install_request ();
         });
     }
+
+    public void display_download_size (string size) {
+        // TODO: Actually do this nicely
+        var size_label = new Gtk.Label (_("Download size: Up to %s".printf (size)));
+        content_area.add (size_label);
+        content_area.show_all ();
+    }
 }
