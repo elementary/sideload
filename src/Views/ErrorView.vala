@@ -57,11 +57,11 @@ public class Sideload.ErrorView : AbstractView {
 
     private static string prettify_flatpak_error (GLib.Error e) {
         if (e is Flatpak.Error.ALREADY_INSTALLED) {
-            return _("This software is already installed.");
+            return _("This app is already installed.");
         }
 
         if (e is Flatpak.Error.NEED_NEW_FLATPAK) {
-            return _("A newer version of Flatpak is needed to install this software.");
+            return _("A newer version of Flatpak is needed to install this app.");
         }
 
         if (e is Flatpak.Error.REMOTE_NOT_FOUND) {
@@ -77,7 +77,7 @@ public class Sideload.ErrorView : AbstractView {
         }
 
         if (e is Flatpak.Error.UNTRUSTED) {
-            return _("The software is not signed with a trusted signature.");
+            return _("The app is not signed with a trusted signature.");
         }
 
         if (e is Flatpak.Error.INVALID_NAME) {

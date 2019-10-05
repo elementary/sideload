@@ -19,9 +19,9 @@ public class Sideload.MainView : AbstractView {
     public signal void install_request ();
 
     construct {
-        primary_label.label = _("Install untrusted software?");
+        primary_label.label = _("Install untrusted app?");
 
-        secondary_label.label = _("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration. Installing this software may add a repository of other apps that will show up in AppCenter.");
+        secondary_label.label = _("This app is provided solely by its developer and has not been reviewed for security, privacy, or system integration. Installing this app may add a repository of other apps that will show up in AppCenter.");
 
         var agree_check = new Gtk.CheckButton.with_label (_("I understand"));
 

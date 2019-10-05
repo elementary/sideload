@@ -31,19 +31,19 @@ public class Sideload.SuccessView : AbstractView {
         badge.gicon = new ThemedIcon ("process-completed");
 
         if (view_type == SuccessType.INSTALLED) {
-            primary_label.label = _("The software has been installed");
+            primary_label.label = _("The app has been installed");
             secondary_label.label = _("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall.");
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
-            primary_label.label = _("Software already installed");
+            primary_label.label = _("App already installed");
             secondary_label.label = _("No changes were made. Visit AppCenter for app information, updates, and to uninstall.");
         }
 
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";
 
-        var open_button = new Gtk.Button.with_label (_("Open Software"));
+        var open_button = new Gtk.Button.with_label (_("Open App"));
         open_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        open_button.action_name = "app.launch-software";
+        open_button.action_name = "app.launch";
 
         button_box.add (close_button);
         button_box.add (open_button);

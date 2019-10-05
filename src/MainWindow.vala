@@ -32,7 +32,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             application: application,
             icon_name: "io.elementary.sideload",
             resizable: false,
-            title: _("Install Untrusted Software"),
+            title: _("Install Untrusted App"),
             file: file
         );
     }
@@ -127,7 +127,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         var win = get_window ();
         if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {
-            var notification = new Notification (_("Software installed"));
+            var notification = new Notification (_("App installed"));
             if (app_name != null) {
                 notification.set_body (_("%s has been successfully installed").printf (app_name));
             } else {

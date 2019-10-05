@@ -44,7 +44,7 @@ public class Sideload.Application : Gtk.Application {
         main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
-        var launch_action = new SimpleAction ("launch-software", null);
+        var launch_action = new SimpleAction ("launch", null);
 
         add_action (quit_action);
         add_action (launch_action);
