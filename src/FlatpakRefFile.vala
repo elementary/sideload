@@ -129,6 +129,7 @@ public class Sideload.FlatpakRefFile : Object {
 
                 download_size = GLib.format_size (total_download_size);
 
+                // Do not allow the install to start, this is a dry run
                 return false;
             });
 
