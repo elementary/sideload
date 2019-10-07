@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-07 07:57-0700\n"
-"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"PO-Revision-Date: 2019-10-08 22:57+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
 "sideload/eo/>\n"
@@ -88,7 +88,7 @@ msgstr "Rezigni"
 
 #: src/Views/MainView.vala:31
 msgid "Install Anyway"
-msgstr ""
+msgstr "Instali ĉiukaze"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -97,7 +97,7 @@ msgstr "Instalanta „%s“"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Pretiganta…"
 
 #: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
@@ -112,40 +112,37 @@ msgstr ""
 "aplikaĵaj informoj, ĝisdatigoj, kaj por malinstali."
 
 #: src/Views/SuccessView.vala:37
-#, fuzzy
 msgid "Software already installed"
-msgstr "Tiu ĉi programo jam estas instalita."
+msgstr "Jam instalita programo"
 
 #: src/Views/SuccessView.vala:38
-#, fuzzy
 msgid ""
 "No changes were made. Visit AppCenter for app information, updates, and to "
 "uninstall."
 msgstr ""
-"Malfermu ĝin kiam ajn de la Aplikaĵa Menuo. Vizitu la Aplikaĵan Centron pri "
-"aplikaĵaj informoj, ĝisdatigoj, kaj por malinstali."
+"Nenio estis ŝanĝita. Vizitu la Aplikaĵan Centron pri aplikaĵaj informoj, "
+"ĝisdatigoj, kaj por malinstali."
 
 #: src/Views/SuccessView.vala:44
 msgid "Open Software"
-msgstr ""
+msgstr "Malfermita programo"
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
 msgstr "Instali ne fidata programo"
 
 #: src/MainWindow.vala:130
-#, fuzzy
 msgid "Software installed"
-msgstr "La programo estis instalita"
+msgstr "Programo instalita"
 
 #: src/MainWindow.vala:132
-#, fuzzy, c-format
+#, c-format
 msgid "%s has been successfully installed"
-msgstr "La programo estis instalita"
+msgstr "%s estis sukcese instalita"
 
 #: src/MainWindow.vala:134
 msgid "Flatpak installed successfully"
-msgstr ""
+msgstr "Flatpak estis sukcese instalita"
 
 #~ msgid "Install"
 #~ msgstr "Instali"
