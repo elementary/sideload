@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 19:07-0700\n"
+"POT-Creation-Date: 2019-10-07 07:57-0700\n"
 "PO-Revision-Date: 2019-10-03 23:23+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -37,7 +37,9 @@ msgstr "このソフトウェアはすでにインストールされています
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this software."
-msgstr "このソフトウェアをインストールするには、新しいバージョンの Flatpak が必要です。"
+msgstr ""
+"このソフトウェアをインストールするには、新しいバージョンの Flatpak が必要で"
+"す。"
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
@@ -65,7 +67,7 @@ msgstr "不明なエラーが発生しました。"
 
 #: src/Views/MainView.vala:22
 msgid "Install untrusted software?"
-msgstr ""
+msgstr "信頼されていないソフトウェアをインストールしますか？"
 
 #: src/Views/MainView.vala:24
 msgid ""
@@ -73,14 +75,18 @@ msgid ""
 "for security, privacy, or system integration. Installing this software may "
 "add a repository of other apps that will show up in AppCenter."
 msgstr ""
+"このソフトウェアは開発者により単独で提供されており、セキュリティー、プライバ"
+"シー保護、およびシステムとの統合に関する審査が行われていません。このソフト"
+"ウェアをインストールすると、AppCenter で表示される他のアプリのリポジトリが追"
+"加される可能性があります。"
 
 #: src/Views/MainView.vala:26
 msgid "I understand"
-msgstr ""
+msgstr "了解"
 
 #: src/Views/MainView.vala:28 src/Views/ProgressView.vala:49
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: src/Views/MainView.vala:31
 msgid "Install Anyway"
@@ -91,9 +97,9 @@ msgstr ""
 msgid "Installing “%s”"
 msgstr "“%s”をインストールしています"
 
-#: src/Views/ProgressView.vala:64 src/MainWindow.vala:63
-msgid "Cancel"
-msgstr "キャンセル"
+#: src/Views/ProgressView.vala:43
+msgid "Preparing…"
+msgstr ""
 
 #: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
@@ -104,27 +110,46 @@ msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
 msgstr ""
-"アプリケーションは、アプリケーションメニューからいつでも開くことができます。アプリの情報、アップデートを参照したり、アプリをアンインストールしたりするには"
-"、AppCenter を開いてください。"
+"アプリケーションは、アプリケーションメニューからいつでも開くことができます。"
+"アプリの情報、アップデートを参照したり、アプリをアンインストールしたりするに"
+"は、AppCenter を開いてください。"
 
-#: src/MainWindow.vala:33
-msgid "Install Untrusted Software"
-msgstr "信頼されていないソフトウェアをインストール"
+#: src/Views/SuccessView.vala:37
+#, fuzzy
+msgid "Software already installed"
+msgstr "このソフトウェアはすでにインストールされています。"
 
-#: src/MainWindow.vala:46
-msgid "Install untrusted software?"
-msgstr "信頼されていないソフトウェアをインストールしますか？"
+#: src/Views/SuccessView.vala:38
+#, fuzzy
+msgid ""
+"No changes were made. Visit AppCenter for app information, updates, and to "
+"uninstall."
+msgstr ""
+"アプリケーションは、アプリケーションメニューからいつでも開くことができます。"
+"アプリの情報、アップデートを参照したり、アプリをアンインストールしたりするに"
+"は、AppCenter を開いてください。"
+
+#: src/Views/SuccessView.vala:44
+msgid "Open Software"
+msgstr ""
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
+msgstr "信頼されていないソフトウェアをインストール"
+
+#: src/MainWindow.vala:130
+#, fuzzy
+msgid "Software installed"
+msgstr "ソフトウェアをインストールしました"
+
+#: src/MainWindow.vala:132
+#, fuzzy, c-format
+msgid "%s has been successfully installed"
+msgstr "ソフトウェアをインストールしました"
+
+#: src/MainWindow.vala:134
+msgid "Flatpak installed successfully"
 msgstr ""
-"このソフトウェアは開発者により単独で提供されており、セキュリティー、プライバシー保護、およびシステムとの統合に関する審査が行われていません。このソフトウェ"
-"アをインストールすると、AppCenter で表示される他のアプリのリポジトリが追加される可能性があります。"
 
-#: src/MainWindow.vala:59
-msgid "I understand"
-msgstr "了解"
-
-#: src/MainWindow.vala:66
-msgid "Install"
-msgstr "インストール"
+#~ msgid "Install"
+#~ msgstr "インストール"
