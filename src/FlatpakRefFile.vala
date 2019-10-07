@@ -22,9 +22,12 @@ public class Sideload.FlatpakRefFile : Object {
     public File file { get; construct; }
 
     public string? download_size { get; private set; default = null; }
+    public bool already_installed { get; private set; default = false; }
+
     public signal void progress_changed (string description, double progress);
     public signal void installation_failed (GLib.Error details);
     public signal void installation_succeeded ();
+    public signal void details_ready ();
 
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
@@ -155,18 +158,18 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    public async bool check_installed (Cancellable? cancellable = null) {
+    public async void get_details (Cancellable? cancellable = null) {
         try {
             yield dry_run (cancellable);
         } catch (Error e) {
             if (e is Flatpak.Error.ALREADY_INSTALLED) {
-                return true;
+                already_installed = true;
             } else if (!(e is Flatpak.Error.ABORTED)) {
                 warning ("Error during dry run: %s", e.message);
             }
+        } finally {
+            details_ready ();
         }
-
-        return false;
     }
 
     public async void install (Cancellable cancellable) throws Error {

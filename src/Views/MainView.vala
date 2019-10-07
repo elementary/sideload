@@ -18,6 +18,9 @@
 public class Sideload.MainView : AbstractView {
     public signal void install_request ();
 
+    private Gtk.Stack details_stack;
+    private Gtk.Label download_size_label;
+
     construct {
         primary_label.label = _("Install untrusted software?");
 
@@ -31,7 +34,34 @@ public class Sideload.MainView : AbstractView {
         var install_button = new Gtk.Button.with_label (_("Install Anyway"));
         install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-        content_area.add (agree_check);
+        var loading_spinner = new Gtk.Spinner ();
+        loading_spinner.start ();
+
+        var loading_label = new Gtk.Label (_("Fetching details"));
+
+        var loading_grid = new Gtk.Grid ();
+        loading_grid.add (loading_spinner);
+        loading_grid.add (loading_label);
+
+        var details_grid = new Gtk.Grid ();
+        details_grid.orientation = Gtk.Orientation.VERTICAL;
+        details_grid.row_spacing = 6;
+
+        download_size_label = new Gtk.Label (null);
+
+        details_grid.add (agree_check);
+        details_grid.add (download_size_label);
+
+        var error_label = new Gtk.Label (_("App already installed"));
+        error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+
+        details_stack = new Gtk.Stack ();
+        details_stack.add_named (loading_grid, "loading");
+        details_stack.add_named (details_grid, "details");
+        details_stack.add_named (error_label, "error");
+        details_stack.visible_child_name = "loading";
+
+        content_area.add (details_stack);
 
         button_box.add (cancel_button);
         button_box.add (install_button);
@@ -46,10 +76,12 @@ public class Sideload.MainView : AbstractView {
         });
     }
 
-    public void display_download_size (string size) {
-        // TODO: Actually do this nicely
-        var size_label = new Gtk.Label (_("Download size: Up to %s".printf (size)));
-        content_area.add (size_label);
-        content_area.show_all ();
+    public void display_details (string? size, bool already_installed) {
+        if (already_installed) {
+            details_stack.visible_child_name = "error";
+        } else if (size != null) {
+            download_size_label.label = _("Download size up to: %s").printf (size);
+            details_stack.visible_child_name = "details";
+        }
     }
 }
