@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 19:07-0700\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"POT-Creation-Date: 2019-10-07 07:57-0700\n"
+"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload/"
 "fr/>\n"
 "Language: fr\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr ""
+msgstr "Échec de l'installation"
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
@@ -33,39 +33,41 @@ msgstr "Fermer"
 
 #: src/Views/ErrorView.vala:60
 msgid "This software is already installed."
-msgstr ""
+msgstr "Ce logiciel est déjà installé."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this software."
 msgstr ""
+"Une nouvelle version de Flatpak est nécessaire pour installer ce logiciel."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Une commande nécessaire à Flatpak n'a pas été trouvée."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Une dépendance d’exécution nécessaire n'a pas été trouvée."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Le fichier .flatpakref fourni ne semble pas être valide."
 
 #: src/Views/ErrorView.vala:80
 msgid "The software is not signed with a trusted signature."
-msgstr ""
+msgstr "Le logiciel n'est pas signé avec une signature certifiée."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
 msgstr ""
+"Le nom de l'application, de l'exécutable ou de la commande est invalide."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Un erreur inconnue s'est produite."
 
 #: src/Views/MainView.vala:22
 msgid "Install untrusted software?"
-msgstr ""
+msgstr "Installer un logiciel non certifié ?"
 
 #: src/Views/MainView.vala:24
 msgid ""
@@ -73,10 +75,14 @@ msgid ""
 "for security, privacy, or system integration. Installing this software may "
 "add a repository of other apps that will show up in AppCenter."
 msgstr ""
+"Ce logiciel est fourni uniquement par son développeur et n'a pas été évalué "
+"pour sa sécurité, son respect de la vie privée ou son intégration au "
+"système. L'installation de ce logiciel peut ajouter un dépôt supplémentaire "
+"pour d'autres applications qui apparaîtront dans le Centre d'Applications."
 
 #: src/Views/MainView.vala:26
 msgid "I understand"
-msgstr ""
+msgstr "Je comprends"
 
 #: src/Views/MainView.vala:28 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -89,7 +95,7 @@ msgstr ""
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Installation de « %s »"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
@@ -97,37 +103,53 @@ msgstr ""
 
 #: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
-msgstr ""
+msgstr "Le logiciel a été installé"
 
 #: src/Views/SuccessView.vala:35
 msgid ""
 "Open it any time from the Applications Menu. Visit AppCenter for app "
 "information, updates, and to uninstall."
 msgstr ""
+"Ouvrez-le à tout moment depuis le menu Applications. Visitez le Centre "
+"d'Applications pour des informations sur les applications, des mises à jour, "
+"et pour désinstaller des applications."
 
 #: src/Views/SuccessView.vala:37
+#, fuzzy
 msgid "Software already installed"
-msgstr ""
+msgstr "Ce logiciel est déjà installé."
 
 #: src/Views/SuccessView.vala:38
+#, fuzzy
 msgid ""
 "No changes were made. Visit AppCenter for app information, updates, and to "
 "uninstall."
 msgstr ""
+"Ouvrez-le à tout moment depuis le menu Applications. Visitez le Centre "
+"d'Applications pour des informations sur les applications, des mises à jour, "
+"et pour désinstaller des applications."
+
+#: src/Views/SuccessView.vala:44
+msgid "Open Software"
+msgstr ""
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
-msgstr ""
+msgstr "Installer un logiciel non certifié"
 
 #: src/MainWindow.vala:130
+#, fuzzy
 msgid "Software installed"
-msgstr ""
+msgstr "Le logiciel a été installé"
 
 #: src/MainWindow.vala:132
-#, c-format
+#, fuzzy, c-format
 msgid "%s has been successfully installed"
-msgstr ""
+msgstr "Le logiciel a été installé"
 
 #: src/MainWindow.vala:134
 msgid "Flatpak installed successfully"
 msgstr ""
+
+#~ msgid "Install"
+#~ msgstr "Installer"
