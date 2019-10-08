@@ -40,6 +40,7 @@ public class Sideload.MainView : AbstractView {
         var loading_label = new Gtk.Label (_("Fetching details"));
 
         var loading_grid = new Gtk.Grid ();
+        loading_grid.column_spacing = 6;
         loading_grid.add (loading_spinner);
         loading_grid.add (loading_label);
 
@@ -49,16 +50,32 @@ public class Sideload.MainView : AbstractView {
 
         download_size_label = new Gtk.Label (null);
 
+        var download_size_icon = new Gtk.Image.from_icon_name ("dialog-information-symbolic", Gtk.IconSize.BUTTON);
+
+        var download_size_grid = new Gtk.Grid ();
+        download_size_grid.column_spacing = 6;
+        download_size_grid.add (download_size_icon);
+        download_size_grid.add (download_size_label);
+
+        details_grid.add (download_size_grid);
         details_grid.add (agree_check);
-        details_grid.add (download_size_label);
 
         var error_label = new Gtk.Label (_("App already installed"));
         error_label.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
 
+        var error_icon = new Gtk.Image.from_icon_name ("dialog-error-symbolic", Gtk.IconSize.BUTTON);
+        error_icon.get_style_context ().add_class (Gtk.STYLE_CLASS_ERROR);
+
+        var error_grid = new Gtk.Grid ();
+        error_grid.column_spacing = 6;
+        error_grid.add (error_icon);
+        error_grid.add (error_label);
+
         details_stack = new Gtk.Stack ();
+        details_stack.vhomogeneous = false;
         details_stack.add_named (loading_grid, "loading");
         details_stack.add_named (details_grid, "details");
-        details_stack.add_named (error_label, "error");
+        details_stack.add_named (error_grid, "error");
         details_stack.visible_child_name = "loading";
 
         content_area.add (details_stack);
