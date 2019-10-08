@@ -20,13 +20,17 @@
 
 public class Sideload.FlatpakRefFile : Object {
     public File file { get; construct; }
+
+    public string? download_size { get; private set; default = null; }
+    public bool already_installed { get; private set; default = false; }
+
     public signal void progress_changed (string description, double progress);
     public signal void installation_failed (GLib.Error details);
     public signal void installation_succeeded ();
+    public signal void details_ready ();
 
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
-    private Flatpak.Ref? parsed_ref = null;
 
     private uint total_operations;
     private int current_operation;
@@ -70,54 +74,6 @@ public class Sideload.FlatpakRefFile : Object {
         return true;
     }
 
-    private async bool parse_ref () {
-        // Get a list of remote names that exist in the installation
-        Gee.HashSet<string> original_remote_names = new Gee.HashSet<string> ();
-        try {
-            var remotes = installation.list_remotes (null);
-            for (int i = 0; i < remotes.length; i++) {
-                original_remote_names.add (remotes[i].name);
-            }
-        } catch (Error e) {
-            warning ("Unable to list remotes: %s", e.message);
-        }
-
-        try {
-            var bytes = yield get_bytes ();
-            parsed_ref = installation.install_ref_file (bytes, null);
-        } catch (Error e) {
-            if (!(e is Flatpak.Error.ALREADY_INSTALLED)) {
-                warning ("Unable to load ref file: %s", e.message);
-            }
-        }
-
-        if (parsed_ref == null) {
-            bool app = yield is_application ();
-            var type = app ? Flatpak.RefKind.APP : Flatpak.RefKind.RUNTIME;
-            try {
-                parsed_ref = installation.get_installed_ref (type, yield get_name (), null, yield get_branch ());
-            } catch (Error e) {
-                warning ("unable to find already installed app: %s", e.message);
-                return false;
-            }
-
-            return true;
-        }
-
-        var remote_name = (parsed_ref as Flatpak.RemoteRef).get_remote_name ();
-
-        try {
-            // Cleanup the remote again if it wasn't there before, we only needed metadata
-            if (!(remote_name in original_remote_names)) {
-                installation.remove_remote (remote_name);
-            }
-        } catch (Error e) {
-            warning ("Error cleaning up remote used to fetch metadata: %s", e.message);
-        }
-
-        return true;
-    }
-
     public async string? get_name () {
         if (!yield load_key_file ()) {
             return null;
@@ -131,19 +87,6 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    private async bool is_application () {
-        if (!yield load_key_file ()) {
-            return true;
-        }
-
-        try {
-            return !key_file.get_boolean (REF_GROUP, "IsRuntime");
-        } catch (Error e) {
-            warning (e.message);
-            return true;
-        }
-    }
-
     private async string? get_branch () {
         if (!yield load_key_file ()) {
             return null;
@@ -154,6 +97,78 @@ public class Sideload.FlatpakRefFile : Object {
         } catch (Error e) {
             warning (e.message);
             return null;
+        }
+    }
+
+    private async void dry_run (Cancellable? cancellable) throws GLib.Error {
+        if (installation == null) {
+            throw new IOError.FAILED (_("Did not find suitable Flatpak installation."));
+        }
+
+        try {
+            uint64 total_download_size = -1;
+            var bytes = yield get_bytes ();
+            var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
+            transaction.add_install_flatpakref (bytes);
+
+            transaction.ready.connect (() => {
+                var operations = transaction.get_operations ();
+                operations.foreach ((entry) => {
+                    try {
+                        var @ref = Flatpak.Ref.parse (entry.get_ref ());
+                        var remote_ref = installation.fetch_remote_ref_sync (
+                            entry.get_remote (),
+                            @ref.kind,
+                            @ref.name,
+                            @ref.arch,
+                            @ref.branch,
+                            cancellable);
+
+                        total_download_size += remote_ref.download_size;
+                    } catch (Error e) {
+                        warning ("Error calculating download size: %s", e.message);
+                    }
+                });
+
+                download_size = GLib.format_size (total_download_size);
+
+                // Do not allow the install to start, this is a dry run
+                return false;
+            });
+
+            Error? transaction_error = null;
+            new Thread<void*> ("install-ref", () => {
+                try {
+                    transaction.run (cancellable);
+                } catch (Error e) {
+                    transaction_error = e;
+                }
+
+                Idle.add (dry_run.callback);
+                return null;
+            });
+
+            yield;
+
+            if (transaction_error != null) {
+                throw transaction_error;
+            }
+        } catch (Error e) {
+            throw e;
+        }
+    }
+
+    public async void get_details (Cancellable? cancellable = null) {
+        try {
+            yield dry_run (cancellable);
+        } catch (Error e) {
+            if (e is Flatpak.Error.ALREADY_INSTALLED) {
+                already_installed = true;
+            } else if (!(e is Flatpak.Error.ABORTED)) {
+                warning ("Error during dry run: %s", e.message);
+            }
+        } finally {
+            details_ready ();
         }
     }
 
@@ -251,12 +266,8 @@ public class Sideload.FlatpakRefFile : Object {
     }
 
     public async void launch () {
-        if (parsed_ref == null && !yield parse_ref ()) {
-            return;
-        }
-
         try {
-            installation.launch (parsed_ref.name, null, parsed_ref.branch, null, null);
+            installation.launch (yield get_name (), null, yield get_branch (), null, null);
         } catch (Error e) {
             warning ("Error launching app: %s", e.message);
         }
