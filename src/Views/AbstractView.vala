@@ -55,6 +55,8 @@ public abstract class AbstractView : Gtk.Grid {
         secondary_label.xalign = 0;
 
         content_area = new Gtk.Grid ();
+        content_area.orientation = Gtk.Orientation.VERTICAL;
+        content_area.row_spacing = 6;
 
         button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
         button_box.expand = true;

@@ -62,6 +62,17 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         file.progress_changed.connect (on_progress_changed);
         file.installation_failed.connect (on_install_failed);
         file.installation_succeeded.connect (on_install_succeeded);
+        file.details_ready.connect (() => {
+            if (file.already_installed) {
+                var success_view = new SuccessView (SuccessView.SuccessType.ALREADY_INSTALLED);
+
+                stack.add (success_view);
+                stack.visible_child = success_view;
+            } else {
+                main_view.display_details (file.download_size);
+            }
+        });
+
         get_details.begin ();
     }
 
@@ -79,6 +90,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private async void get_details () {
+        file.get_details.begin ();
         app_name = yield file.get_name ();
         if (app_name != null) {
             progress_view.app_name = app_name;
