@@ -77,7 +77,7 @@ public class Sideload.MainView : AbstractView {
         });
     }
 
-    public void display_details (string? size, bool already_installed) {
+    public void display_details (string? size) {
         if (size != null) {
             download_size_label.label = _("Download size up to: %s").printf (size);
             details_stack.visible_child_name = "details";
