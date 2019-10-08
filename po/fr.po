@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-07 07:57-0700\n"
+"POT-Creation-Date: 2019-10-08 16:07-0700\n"
 "PO-Revision-Date: 2019-10-03 23:23+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -65,11 +65,11 @@ msgstr ""
 msgid "An unknown error occured."
 msgstr "Un erreur inconnue s'est produite."
 
-#: src/Views/MainView.vala:22
+#: src/Views/MainView.vala:25
 msgid "Install untrusted software?"
 msgstr "Installer un logiciel non certifié ?"
 
-#: src/Views/MainView.vala:24
+#: src/Views/MainView.vala:27
 msgid ""
 "This software is provided solely by its developer and has not been reviewed "
 "for security, privacy, or system integration. Installing this software may "
@@ -80,16 +80,25 @@ msgstr ""
 "système. L'installation de ce logiciel peut ajouter un dépôt supplémentaire "
 "pour d'autres applications qui apparaîtront dans le Centre d'Applications."
 
-#: src/Views/MainView.vala:26
+#: src/Views/MainView.vala:32
+msgid "Fetching details"
+msgstr ""
+
+#: src/Views/MainView.vala:39
 msgid "I understand"
 msgstr "Je comprends"
 
-#: src/Views/MainView.vala:28 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:61 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/Views/MainView.vala:31
+#: src/Views/MainView.vala:64
 msgid "Install Anyway"
+msgstr ""
+
+#: src/Views/MainView.vala:82
+#, c-format
+msgid "Download size up to: %s"
 msgstr ""
 
 #: src/Views/ProgressView.vala:26
@@ -137,17 +146,17 @@ msgstr ""
 msgid "Install Untrusted Software"
 msgstr "Installer un logiciel non certifié"
 
-#: src/MainWindow.vala:130
+#: src/MainWindow.vala:142
 #, fuzzy
 msgid "Software installed"
 msgstr "Le logiciel a été installé"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:144
 #, fuzzy, c-format
 msgid "%s has been successfully installed"
 msgstr "Le logiciel a été installé"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:146
 msgid "Flatpak installed successfully"
 msgstr ""
 
