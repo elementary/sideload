@@ -58,6 +58,7 @@ public class Sideload.Application : Gtk.Application {
 
         launch_action.activate.connect (() => {
             ref_file.launch.begin ();
+            activate_action ("quit", null);
         });
     }
 
