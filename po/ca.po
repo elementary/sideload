@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-07 07:57-0700\n"
-"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"PO-Revision-Date: 2019-10-08 22:57+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
 "ca/>\n"
@@ -88,7 +88,7 @@ msgstr "Cancel·la"
 
 #: src/Views/MainView.vala:31
 msgid "Install Anyway"
-msgstr ""
+msgstr "Instal·la-ho tanmateix"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -97,7 +97,7 @@ msgstr "s'instal·la «%s»"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Es prepara…"
 
 #: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
@@ -113,41 +113,37 @@ msgstr ""
 "actualitzacions i desinstal·lar-les."
 
 #: src/Views/SuccessView.vala:37
-#, fuzzy
 msgid "Software already installed"
-msgstr "Aquest programari ja està instal·lat."
+msgstr "El programari ja està instal·lat."
 
 #: src/Views/SuccessView.vala:38
-#, fuzzy
 msgid ""
 "No changes were made. Visit AppCenter for app information, updates, and to "
 "uninstall."
 msgstr ""
-"Obriu-lo en qualsevol moment des del menú d'aplicacions. Visiteu el Centre "
-"d'aplicacions per obtenir informació sobre les aplicacions, les "
-"actualitzacions i desinstal·lar-les."
+"No s'ha fet cap canvi. Visiteu el Centre d'aplicacions per obtenir "
+"informació sobre les aplicacions, les actualitzacions i la desinstal·lació."
 
 #: src/Views/SuccessView.vala:44
 msgid "Open Software"
-msgstr ""
+msgstr "Obre el programari"
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
 msgstr "Instal·la programari de no confiança"
 
 #: src/MainWindow.vala:130
-#, fuzzy
 msgid "Software installed"
 msgstr "S'ha instal·lat el programari."
 
 #: src/MainWindow.vala:132
-#, fuzzy, c-format
+#, c-format
 msgid "%s has been successfully installed"
-msgstr "S'ha instal·lat el programari."
+msgstr "%s s'ha instal·lat correctament."
 
 #: src/MainWindow.vala:134
 msgid "Flatpak installed successfully"
-msgstr ""
+msgstr "El Flatpak s'ha instal·lat correctament."
 
 #~ msgid "Install"
 #~ msgstr "Instal·la"
