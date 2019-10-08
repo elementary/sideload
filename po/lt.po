@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-07 07:57-0700\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
+"PO-Revision-Date: 2019-10-08 22:57+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
 "sideload/lt/>\n"
@@ -89,9 +89,8 @@ msgid "Cancel"
 msgstr "Atsisakyti"
 
 #: src/Views/MainView.vala:31
-#, fuzzy
 msgid "Install Anyway"
-msgstr "Įdiegti"
+msgstr "Vis tiek įdiegti"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -100,7 +99,7 @@ msgstr "Įdiegiama \"%s\""
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Ruošiama…"
 
 #: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
@@ -116,38 +115,34 @@ msgstr ""
 "Programų centre."
 
 #: src/Views/SuccessView.vala:37
-#, fuzzy
 msgid "Software already installed"
-msgstr "Ši programinė įranga jau įdiegta."
+msgstr "Programinė įranga jau įdiegta"
 
 #: src/Views/SuccessView.vala:38
-#, fuzzy
 msgid ""
 "No changes were made. Visit AppCenter for app information, updates, and to "
 "uninstall."
 msgstr ""
-"Galite bet kuriuo metu ją atverti Programų meniu. Norėdami peržiūrėti "
-"programos informaciją ar atnaujinimus, ar ją pašalinti, apsilankykite "
-"Programų centre."
+"Nebuvo atlikta jokių pakeitimų. Norėdami peržiūrėti programos informaciją ar "
+"atnaujinimus, ar ją pašalinti, apsilankykite Programų centre."
 
 #: src/Views/SuccessView.vala:44
 msgid "Open Software"
-msgstr ""
+msgstr "Atverti programinę įrangą"
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
 msgstr "Įdiegti nepatikimą programinę įrangą"
 
 #: src/MainWindow.vala:130
-#, fuzzy
 msgid "Software installed"
 msgstr "Programinė įranga įdiegta"
 
 #: src/MainWindow.vala:132
-#, fuzzy, c-format
+#, c-format
 msgid "%s has been successfully installed"
-msgstr "Programinė įranga įdiegta"
+msgstr "%s sėkmingai įdiegta"
 
 #: src/MainWindow.vala:134
 msgid "Flatpak installed successfully"
-msgstr ""
+msgstr "Flatpak sėkmingai įdiegtas"
