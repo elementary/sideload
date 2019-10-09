@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-08 16:07-0700\n"
-"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"PO-Revision-Date: 2019-10-09 19:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:32
 msgid "Fetching details"
-msgstr ""
+msgstr "詳細を取得しています"
 
 #: src/Views/MainView.vala:39
 msgid "I understand"
@@ -94,12 +94,12 @@ msgstr "キャンセル"
 
 #: src/Views/MainView.vala:64
 msgid "Install Anyway"
-msgstr ""
+msgstr "了解してインストール"
 
 #: src/Views/MainView.vala:82
 #, c-format
 msgid "Download size up to: %s"
-msgstr ""
+msgstr "最大ダウンロードサイズ: %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -108,7 +108,7 @@ msgstr "“%s”をインストールしています"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "準備しています…"
 
 #: src/Views/SuccessView.vala:34
 msgid "The software has been installed"
@@ -124,41 +124,35 @@ msgstr ""
 "は、AppCenter を開いてください。"
 
 #: src/Views/SuccessView.vala:37
-#, fuzzy
 msgid "Software already installed"
-msgstr "このソフトウェアはすでにインストールされています。"
+msgstr "ソフトウェアはインストール済みです"
 
 #: src/Views/SuccessView.vala:38
-#, fuzzy
 msgid ""
 "No changes were made. Visit AppCenter for app information, updates, and to "
 "uninstall."
-msgstr ""
-"アプリケーションは、アプリケーションメニューからいつでも開くことができます。"
-"アプリの情報、アップデートを参照したり、アプリをアンインストールしたりするに"
-"は、AppCenter を開いてください。"
+msgstr "変更は行われていません。アプリの情報、アップデートを参照したり、アプリをアンインストールしたりするには、AppCenter を開いてください。"
 
 #: src/Views/SuccessView.vala:44
 msgid "Open Software"
-msgstr ""
+msgstr "ソフトウェアを開く"
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted Software"
 msgstr "信頼されていないソフトウェアをインストール"
 
 #: src/MainWindow.vala:142
-#, fuzzy
 msgid "Software installed"
 msgstr "ソフトウェアをインストールしました"
 
 #: src/MainWindow.vala:144
-#, fuzzy, c-format
+#, c-format
 msgid "%s has been successfully installed"
-msgstr "ソフトウェアをインストールしました"
+msgstr "%s は正常にインストールされました"
 
 #: src/MainWindow.vala:146
 msgid "Flatpak installed successfully"
-msgstr ""
+msgstr "Flatpak は正常にインストールされました"
 
 #~ msgid "Install"
 #~ msgstr "インストール"
