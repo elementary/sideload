@@ -60,13 +60,27 @@ public class Sideload.MainView : AbstractView {
         download_size_label.wrap = true;
         download_size_label.xalign = 0;
 
+        var updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
+        updates_icon.valign = Gtk.Align.START;
+
+        unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
+        updates_context.add_class ("updates");
+        updates_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+        var updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
+        updates_label.selectable = true;
+        updates_label.max_width_chars = 50;
+        updates_label.wrap = true;
+        updates_label.xalign = 0;
+
         details_grid = new Gtk.Grid ();
         details_grid.orientation = Gtk.Orientation.VERTICAL;
         details_grid.column_spacing = 6;
         details_grid.row_spacing = 12;
         details_grid.attach (download_size_icon, 0, 0);
         details_grid.attach (download_size_label, 1, 0);
-
+        details_grid.attach (updates_icon, 0, 1);
+        details_grid.attach (updates_label, 1, 1);
         details_grid.attach (agree_check, 0, 3, 2);
 
         details_stack = new Gtk.Stack ();
@@ -104,19 +118,6 @@ public class Sideload.MainView : AbstractView {
         }
 
         if (extra_repo) {
-            var updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
-            updates_icon.valign = Gtk.Align.START;
-
-            unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
-            updates_context.add_class ("updates");
-            updates_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-            var updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
-            updates_label.selectable = true;
-            updates_label.max_width_chars = 50;
-            updates_label.wrap = true;
-            updates_label.xalign = 0;
-
             var repo_icon = new Gtk.Image.from_icon_name ("package-x-generic-symbolic", Gtk.IconSize.BUTTON);
             repo_icon.valign = Gtk.Align.START;
 
@@ -126,8 +127,6 @@ public class Sideload.MainView : AbstractView {
             repo_label.wrap = true;
             repo_label.xalign = 0;
 
-            details_grid.attach (updates_icon, 0, 1);
-            details_grid.attach (updates_label, 1, 1);
             details_grid.attach (repo_icon, 0, 2);
             details_grid.attach (repo_label, 1, 2);
         }
