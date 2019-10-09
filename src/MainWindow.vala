@@ -64,7 +64,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         file.installation_succeeded.connect (on_install_succeeded);
         file.details_ready.connect (() => {
             if (file.already_installed) {
-                var success_view = new SuccessView (SuccessView.SuccessType.ALREADY_INSTALLED);
+                var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
 
                 stack.add (success_view);
                 stack.visible_child = success_view;
@@ -114,7 +114,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private void on_install_failed (GLib.Error error) {
         if (error is Flatpak.Error.ALREADY_INSTALLED) {
-            var success_view = new SuccessView (SuccessView.SuccessType.ALREADY_INSTALLED);
+            var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
 
             stack.add (success_view);
             stack.visible_child = success_view;
@@ -130,7 +130,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
 
     private void on_install_succeeded () {
-        var success_view = new SuccessView ();
+        var success_view = new SuccessView (app_name);
 
         stack.add (success_view);
         stack.visible_child = success_view;
@@ -141,9 +141,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {
             var notification = new Notification (_("App installed"));
             if (app_name != null) {
-                notification.set_body (_("%s has been successfully installed").printf (app_name));
+                notification.set_body (_("“%s” was installed successfully").printf (app_name));
             } else {
-                notification.set_body (_("Flatpak installed successfully"));
+                notification.set_body (_("The app was installed successfully"));
             }
 
             notification.set_icon (new ThemedIcon ("io.elementary.sideload"));
