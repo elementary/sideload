@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-08 16:07-0700\n"
-"PO-Revision-Date: 2019-10-08 22:57+0000\n"
+"PO-Revision-Date: 2019-10-09 21:27+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
 "sideload/lt/>\n"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:32
 msgid "Fetching details"
-msgstr ""
+msgstr "Gaunama išsamesnė informacija"
 
 #: src/Views/MainView.vala:39
 msgid "I understand"
@@ -99,7 +99,7 @@ msgstr "Vis tiek įdiegti"
 #: src/Views/MainView.vala:82
 #, c-format
 msgid "Download size up to: %s"
-msgstr ""
+msgstr "Atsiuntimo dydis iki: %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
