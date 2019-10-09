@@ -71,7 +71,7 @@ public class Sideload.Application : Gtk.Application {
         if (appinfo != null) {
             return appinfo.get_name ();
         } else {
-            return _("AppCenter");
+            return _("your software center");
         }
     }
 
