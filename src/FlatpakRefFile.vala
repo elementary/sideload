@@ -23,6 +23,7 @@ public class Sideload.FlatpakRefFile : Object {
 
     public string? download_size { get; private set; default = null; }
     public bool already_installed { get; private set; default = false; }
+    public bool extra_remotes_needed { get; private set; default = false; }
 
     public signal void progress_changed (string description, double progress);
     public signal void installation_failed (GLib.Error details);
@@ -105,11 +106,23 @@ public class Sideload.FlatpakRefFile : Object {
             throw new IOError.FAILED (_("Did not find suitable Flatpak installation."));
         }
 
+        var added_remotes = new Gee.ArrayList<string> ();
+
         try {
             uint64 total_download_size = -1;
             var bytes = yield get_bytes ();
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_flatpakref (bytes);
+
+            transaction.add_new_remote.connect ((reason, from_id, remote_name, url) => {
+                if (reason == Flatpak.TransactionRemoteReason.RUNTIME_DEPS) {
+                    added_remotes.add (url);
+                    extra_remotes_needed = true;
+                    return true;
+                }
+
+                return false;
+            });
 
             transaction.ready.connect (() => {
                 var operations = transaction.get_operations ();
@@ -149,6 +162,17 @@ public class Sideload.FlatpakRefFile : Object {
             });
 
             yield;
+
+            // Cleanup any remotes we had to add while testing the transaction
+            installation.list_remotes ().foreach ((remote) => {
+                if (remote.get_url () in added_remotes) {
+                    try {
+                        installation.remove_remote (remote.get_name ());
+                    } catch (Error e) {
+                        warning ("Error while removing dry run remote: %s", e.message);
+                    }
+                }
+            });
 
             if (transaction_error != null) {
                 throw transaction_error;
