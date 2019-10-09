@@ -21,10 +21,14 @@ public class Sideload.SuccessView : AbstractView {
         ALREADY_INSTALLED
     }
 
+    public string? app_name { get; construct; }
     public SuccessType view_type { get; construct; }
 
-    public SuccessView (SuccessType type = SuccessType.INSTALLED) {
-        Object (view_type: type);
+    public SuccessView (string? app_name, SuccessType type = SuccessType.INSTALLED) {
+        Object (
+            app_name: app_name,
+            view_type: type
+        );
     }
 
     construct {
@@ -33,10 +37,20 @@ public class Sideload.SuccessView : AbstractView {
         var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
 
         if (view_type == SuccessType.INSTALLED) {
-            primary_label.label = _("The app has been installed");
+            if (app_name != null) {
+                primary_label.label = _("“%s” was installed successfully").printf (app_name);
+            } else {
+                primary_label.label = _("The app was installed successfully");
+            }
+
             secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall.").printf (appstore_name);
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
-            primary_label.label = _("App already installed");
+            if (app_name != null) {
+                primary_label.label = _("“%s” is already installed").printf (app_name);
+            } else {
+                primary_label.label = _("This app is already installed");
+            }
+
             secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall.").printf (appstore_name);
         }
 
