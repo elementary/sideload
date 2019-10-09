@@ -220,7 +220,7 @@ public class Sideload.FlatpakRefFile : Object {
 
             // Automatically select the first available remote thas has the dependency we need to install
             transaction.choose_remote_for_ref.connect ((@ref, runtime_ref, remotes) => {
-                // TODO: Possibly be more clever here, but this currently matches AppCenter & GNOME software
+                // TODO: Possibly be more clever here, but this currently matches AppCenter & GNOME Software
                 if (remotes.length > 0) {
                     return 0;
                 } else {
@@ -293,7 +293,7 @@ public class Sideload.FlatpakRefFile : Object {
         try {
             installation.launch (yield get_name (), null, yield get_branch (), null, null);
         } catch (Error e) {
-            warning ("Error launching software: %s", e.message);
+            warning ("Error launching app: %s", e.message);
         }
     }
 }

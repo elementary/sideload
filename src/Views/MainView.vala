@@ -30,9 +30,9 @@ public class Sideload.MainView : AbstractView {
     }
 
     construct {
-        primary_label.label = _("Install untrusted software?");
+        primary_label.label = _("Install untrusted app?");
 
-        secondary_label.label = _("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration.");
+        secondary_label.label = _("This app is provided solely by its developer and has not been reviewed for security, privacy, or system integration.");
 
         var loading_spinner = new Gtk.Spinner ();
         loading_spinner.start ();
