@@ -66,6 +66,15 @@ public class Sideload.Application : Gtk.Application {
 
     }
 
+    public string get_appstore_name () {
+        var appinfo = GLib.AppInfo.get_default_for_uri_scheme ("appstream");
+        if (appinfo != null) {
+            return appinfo.get_name ();
+        } else {
+            return _("your software center");
+        }
+    }
+
     public static int main (string[] args) {
         if (args.length < 2) {
             print ("Usage: %s /path/to/flatpakref\n", args[0]);

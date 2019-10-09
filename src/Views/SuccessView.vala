@@ -30,12 +30,14 @@ public class Sideload.SuccessView : AbstractView {
     construct {
         badge.gicon = new ThemedIcon ("process-completed");
 
+        var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
+
         if (view_type == SuccessType.INSTALLED) {
             primary_label.label = _("The app has been installed");
-            secondary_label.label = _("Open it any time from the Applications Menu. Visit AppCenter for app information, updates, and to uninstall.");
+            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall.").printf (appstore_name);
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
             primary_label.label = _("App already installed");
-            secondary_label.label = _("No changes were made. Visit AppCenter for app information, updates, and to uninstall.");
+            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall.").printf (appstore_name);
         }
 
         var close_button = new Gtk.Button.with_label (_("Close"));
