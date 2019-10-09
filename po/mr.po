@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-07 07:57-0700\n"
+"POT-Creation-Date: 2019-10-08 16:07-0700\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -63,11 +63,11 @@ msgstr "अनुप्रयोग, रनटाइम किंवा रि�
 msgid "An unknown error occured."
 msgstr "एक अज्ञात त्रुटी आली."
 
-#: src/Views/MainView.vala:22
+#: src/Views/MainView.vala:25
 msgid "Install untrusted software?"
 msgstr "अविश्वासू सॉफ्टवेअर स्थापित करायचे?"
 
-#: src/Views/MainView.vala:24
+#: src/Views/MainView.vala:27
 msgid ""
 "This software is provided solely by its developer and has not been reviewed "
 "for security, privacy, or system integration. Installing this software may "
@@ -77,18 +77,27 @@ msgstr ""
 "सिस्टम एकीकरणासाठी त्याचे पुनरावलोकन केले गेले नाही. हे सॉफ्टवेअर स्थापित केल्याने अ‍ॅपसेंटर "
 "मध्ये दर्शविल्या जाणार्‍या अन्य अ‍ॅप्सची रेपोसिटोरी जोडू शकेल."
 
-#: src/Views/MainView.vala:26
+#: src/Views/MainView.vala:32
+msgid "Fetching details"
+msgstr ""
+
+#: src/Views/MainView.vala:39
 msgid "I understand"
 msgstr "मला समजले"
 
-#: src/Views/MainView.vala:28 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:61 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/MainView.vala:31
+#: src/Views/MainView.vala:64
 #, fuzzy
 msgid "Install Anyway"
 msgstr "स्थापित करा"
+
+#: src/Views/MainView.vala:82
+#, c-format
+msgid "Download size up to: %s"
+msgstr ""
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -133,16 +142,16 @@ msgstr ""
 msgid "Install Untrusted Software"
 msgstr "अविश्वसनीय सॉफ्टवेअर स्थापित करा"
 
-#: src/MainWindow.vala:130
+#: src/MainWindow.vala:142
 #, fuzzy
 msgid "Software installed"
 msgstr "सॉफ्टवेअर स्थापित केले गेले आहे"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:144
 #, fuzzy, c-format
 msgid "%s has been successfully installed"
 msgstr "सॉफ्टवेअर स्थापित केले गेले आहे"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:146
 msgid "Flatpak installed successfully"
 msgstr ""

@@ -69,7 +69,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 stack.add (success_view);
                 stack.visible_child = success_view;
             } else {
-                main_view.display_details (file.download_size);
+                main_view.display_details (file.download_size, file.extra_remotes_needed);
             }
         });
 
