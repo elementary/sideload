@@ -18,9 +18,16 @@
 public class Sideload.MainView : AbstractView {
     public signal void install_request ();
 
+    private static Gtk.CssProvider provider;
+
     private Gtk.Grid details_grid;
     private Gtk.Stack details_stack;
     private Gtk.Label download_size_label;
+
+    static construct {
+        provider = new Gtk.CssProvider ();
+        provider.load_from_resource ("io/elementary/sideload/colors.css");
+    }
 
     construct {
         primary_label.label = _("Install untrusted software?");
@@ -42,6 +49,10 @@ public class Sideload.MainView : AbstractView {
 
         var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic", Gtk.IconSize.BUTTON);
         download_size_icon.valign = Gtk.Align.START;
+
+        unowned Gtk.StyleContext download_context = download_size_icon.get_style_context ();
+        download_context.add_class ("downloads");
+        download_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         download_size_label = new Gtk.Label (null);
         download_size_label.selectable = true;
@@ -95,6 +106,10 @@ public class Sideload.MainView : AbstractView {
         if (extra_repo) {
             var updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
             updates_icon.valign = Gtk.Align.START;
+
+            unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
+            updates_context.add_class ("updates");
+            updates_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
             var updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
             updates_label.selectable = true;
