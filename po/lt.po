@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 12:03-0700\n"
-"PO-Revision-Date: 2019-10-08 22:57+0000\n"
+"POT-Creation-Date: 2019-10-09 14:33-0700\n"
+"PO-Revision-Date: 2019-10-09 21:27+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
 "sideload/lt/>\n"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:40
 msgid "Fetching details"
-msgstr ""
+msgstr "Gaunama išsamesnė informacija"
 
 #: src/Views/MainView.vala:47
 msgid "I understand"
@@ -105,9 +105,9 @@ msgid "Install Anyway"
 msgstr "Vis tiek įdiegti"
 
 #: src/Views/MainView.vala:115
-#, c-format
+#, fuzzy, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Atsiuntimo dydis iki: %s"
 
 #: src/Views/MainView.vala:117
 msgid "Unknown download size"

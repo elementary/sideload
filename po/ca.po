@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 12:03-0700\n"
+"POT-Creation-Date: 2019-10-09 14:33-0700\n"
 "PO-Revision-Date: 2019-10-09 19:04+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -103,9 +103,18 @@ msgid "Install Anyway"
 msgstr "Instal·la-ho tanmateix"
 
 #: src/Views/MainView.vala:115
-#, c-format
-msgid "Download size up to: %s"
+#, fuzzy, c-format
+msgid "Download size may be up to %s"
 msgstr "Mida de la baixada de fins a %s"
+
+#: src/Views/MainView.vala:117
+msgid "Unknown download size"
+msgstr ""
+
+#: src/Views/MainView.vala:130
+#, c-format
+msgid "Other apps from this distributor may appear in %s"
+msgstr ""
 
 #: src/Views/ProgressView.vala:26
 #, c-format

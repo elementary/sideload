@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 12:03-0700\n"
+"POT-Creation-Date: 2019-10-09 14:33-0700\n"
 "PO-Revision-Date: 2019-10-09 19:04+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -32,7 +32,8 @@ msgid "Close"
 msgstr "Cerrar"
 
 #: src/Views/ErrorView.vala:60
-msgid "This software is already installed."
+#, fuzzy
+msgid "This app is already installed."
 msgstr "Ya se ha instalado este programa."
 
 #: src/Views/ErrorView.vala:64
@@ -54,7 +55,8 @@ msgid "The supplied .flatpakref file does not seem to be valid."
 msgstr "El archivo .flatpakref proporcionado no parece ser válido."
 
 #: src/Views/ErrorView.vala:80
-msgid "The software is not signed with a trusted signature."
+#, fuzzy
+msgid "The app is not signed with a trusted signature."
 msgstr "El programa no está firmado con una firma de confianza."
 
 #: src/Views/ErrorView.vala:84
@@ -67,8 +69,9 @@ msgstr ""
 msgid "An unknown error occured."
 msgstr "Se produjo un error desconocido."
 
-#: src/Views/MainView.vala:25
-msgid "Install untrusted software?"
+#: src/Views/MainView.vala:33
+#, fuzzy
+msgid "Install untrusted app?"
 msgstr "¿Quiere instalar un programa que no es de confianza?"
 
 #: src/Views/MainView.vala:35
@@ -103,9 +106,18 @@ msgid "Install Anyway"
 msgstr "Instalar de todos modos"
 
 #: src/Views/MainView.vala:115
-#, c-format
-msgid "Download size up to: %s"
+#, fuzzy, c-format
+msgid "Download size may be up to %s"
 msgstr "Tamaño máximo de descarga: %s"
+
+#: src/Views/MainView.vala:117
+msgid "Unknown download size"
+msgstr ""
+
+#: src/Views/MainView.vala:130
+#, c-format
+msgid "Other apps from this distributor may appear in %s"
+msgstr ""
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -116,9 +128,10 @@ msgstr "Instalando «%s»"
 msgid "Preparing…"
 msgstr "Preparando…"
 
-#: src/Views/SuccessView.vala:34
-msgid "The software has been installed"
-msgstr "Se ha instalado el programa"
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
+#, fuzzy, c-format
+msgid "“%s” was installed successfully"
+msgstr "Se ha instalado Flatpak correctamente"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
 msgid "The app was installed successfully"
@@ -134,9 +147,15 @@ msgstr ""
 "de aplicaciones para consultar información sobre el programa, actualizarlo o "
 "desinstalarlo."
 
-#: src/Views/SuccessView.vala:37
-msgid "Software already installed"
-msgstr "Ya se ha instalado el programa"
+#: src/Views/SuccessView.vala:49
+#, fuzzy, c-format
+msgid "“%s” is already installed"
+msgstr "Ya se ha instalado este programa."
+
+#: src/Views/SuccessView.vala:51
+#, fuzzy
+msgid "This app is already installed"
+msgstr "Ya se ha instalado este programa."
 
 #: src/Views/SuccessView.vala:54
 #, c-format
@@ -147,23 +166,32 @@ msgstr ""
 "No se ha realizado ningún cambio. Visite el Centro de aplicaciones para "
 "consultar información sobre el programa, actualizarlo o desinstalarlo."
 
-#: src/Views/SuccessView.vala:44
-msgid "Open Software"
-msgstr "Abrir programa"
+#: src/Views/SuccessView.vala:60
+msgid "Open App"
+msgstr ""
+
+#: src/Application.vala:74
+msgid "your software center"
+msgstr ""
 
 #: src/MainWindow.vala:35
-msgid "Install Untrusted Software"
+#, fuzzy
+msgid "Install Untrusted App"
 msgstr "Instalar programa no confiable"
 
 #: src/MainWindow.vala:142
-msgid "Software installed"
+#, fuzzy
+msgid "App installed"
 msgstr "Se ha instalado el programa"
 
-#: src/MainWindow.vala:144
-#, c-format
-msgid "%s has been successfully installed"
-msgstr "%s se ha instalado correctamente"
+#~ msgid "The software has been installed"
+#~ msgstr "Se ha instalado el programa"
 
-#: src/MainWindow.vala:146
-msgid "Flatpak installed successfully"
-msgstr "Se ha instalado Flatpak correctamente"
+#~ msgid "Software already installed"
+#~ msgstr "Ya se ha instalado el programa"
+
+#~ msgid "Open Software"
+#~ msgstr "Abrir programa"
+
+#~ msgid "%s has been successfully installed"
+#~ msgstr "%s se ha instalado correctamente"
