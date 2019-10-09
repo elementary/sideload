@@ -24,7 +24,7 @@ public class Sideload.MainView : AbstractView {
     construct {
         primary_label.label = _("Install untrusted software?");
 
-        secondary_label.label = _("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration. Installing this software may add a repository of other apps that will show up in AppCenter.");
+        secondary_label.label = _("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration.");
 
         var loading_spinner = new Gtk.Spinner ();
         loading_spinner.start ();
@@ -77,10 +77,14 @@ public class Sideload.MainView : AbstractView {
         });
     }
 
-    public void display_details (string? size) {
+    public void display_details (string? size, bool extra_repo) {
         if (size != null) {
             download_size_label.label = _("Download size up to: %s").printf (size);
             details_stack.visible_child_name = "details";
+        }
+
+        if (extra_repo) {
+            secondary_label.label = _("This software is provided solely by its developer and has not been reviewed for security, privacy, or system integration. Installing this software will add an extra repository that may contain other apps that will show up in AppCenter.");
         }
     }
 }
