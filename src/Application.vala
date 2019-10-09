@@ -66,8 +66,8 @@ public class Sideload.Application : Gtk.Application {
 
     }
 
-    public unowned string get_appstore_name () {
-        var appinfo = GLib.AppInfo.get_default_for_uri_scheme ("appstream://");
+    public string get_appstore_name () {
+        var appinfo = GLib.AppInfo.get_default_for_uri_scheme ("appstream");
         if (appinfo != null) {
             return appinfo.get_name ();
         } else {
