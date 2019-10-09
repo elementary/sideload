@@ -15,6 +15,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+.appcenter {
+    color: @GRAPE_700;
+}
+
 .downloads {
     color: @LIME_500;
 }

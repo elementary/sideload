@@ -118,10 +118,14 @@ public class Sideload.MainView : AbstractView {
         }
 
         if (extra_repo) {
-            var repo_icon = new Gtk.Image.from_icon_name ("package-x-generic-symbolic", Gtk.IconSize.BUTTON);
+            var repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON);
             repo_icon.valign = Gtk.Align.START;
 
-            var repo_label = new Gtk.Label (_("Installing will add a software source that may contain other apps"));
+            unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
+            repo_context.add_class ("appcenter");
+            repo_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+            var repo_label = new Gtk.Label (_("Other apps from this distributor may appear in AppCenter"));
             repo_label.selectable = true;
             repo_label.max_width_chars = 50;
             repo_label.wrap = true;
