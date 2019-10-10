@@ -61,9 +61,13 @@ public class Sideload.FlatpakRefFile : Object {
             return bytes;
         }
 
-        return yield file.load_bytes_async (null, null);
+        bytes = yield file.load_bytes_async (null, null);
+        return bytes;
     }
 
+    // It's possible that this method is called multiple times in quick succession. key_file may not be
+    // null after the first time, but the data might not be loaded. Use a mutex here so that subsequent
+    // calls wait on the original call to finish and load the data
     private async bool load_key_file () {
         yield keyfile_mutex.lock ();
 
@@ -98,6 +102,7 @@ public class Sideload.FlatpakRefFile : Object {
     }
 
     public async string? get_name () {
+        // Application name from AppData is preferred
         if (appdata_name != null) {
             return appdata_name;
         }
@@ -106,12 +111,19 @@ public class Sideload.FlatpakRefFile : Object {
             return null;
         }
 
+        string? name = null;
+
+        // Otherwise, does the .flatpakref have a Title field?
+        // This is supposed to be the human readable name of the app suitable for display
+        // But is sometimes still the app ID
         try {
-            return key_file.get_string (REF_GROUP, "Name");
+            name = key_file.get_string (REF_GROUP, "Title");
         } catch (Error e) {
             warning (e.message);
-            return null;
         }
+
+        // Finally, fall back to the app id if we can't get anything else
+        return yield get_id ();
     }
 
     private async string? get_branch () {
@@ -164,12 +176,16 @@ public class Sideload.FlatpakRefFile : Object {
                             @ref.branch,
                             cancellable);
 
+                        // If this is the ref the user requested to install, download the appdata for its remote
                         if (@ref.name == flatpakref_id) {
                             installation.update_appstream_sync (entry.get_remote (), @ref.arch, null, cancellable);
                             var remote = installation.get_remote_by_name (entry.get_remote ());
                             var appstream_dir = remote.get_appstream_dir (@ref.arch);
                             var appstream_file = appstream_dir.get_child ("appstream.xml.gz");
-                            parse_xml (appstream_file, flatpakref_id);
+                            // If we can't find the app by ID in the appstream data, try with a .desktop suffix
+                            if (!parse_xml (appstream_file, flatpakref_id)) {
+                                parse_xml (appstream_file, flatpakref_id + ".desktop");
+                            }
                         }
 
                         total_download_size += remote_ref.download_size;
@@ -217,12 +233,12 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    private void parse_xml (GLib.File appstream_file, string id) {
+    private bool parse_xml (GLib.File appstream_file, string id) {
         var path = appstream_file.get_path ();
         Xml.Doc* doc = Xml.Parser.parse_file (path);
         if (doc == null) {
             warning ("Appstream XML file %s not found or permissions missing", path);
-            return;
+            return false;
         }
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
@@ -232,13 +248,13 @@ public class Sideload.FlatpakRefFile : Object {
 
         if (res == null) {
             delete doc;
-            return;
+            return false;
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
             delete res;
             delete doc;
-            return;
+            return false;
         }
 
         Xml.Node* node = res->nodesetval->item (0);
@@ -259,6 +275,8 @@ public class Sideload.FlatpakRefFile : Object {
 
         delete res;
         delete doc;
+
+        return true;
     }
 
     public async void get_details (Cancellable? cancellable = null) {
