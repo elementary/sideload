@@ -111,13 +111,11 @@ public class Sideload.FlatpakRefFile : Object {
             return null;
         }
 
-        string? name = null;
-
         // Otherwise, does the .flatpakref have a Title field?
         // This is supposed to be the human readable name of the app suitable for display
         // But is sometimes still the app ID
         try {
-            name = key_file.get_string (REF_GROUP, "Title");
+            return key_file.get_string (REF_GROUP, "Title");
         } catch (Error e) {
             warning (e.message);
         }
