@@ -25,6 +25,8 @@ public class Sideload.FlatpakRefFile : Object {
     public bool already_installed { get; private set; default = false; }
     public bool extra_remotes_needed { get; private set; default = false; }
 
+    private string? appdata_name = null;
+
     public signal void progress_changed (string description, double progress);
     public signal void installation_failed (GLib.Error details);
     public signal void installation_succeeded ();
@@ -39,6 +41,8 @@ public class Sideload.FlatpakRefFile : Object {
     private const string REF_GROUP = "Flatpak Ref";
 
     private static Flatpak.Installation? installation;
+
+    private AsyncMutex keyfile_mutex = new AsyncMutex ();
 
     static construct {
         try {
@@ -57,25 +61,47 @@ public class Sideload.FlatpakRefFile : Object {
             return bytes;
         }
 
-        bytes = yield file.load_bytes_async (null, null);
-        return bytes;
+        return yield file.load_bytes_async (null, null);
     }
 
     private async bool load_key_file () {
+        yield keyfile_mutex.lock ();
+
+        bool result = false;
+
         if (key_file == null) {
             key_file = new KeyFile ();
             try {
-                return key_file.load_from_bytes (yield get_bytes (), NONE);
+                result = key_file.load_from_bytes (yield get_bytes (), NONE);
             } catch (Error e) {
                 warning (e.message);
-                return false;
             }
+        } else {
+            result = true;
         }
 
-        return true;
+        keyfile_mutex.unlock ();
+        return result;
+    }
+
+    private async string? get_id () {
+        if (!yield load_key_file ()) {
+            return null;
+        }
+
+        try {
+            return key_file.get_string (REF_GROUP, "Name");
+        } catch (Error e) {
+            warning (e.message);
+            return null;
+        }
     }
 
     public async string? get_name () {
+        if (appdata_name != null) {
+            return appdata_name;
+        }
+
         if (!yield load_key_file ()) {
             return null;
         }
@@ -110,6 +136,7 @@ public class Sideload.FlatpakRefFile : Object {
 
         try {
             uint64 total_download_size = -1;
+            var flatpakref_id = yield get_id ();
             var bytes = yield get_bytes ();
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_flatpakref (bytes);
@@ -136,6 +163,14 @@ public class Sideload.FlatpakRefFile : Object {
                             @ref.arch,
                             @ref.branch,
                             cancellable);
+
+                        if (@ref.name == flatpakref_id) {
+                            installation.update_appstream_sync (entry.get_remote (), @ref.arch, null, cancellable);
+                            var remote = installation.get_remote_by_name (entry.get_remote ());
+                            var appstream_dir = remote.get_appstream_dir (@ref.arch);
+                            var appstream_file = appstream_dir.get_child ("appstream.xml.gz");
+                            parse_xml (appstream_file, flatpakref_id);
+                        }
 
                         total_download_size += remote_ref.download_size;
                     } catch (Error e) {
@@ -180,6 +215,50 @@ public class Sideload.FlatpakRefFile : Object {
         } catch (Error e) {
             throw e;
         }
+    }
+
+    private void parse_xml (GLib.File appstream_file, string id) {
+        var path = appstream_file.get_path ();
+        Xml.Doc* doc = Xml.Parser.parse_file (path);
+        if (doc == null) {
+            warning ("Appstream XML file %s not found or permissions missing", path);
+            return;
+        }
+
+        Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
+        // Find a <component> with a child <id> that matches our id
+        var xpath = "/components/component/id[text()='%s']/parent::component".printf (id);
+        Xml.XPath.Object* res = cntx.eval_expression (xpath);
+
+        if (res == null) {
+            delete doc;
+            return;
+        }
+
+        if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
+            delete res;
+            delete doc;
+            return;
+        }
+
+        Xml.Node* node = res->nodesetval->item (0);
+        for (Xml.Node* iter = node->children; iter != null; iter = iter->next) {
+            if (iter->type == Xml.ElementType.ELEMENT_NODE) {
+                switch (iter->name) {
+                    case "name":
+                        // Get the non-localised "<name>" tags
+                        if (iter->has_prop ("lang") == null) {
+                            appdata_name = iter->get_content ();
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        delete res;
+        delete doc;
     }
 
     public async void get_details (Cancellable? cancellable = null) {
@@ -291,7 +370,7 @@ public class Sideload.FlatpakRefFile : Object {
 
     public async void launch () {
         try {
-            installation.launch (yield get_name (), null, yield get_branch (), null, null);
+            installation.launch (yield get_id (), null, yield get_branch (), null, null);
         } catch (Error e) {
             warning ("Error launching app: %s", e.message);
         }
