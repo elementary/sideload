@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-09 14:33-0700\n"
-"PO-Revision-Date: 2019-10-12 13:23+0000\n"
+"PO-Revision-Date: 2019-10-15 21:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
 "sideload/lt/>\n"
@@ -87,7 +87,7 @@ msgstr "Aš suprantu"
 
 #: src/Views/MainView.vala:70
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Šios programos atnaujinimai nebus peržiūrimi"
 
 #: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -162,7 +162,7 @@ msgstr "Atverti programą"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "jūsų programinės įrangos centras"
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted App"
