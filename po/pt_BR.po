@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-09 14:33-0700\n"
 "PO-Revision-Date: 2019-10-18 03:46+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/sideload/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -107,12 +107,12 @@ msgstr "O tamanho do download pode ser de até %s"
 
 #: src/Views/MainView.vala:117
 msgid "Unknown download size"
-msgstr ""
+msgstr "Tamanho do download desconhecido"
 
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Outros aplicativos deste distribuidor podem aparecer em %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -121,12 +121,12 @@ msgstr "Instalando \"%s\""
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Preparando…"
 
 #: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "“%s” instalado com sucesso"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
 msgid "The app was installed successfully"
