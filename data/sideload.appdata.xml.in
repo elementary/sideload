@@ -9,6 +9,15 @@
   <description>
     <p></p>
   </description>
+  <releases>
+    <release version="1.0.0" date="2019-10-21" urgency="medium">
+      <description>
+        <ul>
+          <li>First release. Hello world!</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
   <provides>
     <binary>io.elementary.sideload</binary>
   </provides>
