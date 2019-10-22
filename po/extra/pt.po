@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-30 10:15-0700\n"
+"POT-Creation-Date: 2019-10-22 13:19-0700\n"
 "PO-Revision-Date: 2019-10-14 14:23+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -27,7 +27,11 @@ msgstr "Sideload"
 msgid "Install apps downloaded from the Internet"
 msgstr "Instalar aplicações transferidas da Internet"
 
-#: data/sideload.appdata.xml.in:45
+#: data/sideload.appdata.xml.in:16
+msgid "First release. Hello world!"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:65
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
