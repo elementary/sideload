@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-09 14:33-0700\n"
-"PO-Revision-Date: 2019-10-15 21:24+0000\n"
+"PO-Revision-Date: 2019-10-17 11:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
 "sideload/lt/>\n"
@@ -109,7 +109,7 @@ msgstr "Nežinomas atsiuntimo dydis"
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "%s gali pateikti ir kitas šio platintojo programas"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
