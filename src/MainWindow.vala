@@ -90,7 +90,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private async void get_details () {
-        file.get_details.begin ();
+        yield file.get_details ();
         app_name = yield file.get_name ();
         if (app_name != null) {
             progress_view.app_name = app_name;

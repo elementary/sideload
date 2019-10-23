@@ -17,6 +17,7 @@ resources = gnome.compile_resources(
 executable(
     meson.project_name(),
     resources,
+    'src/Utils/AsyncMutex.vala',
     'src/Views/AbstractView.vala',
     'src/Views/ErrorView.vala',
     'src/Views/MainView.vala',
@@ -31,6 +32,7 @@ executable(
         dependency ('gobject-2.0'),
         dependency ('granite', version: '>=0.5'),
         dependency ('gtk+-3.0'),
+        dependency ('libxml-2.0'),
     ],
     install : true
 )
