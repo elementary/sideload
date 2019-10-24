@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-09 14:33-0700\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
+"PO-Revision-Date: 2019-10-25 16:24+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
 "mr/>\n"
@@ -32,14 +32,12 @@ msgid "Close"
 msgstr "बंद करा"
 
 #: src/Views/ErrorView.vala:60
-#, fuzzy
 msgid "This app is already installed."
-msgstr "हे सॉफ्टवेअर आधीपासून स्थापित केले आहे."
+msgstr "हे अ‍ॅप आधीपासून स्थापित केले आहे."
 
 #: src/Views/ErrorView.vala:64
-#, fuzzy
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr "हे सॉफ्टवेअर स्थापित करण्यासाठी फ्लॅटपॅकची नवीन आवृत्ती आवश्यक आहे."
+msgstr "हे अ‍ॅप स्थापित करण्यासाठी फ्लॅटपॅकची नवीन आवृत्ती आवश्यक आहे."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
@@ -54,9 +52,8 @@ msgid "The supplied .flatpakref file does not seem to be valid."
 msgstr "पुरवलेली .flatpakref फाईल वैध असल्याचे दिसत नाही."
 
 #: src/Views/ErrorView.vala:80
-#, fuzzy
 msgid "The app is not signed with a trusted signature."
-msgstr "सॉफ्टवेअरवर विश्वासार्ह स्वाक्षर्‍याने सही केलेली नाही."
+msgstr "अ‍ॅपवर विश्वासार्ह स्वाक्षर्‍याने सही केलेली नाही."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
@@ -67,23 +64,20 @@ msgid "An unknown error occured."
 msgstr "एक अज्ञात त्रुटी आली."
 
 #: src/Views/MainView.vala:33
-#, fuzzy
 msgid "Install untrusted app?"
-msgstr "अविश्वासू सॉफ्टवेअर स्थापित करायचे?"
+msgstr "अविश्वासू अ‍ॅप स्थापित करायचा?"
 
 #: src/Views/MainView.vala:35
-#, fuzzy
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
-"हे सॉफ्टवेअर पूर्णपणे त्याच्या विकसकाद्वारे प्रदान केले गेले आहे आणि सुरक्षितता, गोपनीयता किंवा "
-"सिस्टम एकीकरणासाठी त्याचे पुनरावलोकन केले गेले नाही. हे सॉफ्टवेअर स्थापित केल्याने अ‍ॅपसेंटर "
-"मध्ये दर्शविल्या जाणार्‍या अन्य अ‍ॅप्सची रेपोसिटोरी जोडू शकेल."
+"हा अ‍ॅप पूर्णपणे त्याच्या विकसकाद्वारे प्रदान केला गेला आहे आणि सुरक्षितता, "
+"गोपनीयता किंवा सिस्टम एकीकरणासाठी त्याचे पुनरावलोकन केले गेले नाही."
 
 #: src/Views/MainView.vala:40
 msgid "Fetching details"
-msgstr ""
+msgstr "तपशील आणत आहे"
 
 #: src/Views/MainView.vala:47
 msgid "I understand"
@@ -91,30 +85,29 @@ msgstr "मला समजले"
 
 #: src/Views/MainView.vala:70
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "या अ‍ॅपवरील अपडेट्सचे पुनरावलोकन केले जाणार नाही"
 
 #: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "रद्द करा"
 
 #: src/Views/MainView.vala:97
-#, fuzzy
 msgid "Install Anyway"
-msgstr "स्थापित करा"
+msgstr "तरीही स्थापित करा"
 
 #: src/Views/MainView.vala:115
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "डाउनलोड आकार %s पर्यंत असू शकतो"
 
 #: src/Views/MainView.vala:117
 msgid "Unknown download size"
-msgstr ""
+msgstr "अज्ञात डाउनलोड आकार"
 
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "या वितरकाकडील अन्य अ‍ॅप %s मध्ये दिसू शकतात"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -123,16 +116,16 @@ msgstr "“%s” स्थापित करत आहे"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "तयारी करीत आहे…"
 
 #: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "“%s” यशस्वीरित्या स्थापित केले"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
 msgid "The app was installed successfully"
-msgstr ""
+msgstr "अ‍ॅप यशस्वीरित्या स्थापित झाला"
 
 #: src/Views/SuccessView.vala:46
 #, fuzzy, c-format
