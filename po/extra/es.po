@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-22 13:19-0700\n"
-"PO-Revision-Date: 2019-10-10 14:23+0000\n"
+"PO-Revision-Date: 2019-10-25 16:24+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload-"
-"extra/es/>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +29,7 @@ msgstr "Instalar aplicaciones descargadas de Internet"
 
 #: data/sideload.appdata.xml.in:16
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "Primer lanzamiento. Hola mundo!"
 
 #: data/sideload.appdata.xml.in:65
 msgid "elementary, Inc."
