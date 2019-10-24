@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-09 12:03-0700\n"
-"PO-Revision-Date: 2019-10-06 14:23+0000\n"
+"POT-Creation-Date: 2019-10-09 14:33-0700\n"
+"PO-Revision-Date: 2019-10-12 13:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
 "es/>\n"
@@ -33,59 +33,65 @@ msgstr "Cerrar"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Esta aplicación ya está instalada."
 
 #: src/Views/ErrorView.vala:64
-#, fuzzy
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr ""
 "Se necesita una versión más reciente de Flatpak para instalar este programa."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "No se encontró un repositorio remoto de Flatpak obligatorio."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "No se encontró una dependencia de tiempo de ejecución obligatoria."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "El archivo .flatpakref proporcionado no parece ser válido."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "El programa no está firmado con una firma de confianza."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
 msgstr ""
+"El nombre de la aplicación, del tiempo de ejecución o del repositorio remoto "
+"no es válido."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Se produjo un error desconocido."
 
 #: src/Views/MainView.vala:33
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "¿Quiere instalar un programa que no es de confianza?"
 
 #: src/Views/MainView.vala:35
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Este programa lo ha proporcionado únicamente su desarrollador y no ha sido "
+"revisado con respecto a su seguridad, su respeto de la privacidad o su "
+"integración con el sistema. La instalación del programa podría añadir un "
+"repositorio con más programas que, en dado caso, figurarán en el Centro de "
+"aplicaciones."
 
 #: src/Views/MainView.vala:40
 msgid "Fetching details"
-msgstr ""
+msgstr "Recuperando datos"
 
 #: src/Views/MainView.vala:47
 msgid "I understand"
-msgstr ""
+msgstr "Comprendo"
 
 #: src/Views/MainView.vala:70
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Las actualizaciones de esta aplicación no serán revisadas"
 
 #: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -93,39 +99,39 @@ msgstr "Cancelar"
 
 #: src/Views/MainView.vala:97
 msgid "Install Anyway"
-msgstr ""
+msgstr "Instalar de todos modos"
 
 #: src/Views/MainView.vala:115
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "El tamaño de descarga puede ser de hasta %s"
 
 #: src/Views/MainView.vala:117
 msgid "Unknown download size"
-msgstr ""
+msgstr "Tamaño de descarga desconocido"
 
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Otras aplicaciones de este distribuidor pueden aparecer en %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Instalando «%s»"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Preparando…"
 
 #: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "«%s» ha sido instalado correctamente"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
 msgid "The app was installed successfully"
-msgstr ""
+msgstr "La aplicación se instaló correctamente"
 
 #: src/Views/SuccessView.vala:46
 #, c-format
@@ -133,15 +139,17 @@ msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall."
 msgstr ""
+"Ábralo en cualquier momento desde el menú de aplicaciones. Visite %s para "
+"consultar información sobre el programa, actualizarlo o desinstalarlo."
 
 #: src/Views/SuccessView.vala:49
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "«%s» ya está instalado"
 
 #: src/Views/SuccessView.vala:51
 msgid "This app is already installed"
-msgstr ""
+msgstr "Esta aplicación ya está instalada"
 
 #: src/Views/SuccessView.vala:54
 #, c-format
@@ -149,19 +157,33 @@ msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall."
 msgstr ""
+"No se ha realizado ningún cambio. Visite %s para consultar información sobre "
+"el programa, actualizarlo o desinstalarlo."
 
 #: src/Views/SuccessView.vala:60
 msgid "Open App"
-msgstr ""
+msgstr "Abrir aplicación"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "su centro de aplicaciones"
 
 #: src/MainWindow.vala:35
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Instalar programa no confiable"
 
 #: src/MainWindow.vala:142
 msgid "App installed"
-msgstr ""
+msgstr "Se ha instalado el programa"
+
+#~ msgid "The software has been installed"
+#~ msgstr "Se ha instalado el programa"
+
+#~ msgid "Software already installed"
+#~ msgstr "Ya se ha instalado el programa"
+
+#~ msgid "Open Software"
+#~ msgstr "Abrir programa"
+
+#~ msgid "%s has been successfully installed"
+#~ msgstr "%s se ha instalado correctamente"
