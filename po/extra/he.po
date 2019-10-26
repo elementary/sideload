@@ -8,39 +8,41 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-22 13:19-0700\n"
-"PO-Revision-Date: 2019-09-30 10:15-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-10-27 10:24+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "טעינה מהצד"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr ""
+msgstr "התקנת יישומים שהתקבלו מהאינטרנט"
 
 #: data/sideload.appdata.xml.in:16
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "מהדורה ראשונה. שלום וברכה!"
 
 #: data/sideload.appdata.xml.in:65
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary בע״מ"
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
-msgstr ""
+msgstr "מתקין Flatpak"
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
-msgstr ""
+msgstr "io.elementary.sideload"
 
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
-msgstr ""
+msgstr "flatpak;"
