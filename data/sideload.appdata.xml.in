@@ -10,7 +10,7 @@
     <p></p>
   </description>
   <releases>
-    <release version="1.0.0" date="2019-10-21" urgency="medium">
+    <release version="1.0.0" date="2019-10-29" urgency="medium">
       <description>
         <ul>
           <li>First release. Hello world!</li>
