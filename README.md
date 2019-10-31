@@ -15,6 +15,8 @@ You'll need the following dependencies:
 * meson
 * valac
 
+Install dependencies `sudo apt install libflatpak-dev libgranite-dev libgtk-3-dev libxml2-dev meson valac`
+
 Run `meson build` to configure the build environment. Change to the build directory and run `ninja` to build
 
     meson build --prefix=/usr
