@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-09 14:33-0700\n"
-"PO-Revision-Date: 2019-10-12 13:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2019-11-01 06:24+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
 "es/>\n"
 "Language: es\n"
@@ -33,7 +33,7 @@ msgstr "Cerrar"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr "Esta aplicación ya está instalada."
+msgstr "Ya se ha instalado este programa."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
@@ -91,7 +91,7 @@ msgstr "Comprendo"
 
 #: src/Views/MainView.vala:70
 msgid "Updates to this app will not be reviewed"
-msgstr "Las actualizaciones de esta aplicación no serán revisadas"
+msgstr "No se revisarán las actualizaciones de esta aplicación"
 
 #: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -127,7 +127,7 @@ msgstr "Preparando…"
 #: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr "«%s» ha sido instalado correctamente"
+msgstr "Se ha instalado «%s» correctamente"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
 msgid "The app was installed successfully"
