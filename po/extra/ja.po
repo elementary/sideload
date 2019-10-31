@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-22 13:19-0700\n"
-"PO-Revision-Date: 2019-10-03 23:23+0000\n"
+"PO-Revision-Date: 2019-11-01 06:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -29,7 +29,7 @@ msgstr "インターネットからダウンロードしたアプリをインス
 
 #: data/sideload.appdata.xml.in:16
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "最初のリリースです。Hello world!"
 
 #: data/sideload.appdata.xml.in:65
 msgid "elementary, Inc."
