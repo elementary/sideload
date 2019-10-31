@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-22 13:19-0700\n"
-"PO-Revision-Date: 2019-10-25 16:24+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2019-11-01 06:24+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/es/>\n"
 "Language: es\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr "Sideload"
+msgstr "Instalación de prueba"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -29,7 +29,7 @@ msgstr "Instalar aplicaciones descargadas de Internet"
 
 #: data/sideload.appdata.xml.in:16
 msgid "First release. Hello world!"
-msgstr "Primer lanzamiento. Hola mundo!"
+msgstr "Primer lanzamiento. ¡Hola, mundo!"
 
 #: data/sideload.appdata.xml.in:65
 msgid "elementary, Inc."
@@ -37,7 +37,7 @@ msgstr "elementary, Inc."
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
-msgstr "Instalador Flatpak"
+msgstr "Instalador de Flatpak"
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
