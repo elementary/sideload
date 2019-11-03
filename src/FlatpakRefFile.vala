@@ -172,13 +172,6 @@ public class Sideload.FlatpakRefFile : Object {
                 operations.foreach ((entry) => {
                     try {
                         var @ref = Flatpak.Ref.parse (entry.get_ref ());
-                        var remote_ref = installation.fetch_remote_ref_sync (
-                            entry.get_remote (),
-                            @ref.kind,
-                            @ref.name,
-                            @ref.arch,
-                            @ref.branch,
-                            cancellable);
 
                         // If this is the ref the user requested to install, download the appdata for its remote
                         if (@ref.name == flatpakref_id) {
@@ -192,7 +185,7 @@ public class Sideload.FlatpakRefFile : Object {
                             }
                         }
 
-                        total_download_size += remote_ref.download_size;
+                        total_download_size += entry.get_download_size ();
                     } catch (Error e) {
                         warning ("Error calculating download size: %s", e.message);
                     }

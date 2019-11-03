@@ -27,7 +27,7 @@ executable(
     'src/MainWindow.vala',
     'src/FlatpakRefFile.vala',
     dependencies: [
-        dependency ('flatpak'),
+        dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),
         dependency ('gobject-2.0'),
         dependency ('granite', version: '>=0.5'),
