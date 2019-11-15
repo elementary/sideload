@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 13:19-0700\n"
+"POT-Creation-Date: 2019-11-15 20:10+0000\n"
 "PO-Revision-Date: 2019-11-01 06:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -28,10 +28,14 @@ msgid "Install apps downloaded from the Internet"
 msgstr "インターネットからダウンロードしたアプリをインストールします"
 
 #: data/sideload.appdata.xml.in:16
+msgid "Improve performance of download size calculation"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:23
 msgid "First release. Hello world!"
 msgstr "最初のリリースです。Hello world!"
 
-#: data/sideload.appdata.xml.in:65
+#: data/sideload.appdata.xml.in:72
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
