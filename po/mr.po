@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-15 20:10+0000\n"
-"PO-Revision-Date: 2019-10-25 16:24+0000\n"
+"PO-Revision-Date: 2019-11-28 16:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
 "mr/>\n"
@@ -128,50 +128,47 @@ msgid "The app was installed successfully"
 msgstr "अ‍ॅप यशस्वीरित्या स्थापित झाला"
 
 #: src/Views/SuccessView.vala:46
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall."
 msgstr ""
-"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित करण्यासाठी "
-"AppCenter ला भेट द्या."
+"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित "
+"करण्यासाठी %s ला भेट द्या."
 
 #: src/Views/SuccessView.vala:49
-#, fuzzy, c-format
+#, c-format
 msgid "“%s” is already installed"
-msgstr "हे सॉफ्टवेअर आधीपासून स्थापित केले आहे."
+msgstr "\"%s\" आधीपासून स्थापित केले आहे"
 
 #: src/Views/SuccessView.vala:51
-#, fuzzy
 msgid "This app is already installed"
-msgstr "हे सॉफ्टवेअर आधीपासून स्थापित केले आहे."
+msgstr "हे अ‍ॅप आधीपासून स्थापित केले आहे"
 
 #: src/Views/SuccessView.vala:54
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall."
 msgstr ""
-"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित करण्यासाठी "
-"AppCenter ला भेट द्या."
+"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित "
+"करण्यासाठी %s ला भेट द्या."
 
 #: src/Views/SuccessView.vala:60
 msgid "Open App"
-msgstr ""
+msgstr "अ‍ॅप उघडा"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "आपले सॉफ्टवेअर केंद्र"
 
 #: src/MainWindow.vala:35
-#, fuzzy
 msgid "Install Untrusted App"
-msgstr "अविश्वसनीय सॉफ्टवेअर स्थापित करा"
+msgstr "अविश्वसनीय अ‍ॅप स्थापित करा"
 
 #: src/MainWindow.vala:142
-#, fuzzy
 msgid "App installed"
-msgstr "सॉफ्टवेअर स्थापित केले गेले आहे"
+msgstr "अ‍ॅप स्थापित केले गेले आहे"
 
 #~ msgid "The software has been installed"
 #~ msgstr "सॉफ्टवेअर स्थापित केले गेले आहे"
