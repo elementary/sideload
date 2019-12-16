@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-15 20:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ay\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
+msgid "Sideload"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
+msgid "Install apps downloaded from the Internet"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:16
+msgid "Improve performance of download size calculation"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:23
+msgid "First release. Hello world!"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:72
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/sideload.desktop.in:5
+msgid "Flatpak Installer"
+msgstr ""
+
+#: data/sideload.desktop.in:7
+msgid "io.elementary.sideload"
+msgstr ""
+
+#: data/sideload.desktop.in:8
+msgid "flatpak;"
+msgstr ""
