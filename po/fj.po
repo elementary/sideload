@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.sideload package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.sideload\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-15 20:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fj\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Views/ErrorView.vala:28
+msgid "Install failed"
+msgstr ""
+
+#: src/Views/ErrorView.vala:45
+msgid "Details"
+msgstr ""
+
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+msgid "Close"
+msgstr ""
+
+#: src/Views/ErrorView.vala:60
+msgid "This app is already installed."
+msgstr ""
+
+#: src/Views/ErrorView.vala:64
+msgid "A newer version of Flatpak is needed to install this app."
+msgstr ""
+
+#: src/Views/ErrorView.vala:68
+msgid "A required Flatpak remote was not found."
+msgstr ""
+
+#: src/Views/ErrorView.vala:72
+msgid "A required runtime dependency could not be found."
+msgstr ""
+
+#: src/Views/ErrorView.vala:76
+msgid "The supplied .flatpakref file does not seem to be valid."
+msgstr ""
+
+#: src/Views/ErrorView.vala:80
+msgid "The app is not signed with a trusted signature."
+msgstr ""
+
+#: src/Views/ErrorView.vala:84
+msgid "The application, runtime, or remote name is invalid."
+msgstr ""
+
+#: src/Views/ErrorView.vala:87
+msgid "An unknown error occured."
+msgstr ""
+
+#: src/Views/MainView.vala:33
+msgid "Install untrusted app?"
+msgstr ""
+
+#: src/Views/MainView.vala:35
+msgid ""
+"This app is provided solely by its developer and has not been reviewed for "
+"security, privacy, or system integration."
+msgstr ""
+
+#: src/Views/MainView.vala:40
+msgid "Fetching details"
+msgstr ""
+
+#: src/Views/MainView.vala:47
+msgid "I understand"
+msgstr ""
+
+#: src/Views/MainView.vala:70
+msgid "Updates to this app will not be reviewed"
+msgstr ""
+
+#: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
+msgid "Cancel"
+msgstr ""
+
+#: src/Views/MainView.vala:97
+msgid "Install Anyway"
+msgstr ""
+
+#: src/Views/MainView.vala:115
+#, c-format
+msgid "Download size may be up to %s"
+msgstr ""
+
+#: src/Views/MainView.vala:117
+msgid "Unknown download size"
+msgstr ""
+
+#: src/Views/MainView.vala:130
+#, c-format
+msgid "Other apps from this distributor may appear in %s"
+msgstr ""
+
+#: src/Views/ProgressView.vala:26
+#, c-format
+msgid "Installing “%s”"
+msgstr ""
+
+#: src/Views/ProgressView.vala:43
+msgid "Preparing…"
+msgstr ""
+
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr ""
+
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
+msgid "The app was installed successfully"
+msgstr ""
+
+#: src/Views/SuccessView.vala:46
+#, c-format
+msgid ""
+"Open it any time from the Applications Menu. Visit %s for app information, "
+"updates, and to uninstall."
+msgstr ""
+
+#: src/Views/SuccessView.vala:49
+#, c-format
+msgid "“%s” is already installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:51
+msgid "This app is already installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:54
+#, c-format
+msgid ""
+"No changes were made. Visit %s for app information, updates, and to "
+"uninstall."
+msgstr ""
+
+#: src/Views/SuccessView.vala:60
+msgid "Open App"
+msgstr ""
+
+#: src/Application.vala:74
+msgid "your software center"
+msgstr ""
+
+#: src/MainWindow.vala:35
+msgid "Install Untrusted App"
+msgstr ""
+
+#: src/MainWindow.vala:142
+msgid "App installed"
+msgstr ""
