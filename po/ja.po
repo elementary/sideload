@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-15 20:10+0000\n"
-"PO-Revision-Date: 2019-10-12 13:23+0000\n"
+"PO-Revision-Date: 2020-01-25 15:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -108,7 +108,7 @@ msgstr "不明なダウンロードサイズ"
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr "この提供者からのその他のアプリが %s に表示される可能性があります"
+msgstr "この開発者のほかのアプリが %s に表示される可能性があります"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
