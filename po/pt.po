@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-15 20:10+0000\n"
-"PO-Revision-Date: 2019-10-14 14:23+0000\n"
+"PO-Revision-Date: 2020-02-03 17:08+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "sideload/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -41,7 +41,7 @@ msgstr "Uma nova versão do Flatpak é necessária para instalar esta aplicaçã
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr "Uma Flatpak remota necessária não foi encontrada."
+msgstr "Um controlo remoto Flatpak necessário não foi localizado."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
@@ -54,7 +54,7 @@ msgstr "O ficheiro .flatpakref fornecido não parece ser válido."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr "A aplicação não é assinada com uma assinatura confiável."
+msgstr "A aplicação não está assinada com uma assinatura confiável."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
@@ -73,12 +73,12 @@ msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
-"Esta aplicação é fornecida exclusivamente por seu programador e não foi "
+"Esta aplicação é fornecida exclusivamente pelo seu programador e não foi "
 "revista quanto à segurança, privacidade ou integração de sistemas."
 
 #: src/Views/MainView.vala:40
 msgid "Fetching details"
-msgstr "Detalhes de busca"
+msgstr "Detalhes de pesquisa"
 
 #: src/Views/MainView.vala:47
 msgid "I understand"
@@ -113,7 +113,7 @@ msgstr "Outras aplicações deste distribuidor podem aparecer em %s"
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr "A Instalar “%s”"
+msgstr "A instalar “%s”"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
@@ -135,7 +135,7 @@ msgid ""
 "updates, and to uninstall."
 msgstr ""
 "Abra-o a qualquer momento a partir do Menu de Aplicações. Visite %s para "
-"obter informações sobre aplicações, atualizações e desinstalar."
+"obter informações sobre aplicações, atualizações e para desinstalar."
 
 #: src/Views/SuccessView.vala:49
 #, c-format
@@ -153,7 +153,7 @@ msgid ""
 "uninstall."
 msgstr ""
 "Não foram feitas alterações. Visite %s para obter informações sobre "
-"aplicações, atualizações e desinstalar."
+"aplicações, atualizações e para desinstalar."
 
 #: src/Views/SuccessView.vala:60
 msgid "Open App"
