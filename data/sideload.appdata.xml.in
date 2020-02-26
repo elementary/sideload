@@ -10,10 +10,11 @@
     <p></p>
   </description>
   <releases>
-    <release version="1.0.1" date="2019-11-14" urgency="medium">
+    <release version="1.0.1" date="2020-02-25" urgency="medium">
       <description>
         <ul>
           <li>Improve performance of download size calculation</li>
+          <li>Updated translations</li>
         </ul>
       </description>
     </release>
