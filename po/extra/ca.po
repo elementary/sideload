@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-15 20:10+0000\n"
-"PO-Revision-Date: 2019-10-24 14:24+0000\n"
+"PO-Revision-Date: 2020-02-27 15:09+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload-"
-"extra/ca/>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -29,7 +29,7 @@ msgstr "Instal·leu aplicacions baixades d’Internet."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "Millora del càlcul de la mida de la baixada"
 
 #: data/sideload.appdata.xml.in:23
 msgid "First release. Hello world!"
