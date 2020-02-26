@@ -1,3 +1,14 @@
+io.elementary.sideload (1.0.1) bionic; urgency=medium
+
+  * Release 1.0.1 (#87)
+  * Update translation template
+  * AppData: Add 1.0.1 release info
+  * Add translation templates (#79)
+  * Add Gettext Updates to Actions
+  * Update flatpak vapi and simplify download size calculation (#77)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 26 Feb 2020 06:41:39 +0000
+
 io.elementary.sideload (1.0.0) bionic; urgency=medium
 
   * no changes since last release.
