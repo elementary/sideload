@@ -1,4 +1,8 @@
-project('io.elementary.sideload', 'vala', 'c')
+project(
+    'io.elementary.sideload', 
+    'vala', 'c',
+    version: '1.0.1'
+)
 
 gnome = import('gnome')
 i18n = import('i18n')
