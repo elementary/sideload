@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-26 06:41+0000\n"
-"PO-Revision-Date: 2019-11-03 22:24+0000\n"
+"PO-Revision-Date: 2020-03-01 15:09+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -29,11 +29,11 @@ msgstr "Instalar aplicações transferidas da Internet"
 
 #: data/sideload.appdata.xml.in:16
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "Melhora o desempenho do cálculo do tamanho da transferência"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduções atualizadas"
 
 #: data/sideload.appdata.xml.in:24
 msgid "First release. Hello world!"
