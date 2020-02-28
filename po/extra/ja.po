@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-26 06:41+0000\n"
-"PO-Revision-Date: 2019-11-01 06:24+0000\n"
+"PO-Revision-Date: 2020-03-01 15:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -29,11 +29,11 @@ msgstr "インターネットからダウンロードしたアプリをインス
 
 #: data/sideload.appdata.xml.in:16
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "ダウンロードサイズの計算パフォーマンスを改善"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Updated translations"
-msgstr ""
+msgstr "翻訳の更新"
 
 #: data/sideload.appdata.xml.in:24
 msgid "First release. Hello world!"
