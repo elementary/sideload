@@ -23,6 +23,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
+    private MainView main_view;
     private ProgressView progress_view;
 
     private string? app_name = null;
@@ -45,7 +46,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        var main_view = new MainView ();
+        main_view = new MainView ();
 
         progress_view = new ProgressView ();
 
@@ -94,6 +95,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         app_name = yield file.get_name ();
         if (app_name != null) {
             progress_view.app_name = app_name;
+            main_view.app_name = app_name;
         }
     }
 
