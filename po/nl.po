@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2019-12-27 14:07+0000\n"
+"PO-Revision-Date: 2020-03-06 17:09+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload/"
 "nl/>\n"
@@ -64,14 +64,13 @@ msgid "An unknown error occured."
 msgstr "Onbekende fout."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Install untrusted app?"
+#, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Wilt u deze onbetrouwbare app installeren?"
+msgstr "Wilt u deze niet-vertrouwde app “%s” installeren?"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
-msgstr "Wilt u deze onbetrouwbare app installeren?"
+msgstr "Wilt u deze niet-vertrouwde app installeren?"
 
 #: src/Views/MainView.vala:41
 msgid ""
