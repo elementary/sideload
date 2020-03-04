@@ -10,6 +10,14 @@
     <p></p>
   </description>
   <releases>
+    <release version="1.0.2" date="2020-03-03" urgency="medium">
+      <description>
+        <ul>
+          <li>Show app name in the main view once it's loaded</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.1" date="2020-02-25" urgency="medium">
       <description>
         <ul>
