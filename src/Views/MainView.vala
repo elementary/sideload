@@ -18,6 +18,12 @@
 public class Sideload.MainView : AbstractView {
     public signal void install_request ();
 
+    public string app_name {
+        set {
+            primary_label.label = _("Install untrusted app “%s”?").printf (value);
+        }
+    }
+
     private static Gtk.CssProvider provider;
 
     private Gtk.Grid details_grid;
