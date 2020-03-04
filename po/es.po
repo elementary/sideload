@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-15 20:10+0000\n"
+"POT-Creation-Date: 2020-03-04 00:47+0000\n"
 "PO-Revision-Date: 2019-11-01 06:24+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -66,11 +66,17 @@ msgstr ""
 msgid "An unknown error occured."
 msgstr "Se produjo un error desconocido."
 
-#: src/Views/MainView.vala:33
+#: src/Views/MainView.vala:23
+#, fuzzy, c-format
+#| msgid "Install untrusted app?"
+msgid "Install untrusted app “%s”?"
+msgstr "¿Quiere instalar un programa que no es de confianza?"
+
+#: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
 msgstr "¿Quiere instalar un programa que no es de confianza?"
 
-#: src/Views/MainView.vala:35
+#: src/Views/MainView.vala:41
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -81,36 +87,36 @@ msgstr ""
 "repositorio con más programas que, en dado caso, figurarán en el Centro de "
 "aplicaciones."
 
-#: src/Views/MainView.vala:40
+#: src/Views/MainView.vala:46
 msgid "Fetching details"
 msgstr "Recuperando datos"
 
-#: src/Views/MainView.vala:47
+#: src/Views/MainView.vala:53
 msgid "I understand"
 msgstr "Comprendo"
 
-#: src/Views/MainView.vala:70
+#: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
 msgstr "No se revisarán las actualizaciones de esta aplicación"
 
-#: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/MainView.vala:97
+#: src/Views/MainView.vala:103
 msgid "Install Anyway"
 msgstr "Instalar de todos modos"
 
-#: src/Views/MainView.vala:115
+#: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "El tamaño de descarga puede ser de hasta %s"
 
-#: src/Views/MainView.vala:117
+#: src/Views/MainView.vala:123
 msgid "Unknown download size"
 msgstr "Tamaño de descarga desconocido"
 
-#: src/Views/MainView.vala:130
+#: src/Views/MainView.vala:136
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Otras aplicaciones de este distribuidor pueden aparecer en %s"
@@ -124,12 +130,12 @@ msgstr "Instalando «%s»"
 msgid "Preparing…"
 msgstr "Preparando…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "Se ha instalado «%s» correctamente"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
 msgid "The app was installed successfully"
 msgstr "La aplicación se instaló correctamente"
 
@@ -168,11 +174,11 @@ msgstr "Abrir aplicación"
 msgid "your software center"
 msgstr "su centro de aplicaciones"
 
-#: src/MainWindow.vala:35
+#: src/MainWindow.vala:36
 msgid "Install Untrusted App"
 msgstr "Instalar programa no confiable"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:144
 msgid "App installed"
 msgstr "Se ha instalado el programa"
 

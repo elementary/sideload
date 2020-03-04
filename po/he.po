@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-15 20:10+0000\n"
+"POT-Creation-Date: 2020-03-04 00:47+0000\n"
 "PO-Revision-Date: 2019-10-27 10:24+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -63,11 +63,17 @@ msgstr "היישום, סביבת הריצה או השם המרוחק פגומי�
 msgid "An unknown error occured."
 msgstr "אירעה שגיאה בלתי ידועה."
 
-#: src/Views/MainView.vala:33
+#: src/Views/MainView.vala:23
+#, fuzzy, c-format
+#| msgid "Install untrusted app?"
+msgid "Install untrusted app “%s”?"
+msgstr "להתקין יישום בלתי מהימן?"
+
+#: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
 msgstr "להתקין יישום בלתי מהימן?"
 
-#: src/Views/MainView.vala:35
+#: src/Views/MainView.vala:41
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -75,36 +81,36 @@ msgstr ""
 "יישום זה סופק על ידי המפתח באופן עצמאי וללא כל סקירת אבטחה, פרטיות או שילוב "
 "במערכת."
 
-#: src/Views/MainView.vala:40
+#: src/Views/MainView.vala:46
 msgid "Fetching details"
 msgstr "הפרטים מתקבלים"
 
-#: src/Views/MainView.vala:47
+#: src/Views/MainView.vala:53
 msgid "I understand"
 msgstr "כמובן"
 
-#: src/Views/MainView.vala:70
+#: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
 msgstr "עדכונים ליישום הזה לא יעברו סקירה"
 
-#: src/Views/MainView.vala:94 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Views/MainView.vala:97
+#: src/Views/MainView.vala:103
 msgid "Install Anyway"
 msgstr "להתקין בכל זאת"
 
-#: src/Views/MainView.vala:115
+#: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "גודל ההורדה יכול להגיע עד %s"
 
-#: src/Views/MainView.vala:117
+#: src/Views/MainView.vala:123
 msgid "Unknown download size"
 msgstr "גודל ההורדה אינו ידוע"
 
-#: src/Views/MainView.vala:130
+#: src/Views/MainView.vala:136
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "יישומים אחרים מהמפיץ הזה עשויים להופיע תחת %s"
@@ -118,12 +124,12 @@ msgstr "היישום „%s” מותקן"
 msgid "Preparing…"
 msgstr "מתבצעות הכנות…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:144
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "ההתקנה של „%s” הצליחה"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
 msgid "The app was installed successfully"
 msgstr "היישום הותקן בהצלחה"
 
@@ -161,10 +167,10 @@ msgstr "פתיחת היישום"
 msgid "your software center"
 msgstr "מרכז התכנה שלך"
 
-#: src/MainWindow.vala:35
+#: src/MainWindow.vala:36
 msgid "Install Untrusted App"
 msgstr "התקנת יישום בלתי מהימן"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:144
 msgid "App installed"
 msgstr "היישום הותקן"
