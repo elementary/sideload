@@ -20,7 +20,7 @@ public class Sideload.MainView : AbstractView {
 
     public string app_name {
         set {
-            primary_label.label = _("Install “%s”?").printf (value);
+            primary_label.label = _("Install untrusted app “%s”?").printf (value);
         }
     }
 
