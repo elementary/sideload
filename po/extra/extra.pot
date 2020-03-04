@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-03-04 00:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,22 @@ msgid "Install apps downloaded from the Internet"
 msgstr ""
 
 #: data/sideload.appdata.xml.in:16
-msgid "Improve performance of download size calculation"
+msgid "Show app name in the main view once it's loaded"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:17
+#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 msgid "Updated translations"
 msgstr ""
 
 #: data/sideload.appdata.xml.in:24
+msgid "Improve performance of download size calculation"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:32
 msgid "First release. Hello world!"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:73
+#: data/sideload.appdata.xml.in:81
 msgid "elementary, Inc."
 msgstr ""
 
