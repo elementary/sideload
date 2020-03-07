@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2020-01-25 15:08+0000\n"
+"PO-Revision-Date: 2020-03-08 11:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -65,10 +65,9 @@ msgid "An unknown error occured."
 msgstr "不明なエラーが発生しました。"
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Install untrusted app?"
+#, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "信頼されていないアプリをインストールしますか？"
+msgstr "信頼されていないアプリ“%s”をインストールしますか？"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
