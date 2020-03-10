@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2019-11-28 16:25+0000\n"
+"PO-Revision-Date: 2020-03-11 16:09+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
 "mr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -64,10 +64,9 @@ msgid "An unknown error occured."
 msgstr "एक अज्ञात त्रुटी आली."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Install untrusted app?"
+#, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "अविश्वासू अ‍ॅप स्थापित करायचा?"
+msgstr "अविश्वासू अ‍ॅप \"%s\" स्थापित करायचा?"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
