@@ -1,7 +1,7 @@
 project(
     'io.elementary.sideload', 
     'vala', 'c',
-    version: '1.0.1'
+    version: '1.1.0'
 )
 
 gnome = import('gnome')
