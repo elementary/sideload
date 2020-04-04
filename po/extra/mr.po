@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:48+0000\n"
-"PO-Revision-Date: 2020-03-11 16:09+0000\n"
+"PO-Revision-Date: 2020-04-05 13:10+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/mr/>\n"
@@ -45,7 +45,7 @@ msgstr "प्रथम प्रकाशन. हॅलो वर्ल्ड!"
 
 #: data/sideload.appdata.xml.in:81
 msgid "elementary, Inc."
-msgstr "एलिमेंटरी, Inc."
+msgstr "एलिमेंटरी,Inc."
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
