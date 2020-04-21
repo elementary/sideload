@@ -1,5 +1,5 @@
 project(
-    'io.elementary.sideload', 
+    'io.elementary.sideload',
     'vala', 'c',
     version: '1.1.0'
 )
@@ -27,9 +27,11 @@ executable(
     'src/Views/MainView.vala',
     'src/Views/ProgressView.vala',
     'src/Views/SuccessView.vala',
+    'src/AddRepoWindow.vala',
     'src/Application.vala',
-    'src/MainWindow.vala',
     'src/FlatpakRefFile.vala',
+    'src/FlatpakRepoFile.vala',
+    'src/InstallRefWindow.vala',
     dependencies: [
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),

@@ -19,8 +19,6 @@
 */
 
 public class Sideload.Application : Gtk.Application {
-    private MainWindow main_window;
-
     private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
     private const string REPO_CONTENT_TYPE = "application/vnd.flatpak.repo";
     private const string[] SUPPORTED_CONTENT_TYPES = {
@@ -82,9 +80,11 @@ public class Sideload.Application : Gtk.Application {
             return;
         }
 
+        Gtk.ApplicationWindow? main_window = null;
+
         if (content_type == REF_CONTENT_TYPE) {
             var ref_file = new FlatpakRefFile (file);
-            main_window = new MainWindow (this, ref_file);
+            main_window = new InstallRefWindow (this, ref_file);
             main_window.show_all ();
 
             var launch_action = new SimpleAction ("launch", null);
@@ -95,7 +95,9 @@ public class Sideload.Application : Gtk.Application {
                 activate_action ("quit", null);
             });
         } else if (content_type == REPO_CONTENT_TYPE) {
-
+            var repo_file = new FlatpakRepoFile (file);
+            main_window = new AddRepoWindow (this, repo_file);
+            main_window.show_all ();
         }
 
         var quit_action = new SimpleAction ("quit", null);
