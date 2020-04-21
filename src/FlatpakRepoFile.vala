@@ -48,7 +48,7 @@ public class Sideload.FlatpakRepoFile : Object {
         var repo_id = basename.to_ascii ();
 
         // Strip the extension
-        repo_id = repo_id[0:repo_id.last_index_of(".")];
+        repo_id = repo_id[0:repo_id.last_index_of (".")];
 
         // Replace any non-alphanumeric characters with underscores
         var builder = new StringBuilder ();
