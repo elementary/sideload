@@ -36,6 +36,21 @@ public class Sideload.AddRepoWindow : Gtk.ApplicationWindow {
         titlebar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         titlebar.set_custom_title (new Gtk.Grid ());
 
+        var view = new AddRepoView ();
+
+        view.add_requested.connect (() => {
+            file.add ();
+            destroy ();
+        });
+
+        add (view);
+
+        file.details_ready.connect (() => {
+            view.display_details (file.get_title ());
+        });
+
+        file.get_details.begin ();
+
         get_style_context ().add_class ("rounded");
         set_titlebar (titlebar);
     }

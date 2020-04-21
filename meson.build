@@ -23,6 +23,7 @@ executable(
     resources,
     'src/Utils/AsyncMutex.vala',
     'src/Views/AbstractView.vala',
+    'src/Views/AddRepoView.vala',
     'src/Views/ErrorView.vala',
     'src/Views/MainView.vala',
     'src/Views/ProgressView.vala',
