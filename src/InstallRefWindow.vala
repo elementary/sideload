@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.MainWindow : Gtk.ApplicationWindow {
+public class Sideload.InstallRefWindow : Gtk.ApplicationWindow {
     public FlatpakRefFile file { get; construct; }
     private Cancellable? current_cancellable = null;
 
@@ -28,7 +28,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private string? app_name = null;
 
-    public MainWindow (Gtk.Application application, FlatpakRefFile file) {
+    public InstallRefWindow (Gtk.Application application, FlatpakRefFile file) {
         Object (
             application: application,
             icon_name: "io.elementary.sideload",

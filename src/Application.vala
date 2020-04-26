@@ -19,7 +19,12 @@
 */
 
 public class Sideload.Application : Gtk.Application {
-    private MainWindow main_window;
+    private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
+    private const string REPO_CONTENT_TYPE = "application/vnd.flatpak.repo";
+    private const string[] SUPPORTED_CONTENT_TYPES = {
+        REF_CONTENT_TYPE,
+        REPO_CONTENT_TYPE
+    };
 
     public Application () {
         Object (
@@ -39,15 +44,65 @@ public class Sideload.Application : Gtk.Application {
             return;
         }
 
-        var ref_file = new FlatpakRefFile (file);
-        main_window = new MainWindow (this, ref_file);
-        main_window.show_all ();
+        hold ();
+        open_file.begin (file);
+    }
+
+    private async void open_file (File file) {
+        GLib.FileInfo? file_info = null;
+        try {
+            file_info = yield file.query_info_async (
+                FileAttribute.STANDARD_CONTENT_TYPE,
+                FileQueryInfoFlags.NONE
+            );
+        } catch (Error e) {
+            print ("Unable to query content type of provided file\n");
+            release ();
+            return;
+        }
+
+        if (file_info == null) {
+            print ("Unable to query content type of provided file\n");
+            release ();
+            return;
+        }
+
+        var content_type = file_info.get_attribute_string (FileAttribute.STANDARD_CONTENT_TYPE);
+        if (content_type == null) {
+            print ("Unable to get content type of provided file\n");
+            release ();
+            return;
+        }
+
+        if (!(content_type in SUPPORTED_CONTENT_TYPES)) {
+            print ("This does not appear to be a valid flatpakref/flatpakrepo file\n");
+            release ();
+            return;
+        }
+
+        Gtk.ApplicationWindow? main_window = null;
+
+        if (content_type == REF_CONTENT_TYPE) {
+            var ref_file = new FlatpakRefFile (file);
+            main_window = new InstallRefWindow (this, ref_file);
+            main_window.show_all ();
+
+            var launch_action = new SimpleAction ("launch", null);
+            add_action (launch_action);
+
+            launch_action.activate.connect (() => {
+                ref_file.launch.begin ();
+                activate_action ("quit", null);
+            });
+        } else if (content_type == REPO_CONTENT_TYPE) {
+            var repo_file = new FlatpakRepoFile (file);
+            main_window = new AddRepoWindow (this, repo_file);
+            main_window.show_all ();
+        }
 
         var quit_action = new SimpleAction ("quit", null);
-        var launch_action = new SimpleAction ("launch", null);
-
         add_action (quit_action);
-        add_action (launch_action);
+
         set_accels_for_action ("app.quit", {"<Control>q"});
 
         quit_action.activate.connect (() => {
@@ -56,10 +111,7 @@ public class Sideload.Application : Gtk.Application {
             }
         });
 
-        launch_action.activate.connect (() => {
-            ref_file.launch.begin ();
-            activate_action ("quit", null);
-        });
+        release ();
     }
 
     protected override void activate () {
@@ -77,7 +129,7 @@ public class Sideload.Application : Gtk.Application {
 
     public static int main (string[] args) {
         if (args.length < 2) {
-            print ("Usage: %s /path/to/flatpakref\n", args[0]);
+            print ("Usage: %s /path/to/flatpakref or /path/to/flatpakrepo\n", args[0]);
             return 1;
         }
 
