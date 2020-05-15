@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2020-05-14 14:11+0000\n"
+"PO-Revision-Date: 2020-05-16 04:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/sideload/"
 "ar/>\n"
@@ -41,29 +41,28 @@ msgid "A newer version of Flatpak is needed to install this app."
 msgstr "هناك حاجة إلى إصدار أحدث من Flatpak لتثبيت هذا التطبيق."
 
 #: src/Views/ErrorView.vala:68
-#, fuzzy
 msgid "A required Flatpak remote was not found."
-msgstr "يتم العثور على جهاز تحكم عن بعد Flatpak مطلوب."
+msgstr "خدمة التحكم عن بعد Flatpak المطلوبة لم يتم ايجادها."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "ملف تابع للتشغيل لم يتم ايجاده."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "الملف الذي بالصيغة .flatpakref يبدو أنه غير صالح."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "التطبيق ليس مسجلا وليس لديه توقيع الأمان."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "التطبيق، أو أمر التشغيل، أو التحكم عن بعد خاطئ."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "خطأ مجهول قد حدث."
 
 #: src/Views/MainView.vala:23
 #, c-format
