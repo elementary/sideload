@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:48+0000\n"
-"PO-Revision-Date: 2020-03-27 18:09+0000\n"
+"PO-Revision-Date: 2020-05-18 19:11+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/tr/>\n"
@@ -29,7 +29,7 @@ msgstr "İnternetten indirilen uygulamaları yükleyin"
 
 #: data/sideload.appdata.xml.in:16
 msgid "Show app name in the main view once it's loaded"
-msgstr ""
+msgstr "Yüklendikten sonra uygulama adını ana ekranda göster"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 msgid "Updated translations"
@@ -37,7 +37,7 @@ msgstr "Çeviriler güncellendi"
 
 #: data/sideload.appdata.xml.in:24
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "İndirme boyutu hesaplamasının performansı iyileştirildi"
 
 #: data/sideload.appdata.xml.in:32
 msgid "First release. Hello world!"
