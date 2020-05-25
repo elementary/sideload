@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:48+0000\n"
-"PO-Revision-Date: 2020-05-25 19:11+0000\n"
+"PO-Revision-Date: 2020-05-27 16:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/da/>\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Sideload"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr ""
+msgstr "Installer applikationer downloadet fra internettet"
 
 #: data/sideload.appdata.xml.in:16
 msgid "Show app name in the main view once it's loaded"
-msgstr ""
+msgstr "Vis appnavnet i hovedvisningen, når den er indlæst"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 msgid "Updated translations"
@@ -37,24 +37,24 @@ msgstr "Opdaterede oversættelser"
 
 #: data/sideload.appdata.xml.in:24
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "Forbedre ydelsen af beregningen af downloadstørrelse"
 
 #: data/sideload.appdata.xml.in:32
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "Første udgivelse. Hello world!"
 
 #: data/sideload.appdata.xml.in:81
 msgid "elementary, Inc."
-msgstr "elementary, Inc."
+msgstr "elementary, Incorporated."
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
-msgstr ""
+msgstr "Flatpak Installering"
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
-msgstr ""
+msgstr "io.elementary.sideload"
 
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
-msgstr ""
+msgstr "flatpak;"
