@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2020-05-11 19:10+0000\n"
+"PO-Revision-Date: 2020-05-28 23:39+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
 "cs/>\n"
@@ -37,11 +37,13 @@ msgstr "Tato aplikace už je nainstalovaná."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr "K instalaci aplikace je potřeba novější verze Flatpaku."
+msgstr ""
+"K instalaci aplikace je potřeba novější verze infrastruktury pro Flatpak "
+"balíčky."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr "Požadovaný vzálený repozitář Flatpak nebyl nalezen."
+msgstr "Požadovaný vzdálený Flatpak repozitář nebyl nalezen."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
@@ -53,7 +55,7 @@ msgstr "Soubor .flatpakref se zdá být neplatný."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr "Program nebyl podepsán důvěryhodným podpisem."
+msgstr "Aplikace nebyla podepsána důvěryhodným podpisem."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
@@ -99,12 +101,12 @@ msgstr "Storno"
 
 #: src/Views/MainView.vala:103
 msgid "Install Anyway"
-msgstr "Instalovat přesto"
+msgstr "Přesto nainstalovat"
 
 #: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
-msgstr "Velikost stahovaných souborů může být až %s"
+msgstr "Velikost stahování může být až %s"
 
 #: src/Views/MainView.vala:123
 msgid "Unknown download size"
@@ -139,8 +141,8 @@ msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall."
 msgstr ""
-"Otevřete ji kdykoliv z Menu aplikací. Navštivte %s pro více informací, "
-"aktualizace a odinstalaci."
+"Otevřete ji kdykoliv z nabídky s aplikacemi. Podrobnosti o aplikací, "
+"aktualizacích a odinstalaci jsou k dispozici na %s."
 
 #: src/Views/SuccessView.vala:49
 #, c-format
