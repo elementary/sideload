@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2020-05-14 14:11+0000\n"
+"PO-Revision-Date: 2020-05-28 23:39+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload/zh_Hans/>\n"
@@ -88,7 +88,7 @@ msgstr "我接受"
 
 #: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "此应用的更新不会被审阅"
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -96,12 +96,12 @@ msgstr "取消"
 
 #: src/Views/MainView.vala:103
 msgid "Install Anyway"
-msgstr "继续安装"
+msgstr "仍然安装"
 
 #: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "下载大小最多可达到 %s"
 
 #: src/Views/MainView.vala:123
 msgid "Unknown download size"
@@ -110,7 +110,7 @@ msgstr "未知下载大小"
 #: src/Views/MainView.vala:136
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "此提供商的其他软件可能会出现在 %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
@@ -124,7 +124,7 @@ msgstr "正在准备…"
 #: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "“%s” 已成功安装"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
 msgid "The app was installed successfully"
@@ -135,24 +135,23 @@ msgstr "此软件已成功安装"
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall."
-msgstr ""
+msgstr "可从应用程序菜单打开它。更多应用信息、更新及卸载相关内容请访问 %s。"
 
 #: src/Views/SuccessView.vala:49
-#, fuzzy, c-format
+#, c-format
 msgid "“%s” is already installed"
-msgstr "此软件已安装。"
+msgstr "“%s” 已安装"
 
 #: src/Views/SuccessView.vala:51
-#, fuzzy
 msgid "This app is already installed"
-msgstr "此软件已安装。"
+msgstr "此软件已安装"
 
 #: src/Views/SuccessView.vala:54
 #, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall."
-msgstr ""
+msgstr "未部署任何变更。更多应用信息、更新及卸载相关内容请访问 %s。"
 
 #: src/Views/SuccessView.vala:60
 msgid "Open App"
@@ -160,14 +159,13 @@ msgstr "打开应用"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "软件中心"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
 msgstr "安装未被信任的应用"
 
 #: src/MainWindow.vala:144
-#, fuzzy
 msgid "App installed"
 msgstr "软件已安装"
 
