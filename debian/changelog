@@ -1,3 +1,9 @@
+io.elementary.sideload (1.1.1) bionic; urgency=medium
+
+  * Release 1.1.1 (#93)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 28 May 2020 23:40:48 +0000
+
 io.elementary.sideload (1.1.0) bionic; urgency=medium
 
   * Release 1.1.0 (#90)
