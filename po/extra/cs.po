@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:48+0000\n"
-"PO-Revision-Date: 2020-05-11 19:10+0000\n"
+"PO-Revision-Date: 2020-05-28 23:39+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/cs/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Nahrání bokem"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -53,7 +53,7 @@ msgstr "Instalátor flatpak"
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
-msgstr ""
+msgstr "io.elementary.sideload"
 
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
