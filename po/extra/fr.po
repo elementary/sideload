@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:48+0000\n"
+"POT-Creation-Date: 2020-05-28 23:40+0000\n"
 "PO-Revision-Date: 2020-03-06 17:09+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/desktop/"
-"sideload-extra/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload-"
+"extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,24 +27,25 @@ msgstr "Sideload"
 msgid "Install apps downloaded from the Internet"
 msgstr "Installez des applications téléchargées depuis Internet"
 
-#: data/sideload.appdata.xml.in:16
+#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:32
+msgid "Updated translations"
+msgstr "Mise à jour des traductions"
+
+#: data/sideload.appdata.xml.in:23
 msgid "Show app name in the main view once it's loaded"
 msgstr ""
 "Affichage du nom de l'application dans la vue principale lorsqu'il est chargé"
 
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
-msgid "Updated translations"
-msgstr "Mise à jour des traductions"
-
-#: data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
 msgstr "Amélioration des performances du calcul de taille de téléchargement"
 
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:39
 msgid "First release. Hello world!"
 msgstr "Première version. Hello world !"
 
-#: data/sideload.appdata.xml.in:81
+#: data/sideload.appdata.xml.in:88
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

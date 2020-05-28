@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:48+0000\n"
+"POT-Creation-Date: 2020-05-28 23:40+0000\n"
 "PO-Revision-Date: 2020-05-18 19:11+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
-"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
-"sideload-extra/tr/>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload-"
+"extra/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,23 +27,24 @@ msgstr "Sideload"
 msgid "Install apps downloaded from the Internet"
 msgstr "İnternetten indirilen uygulamaları yükleyin"
 
-#: data/sideload.appdata.xml.in:16
-msgid "Show app name in the main view once it's loaded"
-msgstr "Yüklendikten sonra uygulama adını ana ekranda göster"
-
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
+#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:32
 msgid "Updated translations"
 msgstr "Çeviriler güncellendi"
 
-#: data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:23
+msgid "Show app name in the main view once it's loaded"
+msgstr "Yüklendikten sonra uygulama adını ana ekranda göster"
+
+#: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
 msgstr "İndirme boyutu hesaplamasının performansı iyileştirildi"
 
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:39
 msgid "First release. Hello world!"
 msgstr "İlk sürüm. Merhaba dünya!"
 
-#: data/sideload.appdata.xml.in:81
+#: data/sideload.appdata.xml.in:88
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
