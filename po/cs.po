@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2020-05-28 23:39+0000\n"
+"PO-Revision-Date: 2020-06-07 11:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
 "cs/>\n"
@@ -38,7 +38,7 @@ msgstr "Tato aplikace už je nainstalovaná."
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr ""
-"K instalaci aplikace je potřeba novější verze infrastruktury pro Flatpak "
+"K instalaci aplikace je zapotřebí novější verze infrastruktury pro Flatpak "
 "balíčky."
 
 #: src/Views/ErrorView.vala:68
@@ -47,7 +47,7 @@ msgstr "Požadovaný vzdálený Flatpak repozitář nebyl nalezen."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr "Požadovaná závislost nebyla nalezena."
+msgstr "Požadované běhové prostředí, na kterém závisí, nebylo nalezeno."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
@@ -81,7 +81,7 @@ msgid ""
 "security, privacy, or system integration."
 msgstr ""
 "Tato aplikace je poskytována výhradně jejím vývojářem a nebyla ověřena její "
-"bezpečnost, důvěryhodnost ani její integrace do systému."
+"bezpečnost, důvěryhodnost ani její začlenění do systému."
 
 #: src/Views/MainView.vala:46
 msgid "Fetching details"
@@ -93,7 +93,7 @@ msgstr "Rozumím"
 
 #: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
-msgstr "Aktualizace této aplikace nebudou revidovány"
+msgstr "Aktualizace této aplikace nebudou přezkoumávány"
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -133,7 +133,7 @@ msgstr "Aplikace „%s“ byla úspěšně nainstalována"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
 msgid "The app was installed successfully"
-msgstr "Aplikace byla nainstalována úspěšně"
+msgstr "Aplikace byla úspěšně nainstalována"
 
 #: src/Views/SuccessView.vala:46
 #, c-format
@@ -141,8 +141,8 @@ msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall."
 msgstr ""
-"Otevřete ji kdykoliv z nabídky s aplikacemi. Podrobnosti o aplikací, "
-"aktualizacích a odinstalaci jsou k dispozici na %s."
+"Otevřete ji kdykoliv z nabídky s aplikacemi. Podrobnosti o aplikaci, "
+"aktualizace a odinstalace jsou k dispozici v %s."
 
 #: src/Views/SuccessView.vala:49
 #, c-format
@@ -159,8 +159,8 @@ msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall."
 msgstr ""
-"Nebyly provedeny žádné změny. Navštivte %s pro informace o aplikaci, "
-"aktualizace a odinstalaci."
+"Nebyly provedeny žádné změny. Podrobnosti o aplikaci, aktualizace a "
+"odinstalace jsou k dispozici v %s."
 
 #: src/Views/SuccessView.vala:60
 msgid "Open App"
@@ -168,7 +168,7 @@ msgstr "Otevřít aplikaci"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr "Vaše centrum softwaru"
+msgstr "Centrum software"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
