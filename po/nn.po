@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-04 00:47+0000\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2020-07-04 12:12+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "desktop/sideload/nn/>\n"
 "Language: nn\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr ""
+msgstr "Installasjonen feila"
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
-msgstr ""
+msgstr "Detaljer"
 
 #: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
 msgid "Close"
@@ -33,102 +33,104 @@ msgstr "Lukk"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Appen er allereie installert."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr ""
+msgstr "Du treng ein nyare versjon av Flatpak for å installera denne appen."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Ein naudsynt fjernkontroll for Flatpak vart ikke funne."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Ein naudsynt del for køyring av program vart ikkje funne."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Fila .flatpakref som følgde med virkar ikkje å vera gyldig."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Denne appen har ingen påliteleg signatur."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Sjølve appen, køyringa av appen, eller remote-namnet er ikkje gyldig."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Ein ukjend feil har skjedd."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "Installer den usikre appen “%s”?"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Vil du installera denne usikre appen?"
 
 #: src/Views/MainView.vala:41
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Denne appen har blitt publisert ut av utviklarane, og har på ingen måte "
+"blitt sjekka for sikkerheit, personvern og integrasjon mot systemet."
 
 #: src/Views/MainView.vala:46
 msgid "Fetching details"
-msgstr ""
+msgstr "Hentar detaljar"
 
 #: src/Views/MainView.vala:53
 msgid "I understand"
-msgstr ""
+msgstr "Eg forstår"
 
 #: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Oppdateringar til denne appen vil ikkje bli sjekka"
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: src/Views/MainView.vala:103
 msgid "Install Anyway"
-msgstr ""
+msgstr "Installer likevel"
 
 #: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Storleiken på nedlastinga kan vera opptil %s"
 
 #: src/Views/MainView.vala:123
 msgid "Unknown download size"
-msgstr ""
+msgstr "Ukjend storleik på nedlastinga"
 
 #: src/Views/MainView.vala:136
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Andre appar frå denne distributøren kan hamna i %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Installerar “%s”"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Gjer klart…"
 
 #: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "“%s” vart installert utan feil"
 
 #: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
 msgid "The app was installed successfully"
-msgstr ""
+msgstr "Appen vart installert utan feil"
 
 #: src/Views/SuccessView.vala:46
 #, c-format
@@ -136,15 +138,17 @@ msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall."
 msgstr ""
+"Du kan opna den kva tid som helst i Appmenyen. Gå til %s for informasjon om "
+"appen, oppdateringar og for å fjerna appen."
 
 #: src/Views/SuccessView.vala:49
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "“%s” er allereie installert"
 
 #: src/Views/SuccessView.vala:51
 msgid "This app is already installed"
-msgstr ""
+msgstr "Denne appen er allereie installert"
 
 #: src/Views/SuccessView.vala:54
 #, c-format
@@ -152,19 +156,21 @@ msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall."
 msgstr ""
+"Det vart ikkje gjort nokon endringar. Gå til %s for informasjon om appen, "
+"oppdateringar og for å fjerna den."
 
 #: src/Views/SuccessView.vala:60
 msgid "Open App"
-msgstr ""
+msgstr "Opna appen"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "ditt programvaresenter"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Installer usikker app"
 
 #: src/MainWindow.vala:144
 msgid "App installed"
-msgstr ""
+msgstr "Appen er installert"
