@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-28 23:40+0000\n"
-"PO-Revision-Date: 2020-05-28 23:39+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2020-08-08 11:13+0000\n"
+"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr ""
+msgstr "安装从网络上下载的应用程序"
 
 #: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
 #: data/sideload.appdata.xml.in:32
@@ -42,7 +42,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:39
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "第一个发布版本。Hello world!"
 
 #: data/sideload.appdata.xml.in:88
 msgid "elementary, Inc."
