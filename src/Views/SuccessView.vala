@@ -43,7 +43,7 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("The app was installed successfully");
             }
 
-            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s...</a>").printf (
+            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
                 appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
             );
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
@@ -53,7 +53,7 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("This app is already installed");
             }
 
-            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s...</a>").printf (
+            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
                 appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
             );
         }
