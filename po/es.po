@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-08-25 20:33+0000\n"
 "PO-Revision-Date: 2020-03-24 18:09+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr "La instalación ha fallado"
 msgid "Details"
 msgstr "Detalles"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
 msgstr "Cerrar"
 
@@ -129,43 +129,59 @@ msgstr "Instalando «%s»"
 msgid "Preparing…"
 msgstr "Preparando…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "Se ha instalado «%s» correctamente"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "El programa se instaló correctamente"
 
 #: src/Views/SuccessView.vala:46
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Open it any time from the Applications Menu. Visit %s for app "
+#| "information, updates, and to uninstall."
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall."
+"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
+"%s…</a>"
 msgstr ""
 "Ábralo en cualquier momento desde el menú de aplicaciones. Visite %s para "
 "consultar información sobre el programa, actualizarlo o desinstalarlo."
 
-#: src/Views/SuccessView.vala:49
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "System Settings"
+msgstr ""
+
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "Applications"
+msgstr ""
+
+#: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
 msgstr "«%s» ya está instalado"
 
-#: src/Views/SuccessView.vala:51
+#: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
 msgstr "Esta aplicación ya está instalada"
 
-#: src/Views/SuccessView.vala:54
-#, c-format
+#: src/Views/SuccessView.vala:57
+#, fuzzy, c-format
+#| msgid ""
+#| "No changes were made. Visit %s for app information, updates, and to "
+#| "uninstall."
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
-"uninstall."
+"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "No se ha realizado ningún cambio. Visite %s para consultar información sobre "
 "el programa, actualizarlo o desinstalarlo."
 
-#: src/Views/SuccessView.vala:60
+#: src/Views/SuccessView.vala:66
 msgid "Open App"
 msgstr "Abrir programa"
 
@@ -177,7 +193,7 @@ msgstr "su centro de aplicaciones"
 msgid "Install Untrusted App"
 msgstr "Instalar programa no confiable"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Se ha instalado el programa"
 

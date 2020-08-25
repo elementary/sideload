@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-08-25 20:33+0000\n"
 "PO-Revision-Date: 2020-08-08 11:13+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,7 +27,7 @@ msgstr "安装失败"
 msgid "Details"
 msgstr "详情"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
 msgstr "关闭"
 
@@ -121,39 +121,55 @@ msgstr "正在安装 “%s”"
 msgid "Preparing…"
 msgstr "正在准备…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "“%s” 已成功安装"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "此软件已成功安装"
 
 #: src/Views/SuccessView.vala:46
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Open it any time from the Applications Menu. Visit %s for app "
+#| "information, updates, and to uninstall."
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall."
+"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
+"%s…</a>"
 msgstr "可从应用程序菜单打开它。更多应用信息、更新及卸载相关内容请访问 %s。"
 
-#: src/Views/SuccessView.vala:49
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "System Settings"
+msgstr ""
+
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "Applications"
+msgstr ""
+
+#: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
 msgstr "“%s” 已安装"
 
-#: src/Views/SuccessView.vala:51
+#: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
 msgstr "此软件已经安装"
 
-#: src/Views/SuccessView.vala:54
-#, c-format
+#: src/Views/SuccessView.vala:57
+#, fuzzy, c-format
+#| msgid ""
+#| "No changes were made. Visit %s for app information, updates, and to "
+#| "uninstall."
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
-"uninstall."
+"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr "未发生任何变更。更多应用信息、更新及卸载相关内容请访问 %s。"
 
-#: src/Views/SuccessView.vala:60
+#: src/Views/SuccessView.vala:66
 msgid "Open App"
 msgstr "打开应用"
 
@@ -165,7 +181,7 @@ msgstr "软件中心"
 msgid "Install Untrusted App"
 msgstr "安装未被信任的应用"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "软件已安装"
 

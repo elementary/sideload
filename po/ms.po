@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-08-25 20:33+0000\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Malay <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Details"
 msgstr ""
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
 msgstr "Tutup"
 
@@ -121,12 +121,12 @@ msgstr ""
 msgid "Preparing…"
 msgstr ""
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr ""
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr ""
 
@@ -134,26 +134,36 @@ msgstr ""
 #, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall."
+"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
+"%s…</a>"
 msgstr ""
 
-#: src/Views/SuccessView.vala:49
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "System Settings"
+msgstr ""
+
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "Applications"
+msgstr ""
+
+#: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
 msgstr ""
 
-#: src/Views/SuccessView.vala:51
+#: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
 msgstr ""
 
-#: src/Views/SuccessView.vala:54
+#: src/Views/SuccessView.vala:57
 #, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
-"uninstall."
+"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 
-#: src/Views/SuccessView.vala:60
+#: src/Views/SuccessView.vala:66
 msgid "Open App"
 msgstr ""
 
@@ -165,6 +175,6 @@ msgstr ""
 msgid "Install Untrusted App"
 msgstr ""
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:153
 msgid "App installed"
 msgstr ""

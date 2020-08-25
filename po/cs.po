@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-08-25 20:33+0000\n"
 "PO-Revision-Date: 2020-06-07 11:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr "Instalace se nezdařila"
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
 msgstr "Zavřít"
 
@@ -126,43 +126,59 @@ msgstr "Instaluje se „%s“"
 msgid "Preparing…"
 msgstr "Příprava…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "Aplikace „%s“ byla úspěšně nainstalována"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "Aplikace byla úspěšně nainstalována"
 
 #: src/Views/SuccessView.vala:46
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Open it any time from the Applications Menu. Visit %s for app "
+#| "information, updates, and to uninstall."
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall."
+"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
+"%s…</a>"
 msgstr ""
 "Otevřete ji kdykoliv z nabídky s aplikacemi. Podrobnosti o aplikaci, "
 "aktualizace a odinstalace jsou k dispozici v %s."
 
-#: src/Views/SuccessView.vala:49
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "System Settings"
+msgstr ""
+
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "Applications"
+msgstr ""
+
+#: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
 msgstr "Aplikace „%s“ už je nainstalovaná"
 
-#: src/Views/SuccessView.vala:51
+#: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
 msgstr "Tato aplikace už je nainstalovaná"
 
-#: src/Views/SuccessView.vala:54
-#, c-format
+#: src/Views/SuccessView.vala:57
+#, fuzzy, c-format
+#| msgid ""
+#| "No changes were made. Visit %s for app information, updates, and to "
+#| "uninstall."
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
-"uninstall."
+"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "Nebyly provedeny žádné změny. Podrobnosti o aplikaci, aktualizace a "
 "odinstalace jsou k dispozici v %s."
 
-#: src/Views/SuccessView.vala:60
+#: src/Views/SuccessView.vala:66
 msgid "Open App"
 msgstr "Otevřít aplikaci"
 
@@ -174,6 +190,6 @@ msgstr "Centrum software"
 msgid "Install Untrusted App"
 msgstr "Nainstalovat nedůvěryhodnou aplikaci"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Aplikace nainstalována"

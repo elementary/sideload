@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-08-25 20:33+0000\n"
 "PO-Revision-Date: 2019-10-17 11:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
@@ -29,7 +29,7 @@ msgstr "Įdiegimas nepavyko"
 msgid "Details"
 msgstr "Išsamiau"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
 msgstr "Užverti"
 
@@ -126,43 +126,59 @@ msgstr "Įdiegiama \"%s\""
 msgid "Preparing…"
 msgstr "Ruošiama…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "\"%s\" buvo sėkmingai įdiegta"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "Programa buvo sėkmingai įdiegta"
 
 #: src/Views/SuccessView.vala:46
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Open it any time from the Applications Menu. Visit %s for app "
+#| "information, updates, and to uninstall."
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall."
+"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
+"%s…</a>"
 msgstr ""
 "Galite bet kuriuo metu ją atverti Programų meniu. Norėdami peržiūrėti "
 "programos informaciją ar atnaujinimus, ar ją pašalinti, apsilankykite %s."
 
-#: src/Views/SuccessView.vala:49
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "System Settings"
+msgstr ""
+
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "Applications"
+msgstr ""
+
+#: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
 msgstr "\"%s\" jau įdiegta"
 
-#: src/Views/SuccessView.vala:51
+#: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
 msgstr "Ši programa jau įdiegta"
 
-#: src/Views/SuccessView.vala:54
-#, c-format
+#: src/Views/SuccessView.vala:57
+#, fuzzy, c-format
+#| msgid ""
+#| "No changes were made. Visit %s for app information, updates, and to "
+#| "uninstall."
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
-"uninstall."
+"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "Nebuvo atlikta jokių pakeitimų. Norėdami peržiūrėti programos informaciją ar "
 "atnaujinimus, ar ją pašalinti, apsilankykite %s."
 
-#: src/Views/SuccessView.vala:60
+#: src/Views/SuccessView.vala:66
 msgid "Open App"
 msgstr "Atverti programą"
 
@@ -174,7 +190,7 @@ msgstr "jūsų programinės įrangos centras"
 msgid "Install Untrusted App"
 msgstr "Įdiegti nepatikimą programą"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Programa įdiegta"
 

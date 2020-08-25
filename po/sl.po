@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-04 00:47+0000\n"
+"POT-Creation-Date: 2020-08-25 20:33+0000\n"
 "PO-Revision-Date: 2020-04-05 13:09+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:28
@@ -28,7 +28,7 @@ msgstr "Namestitev spodletela"
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:57
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
 msgstr "Zapri"
 
@@ -124,43 +124,59 @@ msgstr "Nameščanje \"%s\""
 msgid "Preparing…"
 msgstr "Pripravljanje…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:146
+#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "“%s” je bil uspešno nameščen"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:148
+#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "Aplikacija je bila uspešno nameščena"
 
 #: src/Views/SuccessView.vala:46
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Open it any time from the Applications Menu. Visit %s for app "
+#| "information, updates, and to uninstall."
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall."
+"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
+"%s…</a>"
 msgstr ""
 "Odpre se lahko preko aplikacijskega menija. Obiščite %s za informacije o "
 "aplikaciji, za posodobitve in odstranitev."
 
-#: src/Views/SuccessView.vala:49
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "System Settings"
+msgstr ""
+
+#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
+msgid "Applications"
+msgstr ""
+
+#: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
 msgstr "“%s” je že nameščeno"
 
-#: src/Views/SuccessView.vala:51
+#: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
 msgstr "Ta aplikacija je že nameščena"
 
-#: src/Views/SuccessView.vala:54
-#, c-format
+#: src/Views/SuccessView.vala:57
+#, fuzzy, c-format
+#| msgid ""
+#| "No changes were made. Visit %s for app information, updates, and to "
+#| "uninstall."
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
-"uninstall."
+"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "Ni bilo narejenih sprememb. Obiščite %s za informacije o aplikaciji, za "
 "posodobitve in odstranitev."
 
-#: src/Views/SuccessView.vala:60
+#: src/Views/SuccessView.vala:66
 msgid "Open App"
 msgstr "Odpri aplikacijo"
 
@@ -172,6 +188,6 @@ msgstr "vaš center programske opreme"
 msgid "Install Untrusted App"
 msgstr "Namesti nezaupljivo aplikacijo"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Aplikacija nameščena"
