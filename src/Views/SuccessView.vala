@@ -43,7 +43,10 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("The app was installed successfully");
             }
 
-            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall.").printf (appstore_name);
+            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+            );
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
             if (app_name != null) {
                 primary_label.label = _("“%s” is already installed").printf (app_name);
@@ -51,7 +54,10 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("This app is already installed");
             }
 
-            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall.").printf (appstore_name);
+            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+            );
         }
 
         var close_button = new Gtk.Button.with_label (_("Close"));
