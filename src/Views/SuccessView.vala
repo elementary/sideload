@@ -43,7 +43,9 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("The app was installed successfully");
             }
 
-            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. You can adjust the permissions in systems settings.").printf (appstore_name);
+            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s...</a>").printf (
+                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+            );
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
             if (app_name != null) {
                 primary_label.label = _("“%s” is already installed").printf (app_name);
@@ -51,21 +53,19 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("This app is already installed");
             }
 
-            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. You can adjust the permissions in systems settings.").printf (appstore_name);
+            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s...</a>").printf (
+                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+            );
         }
 
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";
-
-        var permissions_button = new Gtk.Button.with_label (_("Adjust permissions"));
-        permissions_button.action_name = "app.permissions";
 
         var open_button = new Gtk.Button.with_label (_("Open App"));
         open_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         open_button.action_name = "app.launch";
 
         button_box.add (close_button);
-        button_box.add (permissions_button);
         button_box.add (open_button);
 
         show_all ();

@@ -44,25 +44,15 @@ public class Sideload.Application : Gtk.Application {
         main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
-        var permissions_action = new SimpleAction ("permissions", null);
         var launch_action = new SimpleAction ("launch", null);
 
         add_action (quit_action);
-        add_action (permissions_action);
         add_action (launch_action);
         set_accels_for_action ("app.quit", {"<Control>q"});
 
         quit_action.activate.connect (() => {
             if (main_window != null) {
                 main_window.destroy ();
-            }
-        });
-
-        permissions_action.activate.connect (() => {
-            try {
-                AppInfo.launch_default_for_uri ("settings://applications/permissions", null);
-            } catch (Error e) {
-                warning ("Unable to launch permission settings");
             }
         });
 
