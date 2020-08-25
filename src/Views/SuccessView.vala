@@ -44,6 +44,7 @@ public class Sideload.SuccessView : AbstractView {
             }
 
             secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
                 appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
             );
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
@@ -54,6 +55,7 @@ public class Sideload.SuccessView : AbstractView {
             }
 
             secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
                 appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
             );
         }
