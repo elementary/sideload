@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-25 20:33+0000\n"
-"PO-Revision-Date: 2020-03-06 17:09+0000\n"
+"PO-Revision-Date: 2020-08-28 00:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
 "ca/>\n"
@@ -134,27 +134,24 @@ msgid "The app was installed successfully"
 msgstr "L'aplicació s'ha instal·lat correctament."
 
 #: src/Views/SuccessView.vala:46
-#, fuzzy, c-format
-#| msgid ""
-#| "Open it any time from the Applications Menu. Visit %s for app "
-#| "information, updates, and to uninstall."
+#, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
 "Obriu-la en qualsevol moment des del menú d'aplicacions. Visiteu el %s per "
-"obtenir informació sobre les aplicacions, les actualitzacions i la "
-"desinstal·lació."
+"obtenir informació sobre les aplicacions, les actualitzacions i la desinstal·"
+"lació. Els permisos es poden canviar a <a href='%s'> %s -> %s...</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr ""
+msgstr "Configuració del sistema"
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr ""
+msgstr "Aplicacions"
 
 #: src/Views/SuccessView.vala:52
 #, c-format
@@ -166,16 +163,14 @@ msgid "This app is already installed"
 msgstr "Aquesta aplicació ja està instal·lada."
 
 #: src/Views/SuccessView.vala:57
-#, fuzzy, c-format
-#| msgid ""
-#| "No changes were made. Visit %s for app information, updates, and to "
-#| "uninstall."
+#, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "No s'ha fet cap canvi. Visiteu el %s per obtenir informació sobre les "
-"aplicacions, les actualitzacions i la desinstal·lació."
+"aplicacions, les actualitzacions i la desinstal·lació. Els permisos es poden "
+"canviar a <a href='%s'>%s -> %s...</a>"
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
