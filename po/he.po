@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-25 20:33+0000\n"
-"PO-Revision-Date: 2020-03-27 18:09+0000\n"
+"PO-Revision-Date: 2020-08-28 00:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
 "he/>\n"
@@ -133,26 +133,24 @@ msgid "The app was installed successfully"
 msgstr "היישום הותקן בהצלחה"
 
 #: src/Views/SuccessView.vala:46
-#, fuzzy, c-format
-#| msgid ""
-#| "Open it any time from the Applications Menu. Visit %s for app "
-#| "information, updates, and to uninstall."
+#, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
 "ניתן לפתוח אותו בכל עת דרך תפריט היישומים. ניתן לבקר ב־%s לקבלת מידע, "
-"עדכונים ואפשרות הסרה של היישום."
+"עדכונים ואפשרות הסרה של היישום. ניתן לשנות את ההרשאות תחת <a href='%s'>%s ← "
+"%s…</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr ""
+msgstr "הגדרות המערכת"
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr ""
+msgstr "יישומים"
 
 #: src/Views/SuccessView.vala:52
 #, c-format
@@ -164,15 +162,13 @@ msgid "This app is already installed"
 msgstr "היישום הזה כבר מותקן"
 
 #: src/Views/SuccessView.vala:57
-#, fuzzy, c-format
-#| msgid ""
-#| "No changes were made. Visit %s for app information, updates, and to "
-#| "uninstall."
+#, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
-"לא בוצעו שינויים. ניתן לבקר ב־%s לקבלת מידע, עדכונים ואפשרות הסרה של היישום."
+"לא בוצעו שינויים. ניתן לבקר ב־%s לקבלת מידע, עדכונים ואפשרות הסרה של היישום. "
+"ניתן לשנות את ההרשאות תחת <a href='%s'>%s ← %s…</a>"
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
