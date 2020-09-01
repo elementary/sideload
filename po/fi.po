@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-25 20:33+0000\n"
-"PO-Revision-Date: 2020-04-14 14:10+0000\n"
+"PO-Revision-Date: 2020-09-01 18:49+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
 "fi/>\n"
@@ -135,26 +135,24 @@ msgid "The app was installed successfully"
 msgstr "Sovellus asennettiin onnistuneesti"
 
 #: src/Views/SuccessView.vala:46
-#, fuzzy, c-format
-#| msgid ""
-#| "Open it any time from the Applications Menu. Visit %s for app "
-#| "information, updates, and to uninstall."
+#, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
 "Avaa se milloin tahansa Sovellukset-valikosta. Avaa %s saadaksesi "
-"lisätietoja sovelluksesta, päivityksiä siihen tai poistaaksesi sovelluksen."
+"lisätietoja sovelluksesta, päivityksiä siihen tai poistaaksesi sovelluksen. "
+"Oikeuksia voi muuttaa <a href='%s'>%s → %s…</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr ""
+msgstr "Järjestelmän asetukset"
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr ""
+msgstr "Sovellukset"
 
 #: src/Views/SuccessView.vala:52
 #, c-format
@@ -166,16 +164,14 @@ msgid "This app is already installed"
 msgstr "Tämä sovellus on jo asennettu"
 
 #: src/Views/SuccessView.vala:57
-#, fuzzy, c-format
-#| msgid ""
-#| "No changes were made. Visit %s for app information, updates, and to "
-#| "uninstall."
+#, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "Muutoksia ei tehty. Avaa %s saadaksesi lisätietoja sovelluksesta, "
-"päivityksiä siihen tai poistaaksesi sovelluksen."
+"päivityksiä siihen tai poistaaksesi sovelluksen. Oikeuksia voi muuttaa <a "
+"href='%s'>%s → %s…</a>"
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
