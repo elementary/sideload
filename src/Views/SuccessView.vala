@@ -38,7 +38,7 @@ public class Sideload.SuccessView : AbstractView {
 
         if (view_type == SuccessType.INSTALLED) {
             if (app_name != null) {
-                primary_label.label = _("Installed “%s”").printf (app_name);
+                primary_label.label = _("“%s” was installed").printf (app_name);
             } else {
                 primary_label.label = _("The app was installed");
             }
