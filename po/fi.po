@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-09-01 18:49+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -125,13 +125,16 @@ msgstr "Asennetaan “%s”"
 msgid "Preparing…"
 msgstr "Valmistellaan…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "“%s” asennettiin onnistuneesti"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Asennetaan “%s”"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "Sovellus asennettiin onnistuneesti"
 
 #: src/Views/SuccessView.vala:46
@@ -188,3 +191,12 @@ msgstr "Asenna ei-luotettu sovellus"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Sovellus asennettu"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "“%s” asennettiin onnistuneesti"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "Sovellus asennettiin onnistuneesti"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-08-28 00:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -123,13 +123,16 @@ msgstr "היישום „%s” מותקן"
 msgid "Preparing…"
 msgstr "מתבצעות הכנות…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "ההתקנה של „%s” הצליחה"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "היישום „%s” מותקן"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "היישום הותקן בהצלחה"
 
 #: src/Views/SuccessView.vala:46
@@ -185,3 +188,12 @@ msgstr "התקנת יישום בלתי מהימן"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "היישום הותקן"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "ההתקנה של „%s” הצליחה"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "היישום הותקן בהצלחה"

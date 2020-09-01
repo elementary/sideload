@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
@@ -121,13 +121,13 @@ msgstr ""
 msgid "Preparing…"
 msgstr ""
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
+#: src/Views/SuccessView.vala:41
 #, c-format
-msgid "“%s” was installed successfully"
+msgid "Installed “%s”"
 msgstr ""
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+msgid "The app was installed"
 msgstr ""
 
 #: src/Views/SuccessView.vala:46
@@ -177,4 +177,13 @@ msgstr ""
 
 #: src/MainWindow.vala:153
 msgid "App installed"
+msgstr ""
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr ""
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
 msgstr ""

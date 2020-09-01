@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-09-01 18:49+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -128,13 +128,16 @@ msgstr "Instalando «%s»"
 msgid "Preparing…"
 msgstr "Preparando…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "Se ha instalado «%s» correctamente"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Instalando «%s»"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "Se instaló la aplicación correctamente"
 
 #: src/Views/SuccessView.vala:46
@@ -191,6 +194,15 @@ msgstr "Instalar aplicación no confiable"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Se ha instalado la aplicación"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "Se ha instalado «%s» correctamente"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "Se instaló la aplicación correctamente"
 
 #~ msgid "The software has been installed"
 #~ msgstr "Se ha instalado el programa"

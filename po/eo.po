@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-03-17 14:09+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/desktop/"
@@ -123,13 +123,16 @@ msgstr "Instalanta „%s“"
 msgid "Preparing…"
 msgstr "Pretiganta…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "„%s“ estis sukcese instalita"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Instalanta „%s“"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "La aplikaĵo estis sukcese instalita"
 
 #: src/Views/SuccessView.vala:46
@@ -190,6 +193,15 @@ msgstr "Instali ne fidatan aplikaĵon"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Aplikaĵo instalita"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "„%s“ estis sukcese instalita"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "La aplikaĵo estis sukcese instalita"
 
 #~ msgid "The software has been installed"
 #~ msgstr "La programo estis instalita"

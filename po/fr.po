@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-08-28 00:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -127,13 +127,16 @@ msgstr "Installation de « %s »"
 msgid "Preparing…"
 msgstr "Préparation…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "« %s » a été installé avec succès"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Installation de « %s »"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "L'application a été installée avec succès"
 
 #: src/Views/SuccessView.vala:46
@@ -145,8 +148,8 @@ msgid ""
 msgstr ""
 "Ouvrez-le à tout moment depuis le menu Applications. Visitez %s pour des "
 "informations sur les applications, des mises à jour, et pour désinstaller "
-"des applications. Les autorisations peuvent être modifiées dans <a "
-"href='%s'>%s → %s…</a>"
+"des applications. Les autorisations peuvent être modifiées dans <a href='%s'>"
+"%s → %s…</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
@@ -191,6 +194,15 @@ msgstr "Installer une application non certifiée"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Application installée"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "« %s » a été installé avec succès"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "L'application a été installée avec succès"
 
 #~ msgid "The software has been installed"
 #~ msgstr "Le logiciel a été installé"

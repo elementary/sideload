@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-08-28 00:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -124,13 +124,16 @@ msgstr "s'instal·la «%s»"
 msgid "Preparing…"
 msgstr "Es prepara…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "%s s'ha instal·lat correctament."
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "s'instal·la «%s»"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "L'aplicació s'ha instal·lat correctament."
 
 #: src/Views/SuccessView.vala:46
@@ -141,8 +144,9 @@ msgid ""
 "%s…</a>"
 msgstr ""
 "Obriu-la en qualsevol moment des del menú d'aplicacions. Visiteu el %s per "
-"obtenir informació sobre les aplicacions, les actualitzacions i la desinstal·"
-"lació. Els permisos es poden canviar a <a href='%s'> %s -> %s...</a>"
+"obtenir informació sobre les aplicacions, les actualitzacions i la "
+"desinstal·lació. Els permisos es poden canviar a <a href='%s'> %s -> %s...</"
+"a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
@@ -187,6 +191,15 @@ msgstr "Instal·la l'aplicació de no confiança"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "Aplicació instal·lada"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "%s s'ha instal·lat correctament."
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "L'aplicació s'ha instal·lat correctament."
 
 #~ msgid "The software has been installed"
 #~ msgstr "S'ha instal·lat el programari."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-08-08 11:13+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -121,13 +121,16 @@ msgstr "正在安装 “%s”"
 msgid "Preparing…"
 msgstr "正在准备…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "“%s” 已成功安装"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "正在安装 “%s”"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "此软件已成功安装"
 
 #: src/Views/SuccessView.vala:46
@@ -184,6 +187,15 @@ msgstr "安装未被信任的应用"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "软件已安装"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "“%s” 已成功安装"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "此软件已成功安装"
 
 #~ msgid "The software has been installed"
 #~ msgstr "软件已安装"

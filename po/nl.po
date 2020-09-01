@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 20:33+0000\n"
+"POT-Creation-Date: 2020-09-01 18:50+0000\n"
 "PO-Revision-Date: 2020-03-06 17:09+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -123,13 +123,16 @@ msgstr "“%s” aan het installeren"
 msgid "Preparing…"
 msgstr "Voorbereiden…"
 
-#: src/Views/SuccessView.vala:41 src/MainWindow.vala:155
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "De installatie van “%s” is gereed"
+#: src/Views/SuccessView.vala:41
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "“%s” aan het installeren"
 
-#: src/Views/SuccessView.vala:43 src/MainWindow.vala:157
-msgid "The app was installed successfully"
+#: src/Views/SuccessView.vala:43
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "De app is succesvol geïnstalleerd"
 
 #: src/Views/SuccessView.vala:46
@@ -190,3 +193,12 @@ msgstr "Installeer de onbetrouwbare app"
 #: src/MainWindow.vala:153
 msgid "App installed"
 msgstr "App geïnstalleerd"
+
+#: src/MainWindow.vala:155
+#, c-format
+msgid "“%s” was installed successfully"
+msgstr "De installatie van “%s” is gereed"
+
+#: src/MainWindow.vala:157
+msgid "The app was installed successfully"
+msgstr "De app is succesvol geïnstalleerd"
