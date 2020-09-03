@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-01 18:50+0000\n"
-"PO-Revision-Date: 2020-08-28 00:13+0000\n"
+"PO-Revision-Date: 2020-09-04 01:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -125,16 +125,13 @@ msgid "Preparing…"
 msgstr "準備しています…"
 
 #: src/Views/SuccessView.vala:41
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "“%s”をインストールしています"
+msgstr "“%s”をインストールしました"
 
 #: src/Views/SuccessView.vala:43
-#, fuzzy
-#| msgid "The app was installed successfully"
 msgid "The app was installed"
-msgstr "アプリは正常にインストールされました"
+msgstr "アプリをインストールしました"
 
 #: src/Views/SuccessView.vala:46
 #, c-format
