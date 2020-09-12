@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-01 18:50+0000\n"
-"PO-Revision-Date: 2020-03-27 18:09+0000\n"
+"PO-Revision-Date: 2020-09-13 21:14+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload/"
 "tr/>\n"
@@ -66,7 +66,7 @@ msgstr "Bilinmeyen bir hata oluştu."
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Güvenilmeyen \"%s\" adlı uygulama yüklensin mi?"
+msgstr "Güvenilmeyen \"%s\" uygulaması yüklensin mi?"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
@@ -124,38 +124,33 @@ msgid "Preparing…"
 msgstr "Hazırlanıyor…"
 
 #: src/Views/SuccessView.vala:41
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "\"%s\" yükleniyor"
+msgstr "\"%s\" yüklendi"
 
 #: src/Views/SuccessView.vala:43
-#, fuzzy
-#| msgid "The app was installed successfully"
 msgid "The app was installed"
-msgstr "Uygulama başarıyla yüklendi"
+msgstr "Uygulama yüklendi"
 
 #: src/Views/SuccessView.vala:46
-#, fuzzy, c-format
-#| msgid ""
-#| "Open it any time from the Applications Menu. Visit %s for app "
-#| "information, updates, and to uninstall."
+#, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
 "İstediğiniz zaman Uygulamalar Menüsünden açabilirsiniz. Uygulama bilgileri, "
-"güncellemeler ve kaldırmak için %s uygulamasını ziyaret edin."
+"güncellemeler ve kaldırmak için %s uygulamasını ziyaret edin. İzinleri <a "
+"href='%s'>%s → %s…</a> yolundan değiştirilebilirziniz"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr ""
+msgstr "Sistem Ayarları"
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr ""
+msgstr "Uygulamalar"
 
 #: src/Views/SuccessView.vala:52
 #, c-format
@@ -167,16 +162,14 @@ msgid "This app is already installed"
 msgstr "Bu uygulama zaten yüklü"
 
 #: src/Views/SuccessView.vala:57
-#, fuzzy, c-format
-#| msgid ""
-#| "No changes were made. Visit %s for app information, updates, and to "
-#| "uninstall."
+#, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "Hiçbir değişiklik yapılmadı. Uygulama bilgileri, güncellemeler ve kaldırmak "
-"için %s uygulamasını ziyaret edin."
+"için %s uygulamasını ziyaret edin. İzinleri <a href='%s'>%s → %s…</a> "
+"yolundan değiştirilebilirziniz"
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
