@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-01 18:50+0000\n"
+"POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2020-09-07 17:36+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -125,12 +125,15 @@ msgid "Preparing…"
 msgstr "Es prepara…"
 
 #: src/Views/SuccessView.vala:41
-#, c-format
-msgid "Installed “%s”"
-msgstr "S'ha instal·lat «%s»"
+#, fuzzy, c-format
+#| msgid "“%s” is already installed"
+msgid "“%s” has been installed"
+msgstr "%s ja està instal·lada."
 
 #: src/Views/SuccessView.vala:43
-msgid "The app was installed"
+#, fuzzy
+#| msgid "The app was installed"
+msgid "The app has been installed"
 msgstr "L'aplicació s'ha instal·lat."
 
 #: src/Views/SuccessView.vala:46
@@ -197,6 +200,9 @@ msgstr "%s s'ha instal·lat correctament."
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "L'aplicació s'ha instal·lat correctament."
+
+#~ msgid "Installed “%s”"
+#~ msgstr "S'ha instal·lat «%s»"
 
 #~ msgid "The software has been installed"
 #~ msgstr "S'ha instal·lat el programari."

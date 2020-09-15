@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-01 18:50+0000\n"
+"POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2019-10-17 11:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
@@ -128,14 +128,14 @@ msgstr "Ruošiama…"
 
 #: src/Views/SuccessView.vala:41
 #, fuzzy, c-format
-#| msgid "Installing “%s”"
-msgid "Installed “%s”"
-msgstr "Įdiegiama \"%s\""
+#| msgid "“%s” is already installed"
+msgid "“%s” has been installed"
+msgstr "\"%s\" jau įdiegta"
 
 #: src/Views/SuccessView.vala:43
 #, fuzzy
 #| msgid "The app was installed successfully"
-msgid "The app was installed"
+msgid "The app has been installed"
 msgstr "Programa buvo sėkmingai įdiegta"
 
 #: src/Views/SuccessView.vala:46
@@ -205,6 +205,11 @@ msgstr "\"%s\" buvo sėkmingai įdiegta"
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "Programa buvo sėkmingai įdiegta"
+
+#, fuzzy
+#~| msgid "Installing “%s”"
+#~ msgid "Installed “%s”"
+#~ msgstr "Įdiegiama \"%s\""
 
 #~ msgid "The software has been installed"
 #~ msgstr "Programinė įranga įdiegta"

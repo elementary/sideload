@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-01 18:50+0000\n"
+"POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -123,11 +123,11 @@ msgstr ""
 
 #: src/Views/SuccessView.vala:41
 #, c-format
-msgid "Installed “%s”"
+msgid "“%s” has been installed"
 msgstr ""
 
 #: src/Views/SuccessView.vala:43
-msgid "The app was installed"
+msgid "The app has been installed"
 msgstr ""
 
 #: src/Views/SuccessView.vala:46

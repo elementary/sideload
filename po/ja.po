@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-01 18:50+0000\n"
+"POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2020-09-04 01:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -125,12 +125,15 @@ msgid "Preparing…"
 msgstr "準備しています…"
 
 #: src/Views/SuccessView.vala:41
-#, c-format
-msgid "Installed “%s”"
-msgstr "“%s”をインストールしました"
+#, fuzzy, c-format
+#| msgid "“%s” is already installed"
+msgid "“%s” has been installed"
+msgstr "“%s”はインストール済みです"
 
 #: src/Views/SuccessView.vala:43
-msgid "The app was installed"
+#, fuzzy
+#| msgid "The app was installed"
+msgid "The app has been installed"
 msgstr "アプリをインストールしました"
 
 #: src/Views/SuccessView.vala:46
@@ -196,6 +199,9 @@ msgstr "“%s”は正常にインストールされました"
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "アプリは正常にインストールされました"
+
+#~ msgid "Installed “%s”"
+#~ msgstr "“%s”をインストールしました"
 
 #~ msgid "Download size up to: %s"
 #~ msgstr "最大ダウンロードサイズ: %s"

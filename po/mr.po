@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-01 18:50+0000\n"
+"POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2020-03-11 16:09+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -125,14 +125,14 @@ msgstr "तयारी करीत आहे…"
 
 #: src/Views/SuccessView.vala:41
 #, fuzzy, c-format
-#| msgid "Installing “%s”"
-msgid "Installed “%s”"
-msgstr "“%s” स्थापित करत आहे"
+#| msgid "“%s” is already installed"
+msgid "“%s” has been installed"
+msgstr "\"%s\" आधीपासून स्थापित केले आहे"
 
 #: src/Views/SuccessView.vala:43
 #, fuzzy
 #| msgid "The app was installed successfully"
-msgid "The app was installed"
+msgid "The app has been installed"
 msgstr "अ‍ॅप यशस्वीरित्या स्थापित झाला"
 
 #: src/Views/SuccessView.vala:46
@@ -202,6 +202,11 @@ msgstr "“%s” यशस्वीरित्या स्थापित क�
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
 msgstr "अ‍ॅप यशस्वीरित्या स्थापित झाला"
+
+#, fuzzy
+#~| msgid "Installing “%s”"
+#~ msgid "Installed “%s”"
+#~ msgstr "“%s” स्थापित करत आहे"
 
 #~ msgid "The software has been installed"
 #~ msgstr "सॉफ्टवेअर स्थापित केले गेले आहे"
