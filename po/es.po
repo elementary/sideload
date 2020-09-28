@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2020-09-15 16:51+0000\n"
+"PO-Revision-Date: 2020-09-29 06:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
 "es/>\n"
@@ -129,14 +129,11 @@ msgid "Preparing…"
 msgstr "Preparando…"
 
 #: src/Views/SuccessView.vala:41
-#, fuzzy, c-format
-#| msgid "“%s” is already installed"
+#, c-format
 msgid "“%s” has been installed"
-msgstr "«%s» ya está instalada"
+msgstr "«%s» se ha instalado"
 
 #: src/Views/SuccessView.vala:43
-#, fuzzy
-#| msgid "The app was installed"
 msgid "The app has been installed"
 msgstr "Se instaló la aplicación"
 
