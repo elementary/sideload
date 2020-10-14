@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-28 23:40+0000\n"
+"POT-Creation-Date: 2020-10-14 17:22+0000\n"
 "PO-Revision-Date: 2020-03-02 23:09+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
@@ -27,6 +27,13 @@ msgstr "Stranska namestitev"
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
 msgstr "Namestitev aplikacij prenesenih iz interneta"
+
+#: data/sideload.appdata.xml.in:10
+msgid ""
+"Sideload Flatpak apps per user and automatically add their remotes to "
+"AppCenter. Sideload shows important information about apps before you "
+"install like their download size."
+msgstr ""
 
 #: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
 #: data/sideload.appdata.xml.in:32
