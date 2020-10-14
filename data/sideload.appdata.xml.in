@@ -7,7 +7,7 @@
   <name>Sideload</name>
   <summary>Install apps downloaded from the Internet</summary>
   <description>
-    <p></p>
+    <p>Sideload Flatpak apps per user and automatically add their remotes to AppCenter. Sideload shows important information about apps before you install like their download size.</p>
   </description>
   <releases>
     <release version="1.1.1" date="2020-05-28" urgency="medium">
