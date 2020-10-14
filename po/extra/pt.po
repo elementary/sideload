@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-14 17:22+0000\n"
-"PO-Revision-Date: 2020-04-23 19:10+0000\n"
+"PO-Revision-Date: 2020-10-17 06:15+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/pt/>\n"
@@ -33,6 +33,9 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Aplicações Sideload Flatpak por utilizador e adiciona automaticamente os "
+"seus remotos ao AppCenter. O Sideload mostra informação importante sobre "
+"aplicações antes de instalar, como o seu tamanho de transferência."
 
 #: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
 #: data/sideload.appdata.xml.in:32
