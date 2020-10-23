@@ -24,16 +24,9 @@ public class Sideload.MainView : AbstractView {
         }
     }
 
-    private static Gtk.CssProvider provider;
-
     private Gtk.Grid details_grid;
     private Gtk.Stack details_stack;
     private Gtk.Label download_size_label;
-
-    static construct {
-        provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("io/elementary/sideload/colors.css");
-    }
 
     construct {
         primary_label.label = _("Install untrusted app?");
@@ -57,8 +50,8 @@ public class Sideload.MainView : AbstractView {
         download_size_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext download_context = download_size_icon.get_style_context ();
-        download_context.add_class ("downloads");
-        download_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        download_context.add_class (Granite.STYLE_CLASS_ACCENT);
+        download_context.add_class ("green");
 
         download_size_label = new Gtk.Label (null);
         download_size_label.selectable = true;
@@ -70,8 +63,8 @@ public class Sideload.MainView : AbstractView {
         updates_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
-        updates_context.add_class ("updates");
-        updates_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
+        updates_context.add_class ("orange");
 
         var updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
         updates_label.selectable = true;
@@ -128,8 +121,8 @@ public class Sideload.MainView : AbstractView {
             repo_icon.valign = Gtk.Align.START;
 
             unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
-            repo_context.add_class ("appcenter");
-            repo_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            repo_context.add_class (Granite.STYLE_CLASS_ACCENT);
+            repo_context.add_class ("purple");
 
             var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
 
