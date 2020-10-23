@@ -12,15 +12,8 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 vapi_dir = join_paths(meson.current_source_dir(), 'vapi')
 add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
 
-resources = gnome.compile_resources(
-    'resources', 'data/sideload.gresource.xml',
-    source_dir: 'data',
-    c_name: 'resources'
-)
-
 executable(
     meson.project_name(),
-    resources,
     'src/Utils/AsyncMutex.vala',
     'src/Views/AbstractView.vala',
     'src/Views/ErrorView.vala',
