@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2020-10-28 02:15+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
 "Language: de\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr ""
+msgstr "Installation fehlgeschlagen"
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
@@ -33,62 +33,65 @@ msgstr "Schließen"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Diese App ist bereits installiert. "
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr ""
+"Es wird eine neuere Version von Flatpak zur Installation dieser App benötigt."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Ein benötigter Flatpak-Remote wurde nicht gefunden."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Eine benötigte Laufzeitabhängigkeit wurde nicht gefunden."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Die mitgelieferte ».flatpakref«-Datei scheint ungültig zu sein."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Diese App besitzt keine vertrauenswürdige Signatur."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Die Anwendung, die Laufzeitumgebung oder der Remote-Name ist ungültig."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Ein unbekannter fehler ist aufgetreten "
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "Soll die nicht vertrauenswürdige App »%s« installiert werden?"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Nicht-vertrauenswürdige App installieren?"
 
 #: src/Views/MainView.vala:41
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Diese App wird vom Entwickler allein bereitgestellt und wurde nicht auf "
+"Sicherheit, Datenschutz oder Systemintegration überprüft."
 
 #: src/Views/MainView.vala:46
 msgid "Fetching details"
-msgstr ""
+msgstr "Details werden geladen "
 
 #: src/Views/MainView.vala:53
 msgid "I understand"
-msgstr ""
+msgstr "Ich habe verstanden"
 
 #: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Aktualisierungen dieser App werden nicht überprüft"
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -96,39 +99,39 @@ msgstr "Abbrechen"
 
 #: src/Views/MainView.vala:103
 msgid "Install Anyway"
-msgstr ""
+msgstr "Trotzdem installieren"
 
 #: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Der Download ist möglicherweise bis zu %s groß"
 
 #: src/Views/MainView.vala:123
 msgid "Unknown download size"
-msgstr ""
+msgstr "Größe des Downloads unbekannt"
 
 #: src/Views/MainView.vala:136
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Andere Apps von diesem Anbieter erscheinen möglicherweise in %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "»%s« installieren"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Vorbereiten …"
 
 #: src/Views/SuccessView.vala:41
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "»%s« wurde installiert"
 
 #: src/Views/SuccessView.vala:43
 msgid "The app has been installed"
-msgstr ""
+msgstr "Die App wurde installiert"
 
 #: src/Views/SuccessView.vala:46
 #, c-format
@@ -141,20 +144,20 @@ msgstr ""
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr ""
+msgstr "Systemeinstellungen"
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "»%s« ist bereits installiert"
 
 #: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
-msgstr ""
+msgstr "Diese App ist bereits installiert"
 
 #: src/Views/SuccessView.vala:57
 #, c-format
@@ -165,25 +168,25 @@ msgstr ""
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
-msgstr ""
+msgstr "App öffnen"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "Ihr Software-Center"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Nicht-vertrauenswürdige App installieren"
 
 #: src/MainWindow.vala:153
 msgid "App installed"
-msgstr ""
+msgstr "App installiert"
 
 #: src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "»%s« wurde erfolgreich installiert"
 
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
-msgstr ""
+msgstr "Die App wurde erfolgreich installiert"
