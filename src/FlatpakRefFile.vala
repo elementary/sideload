@@ -340,7 +340,12 @@ public class Sideload.FlatpakRefFile : Object {
             return true;
         }
 
-        installation_failed (e);
+        Idle.add (() => {
+            installation_failed (e);
+
+            return GLib.Source.REMOVE;
+        });
+
         return false;
     }
 
