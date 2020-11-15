@@ -129,7 +129,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
             stack.add (success_view);
             stack.visible_child = success_view;
-        } else if (!(error is Flatpak.Error.ABORTED)){
+        } else if (!(error is Flatpak.Error.ABORTED)) {
             var error_view = new ErrorView (error);
 
             stack.add (error_view);
