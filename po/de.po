@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2020-10-28 02:15+0000\n"
+"PO-Revision-Date: 2021-01-19 21:25+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -134,12 +134,16 @@ msgid "The app has been installed"
 msgstr "Die App wurde installiert"
 
 #: src/Views/SuccessView.vala:46
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
+"Sie können es jederzeit über das Anwendungsmenü öffnen. Mit %s finden Sie "
+"Informationen zu Anwendungen, können Sie Anwendungen aktualisieren und "
+"deinstallieren. Berechtigungen können in <a href='%s'>%s → %s…</a> geändert "
+"werden."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
@@ -157,18 +161,20 @@ msgstr "»%s« ist bereits installiert"
 
 #: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
-msgstr "Diese App ist bereits installiert"
+msgstr "Diese Anwendung ist bereits installiert"
 
 #: src/Views/SuccessView.vala:57
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
+"Keine Änderungen vorgenommen. Mit %s finden Sie Informationen zu "
+"Anwendungen, können Sie Anwendungen aktualisieren und deinstallieren."
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
-msgstr "App öffnen"
+msgstr "Anwendung öffnen"
 
 #: src/Application.vala:74
 msgid "your software center"
@@ -176,11 +182,11 @@ msgstr "Ihr Software-Center"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr "Nicht-vertrauenswürdige App installieren"
+msgstr "Unbekannte Anwendung installieren"
 
 #: src/MainWindow.vala:153
 msgid "App installed"
-msgstr "App installiert"
+msgstr "Anwendung installiert"
 
 #: src/MainWindow.vala:155
 #, c-format
