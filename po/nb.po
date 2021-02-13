@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-01-20 22:37+0000\n"
+"PO-Revision-Date: 2021-02-14 02:30+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "sideload/nb/>\n"
@@ -40,8 +40,9 @@ msgid "A newer version of Flatpak is needed to install this app."
 msgstr "En nyere versjon av Flatpak er nødvendig for å installere denne appen."
 
 #: src/Views/ErrorView.vala:68
+#, fuzzy
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "En påkrevd Flatpak ble ikke funnet eksternt."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
@@ -49,15 +50,16 @@ msgstr "En påkrevd kjøretidsavhengighet ble ikke funnet."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Angitt .flatpakref-fil ser ikke ut til å være gyldig."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
 msgstr "Dette programmet er ikke signert med et betrodd sertifikat."
 
 #: src/Views/ErrorView.vala:84
+#, fuzzy
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Programmet, kjøretidsrutinen, eller fjernkontrollsnavnet er ugyldig."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
@@ -139,6 +141,9 @@ msgid ""
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
+"Åpne det fra programmenyen når som helst. Besøk %s for programinfo, "
+"oppdateringer og for å avinstallere. Tilganger kan endres i <a href='%s'>%s →"
+" %s…</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
