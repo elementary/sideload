@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-01-20 02:14+0000\n"
+"PO-Revision-Date: 2021-02-15 12:48+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
@@ -33,7 +33,7 @@ msgstr "Schließen"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr "Diese App ist bereits installiert. "
+msgstr "Diese Anwendung ist bereits installiert."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
@@ -62,7 +62,7 @@ msgstr "Die Anwendung, die Laufzeitumgebung oder der Remote-Name ist ungültig."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr "Ein unbekannter fehler ist aufgetreten "
+msgstr "Ein unbekannter fehler ist aufgetreten."
 
 #: src/Views/MainView.vala:23
 #, c-format
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:46
 msgid "Fetching details"
-msgstr "Details werden geladen "
+msgstr "Details werden geladen"
 
 #: src/Views/MainView.vala:53
 msgid "I understand"
@@ -134,14 +134,14 @@ msgid "The app has been installed"
 msgstr "Die App wurde installiert"
 
 #: src/Views/SuccessView.vala:46
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Open it any time from the Applications Menu. Visit %s for app information, "
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
-"Sie können es jederzeit über das Anwendungsmenü öffnen. Mit %s finden Sie "
-"Informationen zu Anwendungen, können Sie Anwendungen aktualisieren und "
+"Sie können es jederzeit über das Anwendungsmenü öffnen. Unter %s finden Sie "
+"Informationen zu Anwendungen und Sie können Anwendungen aktualisieren sowie "
 "deinstallieren. Berechtigungen können in <a href='%s'>%s → %s…</a> geändert "
 "werden."
 
@@ -164,13 +164,13 @@ msgid "This app is already installed"
 msgstr "Diese Anwendung ist bereits installiert"
 
 #: src/Views/SuccessView.vala:57
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
-"Keine Änderungen vorgenommen. Mit %s finden Sie Informationen zu "
-"Anwendungen, können Sie Anwendungen aktualisieren und deinstallieren. "
+"Keine Änderungen vorgenommen. Unter %s finden Sie Informationen zu "
+"Anwendungen und Sie können Anwendungen aktualisieren sowie deinstallieren. "
 "Berechtigungen können in <a href='%s'>%s → %s…</a> geändert werden."
 
 #: src/Views/SuccessView.vala:66
