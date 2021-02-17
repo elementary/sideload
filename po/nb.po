@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-02-14 02:30+0000\n"
+"PO-Revision-Date: 2021-02-17 05:18+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "sideload/nb/>\n"
@@ -79,6 +79,8 @@ msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Dette programmet tilbys ene og alene av sin utvikler, og har ikke blitt "
+"vurdert for sikkerhet, personvern eller systemintegrasjon."
 
 #: src/Views/MainView.vala:46
 msgid "Fetching details"
@@ -89,8 +91,9 @@ msgid "I understand"
 msgstr "Jeg forstår"
 
 #: src/Views/MainView.vala:76
+#, fuzzy
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Nye versjoner av programmet vil ikke bli vurdert"
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
