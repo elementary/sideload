@@ -23,7 +23,7 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
-    private MainView main_view;
+    private RefView main_view;
     private ProgressView progress_view;
 
     private string? app_name = null;
@@ -46,7 +46,7 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        main_view = new MainView ();
+        main_view = new RefView ();
 
         progress_view = new ProgressView ();
 

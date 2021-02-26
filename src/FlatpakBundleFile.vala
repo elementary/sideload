@@ -21,9 +21,9 @@
 public class Sideload.FlatpakBundleFile : Object {
     public File file { get; construct; }
 
-    public string? download_size { get; private set; default = null; }
+    public string? install_size { get; private set; default = null; }
     public bool already_installed { get; private set; default = false; }
-    public bool extra_remotes_needed { get; private set; default = false; }
+    public bool has_remote { get; private set; default = false; }
 
     private string? appdata_name = null;
 
@@ -54,6 +54,7 @@ public class Sideload.FlatpakBundleFile : Object {
     construct {
         try {
             bundle = new Flatpak.BundleRef (file);
+            install_size = GLib.format_size (bundle.get_installed_size ());
         } catch (Error e) {
             warning (e.message);
         }
@@ -85,7 +86,6 @@ public class Sideload.FlatpakBundleFile : Object {
         var added_remotes = new Gee.ArrayList<string> ();
 
         try {
-            uint64 total_download_size = -1;
             var flatpak_id = yield get_id ();
 
             // get_appstream () only returns the bytes form the appstream file.
@@ -112,7 +112,7 @@ public class Sideload.FlatpakBundleFile : Object {
             transaction.add_new_remote.connect ((reason, from_id, remote_name, url) => {
                 if (reason == Flatpak.TransactionRemoteReason.RUNTIME_DEPS) {
                     added_remotes.add (url);
-                    extra_remotes_needed = true;
+                    has_remote = true;
                     return true;
                 }
 
@@ -120,13 +120,6 @@ public class Sideload.FlatpakBundleFile : Object {
             });
 
             transaction.ready.connect (() => {
-                var operations = transaction.get_operations ();
-                operations.foreach ((entry) => {
-                    total_download_size += entry.get_download_size ();
-                });
-
-                download_size = GLib.format_size (total_download_size);
-
                 // Do not allow the install to start, this is a dry run
                 return false;
             });

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 elementary, Inc. (https://elementary.io)
+ * Copyright 2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Sideload.MainView : AbstractView {
+public class Sideload.RefView : AbstractView {
     public signal void install_request ();
 
     public string app_name {
