@@ -87,6 +87,25 @@ public class Sideload.FlatpakBundleFile : Object {
         try {
             uint64 total_download_size = -1;
             var flatpak_id = yield get_id ();
+
+            // get_appstream () only returns the bytes form the appstream file.
+            // so we create a temporary file to parse it.
+            var appstream_file = GLib.File.new_for_path (file.get_path () + ".appstream");
+            try {
+                // get the appstream info from inside the bundle
+                var stream = appstream_file.create (FileCreateFlags.NONE);
+                yield stream.write_bytes_async (bundle.get_appstream ());
+
+                // If we can't find the app by ID in the appstream data, try with a .desktop suffix
+                if (!parse_xml (appstream_file, flatpak_id)) {
+                    parse_xml (appstream_file, flatpak_id + ".desktop");
+                }
+            } catch (Error e) {
+                warning ("Error while trying to get the bundle appstream file: %s", e.message);
+            } finally {
+                appstream_file.trash_async.begin ();
+            }
+
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_bundle (file, null);
 
@@ -103,25 +122,7 @@ public class Sideload.FlatpakBundleFile : Object {
             transaction.ready.connect (() => {
                 var operations = transaction.get_operations ();
                 operations.foreach ((entry) => {
-                    try {
-                        var @ref = Flatpak.Ref.parse (entry.get_ref ());
-
-                        // If this is the ref the user requested to install, download the appdata for its remote
-                        if (@ref.name == flatpak_id) {
-                            installation.update_appstream_sync (entry.get_remote (), @ref.arch, null, cancellable);
-                            var remote = installation.get_remote_by_name (entry.get_remote ());
-                            var appstream_dir = remote.get_appstream_dir (@ref.arch);
-                            var appstream_file = appstream_dir.get_child ("appstream.xml.gz");
-                            // If we can't find the app by ID in the appstream data, try with a .desktop suffix
-                            if (!parse_xml (appstream_file, flatpak_id)) {
-                                parse_xml (appstream_file, flatpak_id + ".desktop");
-                            }
-                        }
-
-                        total_download_size += entry.get_download_size ();
-                    } catch (Error e) {
-                        warning ("Error calculating download size: %s", e.message);
-                    }
+                    total_download_size += entry.get_download_size ();
                 });
 
                 download_size = GLib.format_size (total_download_size);
