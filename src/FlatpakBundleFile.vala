@@ -27,15 +27,11 @@ public class Sideload.FlatpakBundleFile : Object {
 
     private string? appdata_name = null;
 
-    public signal void progress_changed (string description, double progress);
     public signal void installation_failed (GLib.Error details);
     public signal void installation_succeeded ();
     public signal void details_ready ();
 
     private Flatpak.BundleRef bundle = null;
-
-    private uint total_operations;
-    private int current_operation;
 
     private static Flatpak.Installation? installation;
 
@@ -232,7 +228,6 @@ public class Sideload.FlatpakBundleFile : Object {
         try {
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
             transaction.add_install_bundle (file, null);
-            transaction.new_operation.connect ((operation, progress) => on_new_operation (operation, progress, cancellable));
 
             transaction.add_new_remote.connect ((reason, from, name, url) => {
                 // If the bundle requests to add a new remote for dependencies, allow it
@@ -256,11 +251,9 @@ public class Sideload.FlatpakBundleFile : Object {
             });
 
             transaction.ready.connect (() => {
-                total_operations = transaction.get_operations ().length ();
                 return true;
             });
 
-            current_operation = 0;
             yield run_transaction_async (transaction, cancellable);
         } catch (Error e) {
             throw e;
@@ -282,23 +275,6 @@ public class Sideload.FlatpakBundleFile : Object {
         });
 
         return false;
-    }
-
-    private void on_new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress, Cancellable cancellable) {
-        current_operation++;
-
-        progress.changed.connect (() => {
-            if (cancellable.is_cancelled ()) {
-                return;
-            }
-
-            Idle.add (() => {
-                double existing_progress = (double)(current_operation - 1) / (double)total_operations;
-                double this_op_progress = (double)progress.get_progress () / 100.0f / (double)total_operations;
-                progress_changed (progress.get_status (), existing_progress + this_op_progress);
-                return false;
-            });
-        });
     }
 
     private async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) {

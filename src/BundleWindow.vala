@@ -48,7 +48,7 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
 
         main_view = new BundleView ();
 
-        progress_view = new ProgressView ();
+        progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
 
         stack = new Gtk.Stack ();
         stack.vhomogeneous = false;
@@ -60,7 +60,6 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
         set_titlebar (titlebar);
 
         main_view.install_request.connect (on_install_button_clicked);
-        file.progress_changed.connect (on_progress_changed);
         file.installation_failed.connect (on_install_failed);
         file.installation_succeeded.connect (on_install_succeeded);
         file.details_ready.connect (() => {
@@ -112,15 +111,6 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
         current_cancellable = new Cancellable ();
         file.install.begin (current_cancellable);
         stack.visible_child = progress_view;
-
-        Granite.Services.Application.set_progress_visible.begin (true);
-    }
-
-    private void on_progress_changed (string description, double progress) {
-        progress_view.status = description;
-        progress_view.progress = progress;
-
-        Granite.Services.Application.set_progress.begin (progress);
     }
 
     private void on_install_failed (GLib.Error error) {
@@ -135,8 +125,6 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
             stack.add (error_view);
             stack.visible_child = error_view;
         }
-
-        Granite.Services.Application.set_progress_visible.begin (false);
     }
 
 
@@ -145,8 +133,6 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
 
         stack.add (success_view);
         stack.visible_child = success_view;
-
-        Granite.Services.Application.set_progress_visible.begin (false);
 
         var win = get_window ();
         if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {

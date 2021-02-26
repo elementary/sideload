@@ -48,7 +48,7 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
 
         main_view = new RefView ();
 
-        progress_view = new ProgressView ();
+        progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
 
         stack = new Gtk.Stack ();
         stack.vhomogeneous = false;

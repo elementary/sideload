@@ -1,5 +1,5 @@
 /*
-* Copyright 2019 elementary, Inc. (https://elementary.io)
+* Copyright 2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -19,6 +19,11 @@
 */
 
 public class Sideload.ProgressView : AbstractView {
+    public enum ProgressType {
+        BUNDLE_INSTALL,
+        REF_INSTALL
+    }
+
     private Gtk.ProgressBar progressbar;
 
     public string app_name {
@@ -39,17 +44,28 @@ public class Sideload.ProgressView : AbstractView {
         }
     }
 
-    construct {
-        secondary_label.label = _("Preparing…");
+    public ProgressType view_type { get; construct; }
 
-        progressbar = new Gtk.ProgressBar ();
-        progressbar.fraction = 0.0;
-        progressbar.hexpand = true;
+    public ProgressView (ProgressType type) {
+        Object (view_type: type);
+    }
+
+    construct {
+        if (view_type == ProgressType.REF_INSTALL) {
+            secondary_label.label = _("Preparing…");
+
+            progressbar = new Gtk.ProgressBar ();
+            progressbar.fraction = 0.0;
+            progressbar.hexpand = true;
+
+            content_area.add (progressbar);
+        } else if (view_type == ProgressType.BUNDLE_INSTALL) {
+            secondary_label.label = _("The application is being installed, it may take a while…");
+        }
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
 
-        content_area.add (progressbar);
         button_box.add (cancel_button);
         show_all ();
     }
