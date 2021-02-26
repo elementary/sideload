@@ -21,8 +21,10 @@ executable(
     'src/Views/ProgressView.vala',
     'src/Views/SuccessView.vala',
     'src/Application.vala',
-    'src/MainWindow.vala',
+    'src/RefWindow.vala',
+    'src/BundleWindow.vala',
     'src/FlatpakRefFile.vala',
+    'src/FlatpakBundleFile.vala',
     dependencies: [
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),

@@ -1,5 +1,5 @@
 /*
-* Copyright 2019 elementary, Inc. (https://elementary.io)
+* Copyright 2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.MainWindow : Gtk.ApplicationWindow {
+public class Sideload.RefWindow : Gtk.ApplicationWindow {
     public FlatpakRefFile file { get; construct; }
     private Cancellable? current_cancellable = null;
 
@@ -28,7 +28,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private string? app_name = null;
 
-    public MainWindow (Gtk.Application application, FlatpakRefFile file) {
+    public RefWindow (Gtk.Application application, FlatpakRefFile file) {
         Object (
             application: application,
             icon_name: "io.elementary.sideload",
