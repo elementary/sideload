@@ -211,11 +211,18 @@ public class Sideload.FlatpakBundleFile : Object {
 
     public async void get_details (Cancellable? cancellable = null) {
         try {
-            yield dry_run (cancellable);
+            // flatpak will never throws a error for already installed application, so check mannualy
+            installation.list_installed_refs ().foreach ((@ref) => {
+                if (((Flatpak.Ref) @ref).get_name () == ((Flatpak.Ref) bundle).get_name ()) {
+                    already_installed = true;
+                }
+            });
+
+            if (!already_installed) {
+                yield dry_run (cancellable);
+            }
         } catch (Error e) {
-            if (e is Flatpak.Error.ALREADY_INSTALLED) {
-                already_installed = true;
-            } else if (!(e is Flatpak.Error.ABORTED)) {
+            if (!(e is Flatpak.Error.ABORTED)) {
                 warning ("Error during dry run: %s", e.message);
             }
         } finally {
