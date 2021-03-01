@@ -1,6 +1,8 @@
 src/Views/ErrorView.vala
-src/Views/MainView.vala
+src/Views/RefView.vala
+src/Views/BundleView.vala
 src/Views/ProgressView.vala
 src/Views/SuccessView.vala
 src/Application.vala
-src/MainWindow.vala
+src/RefWindow.vala
+src/BundleWindow.vala
