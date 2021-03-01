@@ -195,8 +195,8 @@ public class Sideload.FlatpakBundleFile : Object {
         try {
             // flatpak will never throws a error for already installed application, so check mannualy
             installation.list_installed_refs ().foreach ((@ref) => {
-                if (@ref.get_name () == bundle.get_name () &&
-                    @ref.get_branch () == bundle.get_branch ()) {
+                if (ref.get_name () == bundle.get_name () &&
+                    ref.get_branch () == bundle.get_branch ()) {
                     already_installed = true;
                 }
             });
