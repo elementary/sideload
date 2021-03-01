@@ -56,10 +56,6 @@ public class Sideload.FlatpakBundleFile : Object {
         }
     }
 
-    private async string? get_id () {
-        return ((Flatpak.Ref) bundle).get_name ();
-    }
-
     public async string? get_name () {
         // Application name from AppData is preferred
         if (appdata_name != null) {
@@ -67,11 +63,7 @@ public class Sideload.FlatpakBundleFile : Object {
         }
 
         // Otherwise, fallback to the app id
-        return yield get_id ();
-    }
-
-    private async string? get_branch () {
-        return ((Flatpak.Ref) bundle).get_branch ();
+        return bundle.get_name ();
     }
 
     private async void dry_run (Cancellable? cancellable) throws GLib.Error {
@@ -82,7 +74,7 @@ public class Sideload.FlatpakBundleFile : Object {
         var added_remotes = new Gee.ArrayList<string> ();
 
         try {
-            var flatpak_id = yield get_id ();
+            var flatpak_id = bundle.get_name ();
 
             // get_appstream () only returns the bytes form the appstream file.
             // so we create a temporary file to parse it.
@@ -203,7 +195,8 @@ public class Sideload.FlatpakBundleFile : Object {
         try {
             // flatpak will never throws a error for already installed application, so check mannualy
             installation.list_installed_refs ().foreach ((@ref) => {
-                if (((Flatpak.Ref) @ref).get_name () == ((Flatpak.Ref) bundle).get_name ()) {
+                if (@ref.get_name () == bundle.get_name () &&
+                    @ref.get_branch () == bundle.get_branch ()) {
                     already_installed = true;
                 }
             });
@@ -301,7 +294,7 @@ public class Sideload.FlatpakBundleFile : Object {
 
     public async void launch () {
         try {
-            installation.launch (yield get_id (), null, yield get_branch (), null, null);
+            installation.launch (bundle.get_name (), null, bundle.get_branch (), null, null);
         } catch (Error e) {
             warning ("Error launching app: %s", e.message);
         }
