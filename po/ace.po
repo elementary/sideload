@@ -1,68 +1,64 @@
-# Arabic translations for io.elementary.sideload package.
-# Copyright (C) 2019 THE io.elementary.sideload'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the io.elementary.sideload package.
-# Automatically generated, 2019.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-03-01 06:13+0000\n"
-"Last-Translator: aalhaif <aalhaif@hotmail.com>\n"
-"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/sideload/"
-"ar/>\n"
-"Language: ar\n"
+"POT-Creation-Date: 2020-10-14 17:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ace\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr "فشل التثبيت"
+msgstr ""
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
-msgstr "التفاصيل"
+msgstr ""
 
 #: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
 msgid "Close"
-msgstr "اغلاق"
+msgstr ""
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr "هذا التطبيق مثبت بالفعل."
+msgstr ""
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr "هناك حاجة إلى إصدار أحدث من Flatpak لتثبيت هذا التطبيق."
+msgstr ""
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr "خدمة التحكم عن بعد Flatpak المطلوبة لم يتم ايجادها."
+msgstr ""
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr "ملف تابع للتشغيل لم يتم ايجاده."
+msgstr ""
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr "الملف الذي بالصيغة .flatpakref يبدو أنه غير صالح."
+msgstr ""
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr "التطبيق ليس مسجلا وليس لديه توقيع الأمان."
+msgstr ""
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr "التطبيق، أو أمر التشغيل، أو التحكم عن بعد خاطئ."
+msgstr ""
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr "خطأ مجهول قد حدث."
+msgstr ""
 
 #: src/Views/MainView.vala:23
 #, c-format
@@ -93,7 +89,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
-msgstr "الغاء"
+msgstr ""
 
 #: src/Views/MainView.vala:103
 msgid "Install Anyway"
@@ -129,7 +125,7 @@ msgstr ""
 
 #: src/Views/SuccessView.vala:43
 msgid "The app has been installed"
-msgstr "التطبيق مثبت بالفعل"
+msgstr ""
 
 #: src/Views/SuccessView.vala:46
 #, c-format
@@ -142,11 +138,11 @@ msgstr ""
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr "إعدادات النظام"
+msgstr ""
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr "التطبيقات"
+msgstr ""
 
 #: src/Views/SuccessView.vala:52
 #, c-format
