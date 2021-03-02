@@ -23,7 +23,7 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
-    private BundleView main_view;
+    private MainView main_view;
     private ProgressView progress_view;
 
     private string? app_name = null;
@@ -46,7 +46,7 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        main_view = new BundleView ();
+        main_view = new MainView ();
 
         progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
 
@@ -69,7 +69,7 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
                 stack.add (success_view);
                 stack.visible_child = success_view;
             } else {
-                main_view.display_details (file.install_size, file.has_remote);
+                main_view.display_bundle_details (file.install_size, file.has_remote);
             }
         });
 
