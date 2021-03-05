@@ -27,6 +27,10 @@ public class Sideload.MainView : AbstractView {
     private Gtk.Grid details_grid;
     private Gtk.Stack details_stack;
     private Gtk.Label download_size_label;
+    private Gtk.Image updates_icon;
+    private Gtk.Label updates_label;
+    private Gtk.Image repo_icon;
+    private Gtk.Label repo_label;
 
     construct {
         primary_label.label = _("Install untrusted app?");
@@ -58,6 +62,34 @@ public class Sideload.MainView : AbstractView {
         download_size_label.max_width_chars = 50;
         download_size_label.wrap = true;
         download_size_label.xalign = 0;
+
+        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
+        updates_icon.valign = Gtk.Align.START;
+
+        unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
+        updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
+        updates_context.add_class ("orange");
+
+        updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
+        updates_label.selectable = true;
+        updates_label.max_width_chars = 50;
+        updates_label.wrap = true;
+        updates_label.xalign = 0;
+
+        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON);
+        repo_icon.valign = Gtk.Align.START;
+
+        unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
+        repo_context.add_class (Granite.STYLE_CLASS_ACCENT);
+        repo_context.add_class ("purple");
+
+        var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
+
+        var repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
+        repo_label.selectable = true;
+        repo_label.max_width_chars = 50;
+        repo_label.wrap = true;
+        repo_label.xalign = 0;
 
         details_grid = new Gtk.Grid ();
         details_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -94,40 +126,15 @@ public class Sideload.MainView : AbstractView {
         });
     }
 
-    public void display_bundle_details (string size, bool extra_repo) {
+    public void display_bundle_details (string size, bool has_repo, bool extra_repo) {
         download_size_label.label = _("Install size may be up to %s").printf (size);
 
-        if (extra_repo) {
-            var updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
-            updates_icon.valign = Gtk.Align.START;
-
-            unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
-            updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
-            updates_context.add_class ("orange");
-
-            var updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
-            updates_label.selectable = true;
-            updates_label.max_width_chars = 50;
-            updates_label.wrap = true;
-            updates_label.xalign = 0;
-
-            var repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON);
-            repo_icon.valign = Gtk.Align.START;
-
-            unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
-            repo_context.add_class (Granite.STYLE_CLASS_ACCENT);
-            repo_context.add_class ("purple");
-
-            var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
-
-            var repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
-            repo_label.selectable = true;
-            repo_label.max_width_chars = 50;
-            repo_label.wrap = true;
-            repo_label.xalign = 0;
-
+        if (has_repo) {
             details_grid.attach (updates_icon, 0, 1);
             details_grid.attach (updates_label, 1, 1);
+        }
+
+        if (extra_repo) {
             details_grid.attach (repo_icon, 0, 2);
             details_grid.attach (repo_label, 1, 2);
         }
@@ -143,36 +150,7 @@ public class Sideload.MainView : AbstractView {
             download_size_label.label = _("Unknown download size");
         }
 
-        var updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
-        updates_icon.valign = Gtk.Align.START;
-
-        unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
-        updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        updates_context.add_class ("orange");
-
-        var updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
-        updates_label.selectable = true;
-        updates_label.max_width_chars = 50;
-        updates_label.wrap = true;
-        updates_label.xalign = 0;
-
-
         if (extra_repo) {
-            var repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON);
-            repo_icon.valign = Gtk.Align.START;
-
-            unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
-            repo_context.add_class (Granite.STYLE_CLASS_ACCENT);
-            repo_context.add_class ("purple");
-
-            var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
-
-            var repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
-            repo_label.selectable = true;
-            repo_label.max_width_chars = 50;
-            repo_label.wrap = true;
-            repo_label.xalign = 0;
-
             details_grid.attach (repo_icon, 0, 2);
             details_grid.attach (repo_label, 1, 2);
         }

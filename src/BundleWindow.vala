@@ -69,7 +69,7 @@ public class Sideload.BundleWindow : Gtk.ApplicationWindow {
                 stack.add (success_view);
                 stack.visible_child = success_view;
             } else {
-                main_view.display_bundle_details (file.install_size, file.has_remote);
+                main_view.display_bundle_details (file.install_size, file.has_remote, file.install_remotes);
             }
         });
 

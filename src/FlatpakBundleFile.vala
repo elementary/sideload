@@ -24,6 +24,7 @@ public class Sideload.FlatpakBundleFile : Object {
     public string? install_size { get; private set; default = null; }
     public bool already_installed { get; private set; default = false; }
     public bool has_remote { get; private set; default = false; }
+    public bool install_remotes { get; private set; default = false; }
 
     private string? appdata_name = null;
 
@@ -51,6 +52,7 @@ public class Sideload.FlatpakBundleFile : Object {
         try {
             bundle = new Flatpak.BundleRef (file);
             install_size = GLib.format_size (bundle.get_installed_size ());
+            has_remote = bundle.get_origin () != null;
         } catch (Error e) {
             warning (e.message);
         }
@@ -100,7 +102,7 @@ public class Sideload.FlatpakBundleFile : Object {
             transaction.add_new_remote.connect ((reason, from_id, remote_name, url) => {
                 if (reason == Flatpak.TransactionRemoteReason.RUNTIME_DEPS) {
                     added_remotes.add (url);
-                    has_remote = true;
+                    install_remotes = true;
                     return true;
                 }
 
