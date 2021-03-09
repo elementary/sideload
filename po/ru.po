@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2021-03-09 20:44+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -179,16 +179,16 @@ msgstr "ваш Центр Приложений"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Установить недоверенное приложение"
 
 #: src/MainWindow.vala:153
 msgid "App installed"
-msgstr ""
+msgstr "Приложение установлено"
 
 #: src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "“%s” успешно установлено"
 
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
