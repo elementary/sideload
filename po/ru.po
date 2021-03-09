@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2021-03-09 20:36+0000\n"
-"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -67,11 +67,11 @@ msgstr "Произошла неизвестная ошибка."
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Установить неподдерживаемое приложение \"%s\"?"
+msgstr "Установить ненадежное приложение «%s»?"
 
 #: src/Views/MainView.vala:39
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Установить ненадежное приложение?"
 
 #: src/Views/MainView.vala:41
 msgid ""
