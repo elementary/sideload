@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-03-09 20:40+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2021-03-09 20:44+0000\n"
+"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -157,7 +157,7 @@ msgstr "“%s” уже установлено"
 
 #: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
-msgstr ""
+msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:57
 #, c-format
@@ -168,11 +168,11 @@ msgstr ""
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
-msgstr ""
+msgstr "Открыть приложение"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "ваш Центр Приложений"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
