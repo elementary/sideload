@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2021-03-09 20:34+0000\n"
-"Last-Translator: Vladimir Yerilov <openmindead@gmail.com>\n"
+"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -54,11 +54,11 @@ msgstr "Указанный .flatpakref файл не является корре
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Приложение не имеет доверенной подписи."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Приложение, среда исполнения или репозиторий не являются корректными."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
