@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2021-03-09 20:44+0000\n"
-"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -153,7 +153,7 @@ msgstr "Приложения"
 #: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
-msgstr "“%s” уже установлено"
+msgstr "«%s» уже установлено"
 
 #: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
@@ -165,6 +165,9 @@ msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
+"Нет никаких изменений. Посетите %s, для получения информации о приложении, "
+"его обновлении и удалении. Разрешения можно изменить с помощью <a "
+"href='%s'>%s → %s…</a>"
 
 #: src/Views/SuccessView.vala:66
 msgid "Open App"
