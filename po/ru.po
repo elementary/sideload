@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-03-09 20:36+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2021-03-09 20:39+0000\n"
+"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Обновления для этого приложения не будут проверяться"
 
 #: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
 msgid "Cancel"
@@ -99,26 +99,26 @@ msgstr "Отменить"
 
 #: src/Views/MainView.vala:103
 msgid "Install Anyway"
-msgstr ""
+msgstr "Все равно установить"
 
 #: src/Views/MainView.vala:121
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Объем загрузки может увеличиться до %s"
 
 #: src/Views/MainView.vala:123
 msgid "Unknown download size"
-msgstr ""
+msgstr "Неизвестный объем загрузки"
 
 #: src/Views/MainView.vala:136
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Другие приложения этого разработчика могут появиться в %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Установка \"%s\""
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
