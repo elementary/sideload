@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2021-03-09 20:33+0000\n"
-"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -38,7 +38,7 @@ msgstr "Это приложение уже установлено."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr "Для установки этого приложения требуется более новая версия Flatpack."
+msgstr "Для установки этого приложения требуется более новая версия Flatpak."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
@@ -46,7 +46,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Не удалось найти необходимую зависимость среды выполнения."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
