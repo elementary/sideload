@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-03-09 20:44+0000\n"
+"PO-Revision-Date: 2021-03-10 00:03+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
@@ -140,6 +140,9 @@ msgid ""
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
+"Откройте его в любое время из Меню приложений. Посетите раздел %s для "
+"получения информации о приложениях, их обновлении и удалении. Разрешения "
+"могут быть изменены в <a href='%s'>%s → %s…</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
@@ -192,4 +195,4 @@ msgstr "«%s» успешно установлено"
 
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
-msgstr "Приложение было успешно установлено"
+msgstr "Приложение успешно установлено"
