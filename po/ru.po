@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-15 16:52+0000\n"
 "PO-Revision-Date: 2021-03-09 20:39+0000\n"
-"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
+"Last-Translator: NIkitaaa2 <nikita122121@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:53
 msgid "I understand"
-msgstr ""
+msgstr "Я понимаю"
 
 #: src/Views/MainView.vala:76
 msgid "Updates to this app will not be reviewed"
