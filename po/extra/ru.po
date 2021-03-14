@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-14 17:22+0000\n"
-"PO-Revision-Date: 2021-03-02 21:50+0000\n"
+"PO-Revision-Date: 2021-03-14 17:42+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ru/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Загрузка из сторонних источников"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr ""
+msgstr "Установка приложений загруженных из Интернета"
 
 #: data/sideload.appdata.xml.in:10
 msgid ""
@@ -34,6 +34,10 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Загружайте приложения Flatpak для каждого пользователя и автоматически "
+"добавляйте их удалённые данные в Центр приложений. Вы сможете просмотреть "
+"важные подробности о приложениях перед установкой, например их размер "
+"загрузки."
 
 #: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
 #: data/sideload.appdata.xml.in:32
@@ -46,11 +50,11 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "Улучшена скорость подсчета размера загрузки"
 
 #: data/sideload.appdata.xml.in:39
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "Первый выпуск. Здравствуй, мир!"
 
 #: data/sideload.appdata.xml.in:88
 msgid "elementary, Inc."
@@ -62,8 +66,8 @@ msgstr ""
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
-msgstr ""
+msgstr "io.elementary.sideload"
 
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
-msgstr ""
+msgstr "flatpak;"
