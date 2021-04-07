@@ -60,6 +60,9 @@ public class Sideload.SuccessView : AbstractView {
             );
         }
 
+        var trash_flatpakref_on_exit = new Gtk.CheckButton.with_label (_("Trash .flatpakref"));
+        content_area.add (trash_flatpakref_on_exit);
+
         var close_button = new Gtk.Button.with_label (_("Close"));
         close_button.action_name = "app.quit";
 
