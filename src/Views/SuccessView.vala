@@ -63,6 +63,9 @@ public class Sideload.SuccessView : AbstractView {
         var trash_flatpakref_on_exit = new Gtk.CheckButton.with_label (_("Trash .flatpakref"));
         content_area.add (trash_flatpakref_on_exit);
 
+        var settings = new Settings ("io.elementary.sideload.saved-state");
+        settings.bind ("trash-flatpakref", trash_flatpakref_on_exit, "active", GLib.SettingsBindFlags.DEFAULT);
+
         var close_button = new Gtk.Button.with_label (_("Close"));
 
         var open_button = new Gtk.Button.with_label (_("Open App"));

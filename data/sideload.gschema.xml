@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/elementary/sideload/saved-state/" id="io.elementary.sideload.saved-state" gettext-domain="io.elementary.sideload">
+    <key name="trash-flatpakref" type="b">
+        <default>false</default>
+        <summary>Saves the checkbox state of having the user's .flatpakref file trashed on exit.</summary>
+        <description>Saves the checkbox state of having the user's .flatpakref file trashed on exit.</description>
+    </key>
+  </schema>
+</schemalist>
