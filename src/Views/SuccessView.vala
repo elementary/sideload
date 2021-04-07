@@ -64,7 +64,6 @@ public class Sideload.SuccessView : AbstractView {
         content_area.add (trash_flatpakref_on_exit);
 
         var close_button = new Gtk.Button.with_label (_("Close"));
-        close_button.action_name = "app.quit";
 
         var open_button = new Gtk.Button.with_label (_("Open App"));
         open_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -76,5 +75,22 @@ public class Sideload.SuccessView : AbstractView {
         show_all ();
 
         open_button.grab_focus ();
+
+        close_button.clicked.connect (() => {
+            Sideload.Application app = ((Sideload.Application) GLib.Application.get_default ());
+            var file = app.main_window.file;
+
+            if (trash_flatpakref_on_exit.active == true) {
+                file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
+                    try {
+                        file.file.trash_async.end (res);
+                    } catch (Error e) {
+                        warning (e.message);
+                    }
+                });
+            }
+
+            ((Sideload.Application) GLib.Application.get_default ()).quit ();
+        });
     }
 }

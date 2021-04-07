@@ -19,7 +19,7 @@
 */
 
 public class Sideload.Application : Gtk.Application {
-    private MainWindow main_window;
+    public MainWindow main_window;
 
     public Application () {
         Object (

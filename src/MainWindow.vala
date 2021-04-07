@@ -160,13 +160,5 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             notification.set_icon (new ThemedIcon ("io.elementary.sideload"));
             application.send_notification ("installed", notification);
         }
-
-        file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
-            try {
-                file.file.trash_async.end (res);
-            } catch (Error e) {
-                warning (e.message);
-            }
-        });
     }
 }
