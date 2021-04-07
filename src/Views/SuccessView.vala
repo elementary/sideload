@@ -90,7 +90,7 @@ public class Sideload.SuccessView : AbstractView {
                 });
             }
 
-            ((Sideload.Application) GLib.Application.get_default ()).quit ();
+            app.quit ();
         });
     }
 }
