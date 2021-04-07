@@ -82,7 +82,7 @@ public class Sideload.SuccessView : AbstractView {
         open_button.grab_focus ();
 
         close_button.clicked.connect (() => {
-            if (trash_flatpakref_on_exit.active == true) {
+            if (trash_flatpakref_on_exit.active) {
                 file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
                     try {
                         file.file.trash_async.end (res);
