@@ -60,7 +60,9 @@ public class Sideload.SuccessView : AbstractView {
             );
         }
 
-        var trash_flatpakref_on_exit = new Gtk.CheckButton.with_label (_("Trash .flatpakref"));
+        Sideload.Application app = ((Sideload.Application) GLib.Application.get_default ());
+        var file = app.main_window.file;
+        var trash_flatpakref_on_exit = new Gtk.CheckButton.with_label (_("Trash \"%s\"").printf (file.file.get_basename ()));
         content_area.add (trash_flatpakref_on_exit);
 
         var settings = new Settings ("io.elementary.sideload.saved-state");
@@ -80,9 +82,6 @@ public class Sideload.SuccessView : AbstractView {
         open_button.grab_focus ();
 
         close_button.clicked.connect (() => {
-            Sideload.Application app = ((Sideload.Application) GLib.Application.get_default ());
-            var file = app.main_window.file;
-
             if (trash_flatpakref_on_exit.active == true) {
                 file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
                     try {
