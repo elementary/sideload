@@ -60,8 +60,8 @@ public class Sideload.SuccessView : AbstractView {
             );
         }
 
-        Sideload.Application app = ((Sideload.Application) GLib.Application.get_default ());
-        var file = app.main_window.file;
+        var app = ((Gtk.Application) GLib.Application.get_default ());
+        var file = ((Sideload.MainWindow) app.active_window).file;
         var trash_flatpakref_on_exit = new Gtk.CheckButton.with_label (_("Trash \"%s\"").printf (file.file.get_basename ()));
         content_area.add (trash_flatpakref_on_exit);
 
