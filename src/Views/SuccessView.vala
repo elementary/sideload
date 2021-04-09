@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 elementary, Inc. (https://elementary.io)
+ * Copyright 2019–2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -60,8 +60,15 @@ public class Sideload.SuccessView : AbstractView {
             );
         }
 
+        var app = ((Gtk.Application) GLib.Application.get_default ());
+        var file = ((Sideload.MainWindow) app.active_window).file;
+        var trash_check = new Gtk.CheckButton.with_label (_("Move \"%s\" to Trash").printf (file.file.get_basename ()));
+        content_area.add (trash_check);
+
+        var settings = new Settings ("io.elementary.sideload");
+        settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
+
         var close_button = new Gtk.Button.with_label (_("Close"));
-        close_button.action_name = "app.quit";
 
         var open_button = new Gtk.Button.with_label (_("Open App"));
         open_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
@@ -73,5 +80,19 @@ public class Sideload.SuccessView : AbstractView {
         show_all ();
 
         open_button.grab_focus ();
+
+        close_button.clicked.connect (() => {
+            if (trash_check.active) {
+                file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
+                    try {
+                        file.file.trash_async.end (res);
+                    } catch (Error e) {
+                        warning (e.message);
+                    }
+                });
+            }
+
+            app.quit ();
+        });
     }
 }

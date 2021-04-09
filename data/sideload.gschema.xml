@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/elementary/sideload/" id="io.elementary.sideload" gettext-domain="io.elementary.sideload">
+    <key name="trash-on-success" type="b">
+        <default>false</default>
+        <summary>Trash on success.</summary>
+        <description>Whether the opened file should be trashed when successfully processed.</description>
+    </key>
+  </schema>
+</schemalist>
