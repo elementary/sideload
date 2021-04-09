@@ -62,11 +62,11 @@ public class Sideload.SuccessView : AbstractView {
 
         var app = ((Gtk.Application) GLib.Application.get_default ());
         var file = ((Sideload.MainWindow) app.active_window).file;
-        var trash_flatpakref_on_exit = new Gtk.CheckButton.with_label (_("Trash \"%s\"").printf (file.file.get_basename ()));
-        content_area.add (trash_flatpakref_on_exit);
+        var trash_check = new Gtk.CheckButton.with_label (_("Move \"%s\" to Trash").printf (file.file.get_basename ()));
+        content_area.add (trash_check);
 
         var settings = new Settings ("io.elementary.sideload");
-        settings.bind ("trash-flatpakref", trash_flatpakref_on_exit, "active", GLib.SettingsBindFlags.DEFAULT);
+        settings.bind ("trash-flatpakref", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var close_button = new Gtk.Button.with_label (_("Close"));
 
@@ -82,7 +82,7 @@ public class Sideload.SuccessView : AbstractView {
         open_button.grab_focus ();
 
         close_button.clicked.connect (() => {
-            if (trash_flatpakref_on_exit.active) {
+            if (trash_check.active) {
                 file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
                     try {
                         file.file.trash_async.end (res);
