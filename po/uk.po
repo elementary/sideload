@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
+"POT-Creation-Date: 2021-04-09 17:16+0000\n"
 "PO-Revision-Date: 2021-01-25 21:47+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -28,7 +28,7 @@ msgstr "Не вдалося встановити"
 msgid "Details"
 msgstr "Подробиці"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "Закрити"
 
@@ -69,11 +69,11 @@ msgstr "Виникла невідома помилка."
 msgid "Install untrusted app “%s”?"
 msgstr "Встановити ненадійний застосунок “%s”?"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
 msgstr "Встановити ненадійний застосунок?"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -81,36 +81,36 @@ msgstr ""
 "Цей застосунок надано виключно його розробником і не перевірено на "
 "безпечність, приватність та системну інтеграцію."
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:39
 msgid "Fetching details"
 msgstr "Отримання подробиць"
 
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:46
 msgid "I understand"
 msgstr "Я розумію"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
 msgstr "Оновлення цього застосунка не перевірятимуться"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "Все одно встановити"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Розмір завантаження може сягнути %s"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
 msgstr "Невідомий розмір завантаження"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Інші застосунки цього видавця можуть з’явитися в %s"
@@ -169,10 +169,15 @@ msgid ""
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
 "Не внесено жодних. Відвідайте %s, щоб отримати відомості про застосунок, "
-"оновлення та видалити його. Дозволи можна змінити за допомогою <a href='%s'>%"
-"s → %s…</a>"
+"оновлення та видалити його. Дозволи можна змінити за допомогою <a href='%s'>"
+"%s → %s…</a>"
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move \"%s\" to Trash"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
 msgstr "Відкрити застосунок"
 

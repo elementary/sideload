@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
+"POT-Creation-Date: 2021-04-09 17:16+0000\n"
 "PO-Revision-Date: 2020-11-03 07:15+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr "Installation fejlede"
 msgid "Details"
 msgstr "Detaljer"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "Luk"
 
@@ -69,11 +69,11 @@ msgstr "Der opstod en ukendt fejl."
 msgid "Install untrusted app “%s”?"
 msgstr "Installer den utroværdige applikation \"%s\"?"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
 msgstr "Installer utroværdig app?"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -81,36 +81,36 @@ msgstr ""
 "Denne app leveres udelukkende af dens udvikler, og er ikke blevet gennemgået "
 "for sikkerhed, privatliv eller systemintegration."
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:39
 msgid "Fetching details"
 msgstr "Henter detaljer"
 
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:46
 msgid "I understand"
 msgstr "Jeg forstår"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
 msgstr "Opdateringer til denne applikation vil ikke blive bedømt"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "Annuller"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "Installer Alligevel"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Download størrelsen kan være op til %s"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
 msgstr "Ukendt download størrelse"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Andre applikationer fra denne distributør kan forekomme i %s"
@@ -179,7 +179,12 @@ msgstr ""
 "Ingen ændringer blev foretaget. Besøg %s for app information, opdateringer, "
 "og for at afinstallere."
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move \"%s\" to Trash"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
 msgstr "Åbn Applikation"
 

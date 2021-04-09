@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
+"POT-Creation-Date: 2021-04-09 17:16+0000\n"
 "PO-Revision-Date: 2020-10-13 22:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr "स्थापना अयशस्वी"
 msgid "Details"
 msgstr "तपशील"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "बंद करा"
 
@@ -68,11 +68,11 @@ msgstr "एक अज्ञात त्रुटी आली."
 msgid "Install untrusted app “%s”?"
 msgstr "अविश्वासू अ‍ॅप \"%s\" स्थापित करायचा?"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
 msgstr "अविश्वासू अ‍ॅप स्थापित करायचा?"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -80,36 +80,36 @@ msgstr ""
 "हा अ‍ॅप पूर्णपणे त्याच्या विकसकाद्वारे प्रदान केला गेला आहे आणि सुरक्षितता, गोपनीयता किंवा "
 "सिस्टम एकीकरणासाठी त्याचे पुनरावलोकन केले गेले नाही."
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:39
 msgid "Fetching details"
 msgstr "तपशील आणत आहे"
 
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:46
 msgid "I understand"
 msgstr "मला समजले"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
 msgstr "या अ‍ॅपवरील अपडेट्सचे पुनरावलोकन केले जाणार नाही"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "तरीही स्थापित करा"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "डाउनलोड आकार %s पर्यंत असू शकतो"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
 msgstr "अज्ञात डाउनलोड आकार"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "या वितरकाकडील अन्य अ‍ॅप %s मध्ये दिसू शकतात"
@@ -139,9 +139,8 @@ msgid ""
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
-"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित "
-"करण्यासाठी %s ला भेट द्या. परवानग्या  <a href='%s'>%s → %s…</a> मध्ये बदलल्या"
-" जाऊ शकतात"
+"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित करण्यासाठी %s ला भेट "
+"द्या. परवानग्या  <a href='%s'>%s → %s…</a> मध्ये बदलल्या जाऊ शकतात"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
@@ -167,11 +166,16 @@ msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
-"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित "
-"करण्यासाठी %s ला भेट द्या. \n"
+"अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित करण्यासाठी %s ला भेट "
+"द्या. \n"
 "परवानग्या  <a href='%s'>%s → %s…</a> मध्ये बदलल्या जाऊ शकतात"
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move \"%s\" to Trash"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
 msgstr "अ‍ॅप उघडा"
 

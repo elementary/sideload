@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
+"POT-Creation-Date: 2021-04-09 17:16+0000\n"
 "PO-Revision-Date: 2021-02-14 23:29+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -27,7 +27,7 @@ msgstr "Install failed"
 msgid "Details"
 msgstr "Details"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "Close"
 
@@ -68,11 +68,11 @@ msgstr "An unknown error occured."
 msgid "Install untrusted app “%s”?"
 msgstr "Install untrusted app “%s”?"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
 msgstr "Install untrusted app?"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -80,36 +80,36 @@ msgstr ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:39
 msgid "Fetching details"
 msgstr "Fetching details"
 
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:46
 msgid "I understand"
 msgstr "I understand"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
 msgstr "Updates to this app will not be reviewed"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "Install Anyway"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Download size may be up to %s"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
 msgstr "Unknown download size"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Other apps from this distributor may appear in %s"
@@ -170,7 +170,12 @@ msgstr ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move \"%s\" to Trash"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
 msgstr "Open App"
 
