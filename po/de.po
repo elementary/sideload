@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-09 17:16+0000\n"
-"PO-Revision-Date: 2021-02-15 12:48+0000\n"
+"PO-Revision-Date: 2021-04-10 17:12+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
@@ -176,7 +176,7 @@ msgstr ""
 #: src/Views/SuccessView.vala:65
 #, c-format
 msgid "Move \"%s\" to Trash"
-msgstr ""
+msgstr "»%s» in den Papierkorb verschieben"
 
 #: src/Views/SuccessView.vala:73
 msgid "Open App"
