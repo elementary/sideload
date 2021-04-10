@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-09 17:16+0000\n"
+"POT-Creation-Date: 2021-04-10 17:12+0000\n"
 "PO-Revision-Date: 2021-04-09 23:40+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -171,8 +171,9 @@ msgstr ""
 "ניתן לשנות את ההרשאות תחת <a href='%s'>%s ← %s…</a>"
 
 #: src/Views/SuccessView.vala:65
-#, c-format
-msgid "Move \"%s\" to Trash"
+#, fuzzy, c-format
+#| msgid "Move \"%s\" to Trash"
+msgid "Move ”%s” to Trash"
 msgstr "להעביר את „%s” לאשפה"
 
 #: src/Views/SuccessView.vala:73
