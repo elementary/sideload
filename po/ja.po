@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-09 17:16+0000\n"
-"PO-Revision-Date: 2021-02-18 10:24+0000\n"
+"PO-Revision-Date: 2021-04-10 10:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -175,7 +175,7 @@ msgstr ""
 #: src/Views/SuccessView.vala:65
 #, c-format
 msgid "Move \"%s\" to Trash"
-msgstr ""
+msgstr "\"%s\" をゴミ箱に移動"
 
 #: src/Views/SuccessView.vala:73
 msgid "Open App"
