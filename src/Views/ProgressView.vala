@@ -54,15 +54,21 @@ public class Sideload.ProgressView : AbstractView {
         if (view_type == ProgressType.REF_INSTALL) {
             secondary_label.use_markup = true;
             secondary_label.label = _("Preparing…");
-
-            progressbar = new Gtk.ProgressBar ();
-            progressbar.fraction = 0.0;
-            progressbar.hexpand = true;
-
-            content_area.add (progressbar);
         } else if (view_type == ProgressType.BUNDLE_INSTALL) {
             secondary_label.label = _("The application is being installed, it may take a while…");
         }
+
+        progressbar = new Gtk.ProgressBar () {
+            pulse_step = 0.05,
+            fraction = 0.0,
+            hexpand = true
+        };
+
+        if (view_type == ProgressType.BUNDLE_INSTALL) {
+            Timeout.add (50, () => { progressbar.pulse (); } );
+        }
+
+        content_area.add (progressbar);
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
