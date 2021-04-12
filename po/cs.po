@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
+"POT-Creation-Date: 2021-04-10 17:12+0000\n"
 "PO-Revision-Date: 2020-06-07 11:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr "Instalace se nezdařila"
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "Zavřít"
 
@@ -71,11 +71,11 @@ msgstr "Nastala neznámá chyba."
 msgid "Install untrusted app “%s”?"
 msgstr "Nainstalovat nedůvěryhodnou aplikaci „%s“?"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
 msgstr "Instalovat nedůvěryhodnou aplikaci?"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -83,36 +83,36 @@ msgstr ""
 "Tato aplikace je poskytována výhradně jejím vývojářem a nebyla ověřena její "
 "bezpečnost, důvěryhodnost ani její začlenění do systému."
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:39
 msgid "Fetching details"
 msgstr "Získávají se podrobnosti"
 
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:46
 msgid "I understand"
 msgstr "Rozumím"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
 msgstr "Aktualizace této aplikace nebudou přezkoumávány"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "Storno"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "Přesto nainstalovat"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Velikost stahování může být až %s"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
 msgstr "Neznámá velikost"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Další aplikace tohoto distributora se mohou objevit v %s"
@@ -181,7 +181,12 @@ msgstr ""
 "Nebyly provedeny žádné změny. Podrobnosti o aplikaci, aktualizace a "
 "odinstalace jsou k dispozici v %s."
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move ”%s” to Trash"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
 msgstr "Otevřít aplikaci"
 

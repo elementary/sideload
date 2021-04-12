@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"PO-Revision-Date: 2021-04-11 01:35+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,27 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr ""
+msgstr "Не удалось установить"
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
-msgstr ""
+msgstr "Подробнее"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "Закрыть"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Это приложение уже установлено."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr ""
+msgstr "Для установки этого приложения требуется более новая версия Flatpak."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
@@ -46,90 +46,92 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Не удалось найти необходимую зависимость среды выполнения."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Указанный .flatpakref файл не является корректным."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Приложение не имеет доверенной подписи."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Приложение, среда исполнения или репозиторий не являются корректными."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Произошла неизвестная ошибка."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "Установить ненадежное приложение «%s»?"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Установить ненадежное приложение?"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Это приложение поставляется исключительно его разработчиком и не проверялось "
+"на безопасность, конфиденциальность или системную интеграцию."
+
+#: src/Views/MainView.vala:39
+msgid "Fetching details"
+msgstr "Получение подробностей"
 
 #: src/Views/MainView.vala:46
-msgid "Fetching details"
-msgstr ""
-
-#: src/Views/MainView.vala:53
 msgid "I understand"
-msgstr ""
+msgstr "Я понимаю"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Обновления для этого приложения не будут проверяться"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
-msgstr ""
+msgstr "Отменить"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
-msgstr ""
+msgstr "Все равно установить"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Объем загрузки может увеличиться до %s"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
-msgstr ""
+msgstr "Неизвестный объем загрузки"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Другие приложения этого разработчика могут появиться в %s"
 
 #: src/Views/ProgressView.vala:26
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Установка «%s»"
 
 #: src/Views/ProgressView.vala:43
 msgid "Preparing…"
-msgstr ""
+msgstr "Подготовка…"
 
 #: src/Views/SuccessView.vala:41
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "«%s» уже установлено"
 
 #: src/Views/SuccessView.vala:43
 msgid "The app has been installed"
-msgstr ""
+msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:46
 #, c-format
@@ -138,24 +140,27 @@ msgid ""
 "updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
 "%s…</a>"
 msgstr ""
+"Откройте его в любое время из Меню приложений. Посетите раздел %s для "
+"получения информации о приложениях, их обновлении и удалении. Разрешения "
+"могут быть изменены в <a href='%s'>%s → %s…</a>"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "System Settings"
-msgstr ""
+msgstr "Параметры системы"
 
 #: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
 msgid "Applications"
-msgstr ""
+msgstr "Приложения"
 
 #: src/Views/SuccessView.vala:52
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "«%s» уже установлено"
 
 #: src/Views/SuccessView.vala:54
 msgid "This app is already installed"
-msgstr ""
+msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:57
 #, c-format
@@ -163,28 +168,36 @@ msgid ""
 "No changes were made. Visit %s for app information, updates, and to "
 "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
 msgstr ""
+"Нет никаких изменений. Посетите %s, для получения информации о приложении, "
+"его обновлении и удалении. Разрешения можно изменить с помощью <a href='%s'>"
+"%s → %s…</a>"
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move ”%s” to Trash"
+msgstr "Переместить «%s» в Корзину"
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
-msgstr ""
+msgstr "Открыть приложение"
 
 #: src/Application.vala:74
 msgid "your software center"
-msgstr ""
+msgstr "ваш центр приложений"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Установить недоверенное приложение"
 
 #: src/MainWindow.vala:153
 msgid "App installed"
-msgstr ""
+msgstr "Приложение установлено"
 
 #: src/MainWindow.vala:155
 #, c-format
 msgid "“%s” was installed successfully"
-msgstr ""
+msgstr "«%s» успешно установлено"
 
 #: src/MainWindow.vala:157
 msgid "The app was installed successfully"
-msgstr ""
+msgstr "Приложение успешно установлено"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-15 16:52+0000\n"
-"PO-Revision-Date: 2021-02-18 10:24+0000\n"
+"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"PO-Revision-Date: 2021-04-11 01:35+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -27,7 +27,7 @@ msgstr "インストールに失敗しました"
 msgid "Details"
 msgstr "詳細"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:63
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
 msgid "Close"
 msgstr "閉じる"
 
@@ -69,11 +69,11 @@ msgstr "不明なエラーが発生しました。"
 msgid "Install untrusted app “%s”?"
 msgstr "信頼されていないアプリ “%s” をインストールしますか？"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
 msgstr "信頼されていないアプリをインストールしますか？"
 
-#: src/Views/MainView.vala:41
+#: src/Views/MainView.vala:34
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -81,36 +81,36 @@ msgstr ""
 "このアプリは開発者により単独で提供されており、セキュリティー、プライバシー保"
 "護、およびシステムとの統合に関する審査が行われていません。"
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:39
 msgid "Fetching details"
 msgstr "詳細を取得しています"
 
-#: src/Views/MainView.vala:53
+#: src/Views/MainView.vala:46
 msgid "I understand"
 msgstr "了解"
 
-#: src/Views/MainView.vala:76
+#: src/Views/MainView.vala:69
 msgid "Updates to this app will not be reviewed"
 msgstr "このアプリに関するアップデートは審査されません"
 
-#: src/Views/MainView.vala:100 src/Views/ProgressView.vala:49
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/MainView.vala:103
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "了解してインストール"
 
-#: src/Views/MainView.vala:121
+#: src/Views/MainView.vala:114
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "ダウンロードサイズは最大 %s になる可能性があります"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:116
 msgid "Unknown download size"
 msgstr "不明なダウンロードサイズ"
 
-#: src/Views/MainView.vala:136
+#: src/Views/MainView.vala:129
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "この開発者のほかのアプリが %s に表示される可能性があります"
@@ -172,7 +172,12 @@ msgstr ""
 "インストールしたりするには、%s を開いてください。パーミッションは <a "
 "href='%s'>%s → %s…</a>から変更できます"
 
-#: src/Views/SuccessView.vala:66
+#: src/Views/SuccessView.vala:65
+#, c-format
+msgid "Move ”%s” to Trash"
+msgstr "”%s” をゴミ箱に移動"
+
+#: src/Views/SuccessView.vala:73
 msgid "Open App"
 msgstr "アプリを開く"
 
