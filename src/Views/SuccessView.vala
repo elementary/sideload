@@ -83,16 +83,20 @@ public class Sideload.SuccessView : AbstractView {
 
         close_button.clicked.connect (() => {
             if (trash_check.active) {
-                file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
-                    try {
-                        file.file.trash_async.end (res);
-                    } catch (Error e) {
-                        warning (e.message);
-                    }
-                });
+                trash_flatpakref (file);
             }
 
             app.quit ();
+        });
+    }
+
+    private void trash_flatpakref (FlatpakRefFile file) {
+        file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
+            try {
+                file.file.trash_async.end (res);
+            } catch (Error e) {
+                warning (e.message);
+            }
         });
     }
 }
