@@ -61,12 +61,17 @@ public class Sideload.SuccessView : AbstractView {
         }
 
         var app = ((Gtk.Application) GLib.Application.get_default ());
-        var file = ((Sideload.MainWindow) app.active_window).file;
-        var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.file.get_basename ()));
-        content_area.add (trash_check);
-
         var settings = new Settings ("io.elementary.sideload");
-        settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
+        FlatpakRefFile? file = null;
+        Gtk.CheckButton trash_check;
+
+        if (app.active_window is Sideload.RefWindow) {
+            file = ((Sideload.RefWindow) app.active_window).file;
+            trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.file.get_basename ()));
+
+            settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
+            content_area.add (trash_check);
+        }
 
         var close_button = new Gtk.Button.with_label (_("Close"));
 
