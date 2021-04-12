@@ -88,6 +88,14 @@ public class Sideload.SuccessView : AbstractView {
 
             app.quit ();
         });
+
+        open_button.clicked.connect (() => {
+            if (trash_check.active) {
+                trash_flatpakref (file);
+            }
+
+            app.activate_action ("launch", null);
+        });
     }
 
     private void trash_flatpakref (FlatpakRefFile file) {
