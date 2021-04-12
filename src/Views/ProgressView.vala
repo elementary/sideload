@@ -35,11 +35,12 @@ public class Sideload.ProgressView : AbstractView {
 
     public string status {
         set {
-            secondary_label.label = value;
+            secondary_label.label = "<span font-features='tnum'>%s</span>".printf (value);
         }
     }
 
     construct {
+        secondary_label.use_markup = true;
         secondary_label.label = _("Preparing…");
 
         progressbar = new Gtk.ProgressBar ();
