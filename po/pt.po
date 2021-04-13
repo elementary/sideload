@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-10 17:12+0000\n"
-"PO-Revision-Date: 2021-04-11 01:35+0000\n"
+"PO-Revision-Date: 2021-04-13 17:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "sideload/pt/>\n"
@@ -33,15 +33,16 @@ msgstr "Fechar"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr "Este aplicação já está instalada."
+msgstr "Esta aplicação já está instalada."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr "Uma nova versão do Flatpak é necessária para instalar esta aplicação."
+msgstr ""
+"Uma versão mais recente do Flatpak é necessária para instalar esta aplicação."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr "Um controlo remoto Flatpak necessário não foi localizado."
+msgstr "Não foi encontrado um Flatpak remoto necessário."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
@@ -67,11 +68,11 @@ msgstr "Ocorreu um erro desconhecido."
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Instalar aplicação \"%s\" não confiável?"
+msgstr "Instalar a aplicação não fidedigna\"%s\"?"
 
 #: src/Views/MainView.vala:32
 msgid "Install untrusted app?"
-msgstr "Instalar aplicação não confiável?"
+msgstr "Instalar a aplicação não fidedigna?"
 
 #: src/Views/MainView.vala:34
 msgid ""
@@ -99,7 +100,7 @@ msgstr "Cancelar"
 
 #: src/Views/MainView.vala:96
 msgid "Install Anyway"
-msgstr "Instalar mesmo assim"
+msgstr "Instalar"
 
 #: src/Views/MainView.vala:114
 #, c-format
