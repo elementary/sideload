@@ -18,8 +18,8 @@
 *
 */
 
-public class Sideload.RefWindow : Gtk.ApplicationWindow {
-    public FlatpakRefFile file { get; construct; }
+public class Sideload.MainWindow : Gtk.ApplicationWindow {
+    public FlatpakFile file { get; construct; }
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
@@ -28,7 +28,7 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
 
     private string? app_name = null;
 
-    public RefWindow (Gtk.Application application, FlatpakRefFile file) {
+    public MainWindow (Gtk.Application application, FlatpakFile file) {
         Object (
             application: application,
             icon_name: "io.elementary.sideload",
@@ -48,7 +48,11 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
 
         main_view = new MainView ();
 
-        progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
+        if (file is FlatpakRefFile) {
+            progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
+        } else {
+            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
+        }
 
         stack = new Gtk.Stack ();
         stack.vhomogeneous = false;
@@ -70,7 +74,11 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
                 stack.add (success_view);
                 stack.visible_child = success_view;
             } else {
-                main_view.display_ref_details (file.download_size, file.extra_remotes_needed);
+                if (file is FlatpakRefFile) {
+                    main_view.display_ref_details (file.size, file.extra_remotes_needed);
+                } else {
+                    main_view.display_bundle_details (file.size, ((FlatpakBundleFile) file).has_remote, file.extra_remotes_needed);
+                }
             }
         });
 
@@ -113,7 +121,9 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
         file.install.begin (current_cancellable);
         stack.visible_child = progress_view;
 
-        Granite.Services.Application.set_progress_visible.begin (true);
+        if (file is FlatpakRefFile) {
+            Granite.Services.Application.set_progress_visible.begin (true);
+        }
     }
 
     private void on_progress_changed (string description, double progress) {
@@ -136,9 +146,10 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
             stack.visible_child = error_view;
         }
 
-        Granite.Services.Application.set_progress_visible.begin (false);
+        if (file is FlatpakRefFile) {
+            Granite.Services.Application.set_progress_visible.begin (false);
+        }
     }
-
 
     private void on_install_succeeded () {
         var success_view = new SuccessView (app_name);
@@ -146,7 +157,9 @@ public class Sideload.RefWindow : Gtk.ApplicationWindow {
         stack.add (success_view);
         stack.visible_child = success_view;
 
-        Granite.Services.Application.set_progress_visible.begin (false);
+        if (file is FlatpakRefFile) {
+            Granite.Services.Application.set_progress_visible.begin (false);
+        }
 
         var win = get_window ();
         if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {

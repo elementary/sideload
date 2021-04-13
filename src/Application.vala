@@ -81,34 +81,29 @@ public class Sideload.Application : Gtk.Application {
         }
 
         Gtk.ApplicationWindow main_window = null;
-        var launch_action = new SimpleAction ("launch", null);
+        FlatpakFile flatpak_file = null;
 
         if (content_type == REF_CONTENT_TYPE) {
-            var ref_file = new FlatpakRefFile (file);
-            main_window = new RefWindow (this, ref_file);
-            main_window.show_all ();
-
-            launch_action.activate.connect (() => {
-                ref_file.launch.begin ();
-                activate_action ("quit", null);
-            });
+            flatpak_file = new FlatpakRefFile (file);
         } else if (content_type == BUNDLE_CONTENT_TYPE) {
-            var bundle_file = new FlatpakBundleFile (file);
-            main_window = new BundleWindow (this, bundle_file);
-            main_window.show_all ();
-
-            launch_action.activate.connect (() => {
-                bundle_file.launch.begin ();
-                activate_action ("quit", null);
-            });
+            flatpak_file = new FlatpakBundleFile (file);
         }
 
+        main_window = new MainWindow (this, flatpak_file);
+        main_window.show_all ();
+
         var quit_action = new SimpleAction ("quit", null);
+        var launch_action = new SimpleAction ("launch", null);
 
         add_action (quit_action);
         add_action (launch_action);
 
         set_accels_for_action ("app.quit", {"<Control>q"});
+
+        launch_action.activate.connect (() => {
+            flatpak_file.launch.begin ();
+            activate_action ("quit", null);
+        });
 
         quit_action.activate.connect (() => {
             if (main_window != null) {
