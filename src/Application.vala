@@ -56,26 +56,26 @@ public class Sideload.Application : Gtk.Application {
                 FileQueryInfoFlags.NONE
             );
         } catch (Error e) {
-            print ("Unable to query content type of provided file\n");
+            critical ("Unable to query content type of provided file: %s", e.message);
             release ();
             return;
         }
 
         if (file_info == null) {
-            print ("Unable to query content type of provided file\n");
+            warning ("Unable to query content type of provided file");
             release ();
             return;
         }
 
         var content_type = file_info.get_attribute_as_string (FileAttribute.STANDARD_CONTENT_TYPE);
         if (content_type == null) {
-            print ("Unable to query content type of provided file\n");
+            warning ("Unable to query content type of provided file");
             release ();
             return;
         }
 
         if (!(content_type in SUPPORTED_CONTENT_TYPES)) {
-            print ("This does not appear to be a valid flatpak/flatpakref file\n");
+            warning ("This does not appear to be a valid flatpak/flatpakref file");
             release ();
             return;
         }

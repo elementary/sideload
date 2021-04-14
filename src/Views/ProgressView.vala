@@ -55,7 +55,7 @@ public class Sideload.ProgressView : AbstractView {
             secondary_label.use_markup = true;
             secondary_label.label = _("Preparing…");
         } else if (view_type == ProgressType.BUNDLE_INSTALL) {
-            secondary_label.label = _("The application is being installed, it may take a while…");
+            secondary_label.label = _("Unable to estimate time remaining.");
         }
 
         progressbar = new Gtk.ProgressBar () {

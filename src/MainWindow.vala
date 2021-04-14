@@ -52,6 +52,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
         } else {
             progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
+            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
         }
 
         stack = new Gtk.Stack ();
