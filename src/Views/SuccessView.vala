@@ -34,7 +34,9 @@ public class Sideload.SuccessView : AbstractView {
     construct {
         badge.gicon = new ThemedIcon ("process-completed");
 
-        var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
+        var app = (Sideload.Application) GLib.Application.get_default ();
+        var appstore_name = app.get_appstore_name ();
+        var file = ((Sideload.MainWindow) app.active_window).file;
 
         if (view_type == SuccessType.INSTALLED) {
             if (app_name != null) {
@@ -43,10 +45,17 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("The app has been installed");
             }
 
-            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
-                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
-            );
+            if (file is FlatpakRefFile) {
+                secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                    /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+                    appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+                );
+            } else if (file is FlatpakBundleFile) {
+                secondary_label.label = _("Open it any time from the Applications Menu. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                    /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+                    "settings://applications/permissions", _("System Settings"), _("Applications")
+                );
+            }
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
             if (app_name != null) {
                 primary_label.label = _("“%s” is already installed").printf (app_name);
@@ -54,21 +63,24 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("This app is already installed");
             }
 
-            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
-                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
-            );
+            if (file is FlatpakRefFile) {
+                secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                    /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+                    appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+                );
+            } else if (file is FlatpakBundleFile) {
+                secondary_label.label = _("No changes were made. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
+                    /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+                    "settings://applications/permissions", _("System Settings"), _("Applications")
+                );
+            }
         }
 
-        var app = ((Gtk.Application) GLib.Application.get_default ());
-        var file = ((Sideload.MainWindow) app.active_window).file;
         var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.file.get_basename ()));
-        var settings = new Settings ("io.elementary.sideload");
+        content_area.add (trash_check);
 
-        if (file is FlatpakRefFile) {
-            settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
-            content_area.add (trash_check);
-        }
+        var settings = new Settings ("io.elementary.sideload");
+        settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var close_button = new Gtk.Button.with_label (_("Close"));
 
@@ -84,7 +96,7 @@ public class Sideload.SuccessView : AbstractView {
 
         close_button.clicked.connect (() => {
             if (trash_check.active) {
-                trash_flatpakref (file);
+                trash_file (file);
             }
 
             app.quit ();
@@ -92,14 +104,14 @@ public class Sideload.SuccessView : AbstractView {
 
         open_button.clicked.connect (() => {
             if (trash_check.active) {
-                trash_flatpakref (file);
+                trash_file (file);
             }
 
             app.activate_action ("launch", null);
         });
     }
 
-    private void trash_flatpakref (FlatpakFile file) {
+    private void trash_file (FlatpakFile file) {
         file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
             try {
                 file.file.trash_async.end (res);
