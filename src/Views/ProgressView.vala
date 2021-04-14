@@ -51,12 +51,8 @@ public class Sideload.ProgressView : AbstractView {
     }
 
     construct {
-        if (view_type == ProgressType.REF_INSTALL) {
             secondary_label.use_markup = true;
             secondary_label.label = _("Preparing…");
-        } else if (view_type == ProgressType.BUNDLE_INSTALL) {
-            secondary_label.label = _("Unable to estimate time remaining.");
-        }
 
         progressbar = new Gtk.ProgressBar () {
             pulse_step = 0.05,
