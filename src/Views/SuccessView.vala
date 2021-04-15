@@ -65,11 +65,12 @@ public class Sideload.SuccessView : AbstractView {
             );
         }
 
+        /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
+        var settings_path = _("System Settings → Applications");
+        var link_markup = "<a href='%s'>%s…</a>".printf ("settings://applications/permissions", settings_path);
+
         secondary_label_string += " ";
-        secondary_label_string += _("Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
-            /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-            "settings://applications/permissions", _("System Settings"), _("Applications")
-        );
+        secondary_label_string += _("Permissions can be changed in %s").printf (link_markup);
 
         secondary_label.label = secondary_label_string;
 
