@@ -51,8 +51,8 @@ public class Sideload.ProgressView : AbstractView {
     }
 
     construct {
-            secondary_label.use_markup = true;
-            secondary_label.label = _("Preparing…");
+        secondary_label.use_markup = true;
+        secondary_label.label = _("Preparing…");
 
         progressbar = new Gtk.ProgressBar () {
             pulse_step = 0.05,
