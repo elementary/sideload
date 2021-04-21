@@ -85,7 +85,7 @@ public class Sideload.MainView : AbstractView {
 
         var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
 
-        var repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
+        repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
         repo_label.selectable = true;
         repo_label.max_width_chars = 50;
         repo_label.wrap = true;
