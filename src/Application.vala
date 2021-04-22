@@ -1,5 +1,5 @@
 /*
-* Copyright 2019 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -19,7 +19,12 @@
 */
 
 public class Sideload.Application : Gtk.Application {
-    private MainWindow main_window;
+    private const string BUNDLE_CONTENT_TYPE = "application/vnd.flatpak";
+    private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
+    private const string[] SUPPORTED_CONTENT_TYPES = {
+        BUNDLE_CONTENT_TYPE,
+        REF_CONTENT_TYPE
+    };
 
     public Application () {
         Object (
@@ -39,8 +44,52 @@ public class Sideload.Application : Gtk.Application {
             return;
         }
 
-        var ref_file = new FlatpakRefFile (file);
-        main_window = new MainWindow (this, ref_file);
+        hold ();
+        open_file.begin (file);
+    }
+
+    private async void open_file (File file) {
+        FileInfo? file_info = null;
+        try {
+            file_info = yield file.query_info_async (
+                FileAttribute.STANDARD_CONTENT_TYPE,
+                FileQueryInfoFlags.NONE
+            );
+        } catch (Error e) {
+            critical ("Unable to query content type of provided file: %s", e.message);
+            release ();
+            return;
+        }
+
+        if (file_info == null) {
+            warning ("Unable to query content type of provided file");
+            release ();
+            return;
+        }
+
+        var content_type = file_info.get_attribute_as_string (FileAttribute.STANDARD_CONTENT_TYPE);
+        if (content_type == null) {
+            warning ("Unable to query content type of provided file");
+            release ();
+            return;
+        }
+
+        if (!(content_type in SUPPORTED_CONTENT_TYPES)) {
+            warning ("This does not appear to be a valid flatpak/flatpakref file");
+            release ();
+            return;
+        }
+
+        Gtk.ApplicationWindow main_window = null;
+        FlatpakFile flatpak_file = null;
+
+        if (content_type == REF_CONTENT_TYPE) {
+            flatpak_file = new FlatpakRefFile (file);
+        } else if (content_type == BUNDLE_CONTENT_TYPE) {
+            flatpak_file = new FlatpakBundleFile (file);
+        }
+
+        main_window = new MainWindow (this, flatpak_file);
         main_window.show_all ();
 
         var quit_action = new SimpleAction ("quit", null);
@@ -48,7 +97,13 @@ public class Sideload.Application : Gtk.Application {
 
         add_action (quit_action);
         add_action (launch_action);
+
         set_accels_for_action ("app.quit", {"<Control>q"});
+
+        launch_action.activate.connect (() => {
+            flatpak_file.launch.begin ();
+            activate_action ("quit", null);
+        });
 
         quit_action.activate.connect (() => {
             if (main_window != null) {
@@ -56,10 +111,7 @@ public class Sideload.Application : Gtk.Application {
             }
         });
 
-        launch_action.activate.connect (() => {
-            ref_file.launch.begin ();
-            activate_action ("quit", null);
-        });
+        release ();
     }
 
     protected override void activate () {
@@ -77,7 +129,7 @@ public class Sideload.Application : Gtk.Application {
 
     public static int main (string[] args) {
         if (args.length < 2) {
-            print ("Usage: %s /path/to/flatpakref\n", args[0]);
+            print ("Usage: %s /path/to/flatpakref or /path/to/flatpak\n", args[0]);
             return 1;
         }
 

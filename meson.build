@@ -22,7 +22,9 @@ executable(
     'src/Views/SuccessView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',
+    'src/FlatpakFile.vala',
     'src/FlatpakRefFile.vala',
+    'src/FlatpakBundleFile.vala',
     dependencies: [
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),

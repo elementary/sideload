@@ -10,5 +10,5 @@ Type=Application
 StartupNotify=true
 Categories=PackageManager;
 NoDisplay=true
-MimeType=application/vnd.flatpak.ref;
+MimeType=application/vnd.flatpak.ref;application/vnd.flatpak;
 X-GNOME-UsesNotifications=true

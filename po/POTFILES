@@ -3,4 +3,5 @@ src/Views/MainView.vala
 src/Views/ProgressView.vala
 src/Views/SuccessView.vala
 src/Application.vala
-src/MainWindow.vala
+src/RefWindow.vala
+src/BundleWindow.vala

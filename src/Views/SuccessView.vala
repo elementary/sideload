@@ -34,7 +34,10 @@ public class Sideload.SuccessView : AbstractView {
     construct {
         badge.gicon = new ThemedIcon ("process-completed");
 
-        var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
+        var app = (Sideload.Application) GLib.Application.get_default ();
+        var appstore_name = app.get_appstore_name ();
+        var file = ((Sideload.MainWindow) app.active_window).file;
+        string? secondary_label_string;
 
         if (view_type == SuccessType.INSTALLED) {
             if (app_name != null) {
@@ -43,10 +46,8 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("The app has been installed");
             }
 
-            secondary_label.label = _("Open it any time from the Applications Menu. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
-                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
-            );
+            secondary_label_string = _("Open it any time from the Applications Menu.");
+
         } else if (view_type == SuccessType.ALREADY_INSTALLED) {
             if (app_name != null) {
                 primary_label.label = _("“%s” is already installed").printf (app_name);
@@ -54,14 +55,25 @@ public class Sideload.SuccessView : AbstractView {
                 primary_label.label = _("This app is already installed");
             }
 
-            secondary_label.label = _("No changes were made. Visit %s for app information, updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>").printf (
-                /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-                appstore_name, "settings://applications/permissions", _("System Settings"), _("Applications")
+            secondary_label_string = _("No changes were made.");
+        }
+
+        if (file is FlatpakRefFile) {
+            secondary_label_string += " ";
+            secondary_label_string += _("Visit %s for app information, updates, and to uninstall.").printf (
+                appstore_name
             );
         }
 
-        var app = ((Gtk.Application) GLib.Application.get_default ());
-        var file = ((Sideload.MainWindow) app.active_window).file;
+        /// TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+        var settings_path = _("System Settings → Applications…");
+        var link_markup = "<a href='%s'>%s</a>".printf ("settings://applications/permissions", settings_path);
+
+        secondary_label_string += " ";
+        secondary_label_string += _("Permissions can be changed in %s").printf (link_markup);
+
+        secondary_label.label = secondary_label_string;
+
         var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.file.get_basename ()));
         content_area.add (trash_check);
 
@@ -82,7 +94,7 @@ public class Sideload.SuccessView : AbstractView {
 
         close_button.clicked.connect (() => {
             if (trash_check.active) {
-                trash_flatpakref (file);
+                trash_file (file);
             }
 
             app.quit ();
@@ -90,14 +102,14 @@ public class Sideload.SuccessView : AbstractView {
 
         open_button.clicked.connect (() => {
             if (trash_check.active) {
-                trash_flatpakref (file);
+                trash_file (file);
             }
 
             app.activate_action ("launch", null);
         });
     }
 
-    private void trash_flatpakref (FlatpakRefFile file) {
+    private void trash_file (FlatpakFile file) {
         file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
             try {
                 file.file.trash_async.end (res);

@@ -1,5 +1,5 @@
 /*
-* Copyright 2019 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -18,20 +18,7 @@
 *
 */
 
-public class Sideload.FlatpakRefFile : Object {
-    public File file { get; construct; }
-
-    public string? download_size { get; private set; default = null; }
-    public bool already_installed { get; private set; default = false; }
-    public bool extra_remotes_needed { get; private set; default = false; }
-
-    private string? appdata_name = null;
-
-    public signal void progress_changed (string description, double progress);
-    public signal void installation_failed (GLib.Error details);
-    public signal void installation_succeeded ();
-    public signal void details_ready ();
-
+public class Sideload.FlatpakRefFile : FlatpakFile {
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
 
@@ -40,17 +27,7 @@ public class Sideload.FlatpakRefFile : Object {
 
     private const string REF_GROUP = "Flatpak Ref";
 
-    private static Flatpak.Installation? installation;
-
     private AsyncMutex keyfile_mutex = new AsyncMutex ();
-
-    static construct {
-        try {
-            installation = new Flatpak.Installation.user ();
-        } catch (Error e) {
-            warning (e.message);
-        }
-    }
 
     public FlatpakRefFile (File file) {
         Object (file: file);
@@ -101,7 +78,7 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    public async string? get_name () {
+    public override async string? get_name () {
         // Application name from AppData is preferred
         if (appdata_name != null) {
             return appdata_name;
@@ -191,7 +168,7 @@ public class Sideload.FlatpakRefFile : Object {
                     }
                 });
 
-                download_size = GLib.format_size (total_download_size);
+                size = GLib.format_size (total_download_size);
 
                 // Do not allow the install to start, this is a dry run
                 return false;
@@ -230,53 +207,7 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    private bool parse_xml (GLib.File appstream_file, string id) {
-        var path = appstream_file.get_path ();
-        Xml.Doc* doc = Xml.Parser.parse_file (path);
-        if (doc == null) {
-            warning ("Appstream XML file %s not found or permissions missing", path);
-            return false;
-        }
-
-        Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
-        // Find a <component> with a child <id> that matches our id
-        var xpath = "/components/component/id[text()='%s']/parent::component".printf (id);
-        Xml.XPath.Object* res = cntx.eval_expression (xpath);
-
-        if (res == null) {
-            delete doc;
-            return false;
-        }
-
-        if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
-            delete res;
-            delete doc;
-            return false;
-        }
-
-        Xml.Node* node = res->nodesetval->item (0);
-        for (Xml.Node* iter = node->children; iter != null; iter = iter->next) {
-            if (iter->type == Xml.ElementType.ELEMENT_NODE) {
-                switch (iter->name) {
-                    case "name":
-                        // Get the non-localised "<name>" tags
-                        if (iter->has_prop ("lang") == null) {
-                            appdata_name = iter->get_content ();
-                        }
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
-
-        delete res;
-        delete doc;
-
-        return true;
-    }
-
-    public async void get_details (Cancellable? cancellable = null) {
+    public override async void get_details (Cancellable? cancellable = null) {
         try {
             yield dry_run (cancellable);
         } catch (Error e) {
@@ -290,7 +221,7 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    public async void install (Cancellable cancellable) throws Error {
+    public override async void install (Cancellable cancellable) throws Error {
         if (installation == null) {
             throw new IOError.FAILED (_("Did not find suitable Flatpak installation."));
         }
@@ -334,23 +265,6 @@ public class Sideload.FlatpakRefFile : Object {
         }
     }
 
-    private bool on_operation_error (Flatpak.TransactionOperation op, GLib.Error e, Flatpak.TransactionErrorDetails details) {
-        if (Flatpak.TransactionErrorDetails.NON_FATAL in details) {
-            warning ("transaction warning: %s", e.message);
-            return true;
-        }
-
-        var e_copy = e.copy ();
-
-        Idle.add (() => {
-            installation_failed (e_copy);
-
-            return GLib.Source.REMOVE;
-        });
-
-        return false;
-    }
-
     private void on_new_operation (Flatpak.TransactionOperation operation, Flatpak.TransactionProgress progress, Cancellable cancellable) {
         current_operation++;
 
@@ -368,29 +282,7 @@ public class Sideload.FlatpakRefFile : Object {
         });
     }
 
-    private async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) {
-        Error? transaction_error = null;
-        new Thread<void*> ("install-ref", () => {
-            try {
-                transaction.run (cancellable);
-            } catch (Error e) {
-                transaction_error = e;
-            }
-
-            Idle.add (run_transaction_async.callback);
-            return null;
-        });
-
-        yield;
-
-        if (transaction_error != null) {
-            installation_failed (transaction_error);
-        } else {
-            installation_succeeded ();
-        }
-    }
-
-    public async void launch () {
+    public override async void launch () {
         try {
             installation.launch (yield get_id (), null, yield get_branch (), null, null);
         } catch (Error e) {
