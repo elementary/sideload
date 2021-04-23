@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-04-13 17:10+0000\n"
+"PO-Revision-Date: 2021-04-23 19:06+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "sideload/pt/>\n"
@@ -108,10 +108,9 @@ msgid "Install Anyway"
 msgstr "Instalar"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "O tamanho da transferência pode ser de até %s"
+msgstr "O tamanho da instalação pode ser de até %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
@@ -142,7 +141,7 @@ msgstr "A aplicação foi instalada"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Abra-a em qualquer altura a partir do Menu de Aplicações."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -155,24 +154,24 @@ msgstr "Esta aplicação já está instalada"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Não foram feitas alterações."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Visite %s para informações sobre a aplicação, atualizações e para "
+"desinstalar."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "Definições do Sistema"
+msgstr "Definições do Sistema → Aplicações…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "As permissões podem ser alteradas em %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
@@ -194,7 +193,7 @@ msgstr "Instalar aplicação não confiável"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "A instalar %s. Incapaz de estimar o tempo restante."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
@@ -212,7 +211,7 @@ msgstr "A aplicação foi instalada com sucesso"
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Não foi encontrada uma instalação Flatpak adequada."
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
