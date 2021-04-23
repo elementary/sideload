@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2020-10-23 23:46+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,7 +27,7 @@ msgstr "安装失败"
 msgid "Details"
 msgstr "详情"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "关闭"
 
@@ -68,115 +68,118 @@ msgstr "出现未知错误。"
 msgid "Install untrusted app “%s”?"
 msgstr "要安装未被信任的应用 “%s” 吗？"
 
-#: src/Views/MainView.vala:32
+#: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
 msgstr "要安装未被信任的应用吗？"
 
-#: src/Views/MainView.vala:34
+#: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr "该应用由其开发者提供且未接受过安全，隐私及系统集成测试。"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:43
 msgid "Fetching details"
 msgstr "正在获取详细信息"
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:50
 msgid "I understand"
 msgstr "我接受"
 
-#: src/Views/MainView.vala:69
+#: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
 msgstr "此应用的更新不会被审阅"
 
-#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
-msgid "Cancel"
-msgstr "取消"
-
-#: src/Views/MainView.vala:96
-msgid "Install Anyway"
-msgstr "仍然安装"
-
-#: src/Views/MainView.vala:114
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "下载大小最多可达到 %s"
-
-#: src/Views/MainView.vala:116
-msgid "Unknown download size"
-msgstr "未知下载大小"
-
-#: src/Views/MainView.vala:129
+#: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "此提供商的其他软件可能会出现在 %s"
 
-#: src/Views/ProgressView.vala:26
+#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Views/MainView.vala:113
+msgid "Install Anyway"
+msgstr "仍然安装"
+
+#: src/Views/MainView.vala:130
+#, fuzzy, c-format
+#| msgid "Download size may be up to %s"
+msgid "Install size may be up to %s"
+msgstr "下载大小最多可达到 %s"
+
+#: src/Views/MainView.vala:148
+#, c-format
+msgid "Download size may be up to %s"
+msgstr "下载大小最多可达到 %s"
+
+#: src/Views/MainView.vala:150
+msgid "Unknown download size"
+msgstr "未知下载大小"
+
+#: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
 msgstr "正在安装 “%s”"
 
-#: src/Views/ProgressView.vala:43
+#: src/Views/ProgressView.vala:55
 msgid "Preparing…"
 msgstr "正在准备…"
 
-#: src/Views/SuccessView.vala:41
+#: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
 msgstr "“%s” 已安装"
 
-#: src/Views/SuccessView.vala:43
+#: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
 msgstr "此应用已成功安装"
 
-#: src/Views/SuccessView.vala:46
-#, c-format
-msgid ""
-"Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
-"%s…</a>"
+#: src/Views/SuccessView.vala:49
+msgid "Open it any time from the Applications Menu."
 msgstr ""
-"可从应用程序菜单打开它。更多应用信息、更新及卸载相关内容请访问 %s。修改权限设"
-"置请前往 <a href='%s'>%s → %s…</a>"
 
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "System Settings"
-msgstr "系统设置"
-
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "Applications"
-msgstr "应用程序"
-
-#: src/Views/SuccessView.vala:52
+#: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
 msgstr "“%s” 已安装"
 
-#: src/Views/SuccessView.vala:54
+#: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
 msgstr "此软件已经安装"
 
-#: src/Views/SuccessView.vala:57
-#, c-format
-msgid ""
-"No changes were made. Visit %s for app information, updates, and to "
-"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#: src/Views/SuccessView.vala:58
+msgid "No changes were made."
 msgstr ""
-"未保存任何变更。更多应用信息、更新及卸载相关内容请访问 %s。修改权限设置请前"
-"往 <a href='%s'>%s → %s…</a>"
 
-#: src/Views/SuccessView.vala:65
+#: src/Views/SuccessView.vala:63
+#, c-format
+msgid "Visit %s for app information, updates, and to uninstall."
+msgstr ""
+
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+#: src/Views/SuccessView.vala:69
+#, fuzzy
+#| msgid "System Settings"
+msgid "System Settings → Applications…"
+msgstr "系统设置"
+
+#: src/Views/SuccessView.vala:73
+#, c-format
+msgid "Permissions can be changed in %s"
+msgstr ""
+
+#: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr ""
 
-#: src/Views/SuccessView.vala:73
+#: src/Views/SuccessView.vala:85
 msgid "Open App"
 msgstr "打开应用"
 
-#: src/Application.vala:74
+#: src/Application.vala:126
 msgid "your software center"
 msgstr "软件中心"
 
@@ -184,18 +187,46 @@ msgstr "软件中心"
 msgid "Install Untrusted App"
 msgstr "安装未被信任的应用"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:55
+#, c-format
+msgid "Installing %s. Unable to estimate time remaining."
+msgstr ""
+
+#: src/MainWindow.vala:167
 msgid "App installed"
 msgstr "软件已安装"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:169
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "“%s” 已成功安装"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:171
 msgid "The app was installed successfully"
 msgstr "此软件已成功安装"
+
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+msgid "Did not find suitable Flatpak installation."
+msgstr ""
+
+#~ msgid ""
+#~ "Open it any time from the Applications Menu. Visit %s for app "
+#~ "information, updates, and to uninstall. Permissions can be changed in <a "
+#~ "href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "可从应用程序菜单打开它。更多应用信息、更新及卸载相关内容请访问 %s。修改权"
+#~ "限设置请前往 <a href='%s'>%s → %s…</a>"
+
+#~ msgid "Applications"
+#~ msgstr "应用程序"
+
+#~ msgid ""
+#~ "No changes were made. Visit %s for app information, updates, and to "
+#~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "未保存任何变更。更多应用信息、更新及卸载相关内容请访问 %s。修改权限设置请"
+#~ "前往 <a href='%s'>%s → %s…</a>"
 
 #, fuzzy
 #~| msgid "Installing “%s”"

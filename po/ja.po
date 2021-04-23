@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2021-04-11 01:35+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -27,7 +27,7 @@ msgstr "インストールに失敗しました"
 msgid "Details"
 msgstr "詳細"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "閉じる"
 
@@ -69,11 +69,11 @@ msgstr "不明なエラーが発生しました。"
 msgid "Install untrusted app “%s”?"
 msgstr "信頼されていないアプリ “%s” をインストールしますか？"
 
-#: src/Views/MainView.vala:32
+#: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
 msgstr "信頼されていないアプリをインストールしますか？"
 
-#: src/Views/MainView.vala:34
+#: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -81,107 +81,108 @@ msgstr ""
 "このアプリは開発者により単独で提供されており、セキュリティー、プライバシー保"
 "護、およびシステムとの統合に関する審査が行われていません。"
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:43
 msgid "Fetching details"
 msgstr "詳細を取得しています"
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:50
 msgid "I understand"
 msgstr "了解"
 
-#: src/Views/MainView.vala:69
+#: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
 msgstr "このアプリに関するアップデートは審査されません"
 
-#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
-msgid "Cancel"
-msgstr "キャンセル"
-
-#: src/Views/MainView.vala:96
-msgid "Install Anyway"
-msgstr "了解してインストール"
-
-#: src/Views/MainView.vala:114
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "ダウンロードサイズは最大 %s になる可能性があります"
-
-#: src/Views/MainView.vala:116
-msgid "Unknown download size"
-msgstr "不明なダウンロードサイズ"
-
-#: src/Views/MainView.vala:129
+#: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "この開発者のほかのアプリが %s に表示される可能性があります"
 
-#: src/Views/ProgressView.vala:26
+#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: src/Views/MainView.vala:113
+msgid "Install Anyway"
+msgstr "了解してインストール"
+
+#: src/Views/MainView.vala:130
+#, fuzzy, c-format
+#| msgid "Download size may be up to %s"
+msgid "Install size may be up to %s"
+msgstr "ダウンロードサイズは最大 %s になる可能性があります"
+
+#: src/Views/MainView.vala:148
+#, c-format
+msgid "Download size may be up to %s"
+msgstr "ダウンロードサイズは最大 %s になる可能性があります"
+
+#: src/Views/MainView.vala:150
+msgid "Unknown download size"
+msgstr "不明なダウンロードサイズ"
+
+#: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
 msgstr "“%s” をインストールしています"
 
-#: src/Views/ProgressView.vala:43
+#: src/Views/ProgressView.vala:55
 msgid "Preparing…"
 msgstr "準備しています…"
 
-#: src/Views/SuccessView.vala:41
+#: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
 msgstr "“%s” をインストールしました"
 
-#: src/Views/SuccessView.vala:43
+#: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
 msgstr "アプリをインストールしました"
 
-#: src/Views/SuccessView.vala:46
-#, c-format
-msgid ""
-"Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
-"%s…</a>"
+#: src/Views/SuccessView.vala:49
+msgid "Open it any time from the Applications Menu."
 msgstr ""
-"アプリは、アプリケーションメニューからいつでも開くことができます。アプリの情"
-"報、アップデートを参照したり、アプリをアンインストールしたりするには、%s を開"
-"いてください。パーミッションは <a href='%s'>%s → %s…</a>から変更できます"
 
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "System Settings"
-msgstr "システム設定"
-
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "Applications"
-msgstr "アプリケーション"
-
-#: src/Views/SuccessView.vala:52
+#: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
 msgstr "“%s” はインストール済みです"
 
-#: src/Views/SuccessView.vala:54
+#: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
 msgstr "このアプリはインストール済みです"
 
-#: src/Views/SuccessView.vala:57
-#, c-format
-msgid ""
-"No changes were made. Visit %s for app information, updates, and to "
-"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#: src/Views/SuccessView.vala:58
+msgid "No changes were made."
 msgstr ""
-"変更は行われていません。アプリの情報、アップデートを参照したり、アプリをアン"
-"インストールしたりするには、%s を開いてください。パーミッションは <a "
-"href='%s'>%s → %s…</a>から変更できます"
 
-#: src/Views/SuccessView.vala:65
+#: src/Views/SuccessView.vala:63
+#, c-format
+msgid "Visit %s for app information, updates, and to uninstall."
+msgstr ""
+
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+#: src/Views/SuccessView.vala:69
+#, fuzzy
+#| msgid "System Settings"
+msgid "System Settings → Applications…"
+msgstr "システム設定"
+
+#: src/Views/SuccessView.vala:73
+#, c-format
+msgid "Permissions can be changed in %s"
+msgstr ""
+
+#: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr "”%s” をゴミ箱に移動"
 
-#: src/Views/SuccessView.vala:73
+#: src/Views/SuccessView.vala:85
 msgid "Open App"
 msgstr "アプリを開く"
 
-#: src/Application.vala:74
+#: src/Application.vala:126
 msgid "your software center"
 msgstr "ソフトウェアセンター"
 
@@ -189,18 +190,49 @@ msgstr "ソフトウェアセンター"
 msgid "Install Untrusted App"
 msgstr "信頼されていないアプリをインストール"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:55
+#, c-format
+msgid "Installing %s. Unable to estimate time remaining."
+msgstr ""
+
+#: src/MainWindow.vala:167
 msgid "App installed"
 msgstr "アプリをインストールしました"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:169
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "“%s” は正常にインストールされました"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:171
 msgid "The app was installed successfully"
 msgstr "アプリは正常にインストールされました"
+
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+msgid "Did not find suitable Flatpak installation."
+msgstr ""
+
+#~ msgid ""
+#~ "Open it any time from the Applications Menu. Visit %s for app "
+#~ "information, updates, and to uninstall. Permissions can be changed in <a "
+#~ "href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "アプリは、アプリケーションメニューからいつでも開くことができます。アプリの"
+#~ "情報、アップデートを参照したり、アプリをアンインストールしたりするに"
+#~ "は、%s を開いてください。パーミッションは <a href='%s'>%s → %s…</a>から変"
+#~ "更できます"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid ""
+#~ "No changes were made. Visit %s for app information, updates, and to "
+#~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "変更は行われていません。アプリの情報、アップデートを参照したり、アプリをア"
+#~ "ンインストールしたりするには、%s を開いてください。パーミッションは <a "
+#~ "href='%s'>%s → %s…</a>から変更できます"
 
 #~ msgid "Installed “%s”"
 #~ msgstr "“%s”をインストールしました"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2021-04-11 01:35+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -28,7 +28,7 @@ msgstr "Не вдалося встановити"
 msgid "Details"
 msgstr "Подробиці"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "Закрити"
 
@@ -69,11 +69,11 @@ msgstr "Виникла невідома помилка."
 msgid "Install untrusted app “%s”?"
 msgstr "Встановити ненадійний застосунок “%s”?"
 
-#: src/Views/MainView.vala:32
+#: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
 msgstr "Встановити ненадійний застосунок?"
 
-#: src/Views/MainView.vala:34
+#: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -81,107 +81,108 @@ msgstr ""
 "Цей застосунок надано виключно його розробником і не перевірено на "
 "безпечність, приватність та системну інтеграцію."
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:43
 msgid "Fetching details"
 msgstr "Отримання подробиць"
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:50
 msgid "I understand"
 msgstr "Я розумію"
 
-#: src/Views/MainView.vala:69
+#: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
 msgstr "Оновлення цього застосунка не перевірятимуться"
 
-#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: src/Views/MainView.vala:96
-msgid "Install Anyway"
-msgstr "Все одно встановити"
-
-#: src/Views/MainView.vala:114
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "Розмір завантаження може сягнути %s"
-
-#: src/Views/MainView.vala:116
-msgid "Unknown download size"
-msgstr "Невідомий розмір завантаження"
-
-#: src/Views/MainView.vala:129
+#: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Інші застосунки цього видавця можуть з’явитися в %s"
 
-#: src/Views/ProgressView.vala:26
+#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/Views/MainView.vala:113
+msgid "Install Anyway"
+msgstr "Все одно встановити"
+
+#: src/Views/MainView.vala:130
+#, fuzzy, c-format
+#| msgid "Download size may be up to %s"
+msgid "Install size may be up to %s"
+msgstr "Розмір завантаження може сягнути %s"
+
+#: src/Views/MainView.vala:148
+#, c-format
+msgid "Download size may be up to %s"
+msgstr "Розмір завантаження може сягнути %s"
+
+#: src/Views/MainView.vala:150
+msgid "Unknown download size"
+msgstr "Невідомий розмір завантаження"
+
+#: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
 msgstr "Встановлення “%s”"
 
-#: src/Views/ProgressView.vala:43
+#: src/Views/ProgressView.vala:55
 msgid "Preparing…"
 msgstr "Підготовка…"
 
-#: src/Views/SuccessView.vala:41
+#: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
 msgstr "“%s” вже встановлено"
 
-#: src/Views/SuccessView.vala:43
+#: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
 msgstr "Цей застосунок вже встановлено"
 
-#: src/Views/SuccessView.vala:46
-#, c-format
-msgid ""
-"Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
-"%s…</a>"
+#: src/Views/SuccessView.vala:49
+msgid "Open it any time from the Applications Menu."
 msgstr ""
-"Відкрийте його будь-коли з меню застосунків. Відвідайте %s, щоб отримати "
-"відомості про застосунок, оновлення та видалити його. Дозволи можна змінити "
-"за допомогою <a href='%s'>%s → %s…</a>"
 
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "System Settings"
-msgstr "Системні параметри"
-
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "Applications"
-msgstr "Застосунки"
-
-#: src/Views/SuccessView.vala:52
+#: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
 msgstr "“%s” вже встановлено"
 
-#: src/Views/SuccessView.vala:54
+#: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
 msgstr "Цей застосунок вже встановлено"
 
-#: src/Views/SuccessView.vala:57
-#, c-format
-msgid ""
-"No changes were made. Visit %s for app information, updates, and to "
-"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#: src/Views/SuccessView.vala:58
+msgid "No changes were made."
 msgstr ""
-"Не внесено жодних. Відвідайте %s, щоб отримати відомості про застосунок, "
-"оновлення та видалити його. Дозволи можна змінити за допомогою <a href='%s'>"
-"%s → %s…</a>"
 
-#: src/Views/SuccessView.vala:65
+#: src/Views/SuccessView.vala:63
+#, c-format
+msgid "Visit %s for app information, updates, and to uninstall."
+msgstr ""
+
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+#: src/Views/SuccessView.vala:69
+#, fuzzy
+#| msgid "System Settings"
+msgid "System Settings → Applications…"
+msgstr "Системні параметри"
+
+#: src/Views/SuccessView.vala:73
+#, c-format
+msgid "Permissions can be changed in %s"
+msgstr ""
+
+#: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr "Перемістити «%s» до Смітника"
 
-#: src/Views/SuccessView.vala:73
+#: src/Views/SuccessView.vala:85
 msgid "Open App"
 msgstr "Відкрити застосунок"
 
-#: src/Application.vala:74
+#: src/Application.vala:126
 msgid "your software center"
 msgstr "ваш центр застосунків"
 
@@ -189,15 +190,45 @@ msgstr "ваш центр застосунків"
 msgid "Install Untrusted App"
 msgstr "Встановити ненадійний застосунок"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:55
+#, c-format
+msgid "Installing %s. Unable to estimate time remaining."
+msgstr ""
+
+#: src/MainWindow.vala:167
 msgid "App installed"
 msgstr "Застосунок встановлено"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:169
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "“%s” успішно встановлено"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:171
 msgid "The app was installed successfully"
 msgstr "Застосунок встановлено успішно"
+
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+msgid "Did not find suitable Flatpak installation."
+msgstr ""
+
+#~ msgid ""
+#~ "Open it any time from the Applications Menu. Visit %s for app "
+#~ "information, updates, and to uninstall. Permissions can be changed in <a "
+#~ "href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "Відкрийте його будь-коли з меню застосунків. Відвідайте %s, щоб отримати "
+#~ "відомості про застосунок, оновлення та видалити його. Дозволи можна "
+#~ "змінити за допомогою <a href='%s'>%s → %s…</a>"
+
+#~ msgid "Applications"
+#~ msgstr "Застосунки"
+
+#~ msgid ""
+#~ "No changes were made. Visit %s for app information, updates, and to "
+#~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "Не внесено жодних. Відвідайте %s, щоб отримати відомості про застосунок, "
+#~ "оновлення та видалити його. Дозволи можна змінити за допомогою <a "
+#~ "href='%s'>%s → %s…</a>"

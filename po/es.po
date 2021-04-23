@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2020-09-29 06:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -27,7 +27,7 @@ msgstr "La instalación ha fallado"
 msgid "Details"
 msgstr "Detalles"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "Cerrar"
 
@@ -72,11 +72,11 @@ msgstr "Se produjo un error desconocido."
 msgid "Install untrusted app “%s”?"
 msgstr "¿Quiere instalar la aplicación «%s», que no es de confianza?"
 
-#: src/Views/MainView.vala:32
+#: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
 msgstr "¿Quiere instalar una aplicación que no es de confianza?"
 
-#: src/Views/MainView.vala:34
+#: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -85,107 +85,108 @@ msgstr ""
 "revisado con respecto a su seguridad, su respeto de la privacidad o su "
 "integración con el sistema."
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:43
 msgid "Fetching details"
 msgstr "Recuperando datos"
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:50
 msgid "I understand"
 msgstr "Comprendo"
 
-#: src/Views/MainView.vala:69
+#: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
 msgstr "No se revisarán las actualizaciones de esta aplicación"
 
-#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Views/MainView.vala:96
-msgid "Install Anyway"
-msgstr "Instalar de todos modos"
-
-#: src/Views/MainView.vala:114
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "El tamaño de descarga puede ser de hasta %s"
-
-#: src/Views/MainView.vala:116
-msgid "Unknown download size"
-msgstr "Tamaño de descarga desconocido"
-
-#: src/Views/MainView.vala:129
+#: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Otras aplicaciones de este distribuidor pueden aparecer en %s"
 
-#: src/Views/ProgressView.vala:26
+#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Views/MainView.vala:113
+msgid "Install Anyway"
+msgstr "Instalar de todos modos"
+
+#: src/Views/MainView.vala:130
+#, fuzzy, c-format
+#| msgid "Download size may be up to %s"
+msgid "Install size may be up to %s"
+msgstr "El tamaño de descarga puede ser de hasta %s"
+
+#: src/Views/MainView.vala:148
+#, c-format
+msgid "Download size may be up to %s"
+msgstr "El tamaño de descarga puede ser de hasta %s"
+
+#: src/Views/MainView.vala:150
+msgid "Unknown download size"
+msgstr "Tamaño de descarga desconocido"
+
+#: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
 msgstr "Instalando «%s»"
 
-#: src/Views/ProgressView.vala:43
+#: src/Views/ProgressView.vala:55
 msgid "Preparing…"
 msgstr "Preparando…"
 
-#: src/Views/SuccessView.vala:41
+#: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
 msgstr "«%s» se ha instalado"
 
-#: src/Views/SuccessView.vala:43
+#: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
 msgstr "Se instaló la aplicación"
 
-#: src/Views/SuccessView.vala:46
-#, c-format
-msgid ""
-"Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
-"%s…</a>"
+#: src/Views/SuccessView.vala:49
+msgid "Open it any time from the Applications Menu."
 msgstr ""
-"Ábrala en cualquier momento desde el menú de aplicaciones. Visite %s para "
-"consultar información sobre la aplicación, actualizarla o desinstalarla. "
-"Puede modificarle los permisos en <a href='%s'>%s ▸ %s…</a>"
 
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "System Settings"
-msgstr "Configuración del sistema"
-
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "Applications"
-msgstr "Aplicaciones"
-
-#: src/Views/SuccessView.vala:52
+#: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
 msgstr "«%s» ya está instalada"
 
-#: src/Views/SuccessView.vala:54
+#: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
 msgstr "Esta aplicación ya está instalada"
 
-#: src/Views/SuccessView.vala:57
-#, c-format
-msgid ""
-"No changes were made. Visit %s for app information, updates, and to "
-"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#: src/Views/SuccessView.vala:58
+msgid "No changes were made."
 msgstr ""
-"No se ha efectuado ningún cambio. Visite %s para consultar información sobre "
-"la aplicación, actualizarla o desinstalarla. Puede modificarle los permisos "
-"en <a href='%s'>%s ▸ %s…</a>"
 
-#: src/Views/SuccessView.vala:65
+#: src/Views/SuccessView.vala:63
+#, c-format
+msgid "Visit %s for app information, updates, and to uninstall."
+msgstr ""
+
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+#: src/Views/SuccessView.vala:69
+#, fuzzy
+#| msgid "System Settings"
+msgid "System Settings → Applications…"
+msgstr "Configuración del sistema"
+
+#: src/Views/SuccessView.vala:73
+#, c-format
+msgid "Permissions can be changed in %s"
+msgstr ""
+
+#: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr ""
 
-#: src/Views/SuccessView.vala:73
+#: src/Views/SuccessView.vala:85
 msgid "Open App"
 msgstr "Abrir aplicación"
 
-#: src/Application.vala:74
+#: src/Application.vala:126
 msgid "your software center"
 msgstr "su centro de aplicaciones"
 
@@ -193,18 +194,48 @@ msgstr "su centro de aplicaciones"
 msgid "Install Untrusted App"
 msgstr "Instalar aplicación no confiable"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:55
+#, c-format
+msgid "Installing %s. Unable to estimate time remaining."
+msgstr ""
+
+#: src/MainWindow.vala:167
 msgid "App installed"
 msgstr "Se ha instalado la aplicación"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:169
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "Se ha instalado «%s» correctamente"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:171
 msgid "The app was installed successfully"
 msgstr "Se instaló la aplicación correctamente"
+
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+msgid "Did not find suitable Flatpak installation."
+msgstr ""
+
+#~ msgid ""
+#~ "Open it any time from the Applications Menu. Visit %s for app "
+#~ "information, updates, and to uninstall. Permissions can be changed in <a "
+#~ "href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "Ábrala en cualquier momento desde el menú de aplicaciones. Visite %s para "
+#~ "consultar información sobre la aplicación, actualizarla o desinstalarla. "
+#~ "Puede modificarle los permisos en <a href='%s'>%s ▸ %s…</a>"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
+
+#~ msgid ""
+#~ "No changes were made. Visit %s for app information, updates, and to "
+#~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "No se ha efectuado ningún cambio. Visite %s para consultar información "
+#~ "sobre la aplicación, actualizarla o desinstalarla. Puede modificarle los "
+#~ "permisos en <a href='%s'>%s ▸ %s…</a>"
 
 #~ msgid "Installed “%s”"
 #~ msgstr "Se instaló «%s»"

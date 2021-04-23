@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-10 17:12+0000\n"
+"POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2020-03-29 21:09+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -27,7 +27,7 @@ msgstr "Falha na instalação"
 msgid "Details"
 msgstr "Detalhes"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:71
+#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "Fechar"
 
@@ -71,11 +71,11 @@ msgstr "Ocorreu um erro desconhecido."
 msgid "Install untrusted app “%s”?"
 msgstr "Instalar aplicativo %s não confiável?"
 
-#: src/Views/MainView.vala:32
+#: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
 msgstr "Instalar aplicativo não confiável?"
 
-#: src/Views/MainView.vala:34
+#: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
@@ -83,114 +83,109 @@ msgstr ""
 "Este software é fornecido exclusivamente pelo desenvolvedor e não foi "
 "revisado quanto à segurança, privacidade ou integração do sistema."
 
-#: src/Views/MainView.vala:39
+#: src/Views/MainView.vala:43
 msgid "Fetching details"
 msgstr "Buscando detalhes"
 
-#: src/Views/MainView.vala:46
+#: src/Views/MainView.vala:50
 msgid "I understand"
 msgstr "Compreendo"
 
-#: src/Views/MainView.vala:69
+#: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
 msgstr "Atualizações deste software não serão revisadas"
 
-#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:49
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Views/MainView.vala:96
-msgid "Install Anyway"
-msgstr "Instalar mesmo assim"
-
-#: src/Views/MainView.vala:114
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "O tamanho do download pode ser de até %s"
-
-#: src/Views/MainView.vala:116
-msgid "Unknown download size"
-msgstr "Tamanho do download desconhecido"
-
-#: src/Views/MainView.vala:129
+#: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Outros aplicativos deste distribuidor podem aparecer em %s"
 
-#: src/Views/ProgressView.vala:26
+#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Views/MainView.vala:113
+msgid "Install Anyway"
+msgstr "Instalar mesmo assim"
+
+#: src/Views/MainView.vala:130
+#, fuzzy, c-format
+#| msgid "Download size may be up to %s"
+msgid "Install size may be up to %s"
+msgstr "O tamanho do download pode ser de até %s"
+
+#: src/Views/MainView.vala:148
+#, c-format
+msgid "Download size may be up to %s"
+msgstr "O tamanho do download pode ser de até %s"
+
+#: src/Views/MainView.vala:150
+msgid "Unknown download size"
+msgstr "Tamanho do download desconhecido"
+
+#: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
 msgstr "Instalando \"%s\""
 
-#: src/Views/ProgressView.vala:43
+#: src/Views/ProgressView.vala:55
 msgid "Preparing…"
 msgstr "Preparando…"
 
-#: src/Views/SuccessView.vala:41
+#: src/Views/SuccessView.vala:44
 #, fuzzy, c-format
 #| msgid "“%s” is already installed"
 msgid "“%s” has been installed"
 msgstr "“%s” já está instalado."
 
-#: src/Views/SuccessView.vala:43
+#: src/Views/SuccessView.vala:46
 #, fuzzy
 #| msgid "The app was installed successfully"
 msgid "The app has been installed"
 msgstr "O aplicativo foi instalado com sucesso"
 
-#: src/Views/SuccessView.vala:46
-#, fuzzy, c-format
-#| msgid ""
-#| "Open it any time from the Applications Menu. Visit %s for app "
-#| "information, updates, and to uninstall."
-msgid ""
-"Open it any time from the Applications Menu. Visit %s for app information, "
-"updates, and to uninstall. Permissions can be changed in <a href='%s'>%s → "
-"%s…</a>"
-msgstr ""
-"Abra-o a qualquer momento no menu Aplicativos. Visite %s para obter "
-"informações, atualizações e desinstalação do aplicativo."
-
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "System Settings"
+#: src/Views/SuccessView.vala:49
+msgid "Open it any time from the Applications Menu."
 msgstr ""
 
-#: src/Views/SuccessView.vala:48 src/Views/SuccessView.vala:59
-msgid "Applications"
-msgstr ""
-
-#: src/Views/SuccessView.vala:52
+#: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
 msgstr "“%s” já está instalado."
 
-#: src/Views/SuccessView.vala:54
+#: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
 msgstr "Este software já está instalado"
 
-#: src/Views/SuccessView.vala:57
-#, fuzzy, c-format
-#| msgid ""
-#| "No changes were made. Visit %s for app information, updates, and to "
-#| "uninstall."
-msgid ""
-"No changes were made. Visit %s for app information, updates, and to "
-"uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#: src/Views/SuccessView.vala:58
+msgid "No changes were made."
 msgstr ""
-"Nenhuma mudança foi feita. Visite “%s” para obter informações, atualizações "
-"e desinstalação do aplicativo."
 
-#: src/Views/SuccessView.vala:65
+#: src/Views/SuccessView.vala:63
+#, c-format
+msgid "Visit %s for app information, updates, and to uninstall."
+msgstr ""
+
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+#: src/Views/SuccessView.vala:69
+msgid "System Settings → Applications…"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
+#, c-format
+msgid "Permissions can be changed in %s"
+msgstr ""
+
+#: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr ""
 
-#: src/Views/SuccessView.vala:73
+#: src/Views/SuccessView.vala:85
 msgid "Open App"
 msgstr "Abrir aplicativo"
 
-#: src/Application.vala:74
+#: src/Application.vala:126
 msgid "your software center"
 msgstr "seu centro de software"
 
@@ -198,18 +193,51 @@ msgstr "seu centro de software"
 msgid "Install Untrusted App"
 msgstr "Instalar aplicativo não confiável"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:55
+#, c-format
+msgid "Installing %s. Unable to estimate time remaining."
+msgstr ""
+
+#: src/MainWindow.vala:167
 msgid "App installed"
 msgstr "Aplicativo instalado"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:169
 #, c-format
 msgid "“%s” was installed successfully"
 msgstr "“%s” foi instalado com sucesso"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:171
 msgid "The app was installed successfully"
 msgstr "O aplicativo foi instalado com sucesso"
+
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+msgid "Did not find suitable Flatpak installation."
+msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "Open it any time from the Applications Menu. Visit %s for app "
+#~| "information, updates, and to uninstall."
+#~ msgid ""
+#~ "Open it any time from the Applications Menu. Visit %s for app "
+#~ "information, updates, and to uninstall. Permissions can be changed in <a "
+#~ "href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "Abra-o a qualquer momento no menu Aplicativos. Visite %s para obter "
+#~ "informações, atualizações e desinstalação do aplicativo."
+
+#, fuzzy
+#~| msgid ""
+#~| "No changes were made. Visit %s for app information, updates, and to "
+#~| "uninstall."
+#~ msgid ""
+#~ "No changes were made. Visit %s for app information, updates, and to "
+#~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
+#~ msgstr ""
+#~ "Nenhuma mudança foi feita. Visite “%s” para obter informações, "
+#~ "atualizações e desinstalação do aplicativo."
 
 #, fuzzy
 #~| msgid "Installing “%s”"
