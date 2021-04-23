@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-04-23 14:59+0000\n"
+"PO-Revision-Date: 2021-04-24 03:24+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "desktop/sideload/en_GB/>\n"
@@ -106,10 +106,9 @@ msgid "Install Anyway"
 msgstr "Install Anyway"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "Download size may be up to %s"
+msgstr "Install size may be up to %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
@@ -140,7 +139,7 @@ msgstr "The app has been installed"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Open it any time from the Applications Menu."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -153,24 +152,22 @@ msgstr "This app is already installed"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "No changes were made."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
+msgstr "Visit %s for app information, updates, and to uninstall."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "System Settings"
+msgstr "System Settings → Applications…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Permissions can be changed in %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
@@ -192,7 +189,7 @@ msgstr "Install Untrusted App"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Installing %s. Unable to estimate time remaining."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
@@ -210,7 +207,7 @@ msgstr "The app was installed successfully"
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Did not find suitable Flatpak installation."
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
