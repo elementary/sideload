@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-04-11 18:08+0000\n"
+"PO-Revision-Date: 2021-04-24 15:46+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
@@ -62,7 +62,7 @@ msgstr "Die Anwendung, die Laufzeitumgebung oder der Remote-Name ist ungültig."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr "Ein unbekannter fehler ist aufgetreten."
+msgstr "Ein unbekannter Fehler ist aufgetreten."
 
 #: src/Views/MainView.vala:23
 #, c-format
@@ -71,7 +71,7 @@ msgstr "Soll die nicht vertrauenswürdige App »%s« installiert werden?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr "Nicht-vertrauenswürdige App installieren?"
+msgstr "Nicht vertrauenswürdige App installieren?"
 
 #: src/Views/MainView.vala:38
 msgid ""
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
-msgstr "Details werden geladen"
+msgstr "Details laden"
 
 #: src/Views/MainView.vala:50
 msgid "I understand"
@@ -96,7 +96,7 @@ msgstr "Aktualisierungen dieser App werden nicht überprüft"
 #: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr "Andere Apps von diesem Anbieter erscheinen möglicherweise in %s"
+msgstr "Andere Apps dieses Anbieters erscheinen möglicherweise in %s"
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
@@ -107,19 +107,18 @@ msgid "Install Anyway"
 msgstr "Trotzdem installieren"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "Der Download ist möglicherweise bis zu %s groß"
+msgstr "Der Installationsumfang beträgt bis zu %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
 msgid "Download size may be up to %s"
-msgstr "Der Download ist möglicherweise bis zu %s groß"
+msgstr "Der Umfang der herunterzuladenden Daten beträgt bis zu %s"
 
 #: src/Views/MainView.vala:150
 msgid "Unknown download size"
-msgstr "Größe des Downloads unbekannt"
+msgstr "Umfang der herunterzuladenden Daten unbekannt"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -141,7 +140,7 @@ msgstr "Die App wurde installiert"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Es kann jederzeit über das Anwendungsmenü geöffnet werden."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -154,24 +153,24 @@ msgstr "Diese Anwendung ist bereits installiert"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Keine Änderungen vorgenommen."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Informationen zur Anwendung, Aktualisierungen sowie die Möglichkeit zur "
+"Deinstallation bietet %s."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "Systemeinstellungen"
+msgstr "Systemeinstellungen → Anwendungen …"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Berechtigungen können in %s geändert werden"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
@@ -193,7 +192,7 @@ msgstr "Unbekannte Anwendung installieren"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "%s installieren. Verbleibende Zeit unbekannt."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
@@ -211,7 +210,7 @@ msgstr "Die Anwendung wurde erfolgreich installiert"
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Entsprechende Flatpak-Installation nicht gefunden."
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
