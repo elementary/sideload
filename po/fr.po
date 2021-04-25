@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-04-11 18:08+0000\n"
+"PO-Revision-Date: 2021-04-25 18:44+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload/"
 "fr/>\n"
@@ -110,10 +110,9 @@ msgid "Install Anyway"
 msgstr "Installer quand même"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "La taille de téléchargement peut aller jusqu'à %s"
+msgstr "La taille d'installation peut aller jusqu'à %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
@@ -144,7 +143,7 @@ msgstr "L'application a été installée"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Ouvrez-le à tout moment depuis le menu des applications."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -157,24 +156,24 @@ msgstr "Cette application est déjà installée"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Aucune modification n'a été effectuée."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Consultez %s pour des informations sur l'application, les mises à jour et "
+"pour la désinstaller."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "Paramètres du système"
+msgstr "Paramètres du système → Applications…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Les autorisations peuvent êtres modifiées dans %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
@@ -196,7 +195,7 @@ msgstr "Installer une application non certifiée"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Installation de %s. Impossible de déterminer le temps restant."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
@@ -214,7 +213,7 @@ msgstr "L'application a été installée avec succès"
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Nous n'avons pas trouvé d'installation Flatpak viable."
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
