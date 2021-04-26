@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2021-04-26 11:29+0000\n"
-"Last-Translator: EpixMan <abdullahgtgt@gmail.com>\n"
+"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/sideload/"
 "ar/>\n"
 "Language: ar\n"
@@ -98,7 +98,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr "الغاء"
+msgstr "إلغاء"
 
 #: src/Views/MainView.vala:113
 msgid "Install Anyway"
