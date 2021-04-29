@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-04-23 19:06+0000\n"
+"PO-Revision-Date: 2021-04-29 18:28+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
@@ -107,10 +107,9 @@ msgid "Install Anyway"
 msgstr "Все равно установить"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "Объем загрузки может увеличиться до %s"
+msgstr "Объем установки может доходить до %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
