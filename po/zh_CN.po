@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2020-10-23 23:46+0000\n"
+"PO-Revision-Date: 2021-04-29 18:28+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -160,10 +160,8 @@ msgstr ""
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "系统设置"
+msgstr "系统设置 → 应用程序…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
