@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-02-09 14:51+0000\n"
+"PO-Revision-Date: 2021-05-04 13:48+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
 "fi/>\n"
@@ -108,10 +108,9 @@ msgid "Install Anyway"
 msgstr "Asenna silti"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "Latauksen koko voi olla jopa %s"
+msgstr "Asennuksen koko voi olla jopa %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
@@ -142,7 +141,7 @@ msgstr "Sovellus on asennettu"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Avaa se milloin tahansa Sovellukset-valikosta."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -155,19 +154,19 @@ msgstr "Tämä sovellus on jo asennettu"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Muutoksia ei tehty."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Mene %s saadaksesi lisätietoja sovelluksesta, päivityksiä sovellukseen tai "
+"poistaaksesi sovelluksen."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "Järjestelmän asetukset"
+msgstr "Järjestelmän asetukset → Sovellukset…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
@@ -177,7 +176,7 @@ msgstr ""
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Siirrä ”%s” roskakoriin"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
@@ -194,7 +193,7 @@ msgstr "Asenna ei-luotettu sovellus"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Asennetaan %s. Jäljellä olevaa aikaa ei voi arvioida."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
@@ -212,7 +211,7 @@ msgstr "Sovellus asennettiin onnistuneesti"
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Soveltuvaa Flatpak-asennusta ei löytynyt."
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
