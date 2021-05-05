@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2020-08-08 11:13+0000\n"
-"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
+"PO-Revision-Date: 2021-05-05 08:47+0000\n"
+"Last-Translator: Harrison Xu <xuhaifeng1998@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "旁加载"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -41,7 +41,7 @@ msgstr "翻译更新"
 
 #: data/sideload.appdata.xml.in:23
 msgid "Show app name in the main view once it's loaded"
-msgstr ""
+msgstr "应用程序完成加载后在主菜单显示名称"
 
 #: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
