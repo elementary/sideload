@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2021-05-05 08:48+0000\n"
-"Last-Translator: Harrison Xu <xuhaifeng1998@gmail.com>\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -41,7 +41,7 @@ msgstr "翻译更新"
 
 #: data/sideload.appdata.xml.in:23
 msgid "Show app name in the main view once it's loaded"
-msgstr "应用程序完成加载后在主菜单显示名称"
+msgstr "应用程序完成加载后在主视图中显示名称"
 
 #: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
