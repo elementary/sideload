@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-05-05 08:47+0000\n"
+"PO-Revision-Date: 2021-05-05 08:48+0000\n"
 "Last-Translator: Harrison Xu <xuhaifeng1998@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/zh_Hans/>\n"
@@ -45,7 +45,7 @@ msgstr "应用程序完成加载后在主菜单显示名称"
 
 #: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "提升下载大小计算的表现"
 
 #: data/sideload.appdata.xml.in:39
 msgid "First release. Hello world!"
