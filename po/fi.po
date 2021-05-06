@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-05-04 13:48+0000\n"
+"PO-Revision-Date: 2021-05-06 10:08+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
 "fi/>\n"
@@ -171,7 +171,7 @@ msgstr "Järjestelmän asetukset → Sovellukset…"
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Oikeuksia voi muuttaa menemällä %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
