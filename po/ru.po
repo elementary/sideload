@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-04-29 18:28+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2021-05-17 15:43+0000\n"
+"Last-Translator: Vsevolod <sevauserg.com@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -140,7 +140,7 @@ msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Откройте его в любое время из меню приложений."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -190,7 +190,7 @@ msgstr "Установить недоверенное приложение"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Установка %s. Не удается оценить оставшееся время."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
