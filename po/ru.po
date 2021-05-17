@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2021-05-17 15:43+0000\n"
-"Last-Translator: Vsevolod <sevauserg.com@gmail.com>\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -153,12 +153,13 @@ msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Никаких изменений не вносилось."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Посетите %s для получения информации о приложении, обновлений и удаления."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
@@ -168,7 +169,7 @@ msgstr "Параметры системы → Приложения…"
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Разрешения можно изменить в %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
