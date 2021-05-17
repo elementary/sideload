@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-05-17 15:43+0000\n"
+"PO-Revision-Date: 2021-05-17 19:10+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
@@ -191,7 +191,7 @@ msgstr "Установить недоверенное приложение"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr "Установка %s. Не удается оценить оставшееся время."
+msgstr "Установка %s. Невозможно оценить оставшееся время."
 
 #: src/MainWindow.vala:167
 msgid "App installed"
