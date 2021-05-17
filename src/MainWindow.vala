@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.MainWindow : Gtk.ApplicationWindow {
+public class Sideload.MainWindow : Hdy.ApplicationWindow {
     public FlatpakFile file { get; construct; }
     private Cancellable? current_cancellable = null;
 
@@ -39,9 +39,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     construct {
-        var titlebar = new Gtk.HeaderBar ();
-        titlebar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        titlebar.set_custom_title (new Gtk.Grid ());
+        Hdy.init ();
+
+        var window_handle = new Hdy.WindowHandle ();
 
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
@@ -60,9 +60,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         stack.add (main_view);
         stack.add (progress_view);
 
-        add (stack);
-        get_style_context ().add_class ("rounded");
-        set_titlebar (titlebar);
+        window_handle.add (stack);
+        add (window_handle);
 
         main_view.install_request.connect (on_install_button_clicked);
         file.progress_changed.connect (on_progress_changed);
