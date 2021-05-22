@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
 "PO-Revision-Date: 2021-05-22 06:33+0000\n"
-"Last-Translator: Harrison Xu <xuhaifeng1998@gmail.com>\n"
+"Last-Translator: Chengyu Liu <wer5lcy@live.cn>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -150,12 +150,12 @@ msgstr "此软件已经安装"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "系统未发生变更。"
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
+msgstr "浏览 %s 以获取应用信息、更新或卸载应用。"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
@@ -165,7 +165,7 @@ msgstr "系统设置 → 应用程序…"
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "权限可在 %s 进行更改"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
