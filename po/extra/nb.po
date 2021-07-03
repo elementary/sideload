@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-23 15:42+0000\n"
-"PO-Revision-Date: 2021-05-06 01:07+0000\n"
+"PO-Revision-Date: 2021-07-03 09:52+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/nb/>\n"
@@ -21,18 +21,22 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Sideinnlasting"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
 msgstr "Installer programmer lastet ned fra Internett"
 
 #: data/sideload.appdata.xml.in:10
+#, fuzzy
 msgid ""
 "Sideload Flatpak apps per user and automatically add their remotes to "
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Sideinnlasting av Fatpak-programmer per user og legg til deres "
+"fjernkontroller automatisk i AppSenter. Sideinnlasting viser viktig info om "
+"programmer før de installeres, som f.eks. installasjonsstørrelsen."
 
 #: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
 #: data/sideload.appdata.xml.in:32
@@ -41,15 +45,15 @@ msgstr "Oppdaterte oversettelser"
 
 #: data/sideload.appdata.xml.in:23
 msgid "Show app name in the main view once it's loaded"
-msgstr ""
+msgstr "Vis programnavn i hovedvisning når det er innlastet"
 
 #: data/sideload.appdata.xml.in:31
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "Forbedret ytelse i utregning av nedlastingsstørrelse"
 
 #: data/sideload.appdata.xml.in:39
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "Første utgave. Hei verden."
 
 #: data/sideload.appdata.xml.in:88
 msgid "elementary, Inc."
@@ -57,12 +61,13 @@ msgstr "elementary, Inc."
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
-msgstr ""
+msgstr "Flatpak-installasjonsprogram"
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
 msgstr ""
 
 #: data/sideload.desktop.in:8
+#, fuzzy
 msgid "flatpak;"
-msgstr ""
+msgstr "flatpak;"
