@@ -165,7 +165,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {
             var notification = new Notification (_("App installed"));
             if (app_name != null) {
-                notification.set_body (_("“%s” was installed").printf (app_name));
+                notification.set_body (_("Installed “%s”").printf (app_name));
             } else {
                 notification.set_body (_("The app was installed"));
             }
