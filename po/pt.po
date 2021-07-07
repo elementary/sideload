@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-07 16:51+0000\n"
-"PO-Revision-Date: 2021-04-23 19:06+0000\n"
+"PO-Revision-Date: 2021-07-07 20:37+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
 "sideload/pt/>\n"
@@ -205,8 +205,6 @@ msgid "Installed “%s”"
 msgstr "Instalado “%s”"
 
 #: src/MainWindow.vala:170
-#, fuzzy
-#| msgid "The app has been installed"
 msgid "The app was installed"
 msgstr "A aplicação foi instalada"
 
