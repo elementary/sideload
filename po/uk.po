@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-07 16:51+0000\n"
-"PO-Revision-Date: 2021-07-03 20:17+0000\n"
+"PO-Revision-Date: 2021-07-07 20:37+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "sideload/uk/>\n"
@@ -67,7 +67,7 @@ msgstr "Виникла невідома помилка."
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Встановити ненадійний застосунок “%s”?"
+msgstr "Встановити ненадійний застосунок «%s»?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
@@ -123,16 +123,16 @@ msgstr "Невідомий розмір завантаження"
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr "Встановлення “%s”"
+msgstr "Встановлення «%s»"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr "Підготовка…"
+msgstr "Підготування…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr "“%s” вже встановлено"
+msgstr "«%s» встановлено"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
@@ -145,7 +145,7 @@ msgstr "Відкрийте його будь-коли з меню застосу
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr "“%s” вже встановлено"
+msgstr "«%s» вже встановлено"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
@@ -199,16 +199,13 @@ msgid "App installed"
 msgstr "Застосунок встановлено"
 
 #: src/MainWindow.vala:168
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "Встановлення “%s”"
+msgstr "Встановлено «%s»"
 
 #: src/MainWindow.vala:170
-#, fuzzy
-#| msgid "The app has been installed"
 msgid "The app was installed"
-msgstr "Цей застосунок вже встановлено"
+msgstr "Цей застосунок було встановлено"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
