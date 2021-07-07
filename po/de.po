@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-04-24 15:46+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -194,23 +194,32 @@ msgstr "Unbekannte Anwendung installieren"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "%s installieren. Verbleibende Zeit unbekannt."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Anwendung installiert"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "»%s« wurde erfolgreich installiert"
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "»%s« installieren"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "Die Anwendung wurde erfolgreich installiert"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "Die App wurde installiert"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "Entsprechende Flatpak-Installation nicht gefunden."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "»%s« wurde erfolgreich installiert"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "Die Anwendung wurde erfolgreich installiert"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "

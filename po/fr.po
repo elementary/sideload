@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-04-25 18:44+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -197,23 +197,31 @@ msgstr "Installer une application non certifiée"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Installation de %s. Impossible de déterminer le temps restant."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Application installée"
 
-#: src/MainWindow.vala:169
+#: src/MainWindow.vala:168
 #, c-format
-msgid "“%s” was installed successfully"
-msgstr "« %s » a été installé avec succès"
+msgid "Installed “%s”"
+msgstr "« %s » a été installé"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "L'application a été installée avec succès"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "L'application a été installée"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "Nous n'avons pas trouvé d'installation Flatpak viable."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "« %s » a été installé avec succès"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "L'application a été installée avec succès"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -236,9 +244,6 @@ msgstr "Nous n'avons pas trouvé d'installation Flatpak viable."
 #~ "sur les applications, des mises à jour, et pour désinstaller des "
 #~ "applications. Les autorisations peuvent être modifiées dans <a href='%s'>"
 #~ "%s → %s…</a>"
-
-#~ msgid "Installed “%s”"
-#~ msgstr "« %s » a été installé"
 
 #~ msgid "The software has been installed"
 #~ msgstr "Le logiciel a été installé"

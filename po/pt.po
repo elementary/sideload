@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-04-23 19:06+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -195,23 +195,31 @@ msgstr "Instalar aplicação não confiável"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "A instalar %s. Incapaz de estimar o tempo restante."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Aplicação instalada"
 
-#: src/MainWindow.vala:169
+#: src/MainWindow.vala:168
 #, c-format
-msgid "“%s” was installed successfully"
-msgstr "\"%s\" foi instalado com sucesso"
+msgid "Installed “%s”"
+msgstr "Instalado “%s”"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "A aplicação foi instalada com sucesso"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "A aplicação foi instalada"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "Não foi encontrada uma instalação Flatpak adequada."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "\"%s\" foi instalado com sucesso"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "A aplicação foi instalada com sucesso"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -232,6 +240,3 @@ msgstr "Não foi encontrada uma instalação Flatpak adequada."
 #~ "Não foram feitas alterações. Visite %s para obter informações sobre "
 #~ "aplicações, atualizações e para desinstalar. As permissões podem ser "
 #~ "alteradas em <a href='%s'>%s → %s…</a>"
-
-#~ msgid "Installed “%s”"
-#~ msgstr "Instalado “%s”"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-07-03 20:17+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -194,23 +194,32 @@ msgstr "Встановити ненадійний застосунок"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Встановлення %s. Неможливо визначити час до завершення."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Застосунок встановлено"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "“%s” успішно встановлено"
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Встановлення “%s”"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "Застосунок встановлено успішно"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "Цей застосунок вже встановлено"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "Не знайдено відповідної установки Flatpak."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "“%s” успішно встановлено"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "Застосунок встановлено успішно"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "

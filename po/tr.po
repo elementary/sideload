@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-04-24 03:24+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -193,23 +193,31 @@ msgstr "Güvenilmeyen Uygulamayı Yükle"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "%s yükleniyor. Kalan süre tahmin edilemiyor."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Uygulama yüklendi"
 
-#: src/MainWindow.vala:169
+#: src/MainWindow.vala:168
 #, c-format
-msgid "“%s” was installed successfully"
-msgstr "\"%s\" başarıyla yüklendi"
+msgid "Installed “%s”"
+msgstr "\"%s\" yüklendi"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "Uygulama başarıyla yüklendi"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "Uygulama yüklendi"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "Uygun Flatpak kurulumu bulunamadı."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "\"%s\" başarıyla yüklendi"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "Uygulama başarıyla yüklendi"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -230,9 +238,6 @@ msgstr "Uygun Flatpak kurulumu bulunamadı."
 #~ "Hiçbir değişiklik yapılmadı. Uygulama bilgileri, güncellemeler ve "
 #~ "kaldırmak için %s uygulamasını ziyaret edin. İzinleri <a href='%s'>%s → "
 #~ "%s…</a> yolundan değiştirilebilirziniz"
-
-#~ msgid "Installed “%s”"
-#~ msgstr "\"%s\" yüklendi"
 
 #~ msgid "The software has been installed"
 #~ msgstr "Yazılım yüklendi"
