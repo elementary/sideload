@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2019-10-17 11:24+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/desktop/"
@@ -198,23 +198,32 @@ msgstr "Įdiegti nepatikimą programą"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Programa įdiegta"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "\"%s\" buvo sėkmingai įdiegta"
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Įdiegiama \"%s\""
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app was installed successfully"
+msgid "The app was installed"
 msgstr "Programa buvo sėkmingai įdiegta"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr ""
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "\"%s\" buvo sėkmingai įdiegta"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "Programa buvo sėkmingai įdiegta"
 
 #, fuzzy
 #~| msgid ""
@@ -238,11 +247,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Nebuvo atlikta jokių pakeitimų. Norėdami peržiūrėti programos informaciją "
 #~ "ar atnaujinimus, ar ją pašalinti, apsilankykite %s."
-
-#, fuzzy
-#~| msgid "Installing “%s”"
-#~ msgid "Installed “%s”"
-#~ msgstr "Įdiegiama \"%s\""
 
 #~ msgid "The software has been installed"
 #~ msgstr "Programinė įranga įdiegta"

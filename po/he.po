@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-04-26 04:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -191,23 +191,32 @@ msgstr "התקנת יישום בלתי מהימן"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "%s בהליכי התקנה. לא ניתן להעריך את הזמן שנותר."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "היישום הותקן"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "ההתקנה של „%s” הצליחה"
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "היישום „%s” מותקן"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "היישום הותקן בהצלחה"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "היישום הותקן"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "לא נמצאה התקנת Flatpak הולמת."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "ההתקנה של „%s” הצליחה"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "היישום הותקן בהצלחה"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -227,8 +236,3 @@ msgstr "לא נמצאה התקנת Flatpak הולמת."
 #~ msgstr ""
 #~ "לא בוצעו שינויים. ניתן לבקר ב־%s לקבלת מידע, עדכונים ואפשרות הסרה של "
 #~ "היישום. ניתן לשנות את ההרשאות תחת <a href='%s'>%s ← %s…</a>"
-
-#, fuzzy
-#~| msgid "Installing “%s”"
-#~ msgid "Installed “%s”"
-#~ msgstr "היישום „%s” מותקן"

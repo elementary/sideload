@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Southern Sami <https://l10n.elementary.io/projects/desktop/"
@@ -189,17 +189,17 @@ msgstr ""
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr ""
 
-#: src/MainWindow.vala:169
+#: src/MainWindow.vala:168
 #, c-format
-msgid "“%s” was installed successfully"
+msgid "Installed “%s”"
 msgstr ""
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
+#: src/MainWindow.vala:170
+msgid "The app was installed"
 msgstr ""
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-04-29 01:19+0000\n"
 "Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -198,23 +198,31 @@ msgstr "Instalar aplicación no confiable"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Instalando %s. No se puede estimar el tiempo restante."
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Se ha instalado la aplicación"
 
-#: src/MainWindow.vala:169
+#: src/MainWindow.vala:168
 #, c-format
-msgid "“%s” was installed successfully"
-msgstr "Se ha instalado «%s» correctamente"
+msgid "Installed “%s”"
+msgstr "Se instaló «%s»"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "Se instaló la aplicación correctamente"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "Se instaló la aplicación"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "No se encontró la instalación adecuada de Flatpak."
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "Se ha instalado «%s» correctamente"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "Se instaló la aplicación correctamente"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -235,9 +243,6 @@ msgstr "No se encontró la instalación adecuada de Flatpak."
 #~ "No se ha efectuado ningún cambio. Visite %s para consultar información "
 #~ "sobre la aplicación, actualizarla o desinstalarla. Puede modificarle los "
 #~ "permisos en <a href='%s'>%s ▸ %s…</a>"
-
-#~ msgid "Installed “%s”"
-#~ msgstr "Se instaló «%s»"
 
 #~ msgid "The software has been installed"
 #~ msgstr "Se ha instalado el programa"

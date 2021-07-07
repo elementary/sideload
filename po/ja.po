@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-06-15 13:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -158,7 +158,9 @@ msgstr "変更は行われていません。"
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr "アプリの情報やアップデートを確認したりアンインストールしたりするには、%s を開いてください。"
+msgstr ""
+"アプリの情報やアップデートを確認したりアンインストールしたりするには、%s を開"
+"いてください。"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
@@ -192,23 +194,31 @@ msgstr "信頼されていないアプリをインストール"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "%s をインストールしています。残り時間は不明です。"
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "アプリをインストールしました"
 
-#: src/MainWindow.vala:169
+#: src/MainWindow.vala:168
 #, c-format
-msgid "“%s” was installed successfully"
-msgstr "“%s” は正常にインストールされました"
+msgid "Installed “%s”"
+msgstr "“%s”をインストールしました"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "アプリは正常にインストールされました"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "アプリをインストールしました"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "適切な Flatpak インストールが見つかりませんでした。"
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "“%s” は正常にインストールされました"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "アプリは正常にインストールされました"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -230,9 +240,6 @@ msgstr "適切な Flatpak インストールが見つかりませんでした。
 #~ "変更は行われていません。アプリの情報、アップデートを参照したり、アプリをア"
 #~ "ンインストールしたりするには、%s を開いてください。パーミッションは <a "
 #~ "href='%s'>%s → %s…</a>から変更できます"
-
-#~ msgid "Installed “%s”"
-#~ msgstr "“%s”をインストールしました"
 
 #~ msgid "Download size up to: %s"
 #~ msgstr "最大ダウンロードサイズ: %s"

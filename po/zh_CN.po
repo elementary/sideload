@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2021-05-22 10:06+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -189,23 +189,32 @@ msgstr "安装未被信任的应用"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "正在安装 %s。无法估计剩余时间。"
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "软件已安装"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "“%s” 已成功安装"
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "正在安装 “%s”"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "此软件已成功安装"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "此应用已成功安装"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr "未找到合适的 Flatpak 安装。"
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "“%s” 已成功安装"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "此软件已成功安装"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -224,11 +233,6 @@ msgstr "未找到合适的 Flatpak 安装。"
 #~ msgstr ""
 #~ "未保存任何变更。更多应用信息、更新及卸载相关内容请访问 %s。修改权限设置请"
 #~ "前往 <a href='%s'>%s → %s…</a>"
-
-#, fuzzy
-#~| msgid "Installing “%s”"
-#~ msgid "Installed “%s”"
-#~ msgstr "正在安装 “%s”"
 
 #~ msgid "The software has been installed"
 #~ msgstr "软件已安装"

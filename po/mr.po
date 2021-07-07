@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2020-10-13 22:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -194,23 +194,32 @@ msgstr "अविश्वसनीय अ‍ॅप स्थापित कर
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "अ‍ॅप स्थापित केले गेले आहे"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr "“%s” यशस्वीरित्या स्थापित केले"
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "“%s” स्थापित करत आहे"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr "अ‍ॅप यशस्वीरित्या स्थापित झाला"
+#: src/MainWindow.vala:170
+#, fuzzy
+#| msgid "The app has been installed"
+msgid "The app was installed"
+msgstr "अ‍ॅप स्थापित झाला"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
 msgid "Did not find suitable Flatpak installation."
 msgstr ""
+
+#~ msgid "“%s” was installed successfully"
+#~ msgstr "“%s” यशस्वीरित्या स्थापित केले"
+
+#~ msgid "The app was installed successfully"
+#~ msgstr "अ‍ॅप यशस्वीरित्या स्थापित झाला"
 
 #~ msgid ""
 #~ "Open it any time from the Applications Menu. Visit %s for app "
@@ -230,11 +239,6 @@ msgstr ""
 #~ "अनुप्रयोग मेनूमधून हे कधीही उघडा. अ‍ॅप माहिती, अपडेट्स आणि विस्थापित करण्यासाठी %s ला "
 #~ "भेट द्या. \n"
 #~ "परवानग्या  <a href='%s'>%s → %s…</a> मध्ये बदलल्या जाऊ शकतात"
-
-#, fuzzy
-#~| msgid "Installing “%s”"
-#~ msgid "Installed “%s”"
-#~ msgstr "“%s” स्थापित करत आहे"
 
 #~ msgid "The software has been installed"
 #~ msgstr "सॉफ्टवेअर स्थापित केले गेले आहे"

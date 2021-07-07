@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-23 15:42+0000\n"
+"POT-Creation-Date: 2021-07-07 16:51+0000\n"
 "PO-Revision-Date: 2019-09-30 10:15-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -199,19 +199,21 @@ msgstr "Install Untrusted Software"
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:167
+#: src/MainWindow.vala:166
 #, fuzzy
 msgid "App installed"
 msgstr "The software has been installed"
 
-#: src/MainWindow.vala:169
-#, c-format
-msgid "“%s” was installed successfully"
-msgstr ""
+#: src/MainWindow.vala:168
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Installed “%s”"
+msgstr "Installing “%s”"
 
-#: src/MainWindow.vala:171
-msgid "The app was installed successfully"
-msgstr ""
+#: src/MainWindow.vala:170
+#, fuzzy
+msgid "The app was installed"
+msgstr "This software is already installed."
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
@@ -234,11 +236,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Open it any time from the Applications Menu. Visit AppCenter for app "
 #~ "information, updates, and to uninstall."
-
-#, fuzzy
-#~| msgid "Installing “%s”"
-#~ msgid "Installed “%s”"
-#~ msgstr "Installing “%s”"
 
 #~ msgid "The software has been installed"
 #~ msgstr "The software has been installed"
