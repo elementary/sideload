@@ -170,7 +170,6 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
                 notification.set_body (_("The app was installed"));
             }
 
-            notification.set_icon (new ThemedIcon ("io.elementary.sideload"));
             application.send_notification ("installed", notification);
         }
     }
