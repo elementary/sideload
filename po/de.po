@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-07 16:51+0000\n"
-"PO-Revision-Date: 2021-04-24 15:46+0000\n"
+"PO-Revision-Date: 2021-07-08 09:17+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
@@ -199,16 +199,13 @@ msgid "App installed"
 msgstr "Anwendung installiert"
 
 #: src/MainWindow.vala:168
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "»%s« installieren"
+msgstr "»%s« installiert"
 
 #: src/MainWindow.vala:170
-#, fuzzy
-#| msgid "The app has been installed"
 msgid "The app was installed"
-msgstr "Die App wurde installiert"
+msgstr "Die Anwendung wurde installiert"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
