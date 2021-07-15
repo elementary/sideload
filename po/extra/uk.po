@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:21+0000\n"
-"PO-Revision-Date: 2021-01-25 21:47+0000\n"
+"PO-Revision-Date: 2021-07-15 21:02+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/uk/>\n"
@@ -41,23 +41,23 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "Керування сповіщеннями в налаштуваннях системи"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Offer to trash Flatpak files after installing"
-msgstr ""
+msgstr "Пропозиція видалити Flatpak-файли після встановлення"
 
 #: data/sideload.appdata.xml.in:18
 msgid "Support dark style"
-msgstr ""
+msgstr "Підтримка темного стилю"
 
 #: data/sideload.appdata.xml.in:19
 msgid "Support Flatpak bundle files"
-msgstr ""
+msgstr "Підтримка пакетних файлів Flatpak"
 
 #: data/sideload.appdata.xml.in:20
 msgid "Fix crashes on installation failure"
-msgstr ""
+msgstr "Виправлено збої, якщо сталася помилка встановлення"
 
 #: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
@@ -66,7 +66,7 @@ msgstr "Оновлено переклади"
 
 #: data/sideload.appdata.xml.in:22
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "Посилання на Налаштування системи → Застосунки → Дозволи"
 
 #: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
