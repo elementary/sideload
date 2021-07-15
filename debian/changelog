@@ -1,3 +1,28 @@
+io.elementary.sideload (6.0.0) bionic; urgency=medium
+
+  * Release 6.0.0 (#126)
+  * MainWindow: remove redundant set_icon from notification (#123)
+  * Update translation files
+  * Update translation template
+  * MainWindow: remove redundant "successfully" from notification
+  * MainWindow: Draggable Window (#120)
+  * Update POTFILES
+  * Flatpak Bundle support (#107)
+  * ProgressView: Use tabular numbers (#115)
+  * Trash flatpakref on app launch (#114)
+  * Unify quote style (#112)
+  * Trash .flatpakref on successful install (#110)
+  * Desktop: Add X-GNOME-UsesNotifications (#109)
+  * LINGUAS: Sort and remove en
+  * Ensure we throw the error dialog in the GTK thread (#105)
+  * Rely on accent colors from Greenfield (#103)
+  * SuccessView: Make primary label format consistent (#102)
+  * SuccessView: More concise copy (#101)
+  * Link to Permission tab of Application Settings (#99)
+  * Support dark style preference (#95)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 15 Jul 2021 18:21:39 +0000
+
 io.elementary.sideload (1.1.1) bionic; urgency=medium
 
   * Release 1.1.1 (#93)
