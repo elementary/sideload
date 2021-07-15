@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-07 16:51+0000\n"
+"POT-Creation-Date: 2021-07-15 18:21+0000\n"
 "PO-Revision-Date: 2021-05-17 20:38+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -39,25 +39,49 @@ msgstr ""
 "важные подробности о приложениях перед установкой, например их размер "
 "загрузки."
 
-#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:16
+msgid "Control notifications in System Settings"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:17
+msgid "Offer to trash Flatpak files after installing"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:18
+msgid "Support dark style"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:19
+msgid "Support Flatpak bundle files"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:20
+msgid "Fix crashes on installation failure"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/sideload.appdata.xml.in:23
+#: data/sideload.appdata.xml.in:22
+msgid "Link to System Settings → Applications → Permissions"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
 msgstr ""
 "Отображение названия приложения в главном представлении после его загрузки"
 
-#: data/sideload.appdata.xml.in:31
+#: data/sideload.appdata.xml.in:44
 msgid "Improve performance of download size calculation"
 msgstr "Улучшена скорость подсчета размера загрузки"
 
-#: data/sideload.appdata.xml.in:39
+#: data/sideload.appdata.xml.in:52
 msgid "First release. Hello world!"
 msgstr "Первый выпуск. Здравствуй, мир!"
 
-#: data/sideload.appdata.xml.in:88
+#: data/sideload.appdata.xml.in:101
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

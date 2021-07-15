@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-07 16:51+0000\n"
+"POT-Creation-Date: 2021-07-15 18:21+0000\n"
 "PO-Revision-Date: 2021-05-05 10:46+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -34,24 +34,48 @@ msgid ""
 "install like their download size."
 msgstr ""
 
-#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:16
+msgid "Control notifications in System Settings"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:17
+msgid "Offer to trash Flatpak files after installing"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:18
+msgid "Support dark style"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:19
+msgid "Support Flatpak bundle files"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:20
+msgid "Fix crashes on installation failure"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
 msgid "Updated translations"
 msgstr "翻译更新"
 
-#: data/sideload.appdata.xml.in:23
+#: data/sideload.appdata.xml.in:22
+msgid "Link to System Settings → Applications → Permissions"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
 msgstr "应用程序完成加载后在主视图中显示名称"
 
-#: data/sideload.appdata.xml.in:31
+#: data/sideload.appdata.xml.in:44
 msgid "Improve performance of download size calculation"
 msgstr "优化下载大小计算的表现"
 
-#: data/sideload.appdata.xml.in:39
+#: data/sideload.appdata.xml.in:52
 msgid "First release. Hello world!"
 msgstr "第一个发布版本。Hello world!"
 
-#: data/sideload.appdata.xml.in:88
+#: data/sideload.appdata.xml.in:101
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

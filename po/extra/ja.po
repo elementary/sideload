@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-07 16:51+0000\n"
+"POT-Creation-Date: 2021-07-15 18:21+0000\n"
 "PO-Revision-Date: 2020-10-17 06:15+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -37,24 +37,48 @@ msgstr ""
 "リモートを AppCenter に登録します。また、ダウンロードサイズなど、アプリの重要"
 "な情報をインストール前に表示します。"
 
-#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:16
+msgid "Control notifications in System Settings"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:17
+msgid "Offer to trash Flatpak files after installing"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:18
+msgid "Support dark style"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:19
+msgid "Support Flatpak bundle files"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:20
+msgid "Fix crashes on installation failure"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/sideload.appdata.xml.in:23
+#: data/sideload.appdata.xml.in:22
+msgid "Link to System Settings → Applications → Permissions"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
 msgstr "アプリ名を読み込んだ際にメインビューに表示するように変更"
 
-#: data/sideload.appdata.xml.in:31
+#: data/sideload.appdata.xml.in:44
 msgid "Improve performance of download size calculation"
 msgstr "ダウンロードサイズの計算パフォーマンスを改善"
 
-#: data/sideload.appdata.xml.in:39
+#: data/sideload.appdata.xml.in:52
 msgid "First release. Hello world!"
 msgstr "最初のリリースです。Hello world!"
 
-#: data/sideload.appdata.xml.in:88
+#: data/sideload.appdata.xml.in:101
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-07 16:51+0000\n"
+"POT-Creation-Date: 2021-07-15 18:21+0000\n"
 "PO-Revision-Date: 2020-10-21 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -37,24 +37,48 @@ msgstr ""
 "जोडा. अ‍ॅप्सच्या डाउनलोड आकाराप्रमाणे आपण स्थापित करण्यापूर्वी साइड लोड महत्त्वाची "
 "माहिती दर्शविते."
 
-#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:16
+msgid "Control notifications in System Settings"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:17
+msgid "Offer to trash Flatpak files after installing"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:18
+msgid "Support dark style"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:19
+msgid "Support Flatpak bundle files"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:20
+msgid "Fix crashes on installation failure"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/sideload.appdata.xml.in:23
+#: data/sideload.appdata.xml.in:22
+msgid "Link to System Settings → Applications → Permissions"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
 msgstr "एकदा अँप लोड झाल्यानंतर त्याचे नाव मुख्य दृश्यात दाखवा"
 
-#: data/sideload.appdata.xml.in:31
+#: data/sideload.appdata.xml.in:44
 msgid "Improve performance of download size calculation"
 msgstr "डाउनलोड आकार गणनाची कार्यक्षमता सुधारित करा"
 
-#: data/sideload.appdata.xml.in:39
+#: data/sideload.appdata.xml.in:52
 msgid "First release. Hello world!"
 msgstr "प्रथम प्रकाशन. हॅलो वर्ल्ड!"
 
-#: data/sideload.appdata.xml.in:88
+#: data/sideload.appdata.xml.in:101
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी,Inc."
 
