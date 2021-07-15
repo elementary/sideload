@@ -10,6 +10,19 @@
     <p>Sideload Flatpak apps per user and automatically add their remotes to AppCenter. Sideload shows important information about apps before you install like their download size.</p>
   </description>
   <releases>
+    <release version="6.0.0" date="2021-07-14" urgency="medium">
+      <description>
+        <ul>
+          <li>Control notifications in System Settings</li>
+          <li>Offer to trash Flatpak files after installing</li>
+          <li>Support dark style</li>
+          <li>Support Flatpak bundle files</li>
+          <li>Fix crashes on installation failure</li>
+          <li>Updated translations</li>
+          <li>Link to System Settings → Applications → Permissions</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.1" date="2020-05-28" urgency="medium">
       <description>
         <ul>
