@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:22+0000\n"
 "PO-Revision-Date: 2021-07-17 07:24+0000\n"
-"Last-Translator: Mário Victor Ribeiro Silva <mariovictorrs@gmail.com>\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/sideload/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -182,7 +182,7 @@ msgstr "Mover \"%s\" para Lixeira"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr "Abrir aplicativo"
+msgstr "Abrir a aplicação"
 
 #: src/Application.vala:126
 msgid "your software center"
@@ -190,7 +190,7 @@ msgstr "seu centro de software"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr "Instalar aplicativo não confiável"
+msgstr "Instalar aplicação não confiável"
 
 #: src/MainWindow.vala:55
 #, c-format
