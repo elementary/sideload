@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:21+0000\n"
-"PO-Revision-Date: 2021-02-14 23:29+0000\n"
+"PO-Revision-Date: 2021-07-18 02:11+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/en_GB/>\n"
@@ -39,23 +39,23 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "Control notifications in System Settings"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Offer to trash Flatpak files after installing"
-msgstr ""
+msgstr "Offer to move Flatpak files to Rubbish Bin after installing"
 
 #: data/sideload.appdata.xml.in:18
 msgid "Support dark style"
-msgstr ""
+msgstr "Support dark style"
 
 #: data/sideload.appdata.xml.in:19
 msgid "Support Flatpak bundle files"
-msgstr ""
+msgstr "Support Flatpak bundle files"
 
 #: data/sideload.appdata.xml.in:20
 msgid "Fix crashes on installation failure"
-msgstr ""
+msgstr "Fix crashes on installation failure"
 
 #: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
@@ -64,7 +64,7 @@ msgstr "Updated translations"
 
 #: data/sideload.appdata.xml.in:22
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "Link to System Settings → Applications → Permissions"
 
 #: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
