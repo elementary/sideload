@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:21+0000\n"
-"PO-Revision-Date: 2020-10-17 06:15+0000\n"
+"PO-Revision-Date: 2021-07-17 11:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -39,23 +39,23 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "システム設定で通知を管理できるように修正"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Offer to trash Flatpak files after installing"
-msgstr ""
+msgstr "インストール後に Flatpak ファイルをゴミ箱に移動できる機能を追加"
 
 #: data/sideload.appdata.xml.in:18
 msgid "Support dark style"
-msgstr ""
+msgstr "ダークモードに対応"
 
 #: data/sideload.appdata.xml.in:19
 msgid "Support Flatpak bundle files"
-msgstr ""
+msgstr "Flatpak バンドルファイルに対応"
 
 #: data/sideload.appdata.xml.in:20
 msgid "Fix crashes on installation failure"
-msgstr ""
+msgstr "インストール失敗時にクラッシュする不具合を修正"
 
 #: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
@@ -64,7 +64,7 @@ msgstr "翻訳の更新"
 
 #: data/sideload.appdata.xml.in:22
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "システム設定 → アプリケーション → パーミッションへのリンクを追加"
 
 #: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
