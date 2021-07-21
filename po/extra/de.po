@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:21+0000\n"
-"PO-Revision-Date: 2021-07-20 06:30+0000\n"
+"PO-Revision-Date: 2021-07-21 15:01+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/de/>\n"
@@ -47,7 +47,7 @@ msgstr "Anbieten, Flatpak Daten nach der Installation zu löschen"
 
 #: data/sideload.appdata.xml.in:18
 msgid "Support dark style"
-msgstr "Unterstützung für dunklen Stil"
+msgstr "Unterstützung für Dark Mode"
 
 #: data/sideload.appdata.xml.in:19
 msgid "Support Flatpak bundle files"
