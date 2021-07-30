@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:21+0000\n"
-"PO-Revision-Date: 2020-11-03 07:15+0000\n"
+"PO-Revision-Date: 2021-07-30 17:54+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload-"
-"extra/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -40,23 +40,23 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "Contrôle des notifications dans les paramètres du système"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Offer to trash Flatpak files after installing"
-msgstr ""
+msgstr "Possibilité de supprimer les fichiers Flatpak après l'installation"
 
 #: data/sideload.appdata.xml.in:18
 msgid "Support dark style"
-msgstr ""
+msgstr "Prise en charge du thème sombre"
 
 #: data/sideload.appdata.xml.in:19
 msgid "Support Flatpak bundle files"
-msgstr ""
+msgstr "Prise en charge des paquets Flatpak"
 
 #: data/sideload.appdata.xml.in:20
 msgid "Fix crashes on installation failure"
-msgstr ""
+msgstr "Correction de plantages en cas d'échec d'installation"
 
 #: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
@@ -65,7 +65,7 @@ msgstr "Mise à jour des traductions"
 
 #: data/sideload.appdata.xml.in:22
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "Lien vers Paramètres du système → Applications → Autorisations"
 
 #: data/sideload.appdata.xml.in:36
 msgid "Show app name in the main view once it's loaded"
