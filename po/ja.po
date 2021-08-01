@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:22+0000\n"
-"PO-Revision-Date: 2021-07-08 00:02+0000\n"
+"PO-Revision-Date: 2021-08-01 23:58+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -46,7 +46,7 @@ msgstr "要求された Flatpak リモートが見つかりませんでした。
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr "要求された実行時に必要な依存関係が見つかりませんでした。"
+msgstr "実行時に必要な依存関係が見つかりませんでした。"
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
