@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:21+0000\n"
-"PO-Revision-Date: 2021-07-19 21:05+0000\n"
+"PO-Revision-Date: 2021-08-11 22:03+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ca/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr "Sideload"
+msgstr "Càrrega lateral"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -33,10 +33,10 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
-"Càrrega paral·lela de les aplicacions de Flatpak per usuari i addició "
-"automàtica dels recursos remots al Centre d'aplicacions. La càrrega "
-"paral·lela mostra informació important sobre les aplicacions abans "
-"d’instal·lar-les, com ara la mida de la baixada."
+"Les aplicacions de Flatpak de Càrrega lateral per usuari i addició "
+"automàtica dels recursos remots al Centre d'aplicacions. La Càrrega lateral "
+"mostra informació important sobre les aplicacions abans d’instal·lar-les, "
+"com ara la mida de la baixada."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Control notifications in System Settings"
