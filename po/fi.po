@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:22+0000\n"
-"PO-Revision-Date: 2021-07-09 09:42+0000\n"
+"PO-Revision-Date: 2021-08-12 13:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
 "fi/>\n"
@@ -97,7 +97,7 @@ msgstr "Tämän sovelluksen päivityksiä ei katselmoida"
 #: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr "Muut tämän jakelijan sovellukset voivat olla esillä %s"
+msgstr "Muut tämän jakelijan sovellukset voivat näkyä sovelluksessa %s"
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
