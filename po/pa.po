@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:22+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-16 03:00+0000\n"
+"Last-Translator: elSolus <tumbleweed@tuta.io>\n"
+"Language-Team: Punjabi <https://l10n.elementary.io/projects/desktop/sideload/"
+"pa/>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -94,7 +97,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr ""
+msgstr "ਰੱਦ ਕਰੋ"
 
 #: src/Views/MainView.vala:113
 msgid "Install Anyway"
