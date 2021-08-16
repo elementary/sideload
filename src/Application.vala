@@ -27,6 +27,11 @@ public class Sideload.Application : Gtk.Application {
     };
 
     public Application () {
+        GLib.Intl.setlocale (LocaleCategory.ALL, "");
+        GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        GLib.Intl.textdomain (GETTEXT_PACKAGE);
+
         Object (
             application_id: "io.elementary.sideload",
             flags: ApplicationFlags.HANDLES_OPEN
