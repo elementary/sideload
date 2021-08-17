@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 18:22+0000\n"
-"PO-Revision-Date: 2021-08-01 23:58+0000\n"
+"PO-Revision-Date: 2021-08-17 01:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -77,9 +77,7 @@ msgstr "信頼されていないアプリをインストールしますか？"
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
-msgstr ""
-"このアプリは開発者により単独で提供されており、セキュリティー、プライバシー保"
-"護、およびシステムとの統合に関する審査が行われていません。"
+msgstr "アプリの開発者が独自に配布しているため、セキュリティーやプライバシー、システムとの統合に関する審査が行われていません。"
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
@@ -96,7 +94,7 @@ msgstr "このアプリに関するアップデートは審査されません"
 #: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr "この開発者のほかのアプリが %s に表示される可能性があります"
+msgstr "同じ配布元のアプリが %s に表示される可能性があります"
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
@@ -109,16 +107,16 @@ msgstr "了解してインストール"
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Install size may be up to %s"
-msgstr "インストールサイズは最大 %s になる可能性があります"
+msgstr "推定のインストールサイズは最大 %s です"
 
 #: src/Views/MainView.vala:148
 #, c-format
 msgid "Download size may be up to %s"
-msgstr "ダウンロードサイズは最大 %s になる可能性があります"
+msgstr "推定のダウンロードサイズは最大 %s です"
 
 #: src/Views/MainView.vala:150
 msgid "Unknown download size"
-msgstr "不明なダウンロードサイズ"
+msgstr "ダウンロードサイズは不明です"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
