@@ -132,6 +132,7 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
             var flatpakref_id = yield get_id ();
             var bytes = yield get_bytes ();
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
+            transaction.add_default_dependency_sources ();
             transaction.add_install_flatpakref (bytes);
 
             transaction.add_new_remote.connect ((reason, from_id, remote_name, url) => {
@@ -229,6 +230,7 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
         try {
             var bytes = yield get_bytes ();
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
+            transaction.add_default_dependency_sources ();
             transaction.add_install_flatpakref (bytes);
             transaction.new_operation.connect ((operation, progress) => on_new_operation (operation, progress, cancellable));
 

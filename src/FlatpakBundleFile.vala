@@ -85,6 +85,7 @@ public class Sideload.FlatpakBundleFile : FlatpakFile {
             }
 
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
+            transaction.add_default_dependency_sources ();
             transaction.add_install_bundle (file, null);
 
             transaction.add_new_remote.connect ((reason, from_id, remote_name, url) => {
@@ -154,6 +155,7 @@ public class Sideload.FlatpakBundleFile : FlatpakFile {
 
         try {
             var transaction = new Flatpak.Transaction.for_installation (installation, cancellable);
+            transaction.add_default_dependency_sources ();
             transaction.add_install_bundle (file, null);
 
             transaction.add_new_remote.connect ((reason, from, name, url) => {
