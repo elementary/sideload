@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 18:21+0000\n"
+"POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2020-01-18 01:07+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Greek <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -35,47 +35,52 @@ msgid ""
 msgstr ""
 
 #: data/sideload.appdata.xml.in:16
-msgid "Control notifications in System Settings"
+msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:17
-msgid "Offer to trash Flatpak files after installing"
-msgstr ""
-
-#: data/sideload.appdata.xml.in:18
-msgid "Support dark style"
-msgstr ""
-
-#: data/sideload.appdata.xml.in:19
-msgid "Support Flatpak bundle files"
-msgstr ""
-
-#: data/sideload.appdata.xml.in:20
-msgid "Fix crashes on installation failure"
-msgstr ""
-
-#: data/sideload.appdata.xml.in:21 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
+#: data/sideload.appdata.xml.in:53
 msgid "Updated translations"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:22
+#: data/sideload.appdata.xml.in:24
+msgid "Control notifications in System Settings"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:25
+msgid "Offer to trash Flatpak files after installing"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:26
+msgid "Support dark style"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:27
+msgid "Support Flatpak bundle files"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:28
+msgid "Fix crashes on installation failure"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:30
 msgid "Link to System Settings → Applications → Permissions"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:36
+#: data/sideload.appdata.xml.in:44
 msgid "Show app name in the main view once it's loaded"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:44
+#: data/sideload.appdata.xml.in:52
 msgid "Improve performance of download size calculation"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:52
+#: data/sideload.appdata.xml.in:60
 msgid "First release. Hello world!"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:101
+#: data/sideload.appdata.xml.in:109
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
