@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 18:22+0000\n"
+"POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/desktop/"
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Open App"
 msgstr ""
 
-#: src/Application.vala:126
+#: src/Application.vala:131
 msgid "your software center"
 msgstr ""
 
@@ -202,7 +202,7 @@ msgstr ""
 msgid "The app was installed"
 msgstr ""
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
-#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
 msgid "Did not find suitable Flatpak installation."
 msgstr ""

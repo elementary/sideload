@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 18:22+0000\n"
+"POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2021-08-12 13:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -182,7 +182,7 @@ msgstr "Siirrä ”%s” roskakoriin"
 msgid "Open App"
 msgstr "Avaa sovellus"
 
-#: src/Application.vala:126
+#: src/Application.vala:131
 msgid "your software center"
 msgstr "ohjelmistokeskus"
 
@@ -208,8 +208,8 @@ msgstr "Asennettu “%s”"
 msgid "The app was installed"
 msgstr "Sovellus asennettiin"
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:226
-#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:152
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
+#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
 msgid "Did not find suitable Flatpak installation."
 msgstr "Soveltuvaa Flatpak-asennusta ei löytynyt."
 
