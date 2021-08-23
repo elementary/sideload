@@ -10,6 +10,14 @@
     <p>Sideload Flatpak apps per user and automatically add their remotes to AppCenter. Sideload shows important information about apps before you install like their download size.</p>
   </description>
   <releases>
+    <release version="6.0.1" date="2021-08-23" urgency="medium">
+      <description>
+        <ul>
+          <li>Use system Flatpak runtimes for locally installed apps</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.0.0" date="2021-07-14" urgency="medium">
       <description>
         <ul>
