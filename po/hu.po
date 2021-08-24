@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2021-08-24 11:51+0000\n"
-"Last-Translator: saboarpad <saboarpad@outlook.com>\n"
+"Last-Translator: zoli111 <acszoltan111@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
 "Language: hu\n"
@@ -33,11 +33,11 @@ msgstr "Bezárás"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Ez az alkalmazás már telepítve van."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr ""
+msgstr "A Flatpak újabb verziója szükséges az alkalmazás telepítéséhez."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
