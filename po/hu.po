@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-08-24 11:51+0000\n"
+"PO-Revision-Date: 2021-08-24 11:55+0000\n"
 "Last-Translator: zoli111 <acszoltan111@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Az alkalmazást nincs aláírva megbízható aláírással."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
@@ -61,16 +61,16 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Ismeretlen hiba történt."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "Telepíti a(z) “%s” nevű nem megbízható alkalmazást?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Telepíti a nem megbízható alkalmazást?"
 
 #: src/Views/MainView.vala:38
 msgid ""
@@ -80,11 +80,11 @@ msgstr ""
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
-msgstr ""
+msgstr "Részletek lekérése"
 
 #: src/Views/MainView.vala:50
 msgid "I understand"
-msgstr ""
+msgstr "Megértettem"
 
 #: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
@@ -101,7 +101,7 @@ msgstr "Mégse"
 
 #: src/Views/MainView.vala:113
 msgid "Install Anyway"
-msgstr ""
+msgstr "Telepítés mindenképp"
 
 #: src/Views/MainView.vala:130
 #, c-format
@@ -124,7 +124,7 @@ msgstr ""
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "Előkészítés…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
