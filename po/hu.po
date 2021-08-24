@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-08-24 02:12+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"PO-Revision-Date: 2021-08-24 11:51+0000\n"
+"Last-Translator: saboarpad <saboarpad@outlook.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
 "Language: hu\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr ""
+msgstr "Telepítés sikertelen"
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Egy szükséges Flatpak forrás nem található."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
