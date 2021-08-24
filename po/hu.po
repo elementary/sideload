@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2021-08-24 11:55+0000\n"
-"Last-Translator: zoli111 <acszoltan111@gmail.com>\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
 "Language: hu\n"
@@ -41,7 +41,7 @@ msgstr "A Flatpak újabb verziója szükséges az alkalmazás telepítéséhez."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr "Egy szükséges Flatpak forrás nem található."
+msgstr "Egy szükséges Flatpak-forrás nem található."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
@@ -57,7 +57,7 @@ msgstr "Az alkalmazást nincs aláírva megbízható aláírással."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Az alkalmazás, futtatókörnyezet vagy távoli forrás neve érvénytelen."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
@@ -77,6 +77,9 @@ msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Ezt az alkalmazást egyedül a fejlesztője szolgáltatja és nem lett "
+"ellenőrizve sem biztonsági, sem adatvédelmi, sem rendszerintegrációi "
+"szempontból."
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
@@ -94,6 +97,7 @@ msgstr ""
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr ""
+"A forrásból származó további alkalmazások is megjelenhetnek majd itt: %s"
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
@@ -106,7 +110,7 @@ msgstr "Telepítés mindenképp"
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "A telepített méret elérheti a %s -ot"
 
 #: src/Views/MainView.vala:148
 #, c-format
@@ -120,7 +124,7 @@ msgstr ""
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "“%s” telepítése"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
