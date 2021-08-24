@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2021-08-24 11:55+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Last-Translator: saboarpad <saboarpad@outlook.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
 "Language: hu\n"
@@ -45,11 +45,11 @@ msgstr "Egy szükséges Flatpak-forrás nem található."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Egy szükséges futásidejű függőség nem található."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "A megadott .flatpakref fájl érvénytelen."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
@@ -91,7 +91,7 @@ msgstr "Megértettem"
 
 #: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Az alkalmazáshoz érkező frissítések nem lesznek felülvizsgálva"
 
 #: src/Views/MainView.vala:88
 #, c-format
@@ -115,11 +115,11 @@ msgstr "A telepített méret elérheti a %s -ot"
 #: src/Views/MainView.vala:148
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "A letöltési méret elérheti a %s -ot"
 
 #: src/Views/MainView.vala:150
 msgid "Unknown download size"
-msgstr ""
+msgstr "Ismeretlen letöltési méret"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
