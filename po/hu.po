@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
 "PO-Revision-Date: 2021-08-24 18:33+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Last-Translator: zoli111 <acszoltan111@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
 "Language: hu\n"
@@ -150,7 +150,7 @@ msgstr "“%s” már telepítve van"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "Ez az alkalmazás már telepítve van"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
@@ -180,7 +180,7 @@ msgstr "\"%s\" mozgatása a kukába"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "Alkalmazás megnyitása"
 
 #: src/Application.vala:131
 msgid "your software center"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Nem megbízható alkalmazás telepítése"
 
 #: src/MainWindow.vala:55
 #, c-format
@@ -197,7 +197,7 @@ msgstr "%s telepítése. Hátralévő idő becslése sikertelen."
 
 #: src/MainWindow.vala:166
 msgid "App installed"
-msgstr ""
+msgstr "Alkalmazás telepítve"
 
 #: src/MainWindow.vala:168
 #, c-format
