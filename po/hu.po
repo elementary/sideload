@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2019-09-30 23:19+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2021-08-24 18:33+0000\n"
+"Last-Translator: saboarpad <saboarpad@outlook.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
 "Language: hu\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
-msgstr ""
+msgstr "Telepítés sikertelen"
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
-msgstr ""
+msgstr "Részletek"
 
 #: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
@@ -33,176 +33,182 @@ msgstr "Bezárás"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Ez az alkalmazás már telepítve van."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr ""
+msgstr "A Flatpak újabb verziója szükséges az alkalmazás telepítéséhez."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Egy szükséges Flatpak-forrás nem található."
 
 #: src/Views/ErrorView.vala:72
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Egy szükséges futásidejű függőség nem található."
 
 #: src/Views/ErrorView.vala:76
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "A megadott .flatpakref fájl érvénytelen."
 
 #: src/Views/ErrorView.vala:80
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Az alkalmazást nincs aláírva megbízható aláírással."
 
 #: src/Views/ErrorView.vala:84
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Az alkalmazás, futtatókörnyezet vagy távoli forrás neve érvénytelen."
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Ismeretlen hiba történt."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "Telepíti a(z) “%s” nevű nem megbízható alkalmazást?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Telepíti a nem megbízható alkalmazást?"
 
 #: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"Ezt az alkalmazást egyedül a fejlesztője szolgáltatja és nem lett "
+"ellenőrizve sem biztonsági, sem adatvédelmi, sem rendszerintegrációi "
+"szempontból."
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
-msgstr ""
+msgstr "Részletek lekérése"
 
 #: src/Views/MainView.vala:50
 msgid "I understand"
-msgstr ""
+msgstr "Megértettem"
 
 #: src/Views/MainView.vala:73
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "Az alkalmazáshoz érkező frissítések nem lesznek felülvizsgálva"
 
 #: src/Views/MainView.vala:88
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr ""
+"A forrásból származó további alkalmazások is megjelenhetnek majd itt: %s"
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr ""
+msgstr "Mégse"
 
 #: src/Views/MainView.vala:113
 msgid "Install Anyway"
-msgstr ""
+msgstr "Telepítés mindenképp"
 
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "A telepített méret elérheti a %s -ot"
 
 #: src/Views/MainView.vala:148
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "A letöltési méret elérheti a %s -ot"
 
 #: src/Views/MainView.vala:150
 msgid "Unknown download size"
-msgstr ""
+msgstr "Ismeretlen letöltési méret"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "“%s” telepítése"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "Előkészítés…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "\"%s\" telepítésre került"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr ""
+msgstr "Az alkalmazás telepítésre került"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Bármikor megnyithatja az alkalmazásmenüből."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "“%s” már telepítve van"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "Ez az alkalmazás már telepítve van"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Nem történtek változtatások."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Látogasson ide az alkalmazásinformációk, frissítések és eltávolítás "
+"érdekében: %s."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "Rendszerbeállítások → Alkalmazások…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Az engedélyek megváltoztathatók itt: %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "\"%s\" mozgatása a kukába"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "Alkalmazás megnyitása"
 
 #: src/Application.vala:131
 msgid "your software center"
-msgstr ""
+msgstr "az Ön szoftverközpontja"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Nem megbízható alkalmazás telepítése"
 
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "%s telepítése. Hátralévő idő becslése sikertelen."
 
 #: src/MainWindow.vala:166
 msgid "App installed"
-msgstr ""
+msgstr "Alkalmazás telepítve"
 
 #: src/MainWindow.vala:168
 #, c-format
 msgid "Installed “%s”"
-msgstr ""
+msgstr "\"%s\" telepítve"
 
 #: src/MainWindow.vala:170
 msgid "The app was installed"
-msgstr ""
+msgstr "Az alkalmazás telepítve lett"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Nem található megfelelő Flatpak-telepítés."

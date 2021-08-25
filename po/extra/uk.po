@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-07-15 21:02+0000\n"
+"PO-Revision-Date: 2021-08-23 23:06+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/uk/>\n"
@@ -42,6 +42,8 @@ msgstr ""
 #: data/sideload.appdata.xml.in:16
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
+"Застосування системного середовища виконання Flatpak для локально "
+"встановлених застосунків"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45

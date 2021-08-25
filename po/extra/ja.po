@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-07-18 02:11+0000\n"
+"PO-Revision-Date: 2021-08-24 02:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Use system Flatpak runtimes for locally installed apps"
-msgstr ""
+msgstr "ローカルにインストールされたアプリがシステム全体で利用可能な Flatpak ランタイムを使用するように修正"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
