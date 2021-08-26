@@ -1,3 +1,14 @@
+io.elementary.sideload (6.0.1) bionic; urgency=medium
+
+  * Release 6.0.1 (#134)
+  * Update translation files
+  * Update translation template
+  * AppData: Update for 6.0.1 (#133)
+  * search for runtimes in system remotes too (#132)
+  * l10n: Correctly setup the locales (#129)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 26 Aug 2021 02:21:03 +0000
+
 io.elementary.sideload (6.0.0) bionic; urgency=medium
 
   * Release 6.0.0 (#126)
