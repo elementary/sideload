@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-04-26 12:57+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2021-08-27 18:48+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/sideload/"
 "ar/>\n"
 "Language: ar\n"
@@ -30,7 +30,7 @@ msgstr "التفاصيل"
 
 #: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
-msgstr "اغلاق"
+msgstr "أغلق"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
@@ -100,7 +100,7 @@ msgstr "التطبيقات الأخرى من هذا الناشر قد تظهر �
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr "إلغاء"
+msgstr "ألغ"
 
 #: src/Views/MainView.vala:113
 msgid "Install Anyway"
