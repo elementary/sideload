@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-09-02 21:43+0000\n"
+"PO-Revision-Date: 2021-09-02 21:46+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload/hu/>\n"
@@ -124,7 +124,7 @@ msgstr "Ismeretlen letöltési méret"
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr "Telepítés: “%s”"
+msgstr "“%s” telepítése"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
