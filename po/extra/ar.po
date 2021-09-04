@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-23 22:26+0000\n"
-"PO-Revision-Date: 2021-08-27 18:48+0000\n"
+"PO-Revision-Date: 2021-09-04 17:03+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ar/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr "تحميل متوازي"
+msgstr "التحميل المتوازي"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr ""
+msgstr "قم بتثبيت التطبيقات المنزلة من الإنترنت"
 
 #: data/sideload.appdata.xml.in:10
 msgid ""
@@ -34,10 +34,13 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"حمل تطبيقات Flatpak بشكل متواز لكل مستخدم على حدة وأضف المتحكمات الخاصة بها "
+"ل آب سنتر. التحميل المتوازي يظهر المعلومات المهمة الخاصة بالتطبيقات قبل "
+"قيامك بتثبيتها مثل حجم التنزيل."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Use system Flatpak runtimes for locally installed apps"
-msgstr ""
+msgstr "استخدام برامج تشغيل Flatpak الخاصة بالنظام للتطبيقات المثبتة محلياً"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:29
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
@@ -47,11 +50,11 @@ msgstr "تحديثات على الترجمة"
 
 #: data/sideload.appdata.xml.in:24
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "ضبط الإشعارات من إعدادات النظام"
 
 #: data/sideload.appdata.xml.in:25
 msgid "Offer to trash Flatpak files after installing"
-msgstr ""
+msgstr "إتاحة خيار نقل ملفات Flatpak إلى سلة المهملات بعد اكتمال التثبيت"
 
 #: data/sideload.appdata.xml.in:26
 msgid "Support dark style"
@@ -59,27 +62,27 @@ msgstr "دعم الواجهة المظلمة"
 
 #: data/sideload.appdata.xml.in:27
 msgid "Support Flatpak bundle files"
-msgstr ""
+msgstr "دعم ملفات باقات Flatpak"
 
 #: data/sideload.appdata.xml.in:28
 msgid "Fix crashes on installation failure"
-msgstr ""
+msgstr "إصلاح التعطل عند فشل التثبيت"
 
 #: data/sideload.appdata.xml.in:30
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "الربط ل إعدادات النظام ← التطبيقات ← الصلاحيات"
 
 #: data/sideload.appdata.xml.in:44
 msgid "Show app name in the main view once it's loaded"
-msgstr ""
+msgstr "إظهار اسم التطبيق في المنظور الرئيسي بعد تحميله"
 
 #: data/sideload.appdata.xml.in:52
 msgid "Improve performance of download size calculation"
-msgstr ""
+msgstr "تحسين أداء تقدير حجم التنزيل"
 
 #: data/sideload.appdata.xml.in:60
 msgid "First release. Hello world!"
-msgstr ""
+msgstr "الإصدار الأول. أهلاً بالعالم!"
 
 #: data/sideload.appdata.xml.in:109
 msgid "elementary, Inc."
@@ -87,7 +90,7 @@ msgstr "elementary, Inc."
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
-msgstr ""
+msgstr "مثبت Flatpak"
 
 #: data/sideload.desktop.in:7
 msgid "io.elementary.sideload"
@@ -95,4 +98,4 @@ msgstr ""
 
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
-msgstr ""
+msgstr "flatpak;"
