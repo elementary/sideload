@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 22:26+0000\n"
+"POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-07-18 02:11+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -38,52 +38,56 @@ msgstr ""
 "install like their download size."
 
 #: data/sideload.appdata.xml.in:16
-msgid "Use system Flatpak runtimes for locally installed apps"
+msgid "Fix blurry app icon in multitasking view"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
-#: data/sideload.appdata.xml.in:53
+#: data/sideload.appdata.xml.in:53 data/sideload.appdata.xml.in:61
 msgid "Updated translations"
 msgstr "Updated translations"
 
 #: data/sideload.appdata.xml.in:24
+msgid "Use system Flatpak runtimes for locally installed apps"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:32
 msgid "Control notifications in System Settings"
 msgstr "Control notifications in System Settings"
 
-#: data/sideload.appdata.xml.in:25
+#: data/sideload.appdata.xml.in:33
 msgid "Offer to trash Flatpak files after installing"
 msgstr "Offer to move Flatpak files to Rubbish Bin after installing"
 
-#: data/sideload.appdata.xml.in:26
+#: data/sideload.appdata.xml.in:34
 msgid "Support dark style"
 msgstr "Support dark style"
 
-#: data/sideload.appdata.xml.in:27
+#: data/sideload.appdata.xml.in:35
 msgid "Support Flatpak bundle files"
 msgstr "Support Flatpak bundle files"
 
-#: data/sideload.appdata.xml.in:28
+#: data/sideload.appdata.xml.in:36
 msgid "Fix crashes on installation failure"
 msgstr "Fix crashes on installation failure"
 
-#: data/sideload.appdata.xml.in:30
+#: data/sideload.appdata.xml.in:38
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "Link to System Settings → Applications → Permissions"
 
-#: data/sideload.appdata.xml.in:44
+#: data/sideload.appdata.xml.in:52
 msgid "Show app name in the main view once it's loaded"
 msgstr "Show app name in the main view once it's loaded"
 
-#: data/sideload.appdata.xml.in:52
+#: data/sideload.appdata.xml.in:60
 msgid "Improve performance of download size calculation"
 msgstr "Improve performance of download size calculation"
 
-#: data/sideload.appdata.xml.in:60
+#: data/sideload.appdata.xml.in:68
 msgid "First release. Hello world!"
 msgstr "First release. Hello world!"
 
-#: data/sideload.appdata.xml.in:109
+#: data/sideload.appdata.xml.in:117
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

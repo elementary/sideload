@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 22:26+0000\n"
+"POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-08-24 02:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -38,52 +38,58 @@ msgstr ""
 "な情報をインストール前に表示します。"
 
 #: data/sideload.appdata.xml.in:16
-msgid "Use system Flatpak runtimes for locally installed apps"
-msgstr "ローカルにインストールされたアプリがシステム全体で利用可能な Flatpak ランタイムを使用するように修正"
+msgid "Fix blurry app icon in multitasking view"
+msgstr ""
 
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:29
+#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
-#: data/sideload.appdata.xml.in:53
+#: data/sideload.appdata.xml.in:53 data/sideload.appdata.xml.in:61
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
 #: data/sideload.appdata.xml.in:24
+msgid "Use system Flatpak runtimes for locally installed apps"
+msgstr ""
+"ローカルにインストールされたアプリがシステム全体で利用可能な Flatpak ランタイ"
+"ムを使用するように修正"
+
+#: data/sideload.appdata.xml.in:32
 msgid "Control notifications in System Settings"
 msgstr "システム設定で通知を管理できるように修正"
 
-#: data/sideload.appdata.xml.in:25
+#: data/sideload.appdata.xml.in:33
 msgid "Offer to trash Flatpak files after installing"
 msgstr "インストール後に Flatpak ファイルをゴミ箱に移動できる機能を追加"
 
-#: data/sideload.appdata.xml.in:26
+#: data/sideload.appdata.xml.in:34
 msgid "Support dark style"
 msgstr "ダークスタイルに対応"
 
-#: data/sideload.appdata.xml.in:27
+#: data/sideload.appdata.xml.in:35
 msgid "Support Flatpak bundle files"
 msgstr "Flatpak バンドルファイルに対応"
 
-#: data/sideload.appdata.xml.in:28
+#: data/sideload.appdata.xml.in:36
 msgid "Fix crashes on installation failure"
 msgstr "インストール失敗時にクラッシュする不具合を修正"
 
-#: data/sideload.appdata.xml.in:30
+#: data/sideload.appdata.xml.in:38
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "システム設定 → アプリケーション → パーミッションへのリンクを追加"
 
-#: data/sideload.appdata.xml.in:44
+#: data/sideload.appdata.xml.in:52
 msgid "Show app name in the main view once it's loaded"
 msgstr "アプリ名を読み込んだ際にメインビューに表示するように変更"
 
-#: data/sideload.appdata.xml.in:52
+#: data/sideload.appdata.xml.in:60
 msgid "Improve performance of download size calculation"
 msgstr "ダウンロードサイズの計算パフォーマンスを改善"
 
-#: data/sideload.appdata.xml.in:60
+#: data/sideload.appdata.xml.in:68
 msgid "First release. Hello world!"
 msgstr "最初のリリースです。Hello world!"
 
-#: data/sideload.appdata.xml.in:109
+#: data/sideload.appdata.xml.in:117
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
