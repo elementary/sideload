@@ -1,3 +1,10 @@
+io.elementary.sideload (6.0.2) bionic; urgency=medium
+
+  * Release 6.0.2 (#137)
+  * Scale app icon (#135)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 22 Sep 2021 20:57:43 +0000
+
 io.elementary.sideload (6.0.1) bionic; urgency=medium
 
   * Release 6.0.1 (#134)
