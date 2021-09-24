@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2021-08-23 23:06+0000\n"
-"Last-Translator: asdffdsdaf <asdffdsdaf@gmail.com>\n"
-"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload-"
-"extra/ru/>\n"
+"PO-Revision-Date: 2021-09-25 03:33+0000\n"
+"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Fix blurry app icon in multitasking view"
-msgstr ""
+msgstr "Исправлены размытые иконки приложений в режиме многозадачности"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
