@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-10-01 08:08+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"Last-Translator: webrunner1981 <adrian.ambroziak1@unilodz.eu>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/sideload/"
 "pl/>\n"
 "Language: pl\n"
@@ -147,7 +147,7 @@ msgstr ""
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "“%s” jest już zainstalowana"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
