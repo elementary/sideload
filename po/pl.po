@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-10-01 08:07+0000\n"
-"Last-Translator: webrunner1981 <adrian.ambroziak1@unilodz.eu>\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/sideload/"
 "pl/>\n"
 "Language: pl\n"
@@ -34,7 +34,7 @@ msgstr "Zamknij"
 
 #: src/Views/ErrorView.vala:60
 msgid "This app is already installed."
-msgstr ""
+msgstr "Ta aplikacja jest już zainstalowana."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
@@ -64,16 +64,16 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:87
 msgid "An unknown error occured."
-msgstr ""
+msgstr "Wystąpił nieznany błąd."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "Zainstalować niezaufaną aplikację „%s”?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "Zainstalować niezaufaną aplikację?"
 
 #: src/Views/MainView.vala:38
 msgid ""
