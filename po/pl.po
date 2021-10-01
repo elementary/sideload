@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-10-01 08:07+0000\n"
-"Last-Translator: webrunner1981 <adrian.ambroziak1@unilodz.eu>\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/sideload/"
 "pl/>\n"
 "Language: pl\n"
@@ -111,7 +111,7 @@ msgstr "Zainstaluj mimo to"
 #: src/Views/MainView.vala:130
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "Rozmiar instalacji może wynosić do %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
