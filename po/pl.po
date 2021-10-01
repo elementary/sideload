@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-10-01 08:10+0000\n"
-"Last-Translator: Jacek Spławski <splawski.j@gmail.com>\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/sideload/"
 "pl/>\n"
 "Language: pl\n"
@@ -175,15 +175,15 @@ msgstr "Uprawnienia mogą być zmienione w %s"
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr "Przenieś \"%s\" do Kosza"
+msgstr "Przenieś „%s” do Kosza"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "Otwórz aplikację"
 
 #: src/Application.vala:131
 msgid "your software center"
-msgstr ""
+msgstr "twoje centrum oprogramowania"
 
 #: src/MainWindow.vala:36
 msgid "Install Untrusted App"
