@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-10-07 17:05+0000\n"
-"Last-Translator: harrylim05 <harry_lim@naver.com>\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/desktop/sideload/"
 "ko/>\n"
 "Language: ko\n"
@@ -37,7 +37,7 @@ msgstr "이 앱은 이미 설치되었습니다."
 
 #: src/Views/ErrorView.vala:64
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr "이 앱을 실행하기 위해서는 최신버전의 Flatapk이 필요합니다."
+msgstr "이 앱을 실행하기 위해서는 최신버전의 Flatpak이 필요합니다."
 
 #: src/Views/ErrorView.vala:68
 msgid "A required Flatpak remote was not found."
