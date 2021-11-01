@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2021-05-22 10:06+0000\n"
-"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
+"PO-Revision-Date: 2021-11-01 02:39+0000\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "desktop/sideload/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -194,16 +194,13 @@ msgid "App installed"
 msgstr "软件已安装"
 
 #: src/MainWindow.vala:168
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "正在安装 “%s”"
+msgstr "“%s”已安装"
 
 #: src/MainWindow.vala:170
-#, fuzzy
-#| msgid "The app has been installed"
 msgid "The app was installed"
-msgstr "此应用已成功安装"
+msgstr "应用已安装"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
