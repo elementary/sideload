@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2021-11-02 07:22+0000\n"
-"Last-Translator: Sebastian Gardziński <skellige102@gmail.com>\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/pl/>\n"
 "Language: pl\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Załaduj nieoficjalną aplikację"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -34,6 +34,9 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Załaduj nieoficjalne aplikacje Flatpak jako użytkownik i automatycznie dodaj "
+"ich repozytoria do AppCenter. Przed załadowaniem nieoficjalnych aplikacji "
+"pokazywane są istotne informacje o nich, takie jak rozmiar do pobrania."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Fix blurry app icon in multitasking view"
