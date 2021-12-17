@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2021-12-14 21:27+0000\n"
+"PO-Revision-Date: 2021-12-17 15:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/tr/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr "Sideload"
+msgstr "Dışarıdan Yükleme"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -34,8 +34,8 @@ msgid ""
 "install like their download size."
 msgstr ""
 "Flatpak uygulamalarını kullanıcı başına yükleyin ve uzak depolarını otomatik "
-"olarak Uygulama Merkezine ekleyin. Sideload, yüklemeden önce indirme "
-"boyutları gibi uygulamalar hakkında önemli bilgiler gösterir."
+"olarak Uygulama Merkezine ekleyin. Dışarıdan yükleme, yüklemeden önce "
+"indirme boyutları gibi uygulamalar hakkında önemli bilgiler gösterir."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Fix blurry app icon in multitasking view"
