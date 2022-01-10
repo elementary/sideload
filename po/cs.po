@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2022-01-10 21:14+0000\n"
+"PO-Revision-Date: 2022-01-11 03:35+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
 "cs/>\n"
@@ -109,10 +109,9 @@ msgid "Install Anyway"
 msgstr "Přesto nainstalovat"
 
 #: src/Views/MainView.vala:130
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "Velikost stahování může být až %s"
+msgstr "Velikost instalace může být až %s"
 
 #: src/Views/MainView.vala:148
 #, c-format
@@ -143,7 +142,7 @@ msgstr "Aplikace byla nainstalována"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Kdykoli ji spustíte z nabídky aplikací."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
