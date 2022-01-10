@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2022-01-10 18:13+0000\n"
+"PO-Revision-Date: 2022-01-10 21:14+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
 "cs/>\n"
@@ -156,27 +156,27 @@ msgstr "Tato aplikace už je nainstalovaná"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Nebyly udělány žádné změny."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
+msgstr "Ohledně informací o aplikacích, aktualizací a odinstalací jděte do %s."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "Nastavení systému → Aplikace…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Oprávnění je možné změnit v %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Přesunout „%s“ do Koše"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
@@ -193,28 +193,25 @@ msgstr "Nainstalovat nedůvěryhodnou aplikaci"
 #: src/MainWindow.vala:55
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Instaluje se %s. Nedaří se odhadnout čas do dokončení."
 
 #: src/MainWindow.vala:166
 msgid "App installed"
 msgstr "Aplikace nainstalována"
 
 #: src/MainWindow.vala:168
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "Instaluje se „%s“"
+msgstr "Nainstalováno „%s“"
 
 #: src/MainWindow.vala:170
-#, fuzzy
-#| msgid "The app was installed successfully"
 msgid "The app was installed"
-msgstr "Aplikace byla úspěšně nainstalována"
+msgstr "Aplikace byla nainstalována"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Nepodařilo se najít vhodnou instalaci Flatpak."
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "Aplikace „%s“ byla úspěšně nainstalována"
