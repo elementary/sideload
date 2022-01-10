@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2022-01-10 18:13+0000\n"
+"PO-Revision-Date: 2022-01-11 03:35+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/cs/>\n"
@@ -33,10 +33,13 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Instalace Flatpak aplikací pro jednotlivé uživatele a automatické přidávání "
+"jejich zdrojů do Centra aplikací. Instalace bokem zobrazuje důležité "
+"informace o aplikaci ještě před instalací, jako například velikost stahování."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Fix blurry app icon in multitasking view"
-msgstr ""
+msgstr "Opravena rozmazaná ikona aplikace ve víceúlohovém zobrazení"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
@@ -47,30 +50,32 @@ msgstr "Aktualizovány překlady"
 #: data/sideload.appdata.xml.in:24
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
+"Použít systémová Flatpak běhová prostředí pro aplikace nainstalované z "
+"lokálních zdrojů"
 
 #: data/sideload.appdata.xml.in:32
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "Ovládání upozornění v Nastavení systému"
 
 #: data/sideload.appdata.xml.in:33
 msgid "Offer to trash Flatpak files after installing"
-msgstr ""
+msgstr "Po instalaci je nabízeno přesunutí Flatpak souborů do koše"
 
 #: data/sideload.appdata.xml.in:34
 msgid "Support dark style"
-msgstr ""
+msgstr "Podpora pro tmavý vzhled"
 
 #: data/sideload.appdata.xml.in:35
 msgid "Support Flatpak bundle files"
-msgstr ""
+msgstr "Podpora pro soubory Flatpak bundle"
 
 #: data/sideload.appdata.xml.in:36
 msgid "Fix crashes on installation failure"
-msgstr ""
+msgstr "Opraveny pády při nezdařené instalaci"
 
 #: data/sideload.appdata.xml.in:38
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "Odkaz na Nastavení systému → Aplikace → Oprávnění"
 
 #: data/sideload.appdata.xml.in:52
 msgid "Show app name in the main view once it's loaded"
