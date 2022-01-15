@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2022-01-15 20:14+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload/"
 "nl/>\n"
 "Language: nl\n"
@@ -139,7 +139,7 @@ msgstr "De app is geïnstalleerd"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr "Open het op elk gewenst moment vanuit het menu Toepassingen."
+msgstr "Open het op elk gewenst moment vanuit het applicatiemenu."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
