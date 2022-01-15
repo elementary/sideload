@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
 "PO-Revision-Date: 2022-01-15 20:14+0000\n"
-"Last-Translator: RobbeBuyle <robbe.buyle@telenet.be>\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload/"
 "nl/>\n"
 "Language: nl\n"
@@ -152,12 +152,12 @@ msgstr "Deze app is al geïnstalleerd"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Er zijn geen wijzigingen aangebracht."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
+msgstr "Bezoek %s voor app-informatie, updates en om te deïnstalleren"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
