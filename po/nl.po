@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2022-01-15 20:14+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2022-01-15 21:12+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload/"
 "nl/>\n"
 "Language: nl\n"
@@ -161,20 +161,18 @@ msgstr "Bezoek %s voor app-informatie, updates en om te deïnstalleren"
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
-#, fuzzy
-#| msgid "System Settings"
 msgid "System Settings → Applications…"
-msgstr "Systeem instellingen"
+msgstr "Systeeminstellingen → Toepassingen…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Rechten kunnen gewijzigd worden in %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Verplaats ”%s” naar de Prullenbak"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
@@ -212,7 +210,7 @@ msgstr "De app is succesvol geïnstalleerd"
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
 #: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Geen geschikte Flatpak-installatie gevonden."
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "De installatie van “%s” is gereed"
