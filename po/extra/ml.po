@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2022-02-03 15:04+0000\n"
+"PO-Revision-Date: 2022-02-03 19:18+0000\n"
 "Last-Translator: Joel Jose <joel750jose@gmail.com>\n"
 "Language-Team: Malayalam <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ml/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
 #: data/sideload.appdata.xml.in:53 data/sideload.appdata.xml.in:61
 msgid "Updated translations"
-msgstr ""
+msgstr "അപ്ഡേറ്റ് ചെയ്ത വിവർത്തനങ്ങൾ"
 
 #: data/sideload.appdata.xml.in:24
 msgid "Use system Flatpak runtimes for locally installed apps"
