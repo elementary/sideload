@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2021-11-23 17:47+0000\n"
+"PO-Revision-Date: 2022-04-07 22:05+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/he/>\n"
@@ -45,7 +45,7 @@ msgstr "תוקן סמל יישום מטושטש בתצוגת ריבוי משימ
 #: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
 #: data/sideload.appdata.xml.in:53 data/sideload.appdata.xml.in:61
 msgid "Updated translations"
-msgstr "תרגומים עודכנו"
+msgstr "תרגומים עדכניים"
 
 #: data/sideload.appdata.xml.in:24
 msgid "Use system Flatpak runtimes for locally installed apps"
