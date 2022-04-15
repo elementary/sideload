@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2022-04-04 21:19+0000\n"
+"PO-Revision-Date: 2022-04-15 20:31+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "desktop/sideload/ckb/>\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:45
 msgid "Details"
-msgstr ""
+msgstr "زانیاری"
 
 #: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
 msgid "Close"
