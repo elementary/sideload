@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2019-09-30 10:15-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-04-20 09:33+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
+"Language-Team: English (Canada) <https://l10n.elementary.io/projects/desktop/"
+"sideload/en_CA/>\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Views/ErrorView.vala:28
 msgid "Install failed"
@@ -65,9 +67,9 @@ msgid "An unknown error occured."
 msgstr "An unknown error occured."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
+#, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Install untrusted software?"
+msgstr "Install untrusted software “%s”?"
 
 #: src/Views/MainView.vala:36
 #, fuzzy
@@ -134,9 +136,9 @@ msgid "Preparing…"
 msgstr ""
 
 #: src/Views/SuccessView.vala:44
-#, fuzzy, c-format
+#, c-format
 msgid "“%s” has been installed"
-msgstr "This software is already installed."
+msgstr "“%s” has been installed"
 
 #: src/Views/SuccessView.vala:46
 #, fuzzy
@@ -148,9 +150,9 @@ msgid "Open it any time from the Applications Menu."
 msgstr ""
 
 #: src/Views/SuccessView.vala:53
-#, fuzzy, c-format
+#, c-format
 msgid "“%s” is already installed"
-msgstr "This software is already installed."
+msgstr "“%s” is already installed"
 
 #: src/Views/SuccessView.vala:55
 #, fuzzy
