@@ -39,9 +39,8 @@ executable(
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),
         dependency ('gobject-2.0'),
-        dependency ('granite-7', version: '>=5.4.0'),
+        dependency ('granite-7'),
         dependency ('gtk4'),
-        dependency ('libadwaita-1'),
         dependency ('libxml-2.0'),
     ],
     install : true
