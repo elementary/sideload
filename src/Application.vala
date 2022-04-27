@@ -95,7 +95,7 @@ public class Sideload.Application : Gtk.Application {
         }
 
         main_window = new MainWindow (this, flatpak_file);
-        main_window.show_all ();
+        main_window.present ();
 
         var quit_action = new SimpleAction ("quit", null);
         var launch_action = new SimpleAction ("launch", null);

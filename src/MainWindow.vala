@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.MainWindow : Hdy.ApplicationWindow {
+public class Sideload.MainWindow : Gtk.ApplicationWindow {
     public FlatpakFile file { get; construct; }
     private Cancellable? current_cancellable = null;
 
@@ -39,12 +39,10 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     }
 
     construct {
-        Hdy.init ();
-
-        var window_handle = new Hdy.WindowHandle ();
-
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.START;
+        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload") {
+            pixel_size = 48,
+            valign = Gtk.Align.START
+        };
 
         main_view = new MainView ();
 
@@ -55,13 +53,26 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
             progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
         }
 
-        stack = new Gtk.Stack ();
-        stack.vhomogeneous = false;
-        stack.add (main_view);
-        stack.add (progress_view);
+        stack = new Gtk.Stack () {
+            vhomogeneous = false
+        };
+        stack.add_child (main_view);
+        stack.add_child (progress_view);
 
-        window_handle.add (stack);
-        add (window_handle);
+        var window_handle = new Gtk.WindowHandle () {
+            child = stack
+        };
+
+        child = window_handle;
+
+        // We need to hide the title area
+        var null_title = new Gtk.Grid () {
+            visible = false
+        };
+        set_titlebar (null_title);
+
+        add_css_class ("dialog");
+        add_css_class (Granite.STYLE_CLASS_MESSAGE_DIALOG);
 
         main_view.install_request.connect (on_install_button_clicked);
         file.progress_changed.connect (on_progress_changed);
@@ -71,7 +82,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
             if (file.already_installed) {
                 var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
 
-                stack.add (success_view);
+                stack.add_child (success_view);
                 stack.visible_child = success_view;
             } else {
                 if (file is FlatpakRefFile) {
@@ -94,9 +105,9 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         get_details.begin ();
     }
 
-    protected override bool delete_event (Gdk.EventAny event) {
-        return cancel ();
-    }
+    // protected override bool delete_event (Gdk.EventAny event) {
+    //     return cancel ();
+    // }
 
     private bool cancel () {
         if (current_cancellable != null) {
@@ -137,12 +148,12 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         if (error is Flatpak.Error.ALREADY_INSTALLED) {
             var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
 
-            stack.add (success_view);
+            stack.add_child (success_view);
             stack.visible_child = success_view;
         } else if (!(error is Flatpak.Error.ABORTED)) {
             var error_view = new ErrorView (error);
 
-            stack.add (error_view);
+            stack.add_child (error_view);
             stack.visible_child = error_view;
         }
 
@@ -154,23 +165,23 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     private void on_install_succeeded () {
         var success_view = new SuccessView (app_name);
 
-        stack.add (success_view);
+        stack.add_child (success_view);
         stack.visible_child = success_view;
 
         if (file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (false);
         }
 
-        var win = get_window ();
-        if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {
-            var notification = new Notification (_("App installed"));
-            if (app_name != null) {
-                notification.set_body (_("Installed “%s”").printf (app_name));
-            } else {
-                notification.set_body (_("The app was installed"));
-            }
+        // var win = get_window ();
+        // if (win != null && !(Gdk.WindowState.FOCUSED in get_window ().get_state ())) {
+        //     var notification = new Notification (_("App installed"));
+        //     if (app_name != null) {
+        //         notification.set_body (_("Installed “%s”").printf (app_name));
+        //     } else {
+        //         notification.set_body (_("The app was installed"));
+        //     }
 
-            application.send_notification ("installed", notification);
-        }
+        //     application.send_notification ("installed", notification);
+        // }
     }
 }

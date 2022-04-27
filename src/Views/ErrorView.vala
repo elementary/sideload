@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 elementary, Inc. (https://elementary.io)
+ * Copyright 2019-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -30,29 +30,30 @@ public class Sideload.ErrorView : AbstractView {
         secondary_label.label = prettify_flatpak_error (error);
 
         var details_view = new Gtk.TextView ();
-        details_view.border_width = 6;
+        // details_view.border_width = 6;
         details_view.buffer.text = error.message;
         details_view.editable = false;
         details_view.pixels_below_lines = 3;
         details_view.wrap_mode = Gtk.WrapMode.WORD;
-        details_view.get_style_context ().add_class (Granite.STYLE_CLASS_TERMINAL);
+        details_view.add_css_class (Granite.STYLE_CLASS_TERMINAL);
 
-        var scroll_box = new Gtk.ScrolledWindow (null, null);
-        scroll_box.margin_top = 12;
-        scroll_box.min_content_height = 70;
-        scroll_box.add (details_view);
+        var scroll_box = new Gtk.ScrolledWindow () {
+            child = details_view,
+            margin_top = 12,
+            min_content_height = 70
+        };
 
-        var expander = new Gtk.Expander (_("Details"));
-        expander.hexpand = true;
-        expander.add (scroll_box);
+        var expander = new Gtk.Expander (_("Details")) {
+            child = scroll_box,
+            hexpand = true
+        };
 
-        var close_button = new Gtk.Button.with_label (_("Close"));
-        close_button.action_name = "app.quit";
+        var close_button = new Gtk.Button.with_label (_("Close")) {
+            action_name = "app.quit"
+        };
 
-        content_area.add (expander);
-        button_box.add (close_button);
-
-        show_all ();
+        content_area.attach (expander, 0, 0);
+        button_box.append (close_button);
     }
 
     private static string prettify_flatpak_error (GLib.Error e) {

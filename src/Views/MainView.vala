@@ -42,15 +42,14 @@ public class Sideload.MainView : AbstractView {
 
         var loading_label = new Gtk.Label (_("Fetching details"));
 
-        var loading_grid = new Gtk.Grid ();
-        loading_grid.column_spacing = 6;
-        loading_grid.add (loading_spinner);
-        loading_grid.add (loading_label);
+        var loading_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        loading_grid.append (loading_spinner);
+        loading_grid.append (loading_label);
 
         var agree_check = new Gtk.CheckButton.with_label (_("I understand"));
         agree_check.margin_top = 12;
 
-        var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic", Gtk.IconSize.BUTTON);
+        var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic");
         download_size_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext download_context = download_size_icon.get_style_context ();
@@ -63,7 +62,7 @@ public class Sideload.MainView : AbstractView {
         download_size_label.wrap = true;
         download_size_label.xalign = 0;
 
-        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
+        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic");
         updates_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
@@ -76,7 +75,7 @@ public class Sideload.MainView : AbstractView {
         updates_label.wrap = true;
         updates_label.xalign = 0;
 
-        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON);
+        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic");
         repo_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
@@ -105,18 +104,16 @@ public class Sideload.MainView : AbstractView {
         details_stack.add_named (details_grid, "details");
         details_stack.visible_child_name = "loading";
 
-        content_area.add (details_stack);
+        content_area.attach (details_stack, 0, 0);
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
 
         var install_button = new Gtk.Button.with_label (_("Install Anyway"));
-        install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        install_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-        button_box.add (cancel_button);
-        button_box.add (install_button);
-
-        show_all ();
+        button_box.append (cancel_button);
+        button_box.append (install_button);
 
         agree_check.bind_property ("active", install_button, "sensitive", GLib.BindingFlags.SYNC_CREATE);
         agree_check.grab_focus ();
@@ -140,7 +137,6 @@ public class Sideload.MainView : AbstractView {
         }
 
         details_stack.visible_child_name = "details";
-        show_all ();
     }
 
     public void display_ref_details (string? size, bool extra_repo) {
@@ -158,6 +154,5 @@ public class Sideload.MainView : AbstractView {
         details_grid.attach (updates_icon, 0, 1);
         details_grid.attach (updates_label, 1, 1);
         details_stack.visible_child_name = "details";
-        show_all ();
     }
 }
