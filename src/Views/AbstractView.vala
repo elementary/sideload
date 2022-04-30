@@ -42,20 +42,22 @@ public abstract class AbstractView : Gtk.Box {
         overlay.add_overlay (badge);
 
         primary_label = new Gtk.Label (null) {
-            halign = Gtk.Align.START
+            max_width_chars = 1,
+            xalign = 0
         };
-        primary_label.max_width_chars = 50;
+
         primary_label.selectable = true;
         primary_label.wrap = true;
         primary_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
         secondary_label = new Gtk.Label (null) {
-            halign = Gtk.Align.START
+            max_width_chars = 50,
+            width_chars = 50,
+            xalign = 0
         };
         secondary_label.use_markup = true;
         secondary_label.selectable = true;
         secondary_label.margin_bottom = 18;
-        secondary_label.max_width_chars = 50;
         secondary_label.wrap = true;
 
         content_area = new Gtk.Grid ();
