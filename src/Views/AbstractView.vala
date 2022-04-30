@@ -84,7 +84,6 @@ public abstract class AbstractView : Gtk.Box {
 
         orientation = Gtk.Orientation.VERTICAL;
         append (message_grid);
-        append (content_area);
         append (button_box);
         add_css_class ("dialog-vbox");
     }
