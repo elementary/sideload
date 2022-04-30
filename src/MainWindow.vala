@@ -103,19 +103,12 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         });
 
         get_details.begin ();
-    }
 
-    // protected override bool delete_event (Gdk.EventAny event) {
-    //     return cancel ();
-    // }
-
-    private bool cancel () {
-        if (current_cancellable != null) {
-            current_cancellable.cancel ();
-            return true;
-        }
-
-        return false;
+        GLib.Application.get_default ().shutdown.connect (() => {
+            if (current_cancellable != null) {
+                current_cancellable.cancel ();
+            }
+        });
     }
 
     private async void get_details () {
