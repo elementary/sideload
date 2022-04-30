@@ -65,6 +65,7 @@ public abstract class AbstractView : Gtk.Box {
         content_area.row_spacing = 6;
 
         button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
+            homogeneous = true,
             hexpand = true,
             vexpand = true,
             halign = Gtk.Align.END,
