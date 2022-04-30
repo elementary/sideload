@@ -29,19 +29,19 @@ public class Sideload.ErrorView : AbstractView {
 
         secondary_label.label = prettify_flatpak_error (error);
 
-        var details_view = new Gtk.TextView ();
-        // details_view.border_width = 6;
-        details_view.buffer.text = error.message;
-        details_view.editable = false;
-        details_view.pixels_below_lines = 3;
-        details_view.wrap_mode = Gtk.WrapMode.WORD;
-        details_view.add_css_class (Granite.STYLE_CLASS_TERMINAL);
+        var details_view = new Gtk.Label (error.message) {
+            selectable = true,
+            wrap = true,
+            xalign = 0,
+            yalign = 0
+        };
 
         var scroll_box = new Gtk.ScrolledWindow () {
             child = details_view,
             margin_top = 12,
             min_content_height = 70
         };
+        scroll_box.add_css_class (Granite.STYLE_CLASS_TERMINAL);
 
         var expander = new Gtk.Expander (_("Details")) {
             child = scroll_box,
