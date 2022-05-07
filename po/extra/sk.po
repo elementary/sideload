@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 19:14+0000\n"
-"PO-Revision-Date: 2022-05-07 01:27+0000\n"
+"PO-Revision-Date: 2022-05-07 15:04+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/sk/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 #: data/sideload.appdata.xml.in:52 data/sideload.appdata.xml.in:60
 #: data/sideload.appdata.xml.in:68
 msgid "Updated translations"
-msgstr "Aktualizácia prekladov"
+msgstr "Aktualizované preklady"
 
 #: data/sideload.appdata.xml.in:23
 msgid "Fix blurry app icon in multitasking view"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:41
 msgid "Support dark style"
-msgstr ""
+msgstr "Podpora tmavého štýlu"
 
 #: data/sideload.appdata.xml.in:42
 msgid "Support Flatpak bundle files"
