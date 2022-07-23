@@ -142,7 +142,6 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         switch (error_code) {
             case Flatpak.Error.ALREADY_INSTALLED:
                 var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
-
                 stack.add (success_view);
                 stack.visible_child = success_view;
                 break;

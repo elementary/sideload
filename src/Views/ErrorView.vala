@@ -82,9 +82,6 @@ public class Sideload.ErrorView : AbstractView {
 
                 case Flatpak.Error.INVALID_NAME:
                     return _("The application, runtime, or remote name is invalid.");
-
-                default:
-                    break; //TODO Check and handle other errors
             }
         }
 
