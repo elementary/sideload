@@ -99,12 +99,13 @@ public abstract class Sideload.FlatpakFile : Object {
     }
 
     protected async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) {
-        Error? transaction_error = null;
+        error_code = -1;
         new Thread<void*> ("install-flatpak", () => {
             try {
                 transaction.run (cancellable);
             } catch (Error e) {
-                transaction_error = e;
+                error_code = e.code;
+                error_message = e.message;
             }
 
             Idle.add (run_transaction_async.callback);
@@ -113,8 +114,8 @@ public abstract class Sideload.FlatpakFile : Object {
 
         yield;
 
-        if (transaction_error != null) {
-            installation_failed (transaction_error.code, transaction_error.message);
+        if (error_code >= 0) {
+            installation_failed (error_code, error_message);
         } else {
             installation_succeeded ();
         }
@@ -126,8 +127,8 @@ public abstract class Sideload.FlatpakFile : Object {
             return true;
         }
 
-        var error_code = e.code;
-        var error_message = e.message;
+        error_code = e.code;
+        error_message = e.message;
 
         Idle.add (() => {
             installation_failed (error_code, error_message);
