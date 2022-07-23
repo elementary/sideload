@@ -47,17 +47,17 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         image.valign = Gtk.Align.START;
 
         main_view = new MainView ();
+        stack = new Gtk.Stack () {
+            vhomogeneous = false
+        };
+        stack.add (main_view);
+        window_handle.add (stack);
+        add (window_handle);
 
         if (file.size == "0") {
             var error_view = new ErrorView (file.error_code, file.error_message);
-            stack = new Gtk.Stack ();
-            stack.vhomogeneous = false;
-            stack.add (main_view);
             stack.add (error_view);
             stack.visible_child = error_view;
-            window_handle.add (stack);
-            add (window_handle);
-
             return;
         } else if (file is FlatpakRefFile) {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
@@ -66,13 +66,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
             progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
         }
 
-        stack = new Gtk.Stack ();
-        stack.vhomogeneous = false;
-        stack.add (main_view);
         stack.add (progress_view);
-
-        window_handle.add (stack);
-        add (window_handle);
 
         main_view.install_request.connect (on_install_button_clicked);
         file.progress_changed.connect (on_progress_changed);
