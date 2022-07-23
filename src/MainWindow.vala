@@ -48,7 +48,18 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
 
         main_view = new MainView ();
 
-        if (file is FlatpakRefFile) {
+        if (file.size == "0") {
+            var error_view = new ErrorView (file.error_code, file.error_message);
+            stack = new Gtk.Stack ();
+            stack.vhomogeneous = false;
+            stack.add (main_view);
+            stack.add (error_view);
+            stack.visible_child = error_view;
+            window_handle.add (stack);
+            add (window_handle);
+
+            return;
+        } else if (file is FlatpakRefFile) {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
         } else {
             progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
@@ -133,17 +144,24 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         Granite.Services.Application.set_progress.begin (progress);
     }
 
-    private void on_install_failed (GLib.Error error) {
-        if (error is Flatpak.Error.ALREADY_INSTALLED) {
-            var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
+    private void on_install_failed (int error_code, string? error_message) {
+        switch (error_code) {
+            case Flatpak.Error.ALREADY_INSTALLED:
+                var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
 
-            stack.add (success_view);
-            stack.visible_child = success_view;
-        } else if (!(error is Flatpak.Error.ABORTED)) {
-            var error_view = new ErrorView (error);
+                stack.add (success_view);
+                stack.visible_child = success_view;
+                break;
 
-            stack.add (error_view);
-            stack.visible_child = error_view;
+            case Flatpak.Error.ABORTED:
+                break;
+
+            default:
+                var error_view = new ErrorView (error_code, error_message);
+                stack.add (error_view);
+                stack.visible_child = error_view;
+
+                break;
         }
 
         if (file is FlatpakRefFile) {
