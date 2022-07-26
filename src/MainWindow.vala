@@ -27,6 +27,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     private ProgressView progress_view;
 
     private string? app_name = null;
+    private string? app_id = null;
 
     public MainWindow (Gtk.Application application, FlatpakFile file) {
         Object (
@@ -113,6 +114,10 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     private async void get_details () {
         yield file.get_details ();
         app_name = yield file.get_name ();
+        if (file is FlatpakRefFile) {
+            app_id = yield ((FlatpakRefFile)file).get_id ();
+        }
+
         if (app_name != null) {
             progress_view.app_name = app_name;
             main_view.app_name = app_name;
@@ -173,7 +178,32 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
                 notification.set_body (_("The app was installed"));
             }
 
+            var icon = get_application_icon ();
+            if (icon != null) {
+                notification.set_icon (new ThemedIcon (icon));
+            }
             application.send_notification ("installed", notification);
+        }
+    }
+
+    private string? get_application_icon () {
+        try {
+            var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
+            var file = File.new_for_path (desktop_file_path);
+            var dis = new DataInputStream (file.read ());
+            
+            string line;
+            while ((line = dis.read_line (null)) != null) {
+                var equal_sign_index = line.index_of ("=");
+                if (line.slice (0, equal_sign_index) == "Icon") {
+                    return line.slice (equal_sign_index + 1, line.length);
+                }
+            }
+
+            return null;
+        } catch (Error e) {
+            warning (e.message);
+            return null;
         }
     }
 }
