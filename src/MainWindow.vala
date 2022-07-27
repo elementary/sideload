@@ -187,6 +187,10 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     }
 
     private string? get_application_icon () {
+        if (app_id == null) {
+            return null;
+        }
+        
         try {
             var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
             var file = File.new_for_path (desktop_file_path);
