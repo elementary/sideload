@@ -65,7 +65,7 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
         return result;
     }
 
-    public async string? get_id () {
+    public override async string? get_id () {
         if (!yield load_key_file ()) {
             return null;
         }

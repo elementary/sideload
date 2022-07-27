@@ -37,6 +37,10 @@ public class Sideload.FlatpakBundleFile : FlatpakFile {
         }
     }
 
+    public override async string? get_id () {
+        return bundle.get_name ();
+    }
+
     public override async string? get_name () {
         // Application name from AppData is preferred
         if (appdata_name != null) {

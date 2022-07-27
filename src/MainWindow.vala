@@ -114,9 +114,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     private async void get_details () {
         yield file.get_details ();
         app_name = yield file.get_name ();
-        if (file is FlatpakRefFile) {
-            app_id = yield ((FlatpakRefFile)file).get_id ();
-        }
+        app_id = yield ((FlatpakFile)file).get_id ();
 
         if (app_name != null) {
             progress_view.app_name = app_name;
@@ -190,12 +188,12 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
         if (app_id == null) {
             return null;
         }
-        
+
         try {
             var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
             var file = File.new_for_path (desktop_file_path);
             var dis = new DataInputStream (file.read ());
-            
+
             string line;
             while ((line = dis.read_line (null)) != null) {
                 var equal_sign_index = line.index_of ("=");

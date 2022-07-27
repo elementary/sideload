@@ -42,6 +42,8 @@ public abstract class Sideload.FlatpakFile : Object {
         }
     }
 
+    public abstract async string? get_id ();
+
     public abstract async string? get_name ();
 
     public abstract async void get_details (Cancellable? cancellable = null);
