@@ -114,7 +114,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     private async void get_details () {
         yield file.get_details ();
         app_name = yield file.get_name ();
-        app_id = yield ((FlatpakFile)file).get_id ();
+        app_id = yield file.get_id ();
 
         if (app_name != null) {
             progress_view.app_name = app_name;
@@ -185,10 +185,6 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     }
 
     private string? get_application_icon () {
-        if (app_id == null) {
-            return null;
-        }
-
         try {
             var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
             var file = File.new_for_path (desktop_file_path);
