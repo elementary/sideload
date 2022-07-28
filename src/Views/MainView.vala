@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2022 elementary, Inc. (https://elementary.io)
+ * Copyright 2019-2021 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -42,49 +42,42 @@ public class Sideload.MainView : AbstractView {
 
         var loading_label = new Gtk.Label (_("Fetching details"));
 
-        var loading_grid = new Gtk.Grid () {
-            column_spacing = 6
-        };
+        var loading_grid = new Gtk.Grid ();
+        loading_grid.column_spacing = 6;
         loading_grid.add (loading_spinner);
         loading_grid.add (loading_label);
 
-        var agree_check = new Gtk.CheckButton.with_label (_("I understand")) {
-            margin_top = 12
-        };
+        var agree_check = new Gtk.CheckButton.with_label (_("I understand"));
+        agree_check.margin_top = 12;
 
-        var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic", Gtk.IconSize.BUTTON) {
-            valign = Gtk.Align.START
-        };
+        var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic", Gtk.IconSize.BUTTON);
+        download_size_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext download_context = download_size_icon.get_style_context ();
         download_context.add_class (Granite.STYLE_CLASS_ACCENT);
         download_context.add_class ("green");
 
-        download_size_label = new Gtk.Label (null) {
-            selectable = true,
-            max_width_chars = 50,
-            wrap = true,
-            xalign = 0
-        };
+        download_size_label = new Gtk.Label (null);
+        download_size_label.selectable = true;
+        download_size_label.max_width_chars = 50;
+        download_size_label.wrap = true;
+        download_size_label.xalign = 0;
 
-        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON) {
-            valign = Gtk.Align.START
-        };
+        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic", Gtk.IconSize.BUTTON);
+        updates_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
         updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
         updates_context.add_class ("orange");
 
-        updates_label = new Gtk.Label (_("Updates to this app will not be reviewed")) {
-            selectable = true,
-            max_width_chars = 50,
-            wrap = true,
-            xalign = 0
-        };
+        updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
+        updates_label.selectable = true;
+        updates_label.max_width_chars = 50;
+        updates_label.wrap = true;
+        updates_label.xalign = 0;
 
-        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON) {
-            valign = Gtk.Align.START
-        };
+        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic", Gtk.IconSize.BUTTON);
+        repo_icon.valign = Gtk.Align.START;
 
         unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
         repo_context.add_class (Granite.STYLE_CLASS_ACCENT);
@@ -92,34 +85,30 @@ public class Sideload.MainView : AbstractView {
 
         var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
 
-        repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name)) {
-            selectable = true,
-            max_width_chars = 50,
-            wrap = true,
-            xalign = 0
-        };
+        repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
+        repo_label.selectable = true;
+        repo_label.max_width_chars = 50;
+        repo_label.wrap = true;
+        repo_label.xalign = 0;
 
-        details_grid = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL,
-            column_spacing = 6,
-            row_spacing = 12
-        };
+        details_grid = new Gtk.Grid ();
+        details_grid.orientation = Gtk.Orientation.VERTICAL;
+        details_grid.column_spacing = 6;
+        details_grid.row_spacing = 12;
         details_grid.attach (download_size_icon, 0, 0);
         details_grid.attach (download_size_label, 1, 0);
         details_grid.attach (agree_check, 0, 3, 2);
 
-        details_stack = new Gtk.Stack () {
-            vhomogeneous = false,
-            visible_child_name = "loading"
-        };
+        details_stack = new Gtk.Stack ();
+        details_stack.vhomogeneous = false;
         details_stack.add_named (loading_grid, "loading");
         details_stack.add_named (details_grid, "details");
+        details_stack.visible_child_name = "loading";
 
         content_area.add (details_stack);
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
-            action_name = "app.quit"
-        };
+        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+        cancel_button.action_name = "app.quit";
 
         var install_button = new Gtk.Button.with_label (_("Install Anyway"));
         install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);

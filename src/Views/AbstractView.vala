@@ -1,5 +1,5 @@
 /*
-* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
+* Copyright 2019 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -26,51 +26,44 @@ public abstract class AbstractView : Gtk.Grid {
     protected Gtk.Label secondary_label;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG) {
-            valign = Gtk.Align.START
-        };
+        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
+        image.valign = Gtk.Align.START;
 
-        badge = new Gtk.Image () {
-            pixel_size = 24,
-            halign = badge.valign = Gtk.Align.END
-        };
+        badge = new Gtk.Image ();
+        badge.pixel_size = 24;
+        badge.halign = badge.valign = Gtk.Align.END;
 
-        var overlay = new Gtk.Overlay () {
-            valign = Gtk.Align.START
-        };
+        var overlay = new Gtk.Overlay ();
+        overlay.valign = Gtk.Align.START;
         overlay.add (image);
         overlay.add_overlay (badge);
 
-        primary_label = new Gtk.Label (null) {
-            hexpand = true,
-            max_width_chars = 50,
-            selectable = true,
-            wrap = true,
-            xalign = 0
-        };
+        primary_label = new Gtk.Label (null);
+        primary_label.hexpand = true;
+        primary_label.max_width_chars = 50;
+        primary_label.selectable = true;
+        primary_label.wrap = true;
+        primary_label.xalign = 0;
         primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
-        secondary_label = new Gtk.Label (null) {
-            use_markup = true,
-            selectable = true,
-            margin_bottom = 18,
-            max_width_chars = 50,
-            wrap = true,
-            xalign = 0
-        };
+        secondary_label = new Gtk.Label (null);
+        secondary_label.use_markup = true;
+        secondary_label.selectable = true;
+        secondary_label.margin_bottom = 18;
+        secondary_label.max_width_chars = 50;
+        secondary_label.wrap = true;
+        secondary_label.xalign = 0;
 
-        content_area = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL,
-            row_spacing = 6
-        };
+        content_area = new Gtk.Grid ();
+        content_area.orientation = Gtk.Orientation.VERTICAL;
+        content_area.row_spacing = 6;
 
-        button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
-            expand = true,
-            valign = Gtk.Align.END,
-            layout_style = Gtk.ButtonBoxStyle.END,
-            margin_top = 12,
-            spacing = 6
-        };
+        button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+        button_box.expand = true;
+        button_box.valign = Gtk.Align.END;
+        button_box.layout_style = Gtk.ButtonBoxStyle.END;
+        button_box.margin_top = 12;
+        button_box.spacing = 6;
 
         column_spacing = 12;
         row_spacing = 6;

@@ -1,5 +1,5 @@
 /*
-* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -44,23 +44,20 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
 
         var window_handle = new Hdy.WindowHandle ();
 
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG) {
-            valign = Gtk.Align.START
-        };
+        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload", Gtk.IconSize.DIALOG);
+        image.valign = Gtk.Align.START;
 
         main_view = new MainView ();
 
         if (file is FlatpakRefFile) {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
         } else {
-            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL) {
-                status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size)
-            };
+            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
+            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
         }
 
-        stack = new Gtk.Stack () {
-            vhomogeneous = false
-        };
+        stack = new Gtk.Stack ();
+        stack.vhomogeneous = false;
         stack.add (main_view);
         stack.add (progress_view);
 
