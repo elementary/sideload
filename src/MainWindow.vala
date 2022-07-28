@@ -175,6 +175,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
 
             var icon = get_application_icon ();
             if (icon != null) {
+                print (icon);
                 notification.set_icon (new ThemedIcon (icon));
             }
             application.send_notification ("installed", notification);
@@ -182,23 +183,9 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
     }
 
     private string? get_application_icon () {
-        try {
-            var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
-            var file = File.new_for_path (desktop_file_path);
-            var dis = new DataInputStream (file.read ());
+        var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
+        var desktop_info = new GLib.DesktopAppInfo.from_filename (desktop_file_path);
 
-            string line;
-            while ((line = dis.read_line (null)) != null) {
-                var equal_sign_index = line.index_of ("=");
-                if (line.slice (0, equal_sign_index) == "Icon") {
-                    return line.slice (equal_sign_index + 1, line.length);
-                }
-            }
-
-            return null;
-        } catch (Error e) {
-            warning (e.message);
-            return null;
-        }
+        return desktop_info.get_icon ().to_string ();
     }
 }
