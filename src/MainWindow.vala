@@ -174,7 +174,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
             }
 
             var icon = get_application_icon ();
-            if (icon != null) { 
+            if (icon != null) {
                 notification.set_icon (icon);
             }
             application.send_notification ("installed", notification);
