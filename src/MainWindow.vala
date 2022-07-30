@@ -174,17 +174,18 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
             }
 
             var icon = get_application_icon ();
-            if (icon != null) {
-                notification.set_icon (new ThemedIcon (icon));
+            if (icon != null) { 
+                notification.set_icon (icon);
             }
             application.send_notification ("installed", notification);
-        }
+            }
     }
 
-    private string? get_application_icon () {
-        var desktop_file_path = (string)GLib.Environment.get_home_dir () + "/.local/share/flatpak/exports/share/applications/" + app_id + ".desktop";
-        var desktop_info = new GLib.DesktopAppInfo.from_filename (desktop_file_path);
-
-        return desktop_info.get_icon ().to_string ();
+    private GLib.Icon? get_application_icon () {
+        var desktop_info = new GLib.DesktopAppInfo (app_id + ".desktop");
+        if (desktop_info != null) {
+            return desktop_info.get_icon ();
+        }
+        return null;
     }
 }
