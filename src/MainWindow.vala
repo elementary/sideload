@@ -178,7 +178,7 @@ public class Sideload.MainWindow : Hdy.ApplicationWindow {
                 notification.set_icon (icon);
             }
             application.send_notification ("installed", notification);
-            }
+        }
     }
 
     private GLib.Icon? get_application_icon () {
