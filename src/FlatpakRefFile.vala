@@ -1,5 +1,5 @@
 /*
-* Copyright 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -65,7 +65,7 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
         return result;
     }
 
-    private async string? get_id () {
+    public override async string? get_id () {
         if (!yield load_key_file ()) {
             return null;
         }
