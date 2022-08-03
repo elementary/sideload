@@ -27,13 +27,15 @@ public abstract class AbstractView : Gtk.Box {
 
     construct {
         var image = new Gtk.Image.from_icon_name ("io.elementary.sideload") {
-            pixel_size = 48
+            pixel_size = 48,
+            valign = Gtk.Align.START
         };
-        image.valign = Gtk.Align.START;
 
-        badge = new Gtk.Image ();
-        badge.pixel_size = 24;
-        badge.halign = badge.valign = Gtk.Align.END;
+        badge = new Gtk.Image () {
+            pixel_size = 24,
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.END
+        };
 
         var overlay = new Gtk.Overlay () {
             child = image,
@@ -43,26 +45,26 @@ public abstract class AbstractView : Gtk.Box {
 
         primary_label = new Gtk.Label (null) {
             max_width_chars = 1,
+            selectable = true,
+            wrap = true,
             xalign = 0
         };
-
-        primary_label.selectable = true;
-        primary_label.wrap = true;
         primary_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
         secondary_label = new Gtk.Label (null) {
+            margin_bottom = 18,
             max_width_chars = 50,
+            selectable = true,
+            use_markup = true,
             width_chars = 50,
+            wrap = true,
             xalign = 0
         };
-        secondary_label.use_markup = true;
-        secondary_label.selectable = true;
-        secondary_label.margin_bottom = 18;
-        secondary_label.wrap = true;
 
-        content_area = new Gtk.Grid ();
-        content_area.orientation = Gtk.Orientation.VERTICAL;
-        content_area.row_spacing = 6;
+        content_area = new Gtk.Grid () {
+            orientation = Gtk.Orientation.VERTICAL,
+            row_spacing = 6
+        };
 
         button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
             homogeneous = true,
