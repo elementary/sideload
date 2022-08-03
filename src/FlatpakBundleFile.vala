@@ -1,5 +1,5 @@
 /*
-* Copyright 2021 elementary, Inc. (https://elementary.io)
+* Copyright 2021-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -35,6 +35,10 @@ public class Sideload.FlatpakBundleFile : FlatpakFile {
         } catch (Error e) {
             warning (e.message);
         }
+    }
+
+    public override async string? get_id () {
+        return bundle.get_name ();
     }
 
     public override async string? get_name () {

@@ -1,5 +1,5 @@
 /*
-* Copyright 2021 elementary, Inc. (https://elementary.io)
+* Copyright 2021-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -41,6 +41,8 @@ public abstract class Sideload.FlatpakFile : Object {
             warning (e.message);
         }
     }
+
+    public abstract async string? get_id ();
 
     public abstract async string? get_name ();
 

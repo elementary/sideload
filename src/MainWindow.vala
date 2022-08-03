@@ -27,6 +27,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     private ProgressView progress_view;
 
     private string? app_name = null;
+    private string? app_id = null;
 
     public MainWindow (Gtk.Application application, FlatpakFile file) {
         Object (
@@ -115,6 +116,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     private async void get_details () {
         yield file.get_details ();
         app_name = yield file.get_name ();
+        app_id = yield file.get_id ();
+
         if (app_name != null) {
             progress_view.app_name = app_name;
             main_view.app_name = app_name;
@@ -174,7 +177,19 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 notification.set_body (_("The app was installed"));
             }
 
+            var icon = get_application_icon ();
+            if (icon != null) {
+                notification.set_icon (icon);
+            }
             application.send_notification ("installed", notification);
         }
+    }
+
+    private GLib.Icon? get_application_icon () {
+        var desktop_info = new GLib.DesktopAppInfo (app_id + ".desktop");
+        if (desktop_info != null) {
+            return desktop_info.get_icon ();
+        }
+        return null;
     }
 }
