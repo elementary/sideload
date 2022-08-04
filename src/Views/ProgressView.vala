@@ -1,5 +1,5 @@
 /*
-* Copyright 2019–2021 elementary, Inc. (https://elementary.io)
+* Copyright 2019–2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -64,12 +64,12 @@ public class Sideload.ProgressView : AbstractView {
             Timeout.add (50, () => { progressbar.pulse (); } );
         }
 
-        content_area.add (progressbar);
+        content_area.attach (progressbar, 0, 0);
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
-        cancel_button.action_name = "app.quit";
+        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
+            action_name = "app.quit"
+        };
 
-        button_box.add (cancel_button);
-        show_all ();
+        button_box.append (cancel_button);
     }
 }
