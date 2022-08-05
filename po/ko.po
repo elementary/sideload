@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 19:14+0000\n"
-"PO-Revision-Date: 2022-08-05 14:42+0000\n"
+"PO-Revision-Date: 2022-08-05 16:38+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/desktop/sideload/"
 "ko/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr "뒤로"
+msgstr "취소"
 
 #: src/Views/MainView.vala:113
 msgid "Install Anyway"
