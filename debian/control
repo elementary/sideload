@@ -4,9 +4,8 @@ Priority: extra
 Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                libflatpak-dev,
-               libgranite-dev (>=5),
-               libgtk-3-dev,
-               libhandy-1-dev,
+               libgranite-7-dev,
+               libgtk-4-dev,
                meson,
                valac
 Standards-Version: 4.1.1
