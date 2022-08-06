@@ -51,6 +51,13 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             vhomogeneous = false
         };
         stack.add_child (main_view);
+        stack.visible_child = main_view;
+
+        var window_handle = new Gtk.WindowHandle () {
+            child = stack
+        };
+
+        child = window_handle;
 
         if (file.size == "0") {
             var error_view = new ErrorView (file.error_code, file.error_message);
@@ -65,12 +72,6 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         }
 
         stack.add_child (progress_view);
-
-        var window_handle = new Gtk.WindowHandle () {
-            child = stack
-        };
-
-        child = window_handle;
 
         // We need to hide the title area
         var null_title = new Gtk.Grid () {
@@ -154,7 +155,6 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 stack.visible_child = success_view;
                 break;
 
-// <<<<<<< HEAD
             case Flatpak.Error.ABORTED:
                 break;
 
@@ -164,15 +164,6 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 stack.visible_child = error_view;
 
                 break;
-// =======
-//             stack.add_child (success_view);
-//             stack.visible_child = success_view;
-//         } else if (!(error is Flatpak.Error.ABORTED)) {
-//             var error_view = new ErrorView (error);
-
-//             stack.add_child (error_view);
-//             stack.visible_child = error_view;
-// >>>>>>> master
         }
 
         if (file is FlatpakRefFile) {
