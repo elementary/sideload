@@ -59,6 +59,30 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         child = window_handle;
 
+        // We need to hide the title area
+        var null_title = new Gtk.Grid () {
+            visible = false
+        };
+        set_titlebar (null_title);
+
+        add_css_class ("dialog");
+        add_css_class (Granite.STYLE_CLASS_MESSAGE_DIALOG);
+
+        var granite_settings = Granite.Settings.get_default ();
+        var gtk_settings = Gtk.Settings.get_default ();
+
+        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+        });
+
+        GLib.Application.get_default ().shutdown.connect (() => {
+            if (current_cancellable != null) {
+                current_cancellable.cancel ();
+            }
+        });
+
         if (file.size == "0") {
             var error_view = new ErrorView (file.error_code, file.error_message);
             stack.add_child (error_view);
@@ -72,15 +96,6 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         }
 
         stack.add_child (progress_view);
-
-        // We need to hide the title area
-        var null_title = new Gtk.Grid () {
-            visible = false
-        };
-        set_titlebar (null_title);
-
-        add_css_class ("dialog");
-        add_css_class (Granite.STYLE_CLASS_MESSAGE_DIALOG);
 
         main_view.install_request.connect (on_install_button_clicked);
         file.progress_changed.connect (on_progress_changed);
@@ -101,22 +116,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             }
         });
 
-        var granite_settings = Granite.Settings.get_default ();
-        var gtk_settings = Gtk.Settings.get_default ();
-
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
-        });
-
         get_details.begin ();
-
-        GLib.Application.get_default ().shutdown.connect (() => {
-            if (current_cancellable != null) {
-                current_cancellable.cancel ();
-            }
-        });
     }
 
     private async void get_details () {
