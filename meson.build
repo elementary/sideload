@@ -39,9 +39,8 @@ executable(
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),
         dependency ('gobject-2.0'),
-        dependency ('granite', version: '>=5.4.0'),
-        dependency ('gtk+-3.0'),
-        dependency ('libhandy-1'),
+        dependency ('granite-7'),
+        dependency ('gtk4'),
         dependency ('libxml-2.0'),
     ],
     install : true

@@ -1,5 +1,5 @@
 /*
-* Copyright 2019-2021 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -95,7 +95,7 @@ public class Sideload.Application : Gtk.Application {
         }
 
         main_window = new MainWindow (this, flatpak_file);
-        main_window.show_all ();
+        main_window.present ();
 
         var quit_action = new SimpleAction ("quit", null);
         var launch_action = new SimpleAction ("launch", null);

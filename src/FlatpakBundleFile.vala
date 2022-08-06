@@ -1,5 +1,5 @@
 /*
-* Copyright 2021 elementary, Inc. (https://elementary.io)
+* Copyright 2021-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -37,6 +37,10 @@ public class Sideload.FlatpakBundleFile : FlatpakFile {
             error_code = Flatpak.Error.INVALID_REF;
             error_message = _("Error constructing Flatpak bundle: %s").printf (e.message);
         }
+    }
+
+    public override async string? get_id () {
+        return bundle.get_name ();
     }
 
     public override async string? get_name () {
