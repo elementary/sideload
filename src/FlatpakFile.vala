@@ -26,9 +26,11 @@ public abstract class Sideload.FlatpakFile : Object {
     public bool extra_remotes_needed { get; protected set; default = false; }
 
     protected string? appdata_name = null;
+    public int error_code = -1;
+    public string error_message = "";
 
     public signal void progress_changed (string description, double progress);
-    public signal void installation_failed (GLib.Error details);
+    public signal void installation_failed (int error_code, string? message);
     public signal void installation_succeeded ();
     public signal void details_ready ();
 
@@ -99,12 +101,13 @@ public abstract class Sideload.FlatpakFile : Object {
     }
 
     protected async void run_transaction_async (Flatpak.Transaction transaction, Cancellable cancellable) {
-        Error? transaction_error = null;
+        error_code = -1;
         new Thread<void*> ("install-flatpak", () => {
             try {
                 transaction.run (cancellable);
             } catch (Error e) {
-                transaction_error = e;
+                error_code = e.code;
+                error_message = e.message;
             }
 
             Idle.add (run_transaction_async.callback);
@@ -113,8 +116,8 @@ public abstract class Sideload.FlatpakFile : Object {
 
         yield;
 
-        if (transaction_error != null) {
-            installation_failed (transaction_error);
+        if (error_code >= 0) {
+            installation_failed (error_code, error_message);
         } else {
             installation_succeeded ();
         }
@@ -126,10 +129,11 @@ public abstract class Sideload.FlatpakFile : Object {
             return true;
         }
 
-        var e_copy = e.copy ();
+        error_code = e.code;
+        error_message = e.message;
 
         Idle.add (() => {
-            installation_failed (e_copy);
+            installation_failed (error_code, error_message);
 
             return GLib.Source.REMOVE;
         });

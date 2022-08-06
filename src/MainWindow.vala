@@ -46,20 +46,12 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         };
 
         main_view = new MainView ();
-
-        if (file is FlatpakRefFile) {
-            progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
-        } else {
-            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
-            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
-        }
-
         stack = new Gtk.Stack () {
             transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT,
             vhomogeneous = false
         };
         stack.add_child (main_view);
-        stack.add_child (progress_view);
+        stack.visible_child = main_view;
 
         var window_handle = new Gtk.WindowHandle () {
             child = stack
@@ -75,6 +67,35 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         add_css_class ("dialog");
         add_css_class (Granite.STYLE_CLASS_MESSAGE_DIALOG);
+
+        var granite_settings = Granite.Settings.get_default ();
+        var gtk_settings = Gtk.Settings.get_default ();
+
+        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+        });
+
+        GLib.Application.get_default ().shutdown.connect (() => {
+            if (current_cancellable != null) {
+                current_cancellable.cancel ();
+            }
+        });
+
+        if (file.size == "0") {
+            var error_view = new ErrorView (file.error_code, file.error_message);
+            stack.add_child (error_view);
+            stack.visible_child = error_view;
+            return;
+        } else if (file is FlatpakRefFile) {
+            progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
+        } else {
+            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
+            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
+        }
+
+        stack.add_child (progress_view);
 
         main_view.install_request.connect (on_install_button_clicked);
         file.progress_changed.connect (on_progress_changed);
@@ -95,22 +116,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             }
         });
 
-        var granite_settings = Granite.Settings.get_default ();
-        var gtk_settings = Gtk.Settings.get_default ();
-
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
-        });
-
         get_details.begin ();
-
-        GLib.Application.get_default ().shutdown.connect (() => {
-            if (current_cancellable != null) {
-                current_cancellable.cancel ();
-            }
-        });
     }
 
     private async void get_details () {
@@ -141,17 +147,23 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         Granite.Services.Application.set_progress.begin (progress);
     }
 
-    private void on_install_failed (GLib.Error error) {
-        if (error is Flatpak.Error.ALREADY_INSTALLED) {
-            var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
+    private void on_install_failed (int error_code, string? error_message) {
+        switch (error_code) {
+            case Flatpak.Error.ALREADY_INSTALLED:
+                var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
+                stack.add_child (success_view);
+                stack.visible_child = success_view;
+                break;
 
-            stack.add_child (success_view);
-            stack.visible_child = success_view;
-        } else if (!(error is Flatpak.Error.ABORTED)) {
-            var error_view = new ErrorView (error);
+            case Flatpak.Error.ABORTED:
+                break;
 
-            stack.add_child (error_view);
-            stack.visible_child = error_view;
+            default:
+                var error_view = new ErrorView (error_code, error_message);
+                stack.add_child (error_view);
+                stack.visible_child = error_view;
+
+                break;
         }
 
         if (file is FlatpakRefFile) {

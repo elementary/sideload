@@ -16,10 +16,14 @@
  */
 
 public class Sideload.ErrorView : AbstractView {
-    public GLib.Error error { get; construct; }
+    public int error_code { get; construct; }
+    public string error_message { get; construct; }
 
-    public ErrorView ( GLib.Error error) {
-        Object (error: error);
+    public ErrorView (int error_code, string? error_message) {
+        Object (
+            error_code: error_code,
+            error_message: error_message
+        );
     }
 
     construct {
@@ -27,9 +31,9 @@ public class Sideload.ErrorView : AbstractView {
 
         primary_label.label = _("Install failed");
 
-        secondary_label.label = prettify_flatpak_error (error);
+        secondary_label.label = prettify_flatpak_error (error_code, error_message);
 
-        var details_view = new Gtk.Label (error.message) {
+        var details_view = new Gtk.Label (error_message) {
             selectable = true,
             wrap = true,
             xalign = 0,
@@ -56,35 +60,32 @@ public class Sideload.ErrorView : AbstractView {
         button_box.append (close_button);
     }
 
-    private static string prettify_flatpak_error (GLib.Error e) {
-        if (e is Flatpak.Error.ALREADY_INSTALLED) {
-            return _("This app is already installed.");
+    private static string prettify_flatpak_error (int error_code, string? error_message) {
+        if (error_code >= 0) {
+            switch (error_code) {
+                case Flatpak.Error.ALREADY_INSTALLED:
+                    return _("This app is already installed.");
+
+                case Flatpak.Error.NEED_NEW_FLATPAK:
+                    return _("A newer version of Flatpak is needed to install this app.");
+
+                case Flatpak.Error.REMOTE_NOT_FOUND:
+                    return _("A required Flatpak remote was not found.");
+
+                case Flatpak.Error.RUNTIME_NOT_FOUND:
+                    return _("A required runtime dependency could not be found.");
+
+                case Flatpak.Error.INVALID_REF:
+                    return _("The supplied .flatpakref file does not seem to be valid.");
+
+                case Flatpak.Error.UNTRUSTED:
+                    return _("The app is not signed with a trusted signature.");
+
+                case Flatpak.Error.INVALID_NAME:
+                    return _("The application, runtime, or remote name is invalid.");
+            }
         }
 
-        if (e is Flatpak.Error.NEED_NEW_FLATPAK) {
-            return _("A newer version of Flatpak is needed to install this app.");
-        }
-
-        if (e is Flatpak.Error.REMOTE_NOT_FOUND) {
-            return _("A required Flatpak remote was not found.");
-        }
-
-        if (e is Flatpak.Error.RUNTIME_NOT_FOUND) {
-            return _("A required runtime dependency could not be found.");
-        }
-
-        if (e is Flatpak.Error.INVALID_REF) {
-            return _("The supplied .flatpakref file does not seem to be valid.");
-        }
-
-        if (e is Flatpak.Error.UNTRUSTED) {
-            return _("The app is not signed with a trusted signature.");
-        }
-
-        if (e is Flatpak.Error.INVALID_NAME) {
-            return _("The application, runtime, or remote name is invalid.");
-        }
-
-        return _("An unknown error occured.");
+        return error_message ?? _("An unknown error occurred.");
     }
 }
