@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 19:14+0000\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: 2022-04-07 22:05+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -96,10 +96,9 @@ msgstr "elementary בע״מ."
 msgid "Flatpak Installer"
 msgstr "מתקין Flatpak"
 
-#: data/sideload.desktop.in:7
-msgid "io.elementary.sideload"
-msgstr "io.elementary.sideload"
-
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "io.elementary.sideload"
+#~ msgstr "io.elementary.sideload"

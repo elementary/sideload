@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 19:14+0000\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: 2021-08-12 13:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -93,10 +93,9 @@ msgstr "elementary, Inc."
 msgid "Flatpak Installer"
 msgstr "Flatpak-asentaja"
 
-#: data/sideload.desktop.in:7
-msgid "io.elementary.sideload"
-msgstr "io.elementary.sideload"
-
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "io.elementary.sideload"
+#~ msgstr "io.elementary.sideload"

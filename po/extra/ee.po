@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 19:14+0000\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -88,10 +88,6 @@ msgstr ""
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
-msgstr ""
-
-#: data/sideload.desktop.in:7
-msgid "io.elementary.sideload"
 msgstr ""
 
 #: data/sideload.desktop.in:8
