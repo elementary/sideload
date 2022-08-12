@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2021-08-17 01:05+0000\n"
+"PO-Revision-Date: 2022-08-12 15:29+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -61,8 +61,6 @@ msgid "The application, runtime, or remote name is invalid."
 msgstr "アプリケーション名、ランタイム名、リモート名のいずれかが不適切です。"
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
 msgstr "不明なエラーが発生しました。"
 
@@ -217,7 +215,7 @@ msgstr "適切な Flatpak インストールが見つかりませんでした。
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Flatpak バンドルを構成中にエラーが発生しました: %s"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "“%s” は正常にインストールされました"
