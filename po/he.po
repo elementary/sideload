@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2021-07-08 09:17+0000\n"
+"PO-Revision-Date: 2022-08-15 13:00+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
 "he/>\n"
@@ -60,8 +60,6 @@ msgid "The application, runtime, or remote name is invalid."
 msgstr "היישום, סביבת הריצה או השם המרוחק פגומים."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
 msgstr "אירעה שגיאה בלתי ידועה."
 
@@ -214,7 +212,7 @@ msgstr "לא נמצאה התקנת Flatpak הולמת."
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "שגיאה בהרכבת מאגד Flatpak‏: %s"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "ההתקנה של „%s” הצליחה"
