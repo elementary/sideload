@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2021-10-22 20:43+0000\n"
+"PO-Revision-Date: 2022-08-15 23:39+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload/"
 "tr/>\n"
@@ -60,8 +60,6 @@ msgid "The application, runtime, or remote name is invalid."
 msgstr "Uygulama, çalışma zamanı veya uzak ad geçersiz."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
 msgstr "Bilinmeyen bir hata oluştu."
 
@@ -216,7 +214,7 @@ msgstr "Uygun Flatpak kurulumu bulunamadı."
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Flatpak paketi oluşturulurken hata oluştu: %s"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "\"%s\" başarıyla yüklendi"
