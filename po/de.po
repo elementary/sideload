@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: 2022-08-24 19:49+0000\n"
-"Last-Translator: CodingSpiderFox <sunrisechain@gmail.com>\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
 "Language: de\n"
@@ -62,8 +62,6 @@ msgid "The application, runtime, or remote name is invalid."
 msgstr "Die Anwendung, die Laufzeitumgebung oder der Remote-Name ist ungültig."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
 msgstr "Ein unbekannter Fehler ist aufgetreten."
 
