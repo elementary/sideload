@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2021-08-12 13:02+0000\n"
+"PO-Revision-Date: 2022-09-07 22:19+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
 "fi/>\n"
@@ -61,8 +61,6 @@ msgstr ""
 "Sovelluksen, suoritusaikaisen ympärstön tai etävaraston nimi on virheellinen."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
 msgstr "Tapahtui tuntematon virhe."
 
