@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2021-09-25 03:33+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
-"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload-"
-"extra/ru/>\n"
+"PO-Revision-Date: 2022-09-30 10:31+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr "Загрузка из сторонних источников"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr "Установка приложений загруженных из Интернета"
+msgstr "Установка приложений, загруженных из Интернета"
 
 #: data/sideload.appdata.xml.in:10
 msgid ""
