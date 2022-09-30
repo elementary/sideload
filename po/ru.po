@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: 2022-09-30 10:35+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: ig-cheprasov <ig-cheprasov@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -71,7 +71,7 @@ msgstr "Установить недоверенное приложение «%s�
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr "Установить ненадежное приложение?"
+msgstr "Установить недоверенное приложение?"
 
 #: src/Views/MainView.vala:38
 msgid ""
