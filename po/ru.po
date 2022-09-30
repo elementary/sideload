@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2022-09-30 10:31+0000\n"
+"PO-Revision-Date: 2022-09-30 10:35+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
@@ -58,7 +58,7 @@ msgstr "Приложение не имеет доверенной подписи
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr "Приложение, среда исполнения или репозиторий не являются корректными."
+msgstr "Приложение, среда исполнения или репозиторий некорректен."
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
@@ -67,7 +67,7 @@ msgstr "Произошла неизвестная ошибка."
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Установить ненадежное приложение «%s»?"
+msgstr "Установить недоверенное приложение «%s»?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
