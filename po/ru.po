@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-11 11:25-0700\n"
-"PO-Revision-Date: 2022-09-30 10:28+0000\n"
+"PO-Revision-Date: 2022-09-30 10:31+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
@@ -159,7 +159,7 @@ msgstr "Никаких изменений не вносилось."
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
-"Посетите %s для получения информации о приложении, обновлений и удаления."
+"Посетите %s для получения информации о приложении, обновлении и удалении."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
