@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 elementary, Inc. (https://elementary.io)
+ * Copyright 2019-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -16,10 +16,14 @@
  */
 
 public class Sideload.ErrorView : AbstractView {
-    public GLib.Error error { get; construct; }
+    public int error_code { get; construct; }
+    public string error_message { get; construct; }
 
-    public ErrorView ( GLib.Error error) {
-        Object (error: error);
+    public ErrorView (int error_code, string? error_message) {
+        Object (
+            error_code: error_code,
+            error_message: error_message
+        );
     }
 
     construct {
@@ -27,63 +31,61 @@ public class Sideload.ErrorView : AbstractView {
 
         primary_label.label = _("Install failed");
 
-        secondary_label.label = prettify_flatpak_error (error);
+        secondary_label.label = prettify_flatpak_error (error_code, error_message);
 
-        var details_view = new Gtk.TextView ();
-        details_view.border_width = 6;
-        details_view.buffer.text = error.message;
-        details_view.editable = false;
-        details_view.pixels_below_lines = 3;
-        details_view.wrap_mode = Gtk.WrapMode.WORD;
-        details_view.get_style_context ().add_class (Granite.STYLE_CLASS_TERMINAL);
+        var details_view = new Gtk.Label (error_message) {
+            selectable = true,
+            wrap = true,
+            xalign = 0,
+            yalign = 0
+        };
 
-        var scroll_box = new Gtk.ScrolledWindow (null, null);
-        scroll_box.margin_top = 12;
-        scroll_box.min_content_height = 70;
-        scroll_box.add (details_view);
+        var scroll_box = new Gtk.ScrolledWindow () {
+            child = details_view,
+            margin_top = 12,
+            min_content_height = 70
+        };
+        scroll_box.add_css_class (Granite.STYLE_CLASS_TERMINAL);
 
-        var expander = new Gtk.Expander (_("Details"));
-        expander.hexpand = true;
-        expander.add (scroll_box);
+        var expander = new Gtk.Expander (_("Details")) {
+            child = scroll_box,
+            hexpand = true
+        };
 
-        var close_button = new Gtk.Button.with_label (_("Close"));
-        close_button.action_name = "app.quit";
+        var close_button = new Gtk.Button.with_label (_("Close")) {
+            action_name = "app.quit"
+        };
 
-        content_area.add (expander);
-        button_box.add (close_button);
-
-        show_all ();
+        content_area.attach (expander, 0, 0);
+        button_box.append (close_button);
     }
 
-    private static string prettify_flatpak_error (GLib.Error e) {
-        if (e is Flatpak.Error.ALREADY_INSTALLED) {
-            return _("This app is already installed.");
+    private static string prettify_flatpak_error (int error_code, string? error_message) {
+        if (error_code >= 0) {
+            switch (error_code) {
+                case Flatpak.Error.ALREADY_INSTALLED:
+                    return _("This app is already installed.");
+
+                case Flatpak.Error.NEED_NEW_FLATPAK:
+                    return _("A newer version of Flatpak is needed to install this app.");
+
+                case Flatpak.Error.REMOTE_NOT_FOUND:
+                    return _("A required Flatpak remote was not found.");
+
+                case Flatpak.Error.RUNTIME_NOT_FOUND:
+                    return _("A required runtime dependency could not be found.");
+
+                case Flatpak.Error.INVALID_REF:
+                    return _("The supplied .flatpakref file does not seem to be valid.");
+
+                case Flatpak.Error.UNTRUSTED:
+                    return _("The app is not signed with a trusted signature.");
+
+                case Flatpak.Error.INVALID_NAME:
+                    return _("The application, runtime, or remote name is invalid.");
+            }
         }
 
-        if (e is Flatpak.Error.NEED_NEW_FLATPAK) {
-            return _("A newer version of Flatpak is needed to install this app.");
-        }
-
-        if (e is Flatpak.Error.REMOTE_NOT_FOUND) {
-            return _("A required Flatpak remote was not found.");
-        }
-
-        if (e is Flatpak.Error.RUNTIME_NOT_FOUND) {
-            return _("A required runtime dependency could not be found.");
-        }
-
-        if (e is Flatpak.Error.INVALID_REF) {
-            return _("The supplied .flatpakref file does not seem to be valid.");
-        }
-
-        if (e is Flatpak.Error.UNTRUSTED) {
-            return _("The app is not signed with a trusted signature.");
-        }
-
-        if (e is Flatpak.Error.INVALID_NAME) {
-            return _("The application, runtime, or remote name is invalid.");
-        }
-
-        return _("An unknown error occured.");
+        return error_message ?? _("An unknown error occurred.");
     }
 }

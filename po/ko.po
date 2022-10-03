@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2021-10-07 17:05+0000\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
+"PO-Revision-Date: 2022-08-11 20:41+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/desktop/sideload/"
 "ko/>\n"
@@ -19,190 +19,197 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Views/ErrorView.vala:28
+#: src/Views/ErrorView.vala:32
 msgid "Install failed"
 msgstr "설치 실패"
 
-#: src/Views/ErrorView.vala:45
+#: src/Views/ErrorView.vala:50
 msgid "Details"
 msgstr "세부 사항"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
+#: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "닫기"
 
-#: src/Views/ErrorView.vala:60
+#: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
 msgstr "이 앱은 이미 설치되었습니다."
 
-#: src/Views/ErrorView.vala:64
+#: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr "이 앱을 실행하기 위해서는 최신버전의 Flatpak이 필요합니다."
 
-#: src/Views/ErrorView.vala:68
+#: src/Views/ErrorView.vala:73
 msgid "A required Flatpak remote was not found."
 msgstr "필요한 Flatpak Remote를 찾을 수 없습니다."
 
-#: src/Views/ErrorView.vala:72
-msgid "A required runtime dependency could not be found."
-msgstr ""
-
 #: src/Views/ErrorView.vala:76
+msgid "A required runtime dependency could not be found."
+msgstr "필요한 런타임 종속성을 찾을 수 없습니다."
+
+#: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr ".flatpakerf 파일이 유효하지 않은 것 같습니다."
 
-#: src/Views/ErrorView.vala:80
+#: src/Views/ErrorView.vala:82
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "이 앱은 신뢰할 수 있는 인증서로 인증되지 않았습니다."
 
-#: src/Views/ErrorView.vala:84
+#: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "이 앱이나 런타임, 또는 Remote 이름이 유효하지 않습니다."
 
-#: src/Views/ErrorView.vala:87
-msgid "An unknown error occured."
-msgstr ""
+#: src/Views/ErrorView.vala:89
+msgid "An unknown error occurred."
+msgstr "알 수 없는 오류가 생겼습니다."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr ""
+msgstr "신뢰할 수 없는 \"%s\" 앱을 설치하시겠습니까?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr ""
+msgstr "신뢰할 수 없는 앱을 설치하시겠습니까?"
 
 #: src/Views/MainView.vala:38
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
+"이 앱은 개발자로부터만 제공되었고 보안, 개인 정보 보호 또는 시스템 통합에 대"
+"해서는 확인되지 않았습니다."
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
-msgstr ""
+msgstr "패치 속성"
 
-#: src/Views/MainView.vala:50
+#: src/Views/MainView.vala:49
 msgid "I understand"
-msgstr ""
+msgstr "이해하였습니다"
 
-#: src/Views/MainView.vala:73
+#: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed"
-msgstr ""
+msgstr "이 앱의 업데이트는 검토되지 않습니다"
 
-#: src/Views/MainView.vala:88
+#: src/Views/MainView.vala:87
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "이 공급자의 다른 앱이 %s에 나타날 수 있습니다"
 
-#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr "뒤로"
+msgstr "취소"
 
-#: src/Views/MainView.vala:113
+#: src/Views/MainView.vala:112
 msgid "Install Anyway"
-msgstr ""
+msgstr "강제 설치"
 
-#: src/Views/MainView.vala:130
+#: src/Views/MainView.vala:127
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "설치 크기는 최대 %s 일 수 있습니다"
 
-#: src/Views/MainView.vala:148
+#: src/Views/MainView.vala:144
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "예상되는 다운로드 크기는 %s이상으로 추정됩니다"
 
-#: src/Views/MainView.vala:150
+#: src/Views/MainView.vala:146
 msgid "Unknown download size"
-msgstr ""
+msgstr "다운로드 크기를 알 수 없습니다"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "%s 설치 중"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "준비 중…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "\"%s\" 설치를 마쳤습니다"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr ""
+msgstr "앱을 설치했습니다"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "애플리케이션 메뉴에서 언제든지 엽니다."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "%s는 이미 설치된 앱입니다"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "이 앱은 이미 설치되었습니다"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "변경 사항이 없습니다."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
+msgstr "앱 정보, 업데이트 및 제거를 위해 %s에 방문하세요."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "시스템 설정 → 애플리케이션…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "%s에서 권한을 변경할 수 있습니다"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "”%s” 휴지통으로 보내기"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "앱 열기"
 
 #: src/Application.vala:131
 msgid "your software center"
-msgstr ""
+msgstr "여러분의 소프트웨어 센터"
 
-#: src/MainWindow.vala:36
+#: src/MainWindow.vala:37
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "신뢰할 수 없는 앱 설치"
 
-#: src/MainWindow.vala:55
+#: src/MainWindow.vala:95
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "%s 설치 중. 남은 시간을 알 수 없습니다."
 
-#: src/MainWindow.vala:166
+#: src/MainWindow.vala:185
 msgid "App installed"
-msgstr ""
+msgstr "앱 설치함"
 
-#: src/MainWindow.vala:168
+#: src/MainWindow.vala:187
 #, c-format
 msgid "Installed “%s”"
-msgstr ""
+msgstr "“%s” 설치함"
 
-#: src/MainWindow.vala:170
+#: src/MainWindow.vala:189
 msgid "The app was installed"
-msgstr ""
+msgstr "앱을 설치했습니다"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
-#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
+#: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "적절한 Flatpak 설치를 찾지 못했습니다."
+
+#: src/FlatpakBundleFile.vala:38
+#, c-format
+msgid "Error constructing Flatpak bundle: %s"
+msgstr "Flatpak 번들을 구성하는 동안 오류 생김: %s"

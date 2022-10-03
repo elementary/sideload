@@ -1,5 +1,5 @@
 /*
- * Copyright 2019–2021 elementary, Inc. (https://elementary.io)
+ * Copyright 2019–2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -75,7 +75,7 @@ public class Sideload.SuccessView : AbstractView {
         secondary_label.label = secondary_label_string;
 
         var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.file.get_basename ()));
-        content_area.add (trash_check);
+        content_area.attach (trash_check, 0, 0);
 
         var settings = new Settings ("io.elementary.sideload");
         settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -83,12 +83,10 @@ public class Sideload.SuccessView : AbstractView {
         var close_button = new Gtk.Button.with_label (_("Close"));
 
         var open_button = new Gtk.Button.with_label (_("Open App"));
-        open_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        open_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        button_box.add (close_button);
-        button_box.add (open_button);
-
-        show_all ();
+        button_box.append (close_button);
+        button_box.append (open_button);
 
         open_button.grab_focus ();
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-22 20:57+0000\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: 2021-12-27 16:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -37,59 +37,61 @@ msgstr ""
 "リモートを AppCenter に登録します。また、ダウンロードサイズなど、アプリの重要"
 "な情報をインストール前に表示します。"
 
-#: data/sideload.appdata.xml.in:16
-msgid "Fix blurry app icon in multitasking view"
-msgstr "“マルチタスク画面”で表示されるアプリのアイコン解像度が低かった不具合を修正"
-
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
-#: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
-#: data/sideload.appdata.xml.in:53 data/sideload.appdata.xml.in:61
+#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:32 data/sideload.appdata.xml.in:44
+#: data/sideload.appdata.xml.in:52 data/sideload.appdata.xml.in:60
+#: data/sideload.appdata.xml.in:68
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:23
+msgid "Fix blurry app icon in multitasking view"
+msgstr ""
+"“マルチタスク画面”で表示されるアプリのアイコン解像度が低かった不具合を修正"
+
+#: data/sideload.appdata.xml.in:31
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "ローカルにインストールされたアプリがシステム全体で利用可能な Flatpak ランタイ"
 "ムを使用するように修正"
 
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:39
 msgid "Control notifications in System Settings"
 msgstr "システム設定で通知を管理できるように修正"
 
-#: data/sideload.appdata.xml.in:33
+#: data/sideload.appdata.xml.in:40
 msgid "Offer to trash Flatpak files after installing"
 msgstr "インストール後に Flatpak ファイルをゴミ箱に移動できる機能を追加"
 
-#: data/sideload.appdata.xml.in:34
+#: data/sideload.appdata.xml.in:41
 msgid "Support dark style"
 msgstr "ダークスタイルに対応"
 
-#: data/sideload.appdata.xml.in:35
+#: data/sideload.appdata.xml.in:42
 msgid "Support Flatpak bundle files"
 msgstr "Flatpak バンドルファイルに対応"
 
-#: data/sideload.appdata.xml.in:36
+#: data/sideload.appdata.xml.in:43
 msgid "Fix crashes on installation failure"
 msgstr "インストール失敗時にクラッシュする不具合を修正"
 
-#: data/sideload.appdata.xml.in:38
+#: data/sideload.appdata.xml.in:45
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "システム設定 → アプリケーション → パーミッションへのリンクを追加"
 
-#: data/sideload.appdata.xml.in:52
+#: data/sideload.appdata.xml.in:59
 msgid "Show app name in the main view once it's loaded"
 msgstr "アプリ名を読み込んだ際にメインビューに表示するように変更"
 
-#: data/sideload.appdata.xml.in:60
+#: data/sideload.appdata.xml.in:67
 msgid "Improve performance of download size calculation"
 msgstr "ダウンロードサイズの計算パフォーマンスを改善"
 
-#: data/sideload.appdata.xml.in:68
+#: data/sideload.appdata.xml.in:75
 msgid "First release. Hello world!"
 msgstr "最初のリリースです。Hello world!"
 
-#: data/sideload.appdata.xml.in:117
+#: data/sideload.appdata.xml.in:124
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -97,10 +99,9 @@ msgstr "elementary, Inc."
 msgid "Flatpak Installer"
 msgstr "Flatpak インストーラー"
 
-#: data/sideload.desktop.in:7
-msgid "io.elementary.sideload"
-msgstr "io.elementary.sideload"
-
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "io.elementary.sideload"
+#~ msgstr "io.elementary.sideload"

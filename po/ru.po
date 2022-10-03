@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-22 20:57+0000\n"
-"PO-Revision-Date: 2021-08-10 13:49+0000\n"
-"Last-Translator: Vladimir Yerilov <openmindead@gmail.com>\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
+"PO-Revision-Date: 2022-09-30 10:37+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -20,58 +20,58 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Views/ErrorView.vala:28
+#: src/Views/ErrorView.vala:32
 msgid "Install failed"
 msgstr "Не удалось установить"
 
-#: src/Views/ErrorView.vala:45
+#: src/Views/ErrorView.vala:50
 msgid "Details"
 msgstr "Подробнее"
 
-#: src/Views/ErrorView.vala:49 src/Views/SuccessView.vala:83
+#: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
 msgstr "Закрыть"
 
-#: src/Views/ErrorView.vala:60
+#: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
 msgstr "Это приложение уже установлено."
 
-#: src/Views/ErrorView.vala:64
+#: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr "Для установки этого приложения требуется более новая версия Flatpak."
 
-#: src/Views/ErrorView.vala:68
+#: src/Views/ErrorView.vala:73
 msgid "A required Flatpak remote was not found."
 msgstr "Требуемый репозиторий Flatpak не найден."
 
-#: src/Views/ErrorView.vala:72
+#: src/Views/ErrorView.vala:76
 msgid "A required runtime dependency could not be found."
 msgstr "Не удалось найти необходимую зависимость среды выполнения."
 
-#: src/Views/ErrorView.vala:76
+#: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr "Указанный .flatpakref файл не является корректным."
+msgstr "Указанный .flatpakref файл некорректен."
 
-#: src/Views/ErrorView.vala:80
+#: src/Views/ErrorView.vala:82
 msgid "The app is not signed with a trusted signature."
 msgstr "Приложение не имеет доверенной подписи."
 
-#: src/Views/ErrorView.vala:84
+#: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr "Приложение, среда исполнения или репозиторий не являются корректными."
+msgstr "Приложение, среда исполнения или репозиторий некорректен."
 
-#: src/Views/ErrorView.vala:87
-msgid "An unknown error occured."
+#: src/Views/ErrorView.vala:89
+msgid "An unknown error occurred."
 msgstr "Произошла неизвестная ошибка."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Install untrusted app “%s”?"
-msgstr "Установить ненадежное приложение «%s»?"
+msgstr "Установить недоверенное приложение «%s»?"
 
 #: src/Views/MainView.vala:36
 msgid "Install untrusted app?"
-msgstr "Установить ненадежное приложение?"
+msgstr "Установить недоверенное приложение?"
 
 #: src/Views/MainView.vala:38
 msgid ""
@@ -85,38 +85,38 @@ msgstr ""
 msgid "Fetching details"
 msgstr "Получение подробностей"
 
-#: src/Views/MainView.vala:50
+#: src/Views/MainView.vala:49
 msgid "I understand"
 msgstr "Я понимаю"
 
-#: src/Views/MainView.vala:73
+#: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed"
 msgstr "Обновления для этого приложения не будут проверяться"
 
-#: src/Views/MainView.vala:88
+#: src/Views/MainView.vala:87
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Другие приложения этого разработчика могут появиться в %s"
 
-#: src/Views/MainView.vala:110 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Views/MainView.vala:113
+#: src/Views/MainView.vala:112
 msgid "Install Anyway"
 msgstr "Все равно установить"
 
-#: src/Views/MainView.vala:130
+#: src/Views/MainView.vala:127
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "Объем установки может доходить до %s"
 
-#: src/Views/MainView.vala:148
+#: src/Views/MainView.vala:144
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Объем загрузки может увеличиться до %s"
 
-#: src/Views/MainView.vala:150
+#: src/Views/MainView.vala:146
 msgid "Unknown download size"
 msgstr "Неизвестный объем загрузки"
 
@@ -140,7 +140,7 @@ msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr "Откройте его в любое время из меню приложений."
+msgstr "Откройте его в любое время из Меню приложений."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
@@ -159,7 +159,7 @@ msgstr "Никаких изменений не вносилось."
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
-"Посетите %s для получения информации о приложении, обновлений и удаления."
+"Посетите %s для получения информации о приложении, обновлении и удалении."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
@@ -184,32 +184,37 @@ msgstr "Открыть приложение"
 msgid "your software center"
 msgstr "ваш центр приложений"
 
-#: src/MainWindow.vala:36
+#: src/MainWindow.vala:37
 msgid "Install Untrusted App"
 msgstr "Установить недоверенное приложение"
 
-#: src/MainWindow.vala:55
+#: src/MainWindow.vala:95
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Установка %s. Невозможно оценить оставшееся время."
 
-#: src/MainWindow.vala:166
+#: src/MainWindow.vala:185
 msgid "App installed"
 msgstr "Приложение установлено"
 
-#: src/MainWindow.vala:168
+#: src/MainWindow.vala:187
 #, c-format
 msgid "Installed “%s”"
 msgstr "Установлен «%s»"
 
-#: src/MainWindow.vala:170
+#: src/MainWindow.vala:189
 msgid "The app was installed"
 msgstr "Это приложение уже установлено"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
-#: src/FlatpakBundleFile.vala:52 src/FlatpakBundleFile.vala:153
+#: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
 msgstr "Не найдено подходящей установки Flatpak."
+
+#: src/FlatpakBundleFile.vala:38
+#, c-format
+msgid "Error constructing Flatpak bundle: %s"
+msgstr "Ошибка обработки пакета Flatpak: %s"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "«%s» успешно установлено"

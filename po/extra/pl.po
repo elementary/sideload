@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-22 20:57+0000\n"
+"POT-Creation-Date: 2022-08-11 11:25-0700\n"
 "PO-Revision-Date: 2022-04-08 16:06+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
-"sideload-extra/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/sideload-"
+"extra/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,59 +38,60 @@ msgstr ""
 "ich repozytoria do AppCenter. Przed załadowaniem nieoficjalnych aplikacji "
 "pokazywane są istotne informacje o nich, takie jak rozmiar do pobrania."
 
-#: data/sideload.appdata.xml.in:16
-msgid "Fix blurry app icon in multitasking view"
-msgstr "Naprawiono rozmytą ikonę aplikacji w widoku wielozadaniowym"
-
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:25
-#: data/sideload.appdata.xml.in:37 data/sideload.appdata.xml.in:45
-#: data/sideload.appdata.xml.in:53 data/sideload.appdata.xml.in:61
+#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:32 data/sideload.appdata.xml.in:44
+#: data/sideload.appdata.xml.in:52 data/sideload.appdata.xml.in:60
+#: data/sideload.appdata.xml.in:68
 msgid "Updated translations"
 msgstr "Aktualizacja tłumaczeń"
 
-#: data/sideload.appdata.xml.in:24
+#: data/sideload.appdata.xml.in:23
+msgid "Fix blurry app icon in multitasking view"
+msgstr "Naprawiono rozmytą ikonę aplikacji w widoku wielozadaniowym"
+
+#: data/sideload.appdata.xml.in:31
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "Używaj systemowych środowisk wykonawczych Flatpak do lokalnie instalowanych "
 "aplikacji"
 
-#: data/sideload.appdata.xml.in:32
+#: data/sideload.appdata.xml.in:39
 msgid "Control notifications in System Settings"
 msgstr "Kontroluj powiadomienia w ustawieniach systemu"
 
-#: data/sideload.appdata.xml.in:33
+#: data/sideload.appdata.xml.in:40
 msgid "Offer to trash Flatpak files after installing"
 msgstr "Zaproponuj wyrzucenie plików Flatpak po instalacji"
 
-#: data/sideload.appdata.xml.in:34
+#: data/sideload.appdata.xml.in:41
 msgid "Support dark style"
 msgstr "Wsparcie dla ciemnego motywu"
 
-#: data/sideload.appdata.xml.in:35
+#: data/sideload.appdata.xml.in:42
 msgid "Support Flatpak bundle files"
 msgstr "Obsługa plików pakietu Flatpak"
 
-#: data/sideload.appdata.xml.in:36
+#: data/sideload.appdata.xml.in:43
 msgid "Fix crashes on installation failure"
 msgstr "Napraw błędy krytyczne w przypadku niepowodzenia instalacji"
 
-#: data/sideload.appdata.xml.in:38
+#: data/sideload.appdata.xml.in:45
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "Dodano link do Ustawienia systemowe → Aplikacje → Uprawnienia"
 
-#: data/sideload.appdata.xml.in:52
+#: data/sideload.appdata.xml.in:59
 msgid "Show app name in the main view once it's loaded"
 msgstr "Pokaż nazwę aplikacji w głównym widoku po jej załadowaniu"
 
-#: data/sideload.appdata.xml.in:60
+#: data/sideload.appdata.xml.in:67
 msgid "Improve performance of download size calculation"
 msgstr "Popraw wydajność obliczania rozmiaru pobierania"
 
-#: data/sideload.appdata.xml.in:68
+#: data/sideload.appdata.xml.in:75
 msgid "First release. Hello world!"
 msgstr "Pierwsze wydanie. Witaj świecie!"
 
-#: data/sideload.appdata.xml.in:117
+#: data/sideload.appdata.xml.in:124
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -98,10 +99,9 @@ msgstr "elementary, Inc."
 msgid "Flatpak Installer"
 msgstr "Instalator Flatpak"
 
-#: data/sideload.desktop.in:7
-msgid "io.elementary.sideload"
-msgstr "io.elementary.sideload"
-
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "io.elementary.sideload"
+#~ msgstr "io.elementary.sideload"
