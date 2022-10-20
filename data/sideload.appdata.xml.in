@@ -10,13 +10,19 @@
     <p>Sideload Flatpak apps per user and automatically add their remotes to AppCenter. Sideload shows important information about apps before you install like their download size.</p>
   </description>
   <releases>
-    <release version="6.0.3" date="2022-04-26" urgency="medium">
+    <release version="6.1.0" date="2022-04-26" urgency="medium">
       <description>
         <ul>
+          <li>Use updated Flatpak branding</li>
+          <li>Badge notifications with the sideloaded app's icon</li>
           <li>Updated translations</li>
         </ul>
       </description>
+      <issues>
+        <issue url="https://github.com/elementary/sideload/issues/136">Crash with invalid checksum</issue>
+      </issues>
     </release>
+
     <release version="6.0.2" date="2021-09-22" urgency="medium">
       <description>
         <ul>
