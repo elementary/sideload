@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2021-09-22 22:27+0000\n"
+"PO-Revision-Date: 2022-10-21 23:57+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/uk/>\n"
@@ -41,11 +41,11 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Use updated Flatpak branding"
-msgstr ""
+msgstr "Використано оновлений брендинг Flatpak"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Badge notifications with the sideloaded app's icon"
-msgstr ""
+msgstr "Значки сповіщень на піктограмах сторонніх застосунків"
 
 #: data/sideload.appdata.xml.in:18 data/sideload.appdata.xml.in:30
 #: data/sideload.appdata.xml.in:38 data/sideload.appdata.xml.in:50
