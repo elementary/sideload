@@ -1,3 +1,19 @@
+io.elementary.sideload (6.1.0) bionic; urgency=medium
+
+  * Release 6.0.3 (#139)
+  * Update translation files
+  * Update translation template
+  * Update AppData for 6.1 (#148)
+  * Fix Gettext Action (#147)
+  * Update POT
+  * Handle error on constructing flatpak bundle, fix error signalling
+    (#143)
+  * Port to Gtk4 (#138)
+  * Badge notification with app icon (#145)
+  * Icons: update to new Flatpak brand (#141)
+
+ -- elementary, Inc. <builds@elementary.io>  Mon, 24 Oct 2022 17:11:44 +0000
+
 io.elementary.sideload (6.0.2) bionic; urgency=medium
 
   * Release 6.0.2 (#137)
