@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2022-10-21 23:57+0000\n"
+"PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/uk/>\n"
@@ -52,7 +52,7 @@ msgstr "Значки сповіщень на піктограмах сторон
 #: data/sideload.appdata.xml.in:58 data/sideload.appdata.xml.in:66
 #: data/sideload.appdata.xml.in:74
 msgid "Updated translations"
-msgstr "Оновлено переклади"
+msgstr "Оновлені переклади"
 
 #: data/sideload.appdata.xml.in:29
 msgid "Fix blurry app icon in multitasking view"
