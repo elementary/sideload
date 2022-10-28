@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2021-12-27 16:55+0000\n"
+"PO-Revision-Date: 2022-10-29 04:48+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -39,11 +39,11 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Use updated Flatpak branding"
-msgstr ""
+msgstr "Flatpak のブランドマーク変更に伴うアイコン修正"
 
 #: data/sideload.appdata.xml.in:17
 msgid "Badge notifications with the sideloaded app's icon"
-msgstr ""
+msgstr "通知アイコンにインストールされたアプリのアイコンをオーバーレイ表示するように修正"
 
 #: data/sideload.appdata.xml.in:18 data/sideload.appdata.xml.in:30
 #: data/sideload.appdata.xml.in:38 data/sideload.appdata.xml.in:50
