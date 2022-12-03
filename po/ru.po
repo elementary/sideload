@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2022-10-07 20:09+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"PO-Revision-Date: 2022-12-04 16:25+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -58,7 +58,7 @@ msgstr "Приложение не имеет доверенной подписи
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr "Приложение, среда исполнения или репозиторий некорректен."
+msgstr "Приложение, среда исполнения или репозиторий некорректны."
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
-msgstr "Получение подробностей"
+msgstr "Получение сведений"
 
 #: src/Views/MainView.vala:49
 msgid "I understand"
@@ -153,7 +153,7 @@ msgstr "Это приложение уже установлено"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr "Никаких изменений не вносилось."
+msgstr "Не было внесено никаких изменений."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
@@ -200,11 +200,11 @@ msgstr "Приложение установлено"
 #: src/MainWindow.vala:187
 #, c-format
 msgid "Installed “%s”"
-msgstr "Установлен «%s»"
+msgstr "Приложение «%s» установлено"
 
 #: src/MainWindow.vala:189
 msgid "The app was installed"
-msgstr "Это приложение уже установлено"
+msgstr "Приложение установлено"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
