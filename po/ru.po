@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2023-01-21 09:25+0000\n"
+"PO-Revision-Date: 2023-01-29 08:25+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
@@ -174,7 +174,7 @@ msgstr "Права доступа можно изменить в %s"
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr "Переместить «%s» в Корзину"
+msgstr "Переместить «%s» в корзину"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
