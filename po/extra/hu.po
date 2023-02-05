@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2021-12-25 23:12+0000\n"
+"PO-Revision-Date: 2023-02-07 16:25+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/hu/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Sideload"
 
 #: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -33,6 +33,10 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Flatpak alkalmazások telepítése külső forrásból a felhasználóhoz és a "
+"forrásuk automatikus hozzáadása az AppKözponthoz. A Sideload telepítés előtt "
+"megjeleníti az alkalmazás legfontosabb tulajdonságait, beleértve a letöltési "
+"méretet."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Use updated Flatpak branding"
