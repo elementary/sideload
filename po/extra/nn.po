@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2020-07-04 12:12+0000\n"
+"PO-Revision-Date: 2023-02-07 16:25+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/nn/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -33,6 +33,9 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
+"Du kan lasta ned Flatpak-appar for kvar brukar og automatisk leggja dei til "
+"i AppCenter. Sidelasting visar deg viktig informasjon om appar før du "
+"installerer dei, som til dømes storleiken på nedlastinga."
 
 #: data/sideload.appdata.xml.in:16
 msgid "Use updated Flatpak branding"
@@ -47,7 +50,7 @@ msgstr ""
 #: data/sideload.appdata.xml.in:58 data/sideload.appdata.xml.in:66
 #: data/sideload.appdata.xml.in:74
 msgid "Updated translations"
-msgstr "Oppdaterte oversettingar"
+msgstr "Oppdatert oversetning"
 
 #: data/sideload.appdata.xml.in:29
 msgid "Fix blurry app icon in multitasking view"
@@ -59,7 +62,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:45
 msgid "Control notifications in System Settings"
-msgstr ""
+msgstr "Handsam varsel i Systeminnstillingar"
 
 #: data/sideload.appdata.xml.in:46
 msgid "Offer to trash Flatpak files after installing"
