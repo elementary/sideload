@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:28+0000\n"
-"PO-Revision-Date: 2021-09-29 02:28+0000\n"
+"PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "sideload/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -216,9 +216,9 @@ msgid "Did not find suitable Flatpak installation."
 msgstr "Fant ikke passende Flatpak-installasjon."
 
 #: src/FlatpakBundleFile.vala:38
-#, c-format
+#, c-format, fuzzy
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Kunne ikke opprette Flatpak-forpakning: %s"
 
 #, fuzzy
 #~ msgid "“%s” was installed successfully"
