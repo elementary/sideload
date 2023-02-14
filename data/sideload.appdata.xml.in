@@ -10,6 +10,18 @@
     <p>Sideload Flatpak apps per user and automatically add their remotes to AppCenter. Sideload shows important information about apps before you install like their download size.</p>
   </description>
   <releases>
+    <release version="6.1.1" date="2023-02-14" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/sideload/issues/80">Mention elementary when talking about reviewing for security</issue>
+        <issue url="https://github.com/elementary/sideload/issues/150">Title label should ask for trust, not assume mistrust</issue>
+      </issues>
+    </release>
+
     <release version="6.1.0" date="2022-10-20" urgency="medium">
       <description>
         <ul>
