@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2021-12-17 15:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -37,68 +37,68 @@ msgstr ""
 "olarak Uygulama Merkezine ekleyin. Dışarıdan yükleme, yüklemeden önce "
 "indirme boyutları gibi uygulamalar hakkında önemli bilgiler gösterir."
 
-#: data/sideload.appdata.xml.in:16
-msgid "Use updated Flatpak branding"
-msgstr ""
-
-#: data/sideload.appdata.xml.in:17
-msgid "Badge notifications with the sideloaded app's icon"
-msgstr ""
-
-#: data/sideload.appdata.xml.in:18 data/sideload.appdata.xml.in:30
-#: data/sideload.appdata.xml.in:38 data/sideload.appdata.xml.in:50
-#: data/sideload.appdata.xml.in:58 data/sideload.appdata.xml.in:66
-#: data/sideload.appdata.xml.in:74
+#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:30
+#: data/sideload.appdata.xml.in:42 data/sideload.appdata.xml.in:50
+#: data/sideload.appdata.xml.in:62 data/sideload.appdata.xml.in:70
+#: data/sideload.appdata.xml.in:78 data/sideload.appdata.xml.in:86
 msgid "Updated translations"
 msgstr "Çeviriler güncellendi"
 
+#: data/sideload.appdata.xml.in:28
+msgid "Use updated Flatpak branding"
+msgstr ""
+
 #: data/sideload.appdata.xml.in:29
+msgid "Badge notifications with the sideloaded app's icon"
+msgstr ""
+
+#: data/sideload.appdata.xml.in:41
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Çoklu görev görünümündeki bulanık uygulama simgesi düzeltildi"
 
-#: data/sideload.appdata.xml.in:37
+#: data/sideload.appdata.xml.in:49
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "Yerel olarak yüklenen uygulamalar için sistem Flatpak çalışma zamanlarını "
 "kullan"
 
-#: data/sideload.appdata.xml.in:45
+#: data/sideload.appdata.xml.in:57
 msgid "Control notifications in System Settings"
 msgstr "Bildirimleri Sistem Ayarlarından kontrol edin"
 
-#: data/sideload.appdata.xml.in:46
+#: data/sideload.appdata.xml.in:58
 msgid "Offer to trash Flatpak files after installing"
 msgstr "Kurulumdan sonra Flatpak dosyalarını çöpe atmayı teklif et"
 
-#: data/sideload.appdata.xml.in:47
+#: data/sideload.appdata.xml.in:59
 msgid "Support dark style"
 msgstr "Koyu renk tema desteği eklendi"
 
-#: data/sideload.appdata.xml.in:48
+#: data/sideload.appdata.xml.in:60
 msgid "Support Flatpak bundle files"
 msgstr "Flatpak paket dosyası desteği eklendi"
 
-#: data/sideload.appdata.xml.in:49
+#: data/sideload.appdata.xml.in:61
 msgid "Fix crashes on installation failure"
 msgstr "Yükleme hatasından dolayı olan çökmeler düzeltildi"
 
-#: data/sideload.appdata.xml.in:51
+#: data/sideload.appdata.xml.in:63
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "Sistem Ayarları → Uygulamalar → İzinler yoluna bağlantı oluşturuldu"
 
-#: data/sideload.appdata.xml.in:65
+#: data/sideload.appdata.xml.in:77
 msgid "Show app name in the main view once it's loaded"
 msgstr "Yüklendikten sonra uygulama adını ana ekranda göster"
 
-#: data/sideload.appdata.xml.in:73
+#: data/sideload.appdata.xml.in:85
 msgid "Improve performance of download size calculation"
 msgstr "İndirme boyutu hesaplamasının performansı iyileştirildi"
 
-#: data/sideload.appdata.xml.in:81
+#: data/sideload.appdata.xml.in:93
 msgid "First release. Hello world!"
 msgstr "İlk sürüm. Merhaba dünya!"
 
-#: data/sideload.appdata.xml.in:130
+#: data/sideload.appdata.xml.in:142
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

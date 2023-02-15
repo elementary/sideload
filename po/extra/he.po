@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
-"sideload-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload-"
+"extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,66 +37,66 @@ msgstr ""
 "היישומים. טעינה צדית מציגה מידע חשוב על היישומים בטרם ההתקנה כגון גודל "
 "ההורדה שלהם."
 
-#: data/sideload.appdata.xml.in:16
-msgid "Use updated Flatpak branding"
-msgstr "נעשה שימוש במיתוג העדכני של Flatpak"
-
-#: data/sideload.appdata.xml.in:17
-msgid "Badge notifications with the sideloaded app's icon"
-msgstr "נוסף עיטור להתראות עם סמל היישומון שנטען מהצד"
-
-#: data/sideload.appdata.xml.in:18 data/sideload.appdata.xml.in:30
-#: data/sideload.appdata.xml.in:38 data/sideload.appdata.xml.in:50
-#: data/sideload.appdata.xml.in:58 data/sideload.appdata.xml.in:66
-#: data/sideload.appdata.xml.in:74
+#: data/sideload.appdata.xml.in:16 data/sideload.appdata.xml.in:30
+#: data/sideload.appdata.xml.in:42 data/sideload.appdata.xml.in:50
+#: data/sideload.appdata.xml.in:62 data/sideload.appdata.xml.in:70
+#: data/sideload.appdata.xml.in:78 data/sideload.appdata.xml.in:86
 msgid "Updated translations"
 msgstr "התרגומים עודכנו"
 
+#: data/sideload.appdata.xml.in:28
+msgid "Use updated Flatpak branding"
+msgstr "נעשה שימוש במיתוג העדכני של Flatpak"
+
 #: data/sideload.appdata.xml.in:29
+msgid "Badge notifications with the sideloaded app's icon"
+msgstr "נוסף עיטור להתראות עם סמל היישומון שנטען מהצד"
+
+#: data/sideload.appdata.xml.in:41
 msgid "Fix blurry app icon in multitasking view"
 msgstr "תוקן סמל יישום מטושטש בתצוגת ריבוי משימות"
 
-#: data/sideload.appdata.xml.in:37
+#: data/sideload.appdata.xml.in:49
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr "להשתמש בסביבת ריצת Flatpak של המערכת ליישומים שמותקנים מקומית"
 
-#: data/sideload.appdata.xml.in:45
+#: data/sideload.appdata.xml.in:57
 msgid "Control notifications in System Settings"
 msgstr "שליטה בהתראות דרך הגדרות המערכת"
 
-#: data/sideload.appdata.xml.in:46
+#: data/sideload.appdata.xml.in:58
 msgid "Offer to trash Flatpak files after installing"
 msgstr "הצעה להשליך קובצי Flatpak לאשפה לאחר התקנתם"
 
-#: data/sideload.appdata.xml.in:47
+#: data/sideload.appdata.xml.in:59
 msgid "Support dark style"
 msgstr "תמיכה בסגנון כהה"
 
-#: data/sideload.appdata.xml.in:48
+#: data/sideload.appdata.xml.in:60
 msgid "Support Flatpak bundle files"
 msgstr "תמיכה בקובצי איגוד של Flatpak"
 
-#: data/sideload.appdata.xml.in:49
+#: data/sideload.appdata.xml.in:61
 msgid "Fix crashes on installation failure"
 msgstr "תוקנו קריסות עקב כשלי התקנה"
 
-#: data/sideload.appdata.xml.in:51
+#: data/sideload.appdata.xml.in:63
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "קישור אל הגדרות מערכת ← יישומים ← הרשאות"
 
-#: data/sideload.appdata.xml.in:65
+#: data/sideload.appdata.xml.in:77
 msgid "Show app name in the main view once it's loaded"
 msgstr "הצגת שם היישומים בתצוגה הראשית עם הטעינה"
 
-#: data/sideload.appdata.xml.in:73
+#: data/sideload.appdata.xml.in:85
 msgid "Improve performance of download size calculation"
 msgstr "שיפור ביצועי חישוב גודל ההורדות"
 
-#: data/sideload.appdata.xml.in:81
+#: data/sideload.appdata.xml.in:93
 msgid "First release. Hello world!"
 msgstr "מהדורה ראשונה. שלום וברכה!"
 
-#: data/sideload.appdata.xml.in:130
+#: data/sideload.appdata.xml.in:142
 msgid "elementary, Inc."
 msgstr "elementary בע״מ."
 
