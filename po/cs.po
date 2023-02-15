@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-01-11 03:35+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -69,18 +69,23 @@ msgid "An unknown error occurred."
 msgstr "Nastala neznámá chyba."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "Nainstalovat nedůvěryhodnou aplikaci „%s“?"
+#, fuzzy, c-format
+#| msgid "Installed “%s”"
+msgid "Trust and install “%s”?"
+msgstr "Nainstalováno „%s“"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "Instalovat nedůvěryhodnou aplikaci?"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "Tato aplikace je poskytována výhradně jejím vývojářem a nebyla ověřena její "
 "bezpečnost, důvěryhodnost ani její začlenění do systému."
@@ -94,7 +99,9 @@ msgid "I understand"
 msgstr "Rozumím"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "Aktualizace této aplikace nebudou přezkoumávány"
 
 #: src/Views/MainView.vala:87
@@ -218,6 +225,13 @@ msgstr "Nepodařilo se najít vhodnou instalaci Flatpak."
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr ""
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "Nainstalovat nedůvěryhodnou aplikaci „%s“?"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "Instalovat nedůvěryhodnou aplikaci?"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "Aplikace „%s“ byla úspěšně nainstalována"

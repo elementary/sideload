@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-04-20 09:33+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (Canada) <https://l10n.elementary.io/projects/desktop/"
@@ -69,20 +69,20 @@ msgid "An unknown error occurred."
 msgstr "An unknown error occured."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "Install untrusted software “%s”?"
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Trust and install “%s”?"
+msgstr "Installing “%s”"
 
 #: src/Views/MainView.vala:36
-#, fuzzy
-msgid "Install untrusted app?"
-msgstr "Install untrusted software?"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
 #, fuzzy
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "This software is provided solely by its developer and has not been reviewed "
 "for security, privacy, or system integration. Installing this software may "
@@ -97,7 +97,7 @@ msgid "I understand"
 msgstr "I understand"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr ""
 
 #: src/Views/MainView.vala:87
@@ -228,6 +228,14 @@ msgstr ""
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr ""
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "Install untrusted software “%s”?"
+
+#, fuzzy
+#~ msgid "Install untrusted app?"
+#~ msgstr "Install untrusted software?"
 
 #, fuzzy
 #~ msgid ""

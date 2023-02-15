@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-08-15 23:39+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -64,18 +64,23 @@ msgid "An unknown error occurred."
 msgstr "Bilinmeyen bir hata oluştu."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "Güvenilmeyen \"%s\" uygulaması yüklensin mi?"
+#, fuzzy, c-format
+#| msgid "Installed “%s”"
+msgid "Trust and install “%s”?"
+msgstr "\"%s\" yüklendi"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "Güvenilmeyen uygulama yüklensin mi?"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "Bu uygulama yalnızca geliştiricisi tarafından sağlanır ve güvenlik, gizlilik "
 "veya sistem entegrasyonu için incelenmemiştir."
@@ -89,7 +94,9 @@ msgid "I understand"
 msgstr "Anlıyorum"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "Bu uygulamanın güncellemeleri gözden geçirilmeyecek"
 
 #: src/Views/MainView.vala:87
@@ -215,6 +222,13 @@ msgstr "Uygun Flatpak kurulumu bulunamadı."
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr "Flatpak paketi oluşturulurken hata oluştu: %s"
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "Güvenilmeyen \"%s\" uygulaması yüklensin mi?"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "Güvenilmeyen uygulama yüklensin mi?"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "\"%s\" başarıyla yüklendi"

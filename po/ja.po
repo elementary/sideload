@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-08-12 15:29+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -65,18 +65,23 @@ msgid "An unknown error occurred."
 msgstr "不明なエラーが発生しました。"
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "信頼されていないアプリ “%s” をインストールしますか？"
+#, fuzzy, c-format
+#| msgid "Installed “%s”"
+msgid "Trust and install “%s”?"
+msgstr "“%s”をインストールしました"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "信頼されていないアプリをインストールしますか？"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "アプリの開発者が独自に配布しているため、セキュリティーやプライバシー、システ"
 "ムとの統合に関する審査が行われていません。"
@@ -90,7 +95,9 @@ msgid "I understand"
 msgstr "了解しました"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "このアプリに関するアップデートは審査されません"
 
 #: src/Views/MainView.vala:87
@@ -216,6 +223,13 @@ msgstr "適切な Flatpak インストールが見つかりませんでした。
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr "Flatpak バンドルを構成中にエラーが発生しました: %s"
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "信頼されていないアプリ “%s” をインストールしますか？"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "信頼されていないアプリをインストールしますか？"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "“%s” は正常にインストールされました"

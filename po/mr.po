@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2020-10-13 22:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -66,18 +66,23 @@ msgid "An unknown error occurred."
 msgstr "एक अज्ञात त्रुटी आली."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "अविश्वासू अ‍ॅप \"%s\" स्थापित करायचा?"
+#, fuzzy, c-format
+#| msgid "Installing “%s”"
+msgid "Trust and install “%s”?"
+msgstr "“%s” स्थापित करत आहे"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "अविश्वासू अ‍ॅप स्थापित करायचा?"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "हा अ‍ॅप पूर्णपणे त्याच्या विकसकाद्वारे प्रदान केला गेला आहे आणि सुरक्षितता, गोपनीयता किंवा "
 "सिस्टम एकीकरणासाठी त्याचे पुनरावलोकन केले गेले नाही."
@@ -91,7 +96,9 @@ msgid "I understand"
 msgstr "मला समजले"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "या अ‍ॅपवरील अपडेट्सचे पुनरावलोकन केले जाणार नाही"
 
 #: src/Views/MainView.vala:87
@@ -221,6 +228,13 @@ msgstr ""
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr ""
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "अविश्वासू अ‍ॅप \"%s\" स्थापित करायचा?"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "अविश्वासू अ‍ॅप स्थापित करायचा?"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "“%s” यशस्वीरित्या स्थापित केले"

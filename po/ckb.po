@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-09-10 13:23+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -64,18 +64,23 @@ msgid "An unknown error occurred."
 msgstr "هەڵەیەکی نەزانراو ڕوویدا."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "دامەزراندنی ئەپی بڕواپێنەکراو %s؟"
+#, fuzzy, c-format
+#| msgid "Installed “%s”"
+msgid "Trust and install “%s”?"
+msgstr "\"%s\" دامەزرا"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "دامەزراندنی ئەپی بڕواپێنەکراو؟"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "ئەم ئەپە تەنها گەشەپێدەرەکەی دابینی کردووە و پێداچوونەوەی لە ڕووی ئاسایش، "
 "پاراستنی تایبەتی یان تێخزاندنی لەگەڵ سیستەم بۆ نەکراوە."
@@ -89,7 +94,9 @@ msgid "I understand"
 msgstr "تێدەگەم"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "پێداچوونەوە بۆ نوێکردنەوەکانی ئەم ئەپە ناکرێت"
 
 #: src/Views/MainView.vala:87
@@ -213,3 +220,10 @@ msgstr "دامەزراندنی گونجاوی فلاتپاک نەدۆزرایە�
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr "هەڵە ڕوویدا لەکاتی دروستکردنی بەندڵی فلاتپاک: %s"
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "دامەزراندنی ئەپی بڕواپێنەکراو %s؟"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "دامەزراندنی ئەپی بڕواپێنەکراو؟"

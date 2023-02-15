@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2022-08-12 13:43+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -64,18 +64,23 @@ msgid "An unknown error occurred."
 msgstr "S'ha produït un error desconegut."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "Voleu instal·lar l'aplicació %s, que no és de confiança?"
+#, fuzzy, c-format
+#| msgid "Installed “%s”"
+msgid "Trust and install “%s”?"
+msgstr "S'ha instal·lat «%s»"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "Voleu instal·lar l'aplicació que no és de confiança?"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "Aquesta aplicació està proporcionada exclusivament per qui la desenvolupa i "
 "no ha estat revisada quant a la seguretat, privadesa o integració amb el "
@@ -90,7 +95,9 @@ msgid "I understand"
 msgstr "Ho entenc"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "Les actualitzacions d'aquesta aplicació no es revisaran."
 
 #: src/Views/MainView.vala:87
@@ -216,6 +223,13 @@ msgstr "No s'ha trobat la instal·lació de Flatpak adequada."
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr "Error en construir el paquet de Flatpak: %s"
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "Voleu instal·lar l'aplicació %s, que no és de confiança?"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "Voleu instal·lar l'aplicació que no és de confiança?"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "%s s'ha instal·lat correctament."

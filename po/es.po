@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:28+0000\n"
+"POT-Creation-Date: 2023-02-15 11:19+0000\n"
 "PO-Revision-Date: 2021-04-29 01:19+0000\n"
 "Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -70,18 +70,23 @@ msgid "An unknown error occurred."
 msgstr "Se produjo un error desconocido."
 
 #: src/Views/MainView.vala:23
-#, c-format
-msgid "Install untrusted app “%s”?"
-msgstr "¿Quiere instalar la aplicación «%s», que no es de confianza?"
+#, fuzzy, c-format
+#| msgid "Installed “%s”"
+msgid "Trust and install “%s”?"
+msgstr "Se instaló «%s»"
 
 #: src/Views/MainView.vala:36
-msgid "Install untrusted app?"
-msgstr "¿Quiere instalar una aplicación que no es de confianza?"
+msgid "Trust and install this app?"
+msgstr ""
 
 #: src/Views/MainView.vala:38
+#, fuzzy
+#| msgid ""
+#| "This app is provided solely by its developer and has not been reviewed "
+#| "for security, privacy, or system integration."
 msgid ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 msgstr ""
 "Esta aplicación la ha proporcionado únicamente su desarrollador y no se ha "
 "revisado con respecto a su seguridad, su respeto de la privacidad o su "
@@ -96,7 +101,9 @@ msgid "I understand"
 msgstr "Comprendo"
 
 #: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed"
+#, fuzzy
+#| msgid "Updates to this app will not be reviewed"
+msgid "Updates to this app will not be reviewed by elementary"
 msgstr "No se revisarán las actualizaciones de esta aplicación"
 
 #: src/Views/MainView.vala:87
@@ -224,6 +231,13 @@ msgstr "No se encontró la instalación adecuada de Flatpak."
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
 msgstr ""
+
+#, c-format
+#~ msgid "Install untrusted app “%s”?"
+#~ msgstr "¿Quiere instalar la aplicación «%s», que no es de confianza?"
+
+#~ msgid "Install untrusted app?"
+#~ msgstr "¿Quiere instalar una aplicación que no es de confianza?"
 
 #~ msgid "“%s” was installed successfully"
 #~ msgstr "Se ha instalado «%s» correctamente"
