@@ -20,7 +20,7 @@ public class Sideload.MainView : AbstractView {
 
     public string app_name {
         set {
-            primary_label.label = _("Install untrusted app “%s”?").printf (value);
+            primary_label.label = _("Trust and install “%s”?").printf (value);
         }
     }
 
@@ -33,9 +33,9 @@ public class Sideload.MainView : AbstractView {
     private Gtk.Label repo_label;
 
     construct {
-        primary_label.label = _("Install untrusted app?");
+        primary_label.label = _("Trust and install this app?");
 
-        secondary_label.label = _("This app is provided solely by its developer and has not been reviewed for security, privacy, or system integration.");
+        secondary_label.label = _("This app is provided solely by its developer and has not been reviewed by elementary for security, privacy, or system integration.");
 
         var loading_spinner = new Gtk.Spinner ();
         loading_spinner.start ();
@@ -69,7 +69,7 @@ public class Sideload.MainView : AbstractView {
         updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
         updates_context.add_class ("orange");
 
-        updates_label = new Gtk.Label (_("Updates to this app will not be reviewed"));
+        updates_label = new Gtk.Label (_("Updates to this app will not be reviewed by elementary"));
         updates_label.selectable = true;
         updates_label.max_width_chars = 50;
         updates_label.wrap = true;
