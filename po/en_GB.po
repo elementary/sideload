@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-15 11:19+0000\n"
-"PO-Revision-Date: 2021-07-07 20:37+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"PO-Revision-Date: 2023-02-17 03:00+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "desktop/sideload/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -60,32 +60,25 @@ msgid "The application, runtime, or remote name is invalid."
 msgstr "The application, runtime, or remote name is invalid."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
-msgstr "An unknown error occured."
+msgstr "An unknown error occurred."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Installed “%s”"
+#, c-format
 msgid "Trust and install “%s”?"
-msgstr "Installed “%s”"
+msgstr "Trust and install “%s”?"
 
 #: src/Views/MainView.vala:36
 msgid "Trust and install this app?"
 msgstr ""
 
 #: src/Views/MainView.vala:38
-#, fuzzy
-#| msgid ""
-#| "This app is provided solely by its developer and has not been reviewed "
-#| "for security, privacy, or system integration."
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
 msgstr ""
-"This app is provided solely by its developer and has not been reviewed for "
-"security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
@@ -96,10 +89,8 @@ msgid "I understand"
 msgstr "I understand"
 
 #: src/Views/MainView.vala:72
-#, fuzzy
-#| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr "Updates to this app will not be reviewed"
+msgstr "Updates to this app will not be reviewed by elementary"
 
 #: src/Views/MainView.vala:87
 #, c-format
