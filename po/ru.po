@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-15 11:19+0000\n"
-"PO-Revision-Date: 2023-01-29 08:25+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"PO-Revision-Date: 2023-02-17 03:00+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -68,23 +68,20 @@ msgstr "Произошла неизвестная ошибка."
 #, fuzzy, c-format
 #| msgid "Installed “%s”"
 msgid "Trust and install “%s”?"
-msgstr "Приложение «%s» установлено"
+msgstr "Доверять и установить «%s»?"
 
 #: src/Views/MainView.vala:36
+#, fuzzy
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Доверять и установить это приложение?"
 
 #: src/Views/MainView.vala:38
-#, fuzzy
-#| msgid ""
-#| "This app is provided solely by its developer and has not been reviewed "
-#| "for security, privacy, or system integration."
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
 msgstr ""
 "Это приложение поставляется исключительно его разработчиком и не проверялось "
-"на безопасность, конфиденциальность или системную интеграцию."
+"elementary на безопасность, конфиденциальность или интеграцию с системой."
 
 #: src/Views/MainView.vala:43
 msgid "Fetching details"
@@ -95,10 +92,8 @@ msgid "I understand"
 msgstr "Я понимаю"
 
 #: src/Views/MainView.vala:72
-#, fuzzy
-#| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr "Обновления для этого приложения не будут проверяться"
+msgstr "Обновления для этого приложения не будут проверяться elementary"
 
 #: src/Views/MainView.vala:87
 #, c-format
