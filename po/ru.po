@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-15 11:19+0000\n"
-"PO-Revision-Date: 2023-02-17 03:00+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"PO-Revision-Date: 2023-02-18 09:25+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
@@ -65,15 +65,13 @@ msgid "An unknown error occurred."
 msgstr "Произошла неизвестная ошибка."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Installed “%s”"
+#, c-format
 msgid "Trust and install “%s”?"
-msgstr "Доверять и установить «%s»?"
+msgstr "Довериться и установить «%s»?"
 
 #: src/Views/MainView.vala:36
-#, fuzzy
 msgid "Trust and install this app?"
-msgstr "Доверять и установить это приложение?"
+msgstr "Довериться и установить это приложение?"
 
 #: src/Views/MainView.vala:38
 msgid ""
