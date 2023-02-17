@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-15 11:19+0000\n"
-"PO-Revision-Date: 2023-02-17 03:00+0000\n"
+"PO-Revision-Date: 2023-02-18 09:25+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "desktop/sideload/en_GB/>\n"
@@ -70,7 +70,7 @@ msgstr "Trust and install “%s”?"
 
 #: src/Views/MainView.vala:36
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Trust and install this app?"
 
 #: src/Views/MainView.vala:38
 msgid ""
@@ -212,7 +212,7 @@ msgstr "Did not find suitable Flatpak installation."
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Error constructing Flatpak bundle: %s"
 
 #, c-format
 #~ msgid "Install untrusted app “%s”?"
