@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-15 11:19+0000\n"
-"PO-Revision-Date: 2023-02-14 13:25+0000\n"
+"PO-Revision-Date: 2023-02-26 08:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "sideload/nb/>\n"
@@ -75,7 +75,7 @@ msgstr "Installerte «%s»"
 
 #: src/Views/MainView.vala:36
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Tiltro og installer dette programmet?"
 
 #: src/Views/MainView.vala:38
 #, fuzzy
