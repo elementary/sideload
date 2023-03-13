@@ -31,6 +31,8 @@ public class Sideload.MainView : AbstractView {
     private Gtk.Label updates_label;
     private Gtk.Image repo_icon;
     private Gtk.Label repo_label;
+    private Gtk.Image permissions_image;
+    private Gtk.Label permissions_label;
 
     construct {
         primary_label.label = _("Trust and install this app?");
@@ -90,13 +92,25 @@ public class Sideload.MainView : AbstractView {
         repo_label.wrap = true;
         repo_label.xalign = 0;
 
-        details_grid = new Gtk.Grid ();
-        details_grid.orientation = Gtk.Orientation.VERTICAL;
-        details_grid.column_spacing = 6;
-        details_grid.row_spacing = 12;
+        permissions_image = new Gtk.Image () {
+            valign = Gtk.Align.START
+        };
+        permissions_image.add_css_class (Granite.STYLE_CLASS_ACCENT);
+
+        permissions_label = new Gtk.Label ("") {
+            max_width_chars = 50,
+            selectable = true,
+            wrap = true,
+            xalign = 0
+        };
+
+        details_grid = new Gtk.Grid () {
+            column_spacing = 6,
+            row_spacing = 12
+        };
         details_grid.attach (download_size_icon, 0, 0);
         details_grid.attach (download_size_label, 1, 0);
-        details_grid.attach (agree_check, 0, 3, 2);
+        details_grid.attach (agree_check, 0, 4, 2);
 
         details_stack = new Gtk.Stack ();
         details_stack.vhomogeneous = false;
@@ -139,20 +153,47 @@ public class Sideload.MainView : AbstractView {
         details_stack.visible_child_name = "details";
     }
 
-    public void display_ref_details (string? size, bool extra_repo) {
+    public void display_ref_details (string? size, bool extra_repo, FlatpakFile.PermissionsFlags permissions_flags) {
         if (size != null) {
             download_size_label.label = _("Download size may be up to %s").printf (size);
         } else {
             download_size_label.label = _("Unknown download size");
         }
 
-        if (extra_repo) {
-            details_grid.attach (repo_icon, 0, 2);
-            details_grid.attach (repo_label, 1, 2);
+        if (
+            FlatpakFile.PermissionsFlags.ESCAPE_SANDBOX in permissions_flags ||
+            FlatpakFile.PermissionsFlags.FILESYSTEM_FULL in permissions_flags ||
+            FlatpakFile.PermissionsFlags.SYSTEM_BUS in permissions_flags
+        ) {
+            permissions_image.icon_name = "security-low-symbolic";
+            permissions_image.add_css_class ("red");
+            permissions_label.label = _("Requests advanced permissions that could be used to violate your privacy or security");
+        } else if (
+            FlatpakFile.PermissionsFlags.DOWNLOADS_FULL in permissions_flags ||
+            FlatpakFile.PermissionsFlags.DOWNLOADS_READ in permissions_flags ||
+            FlatpakFile.PermissionsFlags.FILESYSTEM_OTHER in permissions_flags ||
+            FlatpakFile.PermissionsFlags.FILESYSTEM_READ in permissions_flags ||
+            FlatpakFile.PermissionsFlags.HOME_FULL in permissions_flags ||
+            FlatpakFile.PermissionsFlags.HOME_READ in permissions_flags
+        ) {
+            permissions_image.icon_name = "security-low-symbolic";
+            permissions_image.add_css_class ("yellow");
+            permissions_label.label = _("Requests file and folder permissions that could be used to violate your privacy");
+        } else {
+            permissions_image.icon_name = "security-high-symbolic";
+            permissions_image.add_css_class ("green");
+            permissions_label.label = _("Doesn't request advanced system permissions");
         }
 
-        details_grid.attach (updates_icon, 0, 1);
-        details_grid.attach (updates_label, 1, 1);
+        details_grid.attach (permissions_image, 0, 1);
+        details_grid.attach (permissions_label, 1, 1);
+        details_grid.attach (updates_icon, 0, 2);
+        details_grid.attach (updates_label, 1, 2);
+
+        if (extra_repo) {
+            details_grid.attach (repo_icon, 0, 3);
+            details_grid.attach (repo_label, 1, 3);
+        }
         details_stack.visible_child_name = "details";
     }
 }

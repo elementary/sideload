@@ -21,6 +21,27 @@
 public abstract class Sideload.FlatpakFile : Object {
     public File file { get; construct; }
 
+    [Flags]
+    public enum PermissionsFlags {
+        DEVICES,
+        DOWNLOADS_FULL,
+        DOWNLOADS_READ,
+        ESCAPE_SANDBOX,
+        FILESYSTEM_FULL,
+        FILESYSTEM_OTHER,
+        FILESYSTEM_READ,
+        HOME_FULL,
+        HOME_READ,
+        NETWORK,
+        NONE,
+        SESSION_BUS,
+        SETTINGS,
+        SYSTEM_BUS,
+        UNKNOWN,
+        X11
+    }
+
+    public PermissionsFlags permissions_flags { get; set; default = PermissionsFlags.UNKNOWN; }
     public string? size { get; protected set; default = null; }
     public bool already_installed { get; protected set; default = false; }
     public bool extra_remotes_needed { get; protected set; default = false; }

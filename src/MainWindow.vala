@@ -109,7 +109,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 stack.visible_child = success_view;
             } else {
                 if (file is FlatpakRefFile) {
-                    main_view.display_ref_details (file.size, file.extra_remotes_needed);
+                    main_view.display_ref_details (file.size, file.extra_remotes_needed, file.permissions_flags);
                 } else {
                     main_view.display_bundle_details (file.size, ((FlatpakBundleFile) file).has_remote, file.extra_remotes_needed);
                 }
