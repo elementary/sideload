@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-15 11:19+0000\n"
-"PO-Revision-Date: 2023-03-12 22:25+0000\n"
+"PO-Revision-Date: 2023-03-17 05:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/"
 "sideload/ka/>\n"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr ""
+msgstr "გაუქმება"
 
 #: src/Views/MainView.vala:112
 msgid "Install Anyway"
