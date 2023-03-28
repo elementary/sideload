@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 11:19+0000\n"
+"POT-Creation-Date: 2023-03-28 17:47+0000\n"
 "PO-Revision-Date: 2022-09-10 13:23+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -69,11 +69,11 @@ msgstr "هەڵەیەکی نەزانراو ڕوویدا."
 msgid "Trust and install “%s”?"
 msgstr "\"%s\" دامەزرا"
 
-#: src/Views/MainView.vala:36
+#: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
 msgstr ""
 
-#: src/Views/MainView.vala:38
+#: src/Views/MainView.vala:40
 #, fuzzy
 #| msgid ""
 #| "This app is provided solely by its developer and has not been reviewed "
@@ -85,46 +85,62 @@ msgstr ""
 "ئەم ئەپە تەنها گەشەپێدەرەکەی دابینی کردووە و پێداچوونەوەی لە ڕووی ئاسایش، "
 "پاراستنی تایبەتی یان تێخزاندنی لەگەڵ سیستەم بۆ نەکراوە."
 
-#: src/Views/MainView.vala:43
+#: src/Views/MainView.vala:45
 msgid "Fetching details"
 msgstr "هێنانی زانیارییەکان"
 
-#: src/Views/MainView.vala:49
+#: src/Views/MainView.vala:51
 msgid "I understand"
 msgstr "تێدەگەم"
 
-#: src/Views/MainView.vala:72
+#: src/Views/MainView.vala:74
 #, fuzzy
 #| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "پێداچوونەوە بۆ نوێکردنەوەکانی ئەم ئەپە ناکرێت"
 
-#: src/Views/MainView.vala:87
+#: src/Views/MainView.vala:89
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "لەوانەیە ئەپی تر لەم دابەشکەرەوە ل %s دەربکەون"
 
-#: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
-#: src/Views/MainView.vala:112
+#: src/Views/MainView.vala:126
 msgid "Install Anyway"
 msgstr "هەرچۆنێک بێت، دایمەزرێنە"
 
-#: src/Views/MainView.vala:127
+#: src/Views/MainView.vala:141
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "لەوانەیە قەبارەی دامەزراندن تا %s بڕوات"
 
-#: src/Views/MainView.vala:144
+#: src/Views/MainView.vala:158
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "لەوانەیە قەبارەی داگرتن تا %s بڕوات"
 
-#: src/Views/MainView.vala:146
+#: src/Views/MainView.vala:160
 msgid "Unknown download size"
 msgstr "قەبارەی داگرتنی نەزانراو"
+
+#: src/Views/MainView.vala:170
+msgid ""
+"Requests advanced permissions that could be used to violate your privacy or "
+"security"
+msgstr ""
+
+#: src/Views/MainView.vala:181
+msgid ""
+"Requests file and folder permissions that could be used to violate your "
+"privacy"
+msgstr ""
+
+#: src/Views/MainView.vala:185
+msgid "Doesn't request advanced system permissions"
+msgstr ""
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -211,7 +227,7 @@ msgstr "\"%s\" دامەزرا"
 msgid "The app was installed"
 msgstr "ئەپەکە دامەزرابوو"
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
 msgstr "دامەزراندنی گونجاوی فلاتپاک نەدۆزرایەوە."

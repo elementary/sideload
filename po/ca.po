@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 11:19+0000\n"
+"POT-Creation-Date: 2023-03-28 17:47+0000\n"
 "PO-Revision-Date: 2023-02-17 03:00+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -68,11 +68,11 @@ msgstr "S'ha produït un error desconegut."
 msgid "Trust and install “%s”?"
 msgstr "Confio en %s i la instal·lo?"
 
-#: src/Views/MainView.vala:36
+#: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
 msgstr "Confio i instal·lo aquesta aplicació?"
 
-#: src/Views/MainView.vala:38
+#: src/Views/MainView.vala:40
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
@@ -81,45 +81,61 @@ msgstr ""
 "no ha estat revisada per l'equip de l'elementary quant a la seguretat, "
 "privadesa o integració amb el sistema."
 
-#: src/Views/MainView.vala:43
+#: src/Views/MainView.vala:45
 msgid "Fetching details"
 msgstr "Se n'obtenen els detalls"
 
-#: src/Views/MainView.vala:49
+#: src/Views/MainView.vala:51
 msgid "I understand"
 msgstr "Ho entenc"
 
-#: src/Views/MainView.vala:72
+#: src/Views/MainView.vala:74
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr ""
 "L'equip de l'elementary no revisarà les actualitzacions d'aquesta aplicació."
 
-#: src/Views/MainView.vala:87
+#: src/Views/MainView.vala:89
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Poden aparèixer altres aplicacions d'aquest distribuïdor al %s."
 
-#: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/Views/MainView.vala:112
+#: src/Views/MainView.vala:126
 msgid "Install Anyway"
 msgstr "Instal·la-ho tanmateix"
 
-#: src/Views/MainView.vala:127
+#: src/Views/MainView.vala:141
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "La mida de la instal·lació pot arribar a %s."
 
-#: src/Views/MainView.vala:144
+#: src/Views/MainView.vala:158
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "La mida de la baixada pot arribar a %s."
 
-#: src/Views/MainView.vala:146
+#: src/Views/MainView.vala:160
 msgid "Unknown download size"
 msgstr "Mida de baixada desconeguda"
+
+#: src/Views/MainView.vala:170
+msgid ""
+"Requests advanced permissions that could be used to violate your privacy or "
+"security"
+msgstr ""
+
+#: src/Views/MainView.vala:181
+msgid ""
+"Requests file and folder permissions that could be used to violate your "
+"privacy"
+msgstr ""
+
+#: src/Views/MainView.vala:185
+msgid "Doesn't request advanced system permissions"
+msgstr ""
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -208,7 +224,7 @@ msgstr "S'ha instal·lat «%s»"
 msgid "The app was installed"
 msgstr "L'aplicació s'ha instal·lat."
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
 msgstr "No s'ha trobat la instal·lació de Flatpak adequada."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 11:19+0000\n"
+"POT-Creation-Date: 2023-03-28 17:47+0000\n"
 "PO-Revision-Date: 2020-10-13 22:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -71,11 +71,11 @@ msgstr "एक अज्ञात त्रुटी आली."
 msgid "Trust and install “%s”?"
 msgstr "“%s” स्थापित करत आहे"
 
-#: src/Views/MainView.vala:36
+#: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
 msgstr ""
 
-#: src/Views/MainView.vala:38
+#: src/Views/MainView.vala:40
 #, fuzzy
 #| msgid ""
 #| "This app is provided solely by its developer and has not been reviewed "
@@ -87,47 +87,63 @@ msgstr ""
 "हा अ‍ॅप पूर्णपणे त्याच्या विकसकाद्वारे प्रदान केला गेला आहे आणि सुरक्षितता, गोपनीयता किंवा "
 "सिस्टम एकीकरणासाठी त्याचे पुनरावलोकन केले गेले नाही."
 
-#: src/Views/MainView.vala:43
+#: src/Views/MainView.vala:45
 msgid "Fetching details"
 msgstr "तपशील आणत आहे"
 
-#: src/Views/MainView.vala:49
+#: src/Views/MainView.vala:51
 msgid "I understand"
 msgstr "मला समजले"
 
-#: src/Views/MainView.vala:72
+#: src/Views/MainView.vala:74
 #, fuzzy
 #| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "या अ‍ॅपवरील अपडेट्सचे पुनरावलोकन केले जाणार नाही"
 
-#: src/Views/MainView.vala:87
+#: src/Views/MainView.vala:89
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "या वितरकाकडील अन्य अ‍ॅप %s मध्ये दिसू शकतात"
 
-#: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/MainView.vala:112
+#: src/Views/MainView.vala:126
 msgid "Install Anyway"
 msgstr "तरीही स्थापित करा"
 
-#: src/Views/MainView.vala:127
+#: src/Views/MainView.vala:141
 #, fuzzy, c-format
 #| msgid "Download size may be up to %s"
 msgid "Install size may be up to %s"
 msgstr "डाउनलोड आकार %s पर्यंत असू शकतो"
 
-#: src/Views/MainView.vala:144
+#: src/Views/MainView.vala:158
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "डाउनलोड आकार %s पर्यंत असू शकतो"
 
-#: src/Views/MainView.vala:146
+#: src/Views/MainView.vala:160
 msgid "Unknown download size"
 msgstr "अज्ञात डाउनलोड आकार"
+
+#: src/Views/MainView.vala:170
+msgid ""
+"Requests advanced permissions that could be used to violate your privacy or "
+"security"
+msgstr ""
+
+#: src/Views/MainView.vala:181
+msgid ""
+"Requests file and folder permissions that could be used to violate your "
+"privacy"
+msgstr ""
+
+#: src/Views/MainView.vala:185
+msgid "Doesn't request advanced system permissions"
+msgstr ""
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -219,7 +235,7 @@ msgstr "“%s” स्थापित करत आहे"
 msgid "The app was installed"
 msgstr "अ‍ॅप स्थापित झाला"
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
 msgstr ""

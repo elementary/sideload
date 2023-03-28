@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 11:19+0000\n"
+"POT-Creation-Date: 2023-03-28 17:47+0000\n"
 "PO-Revision-Date: 2022-08-28 16:39+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -71,11 +71,11 @@ msgstr "Ocorreu um erro desconhecido."
 msgid "Trust and install “%s”?"
 msgstr "Instalado “%s”"
 
-#: src/Views/MainView.vala:36
+#: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
 msgstr ""
 
-#: src/Views/MainView.vala:38
+#: src/Views/MainView.vala:40
 #, fuzzy
 #| msgid ""
 #| "This app is provided solely by its developer and has not been reviewed "
@@ -87,46 +87,62 @@ msgstr ""
 "Esta aplicação é fornecida exclusivamente pelo seu programador e não foi "
 "revista quanto à segurança, privacidade ou integração de sistemas."
 
-#: src/Views/MainView.vala:43
+#: src/Views/MainView.vala:45
 msgid "Fetching details"
 msgstr "Detalhes de pesquisa"
 
-#: src/Views/MainView.vala:49
+#: src/Views/MainView.vala:51
 msgid "I understand"
 msgstr "Eu compreendo"
 
-#: src/Views/MainView.vala:72
+#: src/Views/MainView.vala:74
 #, fuzzy
 #| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "As atualizações desta aplicação não serão revistas"
 
-#: src/Views/MainView.vala:87
+#: src/Views/MainView.vala:89
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Outras aplicações deste distribuidor podem aparecer em %s"
 
-#: src/Views/MainView.vala:109 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/MainView.vala:112
+#: src/Views/MainView.vala:126
 msgid "Install Anyway"
 msgstr "Instalar"
 
-#: src/Views/MainView.vala:127
+#: src/Views/MainView.vala:141
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "O tamanho da instalação pode ser de até %s"
 
-#: src/Views/MainView.vala:144
+#: src/Views/MainView.vala:158
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "O tamanho da transferência pode ser de até %s"
 
-#: src/Views/MainView.vala:146
+#: src/Views/MainView.vala:160
 msgid "Unknown download size"
 msgstr "Tamanho de transferência desconhecido"
+
+#: src/Views/MainView.vala:170
+msgid ""
+"Requests advanced permissions that could be used to violate your privacy or "
+"security"
+msgstr ""
+
+#: src/Views/MainView.vala:181
+msgid ""
+"Requests file and folder permissions that could be used to violate your "
+"privacy"
+msgstr ""
+
+#: src/Views/MainView.vala:185
+msgid "Doesn't request advanced system permissions"
+msgstr ""
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -215,7 +231,7 @@ msgstr "Instalado “%s”"
 msgid "The app was installed"
 msgstr "A aplicação foi instalada"
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:227
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
 msgstr "Não foi encontrada uma instalação Flatpak adequada."
