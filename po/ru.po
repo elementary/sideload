@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-28 17:47+0000\n"
-"PO-Revision-Date: 2023-02-18 09:25+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"PO-Revision-Date: 2023-03-31 19:59+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
 "ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -109,32 +109,36 @@ msgstr "Всё равно установить"
 #: src/Views/MainView.vala:141
 #, c-format
 msgid "Install size may be up to %s"
-msgstr "Объем установки может доходить до %s"
+msgstr "Объём установки может доходить до %s"
 
 #: src/Views/MainView.vala:158
 #, c-format
 msgid "Download size may be up to %s"
-msgstr "Объем загрузки может увеличиться до %s"
+msgstr "Объём загрузки может доходить до %s"
 
 #: src/Views/MainView.vala:160
 msgid "Unknown download size"
-msgstr "Неизвестный объем загрузки"
+msgstr "Неизвестный объём загрузки"
 
 #: src/Views/MainView.vala:170
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Запрашивает расширенные права доступа, которые могут быть использованы для "
+"нарушения вашей конфиденциальности или безопасности"
 
 #: src/Views/MainView.vala:181
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Запрашивает права доступа к файлам и папкам, которые могут быть использованы "
+"для нарушения вашей конфиденциальности"
 
 #: src/Views/MainView.vala:185
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "Не запрашивает дополнительных прав доступа к системе"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
