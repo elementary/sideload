@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-28 17:47+0000\n"
-"PO-Revision-Date: 2023-02-17 03:00+0000\n"
+"PO-Revision-Date: 2023-03-31 19:59+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
 "ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -126,16 +126,20 @@ msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Demana permisos avançats que es podrien usar per violar la vostra privadesa "
+"o seguretat"
 
 #: src/Views/MainView.vala:181
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Demana permisos de fitxers i carpetes que es podrien usar per violar la "
+"vostra privadesa"
 
 #: src/Views/MainView.vala:185
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "No demana permisos avançats del sistema"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
