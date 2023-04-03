@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:20+0000\n"
+"POT-Creation-Date: 2023-04-03 22:40+0000\n"
 "PO-Revision-Date: 2022-10-26 15:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -20,15 +20,15 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
+#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
 msgid "Sideload"
 msgstr "Załaduj nieoficjalną aplikację"
 
-#: data/sideload.appdata.xml.in:8 data/sideload.desktop.in:4
+#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
 msgstr "Instaluj programy pobrane z Internetu"
 
-#: data/sideload.appdata.xml.in:10
+#: data/sideload.metainfo.xml.in:12
 msgid ""
 "Sideload Flatpak apps per user and automatically add their remotes to "
 "AppCenter. Sideload shows important information about apps before you "
@@ -38,75 +38,62 @@ msgstr ""
 "ich repozytoria do AppCenter. Przed załadowaniem nieoficjalnych aplikacji "
 "pokazywane są istotne informacje o nich, takie jak rozmiar do pobrania."
 
-#: data/sideload.appdata.xml.in:16
+#: data/sideload.metainfo.xml.in:52
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/sideload.metainfo.xml.in:60
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
 
-#: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:31
-#: data/sideload.appdata.xml.in:43 data/sideload.appdata.xml.in:51
-#: data/sideload.appdata.xml.in:63 data/sideload.appdata.xml.in:71
-#: data/sideload.appdata.xml.in:79 data/sideload.appdata.xml.in:87
+#: data/sideload.metainfo.xml.in:61 data/sideload.metainfo.xml.in:75
+#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:96
+#: data/sideload.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Zaktualizowano tłumaczenia"
 
-#: data/sideload.appdata.xml.in:29
+#: data/sideload.metainfo.xml.in:73
 msgid "Use updated Flatpak branding"
 msgstr "Użyto zaktualizowanej marki Flatpak"
 
-#: data/sideload.appdata.xml.in:30
+#: data/sideload.metainfo.xml.in:74
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 "Powiadomienia na tarczy wyświetlają teraz ikonę zainstalowanej aplikacji"
 
-#: data/sideload.appdata.xml.in:42
+#: data/sideload.metainfo.xml.in:86
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Naprawiono rozmytą ikonę aplikacji w widoku wielozadaniowym"
 
-#: data/sideload.appdata.xml.in:50
+#: data/sideload.metainfo.xml.in:95
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "Używaj systemowych środowisk wykonawczych Flatpak do lokalnie instalowanych "
 "aplikacji"
 
-#: data/sideload.appdata.xml.in:58
+#: data/sideload.metainfo.xml.in:104
 msgid "Control notifications in System Settings"
 msgstr "Kontroluj powiadomienia w ustawieniach systemu"
 
-#: data/sideload.appdata.xml.in:59
+#: data/sideload.metainfo.xml.in:105
 msgid "Offer to trash Flatpak files after installing"
 msgstr "Zaproponuj wyrzucenie plików Flatpak po instalacji"
 
-#: data/sideload.appdata.xml.in:60
+#: data/sideload.metainfo.xml.in:106
 msgid "Support dark style"
 msgstr "Wsparcie dla ciemnego motywu"
 
-#: data/sideload.appdata.xml.in:61
+#: data/sideload.metainfo.xml.in:107
 msgid "Support Flatpak bundle files"
 msgstr "Obsługa plików pakietu Flatpak"
 
-#: data/sideload.appdata.xml.in:62
+#: data/sideload.metainfo.xml.in:108
 msgid "Fix crashes on installation failure"
 msgstr "Napraw błędy krytyczne w przypadku niepowodzenia instalacji"
 
-#: data/sideload.appdata.xml.in:64
+#: data/sideload.metainfo.xml.in:110
 msgid "Link to System Settings → Applications → Permissions"
 msgstr "Dodano link do Ustawienia systemowe → Aplikacje → Uprawnienia"
-
-#: data/sideload.appdata.xml.in:78
-msgid "Show app name in the main view once it's loaded"
-msgstr "Pokaż nazwę aplikacji w głównym widoku po jej załadowaniu"
-
-#: data/sideload.appdata.xml.in:86
-msgid "Improve performance of download size calculation"
-msgstr "Popraw wydajność obliczania rozmiaru pobierania"
-
-#: data/sideload.appdata.xml.in:94
-msgid "First release. Hello world!"
-msgstr "Pierwsze wydanie. Witaj świecie!"
-
-#: data/sideload.appdata.xml.in:143
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
@@ -115,6 +102,15 @@ msgstr "Instalator Flatpak"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "Show app name in the main view once it's loaded"
+#~ msgstr "Pokaż nazwę aplikacji w głównym widoku po jej załadowaniu"
+
+#~ msgid "Improve performance of download size calculation"
+#~ msgstr "Popraw wydajność obliczania rozmiaru pobierania"
+
+#~ msgid "First release. Hello world!"
+#~ msgstr "Pierwsze wydanie. Witaj świecie!"
 
 #~ msgid "io.elementary.sideload"
 #~ msgstr "io.elementary.sideload"
