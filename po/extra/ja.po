@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 22:20+0000\n"
-"PO-Revision-Date: 2022-10-29 04:48+0000\n"
+"PO-Revision-Date: 2023-04-03 22:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: data/sideload.appdata.xml.in:7 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: data/sideload.appdata.xml.in:16
 msgid "Show whether or not apps ask for advanced system permissions"
-msgstr ""
+msgstr "アプリがシステムパーミッションを追加で要求するかどうかを表示"
 
 #: data/sideload.appdata.xml.in:17 data/sideload.appdata.xml.in:31
 #: data/sideload.appdata.xml.in:43 data/sideload.appdata.xml.in:51
