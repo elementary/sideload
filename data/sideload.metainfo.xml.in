@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019-2023 elementary, Inc. <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.sideload</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <translation type="gettext">io.elementary.sideload</translation>
+
+  <name>Sideload</name>
+  <summary>Install apps downloaded from the Internet</summary>
+  <description>
+    <p>Sideload Flatpak apps per user and automatically add their remotes to AppCenter. Sideload shows important information about apps before you install like their download size.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/sideload/master/6.1.0/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/sideload/master/6.1.0/screenshot-progress.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/sideload/master/6.1.0/screenshot-success.png</image>
+    </screenshot>
+  </screenshots>
+
+  <branding>
+    <color type="primary">#f9c440</color>
+  </branding>
+
+  <content_rating type="oars-1.1" />
+
+  <provides>
+    <binary>io.elementary.sideload</binary>
+  </provides>
+
+  <recommends>
+    <display_length compare="ge">508</display_length>
+  </recommends>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <url type="homepage">https://elementary.io/</url>
+  <url type="bugtracker">https://github.com/elementary/sideload/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/sideload/discussions</url>
+  <url type="translate">https://l10n.elementary.io/engage/desktop/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="6.2.0" date="2023-04-03" urgency="medium">
+      <description>
+        <ul>
+          <li>Show whether or not apps ask for advanced system permissions</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/sideload/issues/80">Mention elementary when talking about reviewing for security</issue>
+        <issue url="https://github.com/elementary/sideload/issues/150">Title label should ask for trust, not assume mistrust</issue>
+      </issues>
+    </release>
+
+    <release version="6.1.0" date="2022-10-20" urgency="medium">
+      <description>
+        <ul>
+          <li>Use updated Flatpak branding</li>
+          <li>Badge notifications with the sideloaded app's icon</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/sideload/issues/136">Crash with invalid checksum</issue>
+      </issues>
+    </release>
+
+    <release version="6.0.2" date="2021-09-22" urgency="medium">
+      <description>
+        <ul>
+          <li>Fix blurry app icon in multitasking view</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.0.1" date="2021-08-25" urgency="medium">
+      <description>
+        <ul>
+          <li>Use system Flatpak runtimes for locally installed apps</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.0.0" date="2021-07-14" urgency="medium">
+      <description>
+        <ul>
+          <li>Control notifications in System Settings</li>
+          <li>Offer to trash Flatpak files after installing</li>
+          <li>Support dark style</li>
+          <li>Support Flatpak bundle files</li>
+          <li>Fix crashes on installation failure</li>
+          <li>Updated translations</li>
+          <li>Link to System Settings → Applications → Permissions</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.1.1" date="2020-05-28"/>
+    <release version="1.1.0" date="2020-04-01"/>
+    <release version="1.0.1" date="2020-02-25"/>
+    <release version="1.0.0" date="2019-10-29"/>
+  </releases>
+</component>
