@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 22:40+0000\n"
-"PO-Revision-Date: 2023-04-03 22:40+0000\n"
+"PO-Revision-Date: 2023-04-05 13:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/ja/>\n"
@@ -33,9 +33,9 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
-"Flatpak アプリを、AppCenter を経由せず現在のユーザーだけにインストールして、"
-"リモートを AppCenter に登録します。また、ダウンロードサイズなど、アプリの重要"
-"な情報をインストール前に表示します。"
+"Flatpak アプリをユーザーごとにサイドロードし、"
+"アプリのリモートリポジトリを自動的に AppCenter に登録します。また、ダウンロー"
+"ドサイズなど、アプリの重要な情報をインストール前に表示します。"
 
 #: data/sideload.metainfo.xml.in:52
 msgid "elementary, Inc."
@@ -57,8 +57,7 @@ msgstr "Flatpak のブランドマーク変更に伴うアイコン修正"
 
 #: data/sideload.metainfo.xml.in:74
 msgid "Badge notifications with the sideloaded app's icon"
-msgstr ""
-"通知アイコンにインストールされたアプリのアイコンをオーバーレイ表示するように"
+msgstr "サイドロードされたアプリのアイコンを通知アイコンにオーバーレイ表示するように"
 "修正"
 
 #: data/sideload.metainfo.xml.in:86
