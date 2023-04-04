@@ -14,13 +14,13 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/sideload/master/6.1.0/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/sideload/6.2.0/data/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/sideload/master/6.1.0/screenshot-progress.png</image>
+      <image>https://raw.githubusercontent.com/elementary/sideload/6.2.0/data/screenshot-progress.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/sideload/master/6.1.0/screenshot-success.png</image>
+      <image>https://raw.githubusercontent.com/elementary/sideload/6.2.0/data/screenshot-success.png</image>
     </screenshot>
   </screenshots>
 
@@ -54,7 +54,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="6.2.0" date="2023-04-02" urgency="medium">
+    <release version="6.2.0" date="2023-04-03" urgency="medium">
       <description>
         <ul>
           <li>Show whether or not apps ask for advanced system permissions</li>
