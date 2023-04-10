@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 22:40+0000\n"
-"PO-Revision-Date: 2023-03-01 10:25+0000\n"
+"PO-Revision-Date: 2023-04-11 16:59+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
 "fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -126,16 +126,20 @@ msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Pyytää edistyneitä oikeuksia, joita on mahdollista käyttää yksityisyyttäsi "
+"tai turvallisuuttasi vastaan"
 
 #: src/Views/MainView.vala:181
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Pyytää tiedosto- ja kansio-oikeuksia, joita on mahdollista käyttää "
+"yksityisyyttäsi tai turvallisuuttasi vastaan"
 
 #: src/Views/MainView.vala:185
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "Ei pyydä edistyneitä järjestelmäoikeuksia"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
