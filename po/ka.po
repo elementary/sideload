@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 22:40+0000\n"
-"PO-Revision-Date: 2023-03-17 05:25+0000\n"
+"PO-Revision-Date: 2023-04-15 14:59+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/"
 "sideload/ka/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
-msgstr ""
+msgstr "დაყენების შეცდომა"
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
@@ -33,7 +33,7 @@ msgstr "დახურვა"
 
 #: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
-msgstr ""
+msgstr "ეს აპი უკვე დაყენებულია."
 
 #: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
@@ -61,16 +61,16 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
-msgstr ""
+msgstr "უცნობი შეცდომა."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Trust and install “%s”?"
-msgstr ""
+msgstr "ვენდო და დავაყენო \"%s\"?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "ვენდო და დავაყენო ეს აპი?"
 
 #: src/Views/MainView.vala:40
 msgid ""
@@ -80,11 +80,11 @@ msgstr ""
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
-msgstr ""
+msgstr "გამოთხოვის დეტალები"
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
-msgstr ""
+msgstr "მე მესმის"
 
 #: src/Views/MainView.vala:74
 msgid "Updates to this app will not be reviewed by elementary"
@@ -101,21 +101,21 @@ msgstr "გაუქმება"
 
 #: src/Views/MainView.vala:126
 msgid "Install Anyway"
-msgstr ""
+msgstr "მაინც დაყენება"
 
 #: src/Views/MainView.vala:141
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "დაყენების ზომა %s-მდე შეიძლება, იყოს"
 
 #: src/Views/MainView.vala:158
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "გადმოწერის ზომა %s-მდე შეიძლება, იყოს"
 
 #: src/Views/MainView.vala:160
 msgid "Unknown download size"
-msgstr ""
+msgstr "გადმოწერის უცნობი ზომა"
 
 #: src/Views/MainView.vala:170
 msgid ""
@@ -136,20 +136,20 @@ msgstr ""
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "\"%s\"-ის დაყენება"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "მომზადება…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "\"%s\" დაყენებულია"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr ""
+msgstr "აპი დაყენებულია"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
@@ -158,15 +158,15 @@ msgstr ""
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "“%s” უკვე დაყენებულია"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "ეს აპი უკვე დაყენებულია"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "ცვლილებები არ განხორციელებულა."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
@@ -176,7 +176,7 @@ msgstr ""
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "სისტემის მორგება → აპლიკაციები…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
@@ -190,15 +190,15 @@ msgstr ""
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "აპის გახსნა"
 
 #: src/Application.vala:131
 msgid "your software center"
-msgstr ""
+msgstr "თქვენი პროგრამების ცენტრი"
 
 #: src/MainWindow.vala:37
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "არასანდო აპის დაყენება"
 
 #: src/MainWindow.vala:95
 #, c-format
@@ -207,16 +207,16 @@ msgstr ""
 
 #: src/MainWindow.vala:185
 msgid "App installed"
-msgstr ""
+msgstr "აპი დაყენებულია"
 
 #: src/MainWindow.vala:187
 #, c-format
 msgid "Installed “%s”"
-msgstr ""
+msgstr "\"%s\" დაყენებულია"
 
 #: src/MainWindow.vala:189
 msgid "The app was installed"
-msgstr ""
+msgstr "აპი დაყენებულია"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
