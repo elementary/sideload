@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 22:40+0000\n"
-"PO-Revision-Date: 2022-08-14 02:30+0000\n"
+"PO-Revision-Date: 2023-05-07 01:06+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload/"
 "nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -64,20 +64,15 @@ msgid "An unknown error occurred."
 msgstr "Onbekende fout."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Installed “%s”"
+#, c-format
 msgid "Trust and install “%s”?"
-msgstr "“%s” is geïnstalleerd"
+msgstr "Vertrouw en installeer “%s”?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Deze app vertrouwen en installeren?"
 
 #: src/Views/MainView.vala:40
-#, fuzzy
-#| msgid ""
-#| "This app is provided solely by its developer and has not been reviewed "
-#| "for security, privacy, or system integration."
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
@@ -94,10 +89,8 @@ msgid "I understand"
 msgstr "Ik begrijp het"
 
 #: src/Views/MainView.vala:74
-#, fuzzy
-#| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr "Updates van deze app worden niet beoordeeld"
+msgstr "Updates van deze app worden niet beoordeeld door elementary"
 
 #: src/Views/MainView.vala:89
 #, c-format
@@ -131,16 +124,20 @@ msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Vraagt geavanceerde toegang dat kan worden misbruikt om inbreuk te maken op "
+"uw privacy en veiligheid"
 
 #: src/Views/MainView.vala:181
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Vraagt bestand- en foldertoegang aan dat kan worden misbruikt om inbreuk kan "
+"maken op uw privacy"
 
 #: src/Views/MainView.vala:185
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "Vraagt geen geavanceerde toegang aan"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
