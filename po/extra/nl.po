@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 22:40+0000\n"
 "PO-Revision-Date: 2023-05-26 11:13+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"Last-Translator: Thierry Flament <thierry.flament@outlook.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/"
 "sideload-extra/nl/>\n"
 "Language: nl\n"
@@ -91,7 +91,7 @@ msgstr "Repareert crashes bij mislukte installatie"
 
 #: data/sideload.metainfo.xml.in:110
 msgid "Link to System Settings → Applications → Permissions"
-msgstr ""
+msgstr "Link naar Systeeminstellingen → Toepassingen → Machtigingen"
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
