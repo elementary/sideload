@@ -48,7 +48,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         main_view = new MainView ();
         stack = new Gtk.Stack () {
             transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT,
-            vhomogeneous = false
+            vhomogeneous = false,
+            interpolate_size = true
         };
         stack.add_child (main_view);
         stack.visible_child = main_view;
