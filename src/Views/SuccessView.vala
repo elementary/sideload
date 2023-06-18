@@ -88,7 +88,7 @@ public class Sideload.SuccessView : AbstractView {
         button_box.append (close_button);
         button_box.append (open_button);
 
-        open_button.grab_focus ();
+        ((Sideload.MainWindow) app.active_window).default_widget = open_button;
 
         close_button.clicked.connect (() => {
             if (trash_check.active) {
