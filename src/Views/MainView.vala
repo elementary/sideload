@@ -33,6 +33,7 @@ public class Sideload.MainView : AbstractView {
     private Gtk.Label repo_label;
     private Gtk.Image permissions_image;
     private Gtk.Label permissions_label;
+    private Gtk.Button install_button;
 
     construct {
         primary_label.label = _("Trust and install this app?");
@@ -47,9 +48,6 @@ public class Sideload.MainView : AbstractView {
         var loading_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         loading_grid.append (loading_spinner);
         loading_grid.append (loading_label);
-
-        var agree_check = new Gtk.CheckButton.with_label (_("I understand"));
-        agree_check.margin_top = 12;
 
         var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic");
         download_size_icon.valign = Gtk.Align.START;
@@ -110,7 +108,6 @@ public class Sideload.MainView : AbstractView {
         };
         details_grid.attach (download_size_icon, 0, 0);
         details_grid.attach (download_size_label, 1, 0);
-        details_grid.attach (agree_check, 0, 4, 2);
 
         details_stack = new Gtk.Stack ();
         details_stack.vhomogeneous = false;
@@ -123,14 +120,13 @@ public class Sideload.MainView : AbstractView {
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
         cancel_button.action_name = "app.quit";
 
-        var install_button = new Gtk.Button.with_label (_("Install Anyway"));
+        install_button = new Gtk.Button.with_label (_("Install Anyway")) {
+            sensitive = false
+        };
         install_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         button_box.append (cancel_button);
         button_box.append (install_button);
-
-        agree_check.bind_property ("active", install_button, "sensitive", GLib.BindingFlags.SYNC_CREATE);
-        agree_check.grab_focus ();
 
         install_button.clicked.connect (() => {
             install_request ();
@@ -151,6 +147,7 @@ public class Sideload.MainView : AbstractView {
         }
 
         details_stack.visible_child_name = "details";
+        install_button.sensitive = true;
     }
 
     public void display_ref_details (string? size, bool extra_repo, FlatpakFile.PermissionsFlags permissions_flags) {
@@ -195,5 +192,6 @@ public class Sideload.MainView : AbstractView {
             details_grid.attach (repo_label, 1, 3);
         }
         details_stack.visible_child_name = "details";
+        install_button.sensitive = true;
     }
 }
