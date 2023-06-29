@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2020-10-13 22:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -214,22 +214,22 @@ msgstr "आपले सॉफ्टवेअर केंद्र"
 msgid "Install Untrusted App"
 msgstr "अविश्वसनीय अ‍ॅप स्थापित करा"
 
-#: src/MainWindow.vala:95
+#: src/MainWindow.vala:96
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:185
+#: src/MainWindow.vala:186
 msgid "App installed"
 msgstr "अ‍ॅप स्थापित केले गेले आहे"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 #, fuzzy, c-format
 #| msgid "Installing “%s”"
 msgid "Installed “%s”"
 msgstr "“%s” स्थापित करत आहे"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:190
 #, fuzzy
 #| msgid "The app has been installed"
 msgid "The app was installed"

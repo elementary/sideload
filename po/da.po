@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2020-11-03 07:15+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -218,22 +218,22 @@ msgstr "dit applikations center"
 msgid "Install Untrusted App"
 msgstr "Installer Utroværdig Applikation"
 
-#: src/MainWindow.vala:95
+#: src/MainWindow.vala:96
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:185
+#: src/MainWindow.vala:186
 msgid "App installed"
 msgstr "Applikationen er installeret"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 #, fuzzy, c-format
 #| msgid "Installing “%s”"
 msgid "Installed “%s”"
 msgstr "Installerer \"%s\""
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:190
 #, fuzzy
 #| msgid "The app was installed successfully"
 msgid "The app was installed"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2022-01-11 03:35+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -214,21 +214,21 @@ msgstr "Centrum software"
 msgid "Install Untrusted App"
 msgstr "Nainstalovat nedůvěryhodnou aplikaci"
 
-#: src/MainWindow.vala:95
+#: src/MainWindow.vala:96
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Instaluje se %s. Nedaří se odhadnout čas do dokončení."
 
-#: src/MainWindow.vala:185
+#: src/MainWindow.vala:186
 msgid "App installed"
 msgstr "Aplikace nainstalována"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 #, c-format
 msgid "Installed “%s”"
 msgstr "Nainstalováno „%s“"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:190
 msgid "The app was installed"
 msgstr "Aplikace byla nainstalována"
 

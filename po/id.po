@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2023-05-20 17:06+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -207,21 +207,21 @@ msgstr "pusat aplikasi anda"
 msgid "Install Untrusted App"
 msgstr "Pasang Aplikasi yang Tidak Tepercaya"
 
-#: src/MainWindow.vala:95
+#: src/MainWindow.vala:96
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Memasang %s. Tidak dapat memperkirakan waktu yang tersisa."
 
-#: src/MainWindow.vala:185
+#: src/MainWindow.vala:186
 msgid "App installed"
 msgstr "Aplikasi Terpasang"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 #, c-format
 msgid "Installed “%s”"
 msgstr "“%s” terpasang"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:190
 msgid "The app was installed"
 msgstr "Aplikasi telah dipasang"
 
