@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2021-11-17 14:30+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -41,57 +41,33 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/sideload.metainfo.xml.in:60
-msgid "Show whether or not apps ask for advanced system permissions"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:61 data/sideload.metainfo.xml.in:75
-#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:96
-#: data/sideload.metainfo.xml.in:109
+#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
+#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
+#: data/sideload.metainfo.xml.in:108
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/sideload.metainfo.xml.in:73
+#: data/sideload.metainfo.xml.in:72
+msgid "Show whether or not apps ask for advanced system permissions"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:85
 msgid "Use updated Flatpak branding"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:74
+#: data/sideload.metainfo.xml.in:86
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:86
+#: data/sideload.metainfo.xml.in:98
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Corrige ícone de aplicação desfocada em vista de tarefas"
 
-#: data/sideload.metainfo.xml.in:95
+#: data/sideload.metainfo.xml.in:107
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "Usar o tempo de execução do sistema Flatpak para aplicações instaladas "
 "localmente"
-
-#: data/sideload.metainfo.xml.in:104
-msgid "Control notifications in System Settings"
-msgstr "Controlar as notificações nas Definições do Sistema"
-
-#: data/sideload.metainfo.xml.in:105
-msgid "Offer to trash Flatpak files after installing"
-msgstr "Enviar ficheiros Flatpak para o lixo após a instalação"
-
-#: data/sideload.metainfo.xml.in:106
-msgid "Support dark style"
-msgstr "Suporte ao estilo escuro"
-
-#: data/sideload.metainfo.xml.in:107
-msgid "Support Flatpak bundle files"
-msgstr "Suporta ficheiros de pacotes Flatpak"
-
-#: data/sideload.metainfo.xml.in:108
-msgid "Fix crashes on installation failure"
-msgstr "Corrige falhas na falha de instalação"
-
-#: data/sideload.metainfo.xml.in:110
-msgid "Link to System Settings → Applications → Permissions"
-msgstr "Ligação às Definições do Sistema → Aplicações → Permissões"
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
@@ -100,6 +76,24 @@ msgstr "Instalador Flatpak"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "Control notifications in System Settings"
+#~ msgstr "Controlar as notificações nas Definições do Sistema"
+
+#~ msgid "Offer to trash Flatpak files after installing"
+#~ msgstr "Enviar ficheiros Flatpak para o lixo após a instalação"
+
+#~ msgid "Support dark style"
+#~ msgstr "Suporte ao estilo escuro"
+
+#~ msgid "Support Flatpak bundle files"
+#~ msgstr "Suporta ficheiros de pacotes Flatpak"
+
+#~ msgid "Fix crashes on installation failure"
+#~ msgstr "Corrige falhas na falha de instalação"
+
+#~ msgid "Link to System Settings → Applications → Permissions"
+#~ msgstr "Ligação às Definições do Sistema → Aplicações → Permissões"
 
 #~ msgid "Show app name in the main view once it's loaded"
 #~ msgstr "Mostrar o nome da aplicação no ecrã principal após o carregamento"

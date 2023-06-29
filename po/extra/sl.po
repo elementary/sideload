@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2020-03-02 23:09+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
@@ -39,54 +39,30 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/sideload.metainfo.xml.in:60
-msgid "Show whether or not apps ask for advanced system permissions"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:61 data/sideload.metainfo.xml.in:75
-#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:96
-#: data/sideload.metainfo.xml.in:109
+#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
+#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
+#: data/sideload.metainfo.xml.in:108
 msgid "Updated translations"
 msgstr "Posodobljeni prevodi"
 
-#: data/sideload.metainfo.xml.in:73
+#: data/sideload.metainfo.xml.in:72
+msgid "Show whether or not apps ask for advanced system permissions"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:85
 msgid "Use updated Flatpak branding"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:74
+#: data/sideload.metainfo.xml.in:86
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:86
+#: data/sideload.metainfo.xml.in:98
 msgid "Fix blurry app icon in multitasking view"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:95
-msgid "Use system Flatpak runtimes for locally installed apps"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:104
-msgid "Control notifications in System Settings"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:105
-msgid "Offer to trash Flatpak files after installing"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:106
-msgid "Support dark style"
-msgstr ""
-
 #: data/sideload.metainfo.xml.in:107
-msgid "Support Flatpak bundle files"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:108
-msgid "Fix crashes on installation failure"
-msgstr ""
-
-#: data/sideload.metainfo.xml.in:110
-msgid "Link to System Settings → Applications → Permissions"
+msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 
 #: data/sideload.desktop.in:5
