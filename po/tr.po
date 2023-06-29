@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2023-05-18 21:06+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -209,21 +209,21 @@ msgstr "yazılım merkeziniz"
 msgid "Install Untrusted App"
 msgstr "Güvenilmeyen Uygulamayı Yükle"
 
-#: src/MainWindow.vala:95
+#: src/MainWindow.vala:96
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "%s yükleniyor. Kalan süre tahmin edilemiyor."
 
-#: src/MainWindow.vala:185
+#: src/MainWindow.vala:186
 msgid "App installed"
 msgstr "Uygulama yüklendi"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 #, c-format
 msgid "Installed “%s”"
 msgstr "\"%s\" yüklendi"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:190
 msgid "The app was installed"
 msgstr "Uygulama yüklendi"
 

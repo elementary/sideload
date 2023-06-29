@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 22:40+0000\n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
 "PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -207,21 +207,21 @@ msgstr "软件中心"
 msgid "Install Untrusted App"
 msgstr "安装未被信任的应用"
 
-#: src/MainWindow.vala:95
+#: src/MainWindow.vala:96
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "正在安装 %s。无法估计剩余时间。"
 
-#: src/MainWindow.vala:185
+#: src/MainWindow.vala:186
 msgid "App installed"
 msgstr "软件已安装"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 #, c-format
 msgid "Installed “%s”"
 msgstr "“%s”已安装"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:190
 msgid "The app was installed"
 msgstr "应用已安装"
 
