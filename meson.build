@@ -2,7 +2,7 @@ project(
     'io.elementary.sideload', 
     'vala', 'c',
     version: '6.2.1',
-    meson_version: '>= 0.57'
+    meson_version: '>= 0.59'
 )
 
 gnome = import('gnome')
@@ -51,4 +51,3 @@ subdir('data')
 subdir('po')
 
 gnome.post_install(glib_compile_schemas: true)
-meson.add_install_script('meson/post_install.py')
