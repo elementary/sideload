@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-29 15:32+0000\n"
-"PO-Revision-Date: 2023-11-01 23:10+0000\n"
+"PO-Revision-Date: 2023-12-23 20:30+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "sideload/uk/>\n"
@@ -156,7 +156,7 @@ msgstr "«%s» встановлено"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr "Цей застосунок уже встановлено"
+msgstr "Цей застосунок установлено"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
