@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
+msgid "Sideload"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
+msgid "Install apps downloaded from the Internet"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:12
+msgid ""
+"Sideload Flatpak apps per user and automatically add their remotes to "
+"AppCenter. Sideload shows important information about apps before you "
+"install like their download size."
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:52
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
+#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
+#: data/sideload.metainfo.xml.in:108
+msgid "Updated translations"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:72
+msgid "Show whether or not apps ask for advanced system permissions"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:85
+msgid "Use updated Flatpak branding"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:86
+msgid "Badge notifications with the sideloaded app's icon"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:98
+msgid "Fix blurry app icon in multitasking view"
+msgstr ""
+
+#: data/sideload.metainfo.xml.in:107
+msgid "Use system Flatpak runtimes for locally installed apps"
+msgstr ""
+
+#: data/sideload.desktop.in:5
+msgid "Flatpak Installer"
+msgstr ""
+
+#: data/sideload.desktop.in:8
+msgid "flatpak;"
+msgstr ""
