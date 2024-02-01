@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.sideload package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.elementary.sideload\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-29 15:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Views/ErrorView.vala:32
+msgid "Install failed"
+msgstr ""
+
+#: src/Views/ErrorView.vala:50
+msgid "Details"
+msgstr ""
+
+#: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
+msgid "Close"
+msgstr ""
+
+#: src/Views/ErrorView.vala:67
+msgid "This app is already installed."
+msgstr ""
+
+#: src/Views/ErrorView.vala:70
+msgid "A newer version of Flatpak is needed to install this app."
+msgstr ""
+
+#: src/Views/ErrorView.vala:73
+msgid "A required Flatpak remote was not found."
+msgstr ""
+
+#: src/Views/ErrorView.vala:76
+msgid "A required runtime dependency could not be found."
+msgstr ""
+
+#: src/Views/ErrorView.vala:79
+msgid "The supplied .flatpakref file does not seem to be valid."
+msgstr ""
+
+#: src/Views/ErrorView.vala:82
+msgid "The app is not signed with a trusted signature."
+msgstr ""
+
+#: src/Views/ErrorView.vala:85
+msgid "The application, runtime, or remote name is invalid."
+msgstr ""
+
+#: src/Views/ErrorView.vala:89
+msgid "An unknown error occurred."
+msgstr ""
+
+#: src/Views/MainView.vala:23
+#, c-format
+msgid "Trust and install “%s”?"
+msgstr ""
+
+#: src/Views/MainView.vala:38
+msgid "Trust and install this app?"
+msgstr ""
+
+#: src/Views/MainView.vala:40
+msgid ""
+"This app is provided solely by its developer and has not been reviewed by "
+"elementary for security, privacy, or system integration."
+msgstr ""
+
+#: src/Views/MainView.vala:45
+msgid "Fetching details"
+msgstr ""
+
+#: src/Views/MainView.vala:51
+msgid "I understand"
+msgstr ""
+
+#: src/Views/MainView.vala:74
+msgid "Updates to this app will not be reviewed by elementary"
+msgstr ""
+
+#: src/Views/MainView.vala:89
+#, c-format
+msgid "Other apps from this distributor may appear in %s"
+msgstr ""
+
+#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+msgid "Cancel"
+msgstr ""
+
+#: src/Views/MainView.vala:126
+msgid "Install Anyway"
+msgstr ""
+
+#: src/Views/MainView.vala:141
+#, c-format
+msgid "Install size may be up to %s"
+msgstr ""
+
+#: src/Views/MainView.vala:158
+#, c-format
+msgid "Download size may be up to %s"
+msgstr ""
+
+#: src/Views/MainView.vala:160
+msgid "Unknown download size"
+msgstr ""
+
+#: src/Views/MainView.vala:170
+msgid ""
+"Requests advanced permissions that could be used to violate your privacy or "
+"security"
+msgstr ""
+
+#: src/Views/MainView.vala:181
+msgid ""
+"Requests file and folder permissions that could be used to violate your "
+"privacy"
+msgstr ""
+
+#: src/Views/MainView.vala:185
+msgid "Doesn't request advanced system permissions"
+msgstr ""
+
+#: src/Views/ProgressView.vala:31
+#, c-format
+msgid "Installing “%s”"
+msgstr ""
+
+#: src/Views/ProgressView.vala:55
+msgid "Preparing…"
+msgstr ""
+
+#: src/Views/SuccessView.vala:44
+#, c-format
+msgid "“%s” has been installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:46
+msgid "The app has been installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:49
+msgid "Open it any time from the Applications Menu."
+msgstr ""
+
+#: src/Views/SuccessView.vala:53
+#, c-format
+msgid "“%s” is already installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:55
+msgid "This app is already installed"
+msgstr ""
+
+#: src/Views/SuccessView.vala:58
+msgid "No changes were made."
+msgstr ""
+
+#: src/Views/SuccessView.vala:63
+#, c-format
+msgid "Visit %s for app information, updates, and to uninstall."
+msgstr ""
+
+#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
+#: src/Views/SuccessView.vala:69
+msgid "System Settings → Applications…"
+msgstr ""
+
+#: src/Views/SuccessView.vala:73
+#, c-format
+msgid "Permissions can be changed in %s"
+msgstr ""
+
+#: src/Views/SuccessView.vala:77
+#, c-format
+msgid "Move ”%s” to Trash"
+msgstr ""
+
+#: src/Views/SuccessView.vala:85
+msgid "Open App"
+msgstr ""
+
+#: src/Application.vala:131
+msgid "your software center"
+msgstr ""
+
+#: src/MainWindow.vala:37
+msgid "Install Untrusted App"
+msgstr ""
+
+#: src/MainWindow.vala:96
+#, c-format
+msgid "Installing %s. Unable to estimate time remaining."
+msgstr ""
+
+#: src/MainWindow.vala:186
+msgid "App installed"
+msgstr ""
+
+#: src/MainWindow.vala:188
+#, c-format
+msgid "Installed “%s”"
+msgstr ""
+
+#: src/MainWindow.vala:190
+msgid "The app was installed"
+msgstr ""
+
+#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
+#: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
+msgid "Did not find suitable Flatpak installation."
+msgstr ""
+
+#: src/FlatpakBundleFile.vala:38
+#, c-format
+msgid "Error constructing Flatpak bundle: %s"
+msgstr ""
