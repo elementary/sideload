@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-29 15:32+0000\n"
-"PO-Revision-Date: 2024-02-12 08:12+0000\n"
+"PO-Revision-Date: 2024-02-19 12:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -54,7 +54,7 @@ msgstr "指定された .flatpakref ファイルは有効ではない可能性�
 
 #: src/Views/ErrorView.vala:82
 msgid "The app is not signed with a trusted signature."
-msgstr "アプリには信頼できる署名が付与されていません。"
+msgstr "アプリに信頼できる署名が付与されていません。"
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
