@@ -8,49 +8,54 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-29 15:32+0000\n"
-"PO-Revision-Date: 2019-09-30 10:15-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-02-22 04:12+0000\n"
+"Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
+"Language-Team: Uzbek <https://l10n.elementary.io/projects/desktop/sideload/"
+"uz/>\n"
 "Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
-msgstr ""
+msgstr "O'rnatib bo'lmadi"
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
-msgstr ""
+msgstr "Batafsil"
 
 #: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
-msgstr ""
+msgstr "Yopish"
 
 #: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
-msgstr ""
+msgstr "Bu ilova allaqachon o'rnatilgan."
 
 #: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr ""
+"Ilovaning ushbu talqinini o'rnatish uchun Flatpakning yangiroq talqini talab "
+"etiladi."
 
 #: src/Views/ErrorView.vala:73
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Flatpakning talab etiladigan repozitoriyasi topilmadi."
 
 #: src/Views/ErrorView.vala:76
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Talab etiladigan ishga tushirish muhiti topilmadi."
 
 #: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Ko'rsatilgan .flatpakref fayli noto'g'ri."
 
 #: src/Views/ErrorView.vala:82
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Ilova ishonchli imzo bilan imzolanmagan."
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
@@ -94,7 +99,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr ""
+msgstr "Bekor qilish"
 
 #: src/Views/MainView.vala:126
 msgid "Install Anyway"
