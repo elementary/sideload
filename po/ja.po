@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-29 15:32+0000\n"
-"PO-Revision-Date: 2024-02-19 12:12+0000\n"
+"PO-Revision-Date: 2024-03-21 04:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -78,7 +78,7 @@ msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
 msgstr "アプリの開発者が独自に配布しているため、elementary "
-"によるセキュリティ・プライバシー・システム統合の安全性確認の対象外です。"
+"によるセキュリティ・プライバシー・システム統合の審査対象外です。"
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
@@ -90,7 +90,7 @@ msgstr "了解しました"
 
 #: src/Views/MainView.vala:74
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr "このアプリに対するアップデートは、elementary の確認対象外です"
+msgstr "このアプリに対するアップデートは、elementary の審査対象外です"
 
 #: src/Views/MainView.vala:89
 #, c-format
