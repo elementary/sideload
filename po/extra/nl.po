@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 15:32+0000\n"
+"POT-Creation-Date: 2024-05-04 06:37+0000\n"
 "PO-Revision-Date: 2023-08-02 17:08+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/"
-"sideload-extra/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/sideload-"
+"extra/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,34 +37,30 @@ msgstr ""
 "toe aan AppCenter. Sideload toont belangrijke informatie over apps voordat u "
 "ze installeert, zoals hun downloadgrootte."
 
-#: data/sideload.metainfo.xml.in:52
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
-#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:75
+#: data/sideload.metainfo.xml.in:89 data/sideload.metainfo.xml.in:101
+#: data/sideload.metainfo.xml.in:110
 msgid "Updated translations"
 msgstr "Geüpdatete vertalingen"
 
-#: data/sideload.metainfo.xml.in:72
+#: data/sideload.metainfo.xml.in:74
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
 "Laat zien of een app wel of niet vraagt om geavanceerde systeempermissies"
 
-#: data/sideload.metainfo.xml.in:85
+#: data/sideload.metainfo.xml.in:87
 msgid "Use updated Flatpak branding"
 msgstr "Gebruik bijgewerkte Flatpak branding"
 
-#: data/sideload.metainfo.xml.in:86
+#: data/sideload.metainfo.xml.in:88
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr "Badge meldingen met het pictogram van de applicatie van derden"
 
-#: data/sideload.metainfo.xml.in:98
+#: data/sideload.metainfo.xml.in:100
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Wazig app-pictogram in multitasking-weergave repareren"
 
-#: data/sideload.metainfo.xml.in:107
+#: data/sideload.metainfo.xml.in:109
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr "Gebruik systeem Flatpak-runtimes voor lokaal geïnstalleerde apps"
 
@@ -75,6 +71,9 @@ msgstr "Flatpak installatieprogramma"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Control notifications in System Settings"
 #~ msgstr "Beheer meldingen in systeeminstellingen"

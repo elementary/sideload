@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 15:32+0000\n"
+"POT-Creation-Date: 2024-05-04 06:37+0000\n"
 "PO-Revision-Date: 2023-04-05 13:59+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -37,33 +37,29 @@ msgstr ""
 "היישומים. טעינה צדית מציגה מידע חשוב על היישומים בטרם ההתקנה כגון גודל "
 "ההורדה שלהם."
 
-#: data/sideload.metainfo.xml.in:52
-msgid "elementary, Inc."
-msgstr "elementary בע״מ."
-
-#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
-#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:75
+#: data/sideload.metainfo.xml.in:89 data/sideload.metainfo.xml.in:101
+#: data/sideload.metainfo.xml.in:110
 msgid "Updated translations"
 msgstr "התרגומים עודכנו"
 
-#: data/sideload.metainfo.xml.in:72
+#: data/sideload.metainfo.xml.in:74
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr "להציג האם יישומים מבקשים הרשאות מערכת מתקדמות או שלא"
 
-#: data/sideload.metainfo.xml.in:85
+#: data/sideload.metainfo.xml.in:87
 msgid "Use updated Flatpak branding"
 msgstr "נעשה שימוש במיתוג העדכני של Flatpak"
 
-#: data/sideload.metainfo.xml.in:86
+#: data/sideload.metainfo.xml.in:88
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr "נוסף עיטור להתראות עם סמל היישומון שנטען מהצד"
 
-#: data/sideload.metainfo.xml.in:98
+#: data/sideload.metainfo.xml.in:100
 msgid "Fix blurry app icon in multitasking view"
 msgstr "תוקן סמל יישום מטושטש בתצוגת ריבוי משימות"
 
-#: data/sideload.metainfo.xml.in:107
+#: data/sideload.metainfo.xml.in:109
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr "להשתמש בסביבת ריצת Flatpak של המערכת ליישומים שמותקנים מקומית"
 
@@ -74,6 +70,9 @@ msgstr "מתקין Flatpak"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary בע״מ."
 
 #~ msgid "Control notifications in System Settings"
 #~ msgstr "שליטה בהתראות דרך הגדרות המערכת"

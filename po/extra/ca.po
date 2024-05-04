@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 15:32+0000\n"
+"POT-Creation-Date: 2024-05-04 06:37+0000\n"
 "PO-Revision-Date: 2023-06-14 11:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -38,34 +38,30 @@ msgstr ""
 "mostra informació important sobre les aplicacions abans d’instal·lar-les, "
 "com ara la mida de la baixada."
 
-#: data/sideload.metainfo.xml.in:52
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
-#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:75
+#: data/sideload.metainfo.xml.in:89 data/sideload.metainfo.xml.in:101
+#: data/sideload.metainfo.xml.in:110
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/sideload.metainfo.xml.in:72
+#: data/sideload.metainfo.xml.in:74
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr "Mostra si les aplicacions demanen o no permisos avançats del sistema"
 
-#: data/sideload.metainfo.xml.in:85
+#: data/sideload.metainfo.xml.in:87
 msgid "Use updated Flatpak branding"
 msgstr "Usa la marca de Flatpak actualitzada."
 
-#: data/sideload.metainfo.xml.in:86
+#: data/sideload.metainfo.xml.in:88
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 "Notificacions de la insígnia amb la icona de l'aplicació de càrrega lateral"
 
-#: data/sideload.metainfo.xml.in:98
+#: data/sideload.metainfo.xml.in:100
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Correcció de la icona d'aplicació borrosa a la vista de multitasca"
 
-#: data/sideload.metainfo.xml.in:107
+#: data/sideload.metainfo.xml.in:109
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "Usa entorns d'execució de Flatpak de sistema per a aplicacions instal·lades "
@@ -78,6 +74,9 @@ msgstr "Instal·lador de Flatpak"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Control notifications in System Settings"
 #~ msgstr "Controleu les notificacions a la configuració del sistema."

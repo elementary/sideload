@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-29 15:32+0000\n"
+"POT-Creation-Date: 2024-05-04 06:37+0000\n"
 "PO-Revision-Date: 2023-04-12 22:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -37,36 +37,32 @@ msgstr ""
 "動的に AppCenter に登録します。また、ダウンロードサイズなど、アプリの重要な情"
 "報をインストール前に表示します。"
 
-#: data/sideload.metainfo.xml.in:52
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/sideload.metainfo.xml.in:60 data/sideload.metainfo.xml.in:73
-#: data/sideload.metainfo.xml.in:87 data/sideload.metainfo.xml.in:99
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:75
+#: data/sideload.metainfo.xml.in:89 data/sideload.metainfo.xml.in:101
+#: data/sideload.metainfo.xml.in:110
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/sideload.metainfo.xml.in:72
+#: data/sideload.metainfo.xml.in:74
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr "アプリがシステムパーミッションを追加で要求するかどうかを表示"
 
-#: data/sideload.metainfo.xml.in:85
+#: data/sideload.metainfo.xml.in:87
 msgid "Use updated Flatpak branding"
 msgstr "Flatpak のブランドマーク変更に伴うアイコン修正"
 
-#: data/sideload.metainfo.xml.in:86
+#: data/sideload.metainfo.xml.in:88
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 "サイドロードされたアプリのアイコンを通知アイコンにオーバーレイ表示するように"
 "修正"
 
-#: data/sideload.metainfo.xml.in:98
+#: data/sideload.metainfo.xml.in:100
 msgid "Fix blurry app icon in multitasking view"
 msgstr ""
 "“マルチタスク画面”で表示されるアプリのアイコン解像度が低かった不具合を修正"
 
-#: data/sideload.metainfo.xml.in:107
+#: data/sideload.metainfo.xml.in:109
 msgid "Use system Flatpak runtimes for locally installed apps"
 msgstr ""
 "ローカルにインストールされたアプリが、全ユーザー用にインストールされた "
@@ -79,6 +75,9 @@ msgstr "Flatpak インストーラー"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Control notifications in System Settings"
 #~ msgstr "システム設定で通知を管理できるように修正"
