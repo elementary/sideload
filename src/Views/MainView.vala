@@ -51,12 +51,11 @@ public class Sideload.MainView : AbstractView {
         var agree_check = new Gtk.CheckButton.with_label (_("I understand"));
         agree_check.margin_top = 12;
 
-        var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic");
-        download_size_icon.valign = Gtk.Align.START;
-
-        unowned Gtk.StyleContext download_context = download_size_icon.get_style_context ();
-        download_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        download_context.add_class ("green");
+        var download_size_icon = new Gtk.Image.from_icon_name ("browser-download-symbolic") {
+            valign = START
+        };
+        download_size_icon.add_css_class (Granite.STYLE_CLASS_ACCENT);
+        download_size_icon.add_css_class ("green");
 
         download_size_label = new Gtk.Label (null);
         download_size_label.selectable = true;
@@ -64,12 +63,11 @@ public class Sideload.MainView : AbstractView {
         download_size_label.wrap = true;
         download_size_label.xalign = 0;
 
-        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic");
-        updates_icon.valign = Gtk.Align.START;
-
-        unowned Gtk.StyleContext updates_context = updates_icon.get_style_context ();
-        updates_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        updates_context.add_class ("orange");
+        updates_icon = new Gtk.Image.from_icon_name ("system-software-update-symbolic") {
+            valign = START
+        };
+        updates_icon.add_css_class (Granite.STYLE_CLASS_ACCENT);
+        updates_icon.add_css_class ("orange");
 
         updates_label = new Gtk.Label (_("Updates to this app will not be reviewed by elementary"));
         updates_label.selectable = true;
@@ -77,12 +75,11 @@ public class Sideload.MainView : AbstractView {
         updates_label.wrap = true;
         updates_label.xalign = 0;
 
-        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic");
-        repo_icon.valign = Gtk.Align.START;
-
-        unowned Gtk.StyleContext repo_context = repo_icon.get_style_context ();
-        repo_context.add_class (Granite.STYLE_CLASS_ACCENT);
-        repo_context.add_class ("purple");
+        repo_icon = new Gtk.Image.from_icon_name ("system-software-install-symbolic") {
+            valign = START
+        };
+        repo_icon.add_css_class (Granite.STYLE_CLASS_ACCENT);
+        repo_icon.add_css_class ("purple");
 
         var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
 
