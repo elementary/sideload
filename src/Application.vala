@@ -97,26 +97,40 @@ public class Sideload.Application : Gtk.Application {
         main_window = new MainWindow (this, flatpak_file);
         main_window.present ();
 
-        var quit_action = new SimpleAction ("quit", null);
         var launch_action = new SimpleAction ("launch", null);
 
-        add_action (quit_action);
         add_action (launch_action);
 
-        set_accels_for_action ("app.quit", {"<Control>q"});
-
         launch_action.activate.connect (() => {
-            flatpak_file.launch.begin ();
-            activate_action ("quit", null);
-        });
-
-        quit_action.activate.connect (() => {
-            if (main_window != null) {
-                main_window.destroy ();
-            }
+            flatpak_file.launch.begin ((obj, res) => {
+                flatpak_file.launch.end (res);
+                main_window.close ();
+            });
         });
 
         release ();
+    }
+
+    protected override void startup () {
+        base.startup ();
+        Granite.init ();
+
+        var granite_settings = Granite.Settings.get_default ();
+        var gtk_settings = Gtk.Settings.get_default ();
+
+        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
+
+        granite_settings.notify["prefers-color-scheme"].connect (() => {
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
+        });
+
+        var quit_action = new SimpleAction ("quit", null);
+
+        add_action (quit_action);
+
+        set_accels_for_action ("app.quit", {"<Control>q"});
+
+        quit_action.activate.connect (quit);
     }
 
     protected override void activate () {
