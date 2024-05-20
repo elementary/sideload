@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2023-03-31 19:59+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -88,38 +88,38 @@ msgstr "Fetching details"
 msgid "I understand"
 msgstr "I understand"
 
-#: src/Views/MainView.vala:74
+#: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "Updates to this app will not be reviewed by elementary"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Other apps from this distributor may appear in %s"
 
-#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/MainView.vala:126
+#: src/Views/MainView.vala:123
 msgid "Install Anyway"
 msgstr "Install Anyway"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "Install size may be up to %s"
 
-#: src/Views/MainView.vala:158
+#: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Download size may be up to %s"
 
-#: src/Views/MainView.vala:160
+#: src/Views/MainView.vala:157
 msgid "Unknown download size"
 msgstr "Unknown download size"
 
-#: src/Views/MainView.vala:170
+#: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
@@ -127,7 +127,7 @@ msgstr ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 
-#: src/Views/MainView.vala:181
+#: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
@@ -135,7 +135,7 @@ msgstr ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 
-#: src/Views/MainView.vala:185
+#: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
 msgstr "Doesn't request advanced system permissions"
 
@@ -198,7 +198,7 @@ msgstr "Move ”%s” to Rubbish bin"
 msgid "Open App"
 msgstr "Open App"
 
-#: src/Application.vala:131
+#: src/Application.vala:145
 msgid "your software center"
 msgstr "your software centre"
 
@@ -206,21 +206,21 @@ msgstr "your software centre"
 msgid "Install Untrusted App"
 msgstr "Install Untrusted App"
 
-#: src/MainWindow.vala:96
+#: src/MainWindow.vala:87
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Installing %s. Unable to estimate time remaining."
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:177
 msgid "App installed"
 msgstr "App installed"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:179
 #, c-format
 msgid "Installed “%s”"
 msgstr "Installed “%s”"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:181
 msgid "The app was installed"
 msgstr "The app was installed"
 

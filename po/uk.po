@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2023-12-23 20:30+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -89,38 +89,38 @@ msgstr "Отримання подробиць"
 msgid "I understand"
 msgstr "Я розумію"
 
-#: src/Views/MainView.vala:74
+#: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "elementary не перевірятиме оновлення цього застосунку"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Інші застосунки цього видавця можуть з’явитися в %s"
 
-#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/Views/MainView.vala:126
+#: src/Views/MainView.vala:123
 msgid "Install Anyway"
 msgstr "Все одно встановити"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "Розмір встановлення може сягнути %s"
 
-#: src/Views/MainView.vala:158
+#: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Розмір завантаження може сягнути %s"
 
-#: src/Views/MainView.vala:160
+#: src/Views/MainView.vala:157
 msgid "Unknown download size"
 msgstr "Невідомий розмір завантаження"
 
-#: src/Views/MainView.vala:170
+#: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
@@ -128,7 +128,7 @@ msgstr ""
 "Запитує розширені дозволи, які можуть бути використані для порушення вашої "
 "приватності або безпеки"
 
-#: src/Views/MainView.vala:181
+#: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
@@ -136,7 +136,7 @@ msgstr ""
 "Запитує дозволи на файли та теки, які можуть бути використані для порушення "
 "вашої приватності"
 
-#: src/Views/MainView.vala:185
+#: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
 msgstr "Не запитує розширені системні дозволи"
 
@@ -201,7 +201,7 @@ msgstr "Перемістити «%s» до Смітника"
 msgid "Open App"
 msgstr "Відкрити застосунок"
 
-#: src/Application.vala:131
+#: src/Application.vala:145
 msgid "your software center"
 msgstr "ваш центр застосунків"
 
@@ -209,21 +209,21 @@ msgstr "ваш центр застосунків"
 msgid "Install Untrusted App"
 msgstr "Встановити ненадійний застосунок"
 
-#: src/MainWindow.vala:96
+#: src/MainWindow.vala:87
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Встановлення %s. Неможливо визначити час до завершення."
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:177
 msgid "App installed"
 msgstr "Застосунок встановлено"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:179
 #, c-format
 msgid "Installed “%s”"
 msgstr "Встановлено «%s»"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:181
 msgid "The app was installed"
 msgstr "Цей застосунок було встановлено"
 

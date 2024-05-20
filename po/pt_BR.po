@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2021-07-17 07:24+0000\n"
 "Last-Translator: lucaspifonseca <lucaspifonseca@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -98,52 +98,52 @@ msgstr "Buscando detalhes"
 msgid "I understand"
 msgstr "Compreendo"
 
-#: src/Views/MainView.vala:74
+#: src/Views/MainView.vala:72
 #, fuzzy
 #| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "Atualizações deste software não serão revisadas"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Outros aplicativos deste distribuidor podem aparecer em %s"
 
-#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/MainView.vala:126
+#: src/Views/MainView.vala:123
 msgid "Install Anyway"
 msgstr "Instalar mesmo assim"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "O tamanho da instalação pode ser de até %s"
 
-#: src/Views/MainView.vala:158
+#: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "O tamanho do download pode ser de até %s"
 
-#: src/Views/MainView.vala:160
+#: src/Views/MainView.vala:157
 msgid "Unknown download size"
 msgstr "Tamanho do download desconhecido"
 
-#: src/Views/MainView.vala:170
+#: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
 
-#: src/Views/MainView.vala:181
+#: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
 
-#: src/Views/MainView.vala:185
+#: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
 msgstr ""
 
@@ -206,7 +206,7 @@ msgstr "Mover \"%s\" para Lixeira"
 msgid "Open App"
 msgstr "Abrir a aplicação"
 
-#: src/Application.vala:131
+#: src/Application.vala:145
 msgid "your software center"
 msgstr "seu centro de software"
 
@@ -214,22 +214,22 @@ msgstr "seu centro de software"
 msgid "Install Untrusted App"
 msgstr "Instalar aplicação não confiável"
 
-#: src/MainWindow.vala:96
+#: src/MainWindow.vala:87
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Instalando %s. Incapaz de estimar tempo restante."
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:177
 msgid "App installed"
 msgstr "Aplicativo instalado"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:179
 #, fuzzy, c-format
 #| msgid "Installing “%s”"
 msgid "Installed “%s”"
 msgstr "Instalando \"%s\""
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:181
 #, fuzzy
 #| msgid "The app was installed successfully"
 msgid "The app was installed"

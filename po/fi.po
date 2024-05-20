@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2023-04-11 16:59+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -90,38 +90,38 @@ msgstr "Noudetaan tietoja"
 msgid "I understand"
 msgstr "Ymmärrän"
 
-#: src/Views/MainView.vala:74
+#: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "Tämän sovelluksen päivityksiä ei katselmoida elementaryn toimesta"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Muut tämän jakelijan sovellukset voivat näkyä sovelluksessa %s"
 
-#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/Views/MainView.vala:126
+#: src/Views/MainView.vala:123
 msgid "Install Anyway"
 msgstr "Asenna silti"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "Asennuksen koko voi olla jopa %s"
 
-#: src/Views/MainView.vala:158
+#: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "Latauksen koko voi olla jopa %s"
 
-#: src/Views/MainView.vala:160
+#: src/Views/MainView.vala:157
 msgid "Unknown download size"
 msgstr "Tuntematon latauksen koko"
 
-#: src/Views/MainView.vala:170
+#: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
@@ -129,7 +129,7 @@ msgstr ""
 "Pyytää edistyneitä oikeuksia, joita on mahdollista käyttää yksityisyyttäsi "
 "tai turvallisuuttasi vastaan"
 
-#: src/Views/MainView.vala:181
+#: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
@@ -137,7 +137,7 @@ msgstr ""
 "Pyytää tiedosto- ja kansio-oikeuksia, joita on mahdollista käyttää "
 "yksityisyyttäsi tai turvallisuuttasi vastaan"
 
-#: src/Views/MainView.vala:185
+#: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
 msgstr "Ei pyydä edistyneitä järjestelmäoikeuksia"
 
@@ -202,7 +202,7 @@ msgstr "Siirrä ”%s” roskakoriin"
 msgid "Open App"
 msgstr "Avaa sovellus"
 
-#: src/Application.vala:131
+#: src/Application.vala:145
 msgid "your software center"
 msgstr "ohjelmistokeskus"
 
@@ -210,21 +210,21 @@ msgstr "ohjelmistokeskus"
 msgid "Install Untrusted App"
 msgstr "Asenna ei-luotettu sovellus"
 
-#: src/MainWindow.vala:96
+#: src/MainWindow.vala:87
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Asennetaan %s. Jäljellä olevaa aikaa ei voi arvioida."
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:177
 msgid "App installed"
 msgstr "Sovellus asennettu"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:179
 #, c-format
 msgid "Installed “%s”"
 msgstr "Asennettu “%s”"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:181
 msgid "The app was installed"
 msgstr "Sovellus asennettiin"
 
