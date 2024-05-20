@@ -56,7 +56,15 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-      <release version="6.2.1" date="2023-06-29" urgency="medium">
+    <release version="6.2.2" date="2024-05-20" urgency="medium">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="6.2.1" date="2023-06-29" urgency="medium">
       <description>
         <ul>
           <li>Updated translations</li>
@@ -103,15 +111,7 @@
       </description>
     </release>
 
-    <release version="6.0.1" date="2021-08-25" urgency="medium">
-      <description>
-        <ul>
-          <li>Use system Flatpak runtimes for locally installed apps</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="6.0.1" date="2021-08-25"/>
     <release version="6.0.0" date="2021-07-14"/>
     <release version="1.1.1" date="2020-05-28"/>
     <release version="1.1.0" date="2020-04-01"/>
