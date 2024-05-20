@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2023-05-05 09:06+0000\n"
 "Last-Translator: Benjamin <morantbenjamin@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -38,34 +38,28 @@ msgstr ""
 "en arrière-plan affiche des informations importantes sur les applications "
 "avant leur installation, comme la taille de leur téléchargement."
 
-#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:75
-#: data/sideload.metainfo.xml.in:89 data/sideload.metainfo.xml.in:101
-#: data/sideload.metainfo.xml.in:110
+#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
+#: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
+#: data/sideload.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/sideload.metainfo.xml.in:74
+#: data/sideload.metainfo.xml.in:82
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
 "Montrer si les applications demandent des permissions systèmes avancées"
 
-#: data/sideload.metainfo.xml.in:87
+#: data/sideload.metainfo.xml.in:95
 msgid "Use updated Flatpak branding"
 msgstr "Utilisation de la nouvelle marque de Flatpak"
 
-#: data/sideload.metainfo.xml.in:88
+#: data/sideload.metainfo.xml.in:96
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr "Notifications avec l'icône de l'application en badge"
 
-#: data/sideload.metainfo.xml.in:100
+#: data/sideload.metainfo.xml.in:108
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Correction de l'icône floue dans la vue multitâche"
-
-#: data/sideload.metainfo.xml.in:109
-msgid "Use system Flatpak runtimes for locally installed apps"
-msgstr ""
-"Utilisation des exécutables Flatpak du système pour les applications "
-"installées en local"
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
@@ -74,6 +68,11 @@ msgstr "Installateur Flatpak"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "Use system Flatpak runtimes for locally installed apps"
+#~ msgstr ""
+#~ "Utilisation des exécutables Flatpak du système pour les applications "
+#~ "installées en local"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
