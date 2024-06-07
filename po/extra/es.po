@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-20 17:36+0000\n"
-"PO-Revision-Date: 2021-07-16 20:14+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload-"
-"extra/es/>\n"
+"PO-Revision-Date: 2024-06-08 01:13+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
+"sideload-extra/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr "Instalación de prueba"
+msgstr "Sideload"
 
 #: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -33,8 +33,8 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
-"Cargue en paralelo aplicaciones Flatpak por usuario y añada automáticamente "
-"sus remotos al Centro de aplicaciones. Instalación de prueba muestra "
+"Instale en paralelo aplicaciones Flatpak por usuario y añada automáticamente "
+"sus repositorios remotos al Centro de Aplicaciones. Sideload muestra "
 "información importante sobre las aplicaciones antes de que las instale, como "
 "el tamaño de descarga."
 
@@ -47,18 +47,21 @@ msgstr "Traducciones actualizadas"
 #: data/sideload.metainfo.xml.in:82
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
+"Ahora se muestra si las aplicaciones solicitan permisos avanzados del "
+"sistema o no"
 
 #: data/sideload.metainfo.xml.in:95
 msgid "Use updated Flatpak branding"
-msgstr ""
+msgstr "Ahora se utilizan los logotipos actualizados de Flatpak"
 
 #: data/sideload.metainfo.xml.in:96
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
+"Las notificaciones se marcan con el ícono de la aplicación externa instalada"
 
 #: data/sideload.metainfo.xml.in:108
 msgid "Fix blurry app icon in multitasking view"
-msgstr ""
+msgstr "Corregido el icono de baja calidad en la Vista Multitarea"
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
