@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2024-06-08 01:13+0000\n"
-"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Last-Translator: Alvaro Romano <alvaroromanook@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
 "es/>\n"
 "Language: es\n"
@@ -64,10 +64,8 @@ msgstr ""
 "remoto no es válido."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
-msgstr "Se produjo un error desconocido."
+msgstr "Se ha producido un error desconocido."
 
 #: src/Views/MainView.vala:23
 #, c-format
@@ -243,7 +241,7 @@ msgstr "No se encontró la instalación adecuada de Flatpak."
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Error en la construcción del paquete Flatpak: %s"
 
 #, c-format
 #~ msgid "Install untrusted app “%s”?"
