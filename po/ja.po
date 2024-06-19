@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-20 17:36+0000\n"
-"PO-Revision-Date: 2024-05-09 14:13+0000\n"
+"PO-Revision-Date: 2024-06-19 13:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -67,7 +67,7 @@ msgstr "不明なエラーが発生しました。"
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Trust and install “%s”?"
-msgstr "“%s” を信頼してインストールしますか?"
+msgstr "“%s”を信頼してインストールしますか?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
@@ -143,7 +143,7 @@ msgstr "追加のシステムパーミッションは不要です"
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr "“%s” をインストールしています"
+msgstr "“%s”をインストールしています"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
@@ -152,7 +152,7 @@ msgstr "準備しています…"
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr "“%s” をインストールしました"
+msgstr "“%s”をインストールしました"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
@@ -165,7 +165,7 @@ msgstr "このアプリはアプリケーションメニューからいつでも
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr "“%s” はインストール済みです"
+msgstr "“%s”はインストール済みです"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
@@ -195,7 +195,7 @@ msgstr "権限は%sで変更できます。"
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr "”%s” をゴミ箱に移動"
+msgstr "”%s”をゴミ箱に移動"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
