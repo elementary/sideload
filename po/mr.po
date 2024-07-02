@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2020-10-13 22:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -95,53 +95,53 @@ msgstr "तपशील आणत आहे"
 msgid "I understand"
 msgstr "मला समजले"
 
-#: src/Views/MainView.vala:74
+#: src/Views/MainView.vala:72
 #, fuzzy
 #| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
 msgstr "या अ‍ॅपवरील अपडेट्सचे पुनरावलोकन केले जाणार नाही"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "या वितरकाकडील अन्य अ‍ॅप %s मध्ये दिसू शकतात"
 
-#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/MainView.vala:126
+#: src/Views/MainView.vala:123
 msgid "Install Anyway"
 msgstr "तरीही स्थापित करा"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:138
 #, fuzzy, c-format
 #| msgid "Download size may be up to %s"
 msgid "Install size may be up to %s"
 msgstr "डाउनलोड आकार %s पर्यंत असू शकतो"
 
-#: src/Views/MainView.vala:158
+#: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "डाउनलोड आकार %s पर्यंत असू शकतो"
 
-#: src/Views/MainView.vala:160
+#: src/Views/MainView.vala:157
 msgid "Unknown download size"
 msgstr "अज्ञात डाउनलोड आकार"
 
-#: src/Views/MainView.vala:170
+#: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
 
-#: src/Views/MainView.vala:181
+#: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
 
-#: src/Views/MainView.vala:185
+#: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
 msgstr ""
 
@@ -206,7 +206,7 @@ msgstr ""
 msgid "Open App"
 msgstr "अ‍ॅप उघडा"
 
-#: src/Application.vala:131
+#: src/Application.vala:145
 msgid "your software center"
 msgstr "आपले सॉफ्टवेअर केंद्र"
 
@@ -214,22 +214,22 @@ msgstr "आपले सॉफ्टवेअर केंद्र"
 msgid "Install Untrusted App"
 msgstr "अविश्वसनीय अ‍ॅप स्थापित करा"
 
-#: src/MainWindow.vala:96
+#: src/MainWindow.vala:87
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:177
 msgid "App installed"
 msgstr "अ‍ॅप स्थापित केले गेले आहे"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:179
 #, fuzzy, c-format
 #| msgid "Installing “%s”"
 msgid "Installed “%s”"
 msgstr "“%s” स्थापित करत आहे"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:181
 #, fuzzy
 #| msgid "The app has been installed"
 msgid "The app was installed"

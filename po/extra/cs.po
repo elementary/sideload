@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
 "PO-Revision-Date: 2023-08-30 11:08+0000\n"
 "Last-Translator: Jakub Kyzr <jakubkyzr@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/desktop/sideload-"
@@ -37,33 +37,27 @@ msgstr ""
 "jejich zdrojů do Centra aplikací. Instalace bokem zobrazuje důležité "
 "informace o aplikaci ještě před instalací, jako například velikost stahování."
 
-#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:75
-#: data/sideload.metainfo.xml.in:89 data/sideload.metainfo.xml.in:101
-#: data/sideload.metainfo.xml.in:110
+#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
+#: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
+#: data/sideload.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Aktualizované překlady"
 
-#: data/sideload.metainfo.xml.in:74
+#: data/sideload.metainfo.xml.in:82
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:87
+#: data/sideload.metainfo.xml.in:95
 msgid "Use updated Flatpak branding"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:88
+#: data/sideload.metainfo.xml.in:96
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:100
+#: data/sideload.metainfo.xml.in:108
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Opravena rozmazaná ikona aplikace ve víceúlohovém zobrazení"
-
-#: data/sideload.metainfo.xml.in:109
-msgid "Use system Flatpak runtimes for locally installed apps"
-msgstr ""
-"Použít systémová Flatpak běhová prostředí pro aplikace nainstalované z "
-"lokálních zdrojů"
 
 #: data/sideload.desktop.in:5
 msgid "Flatpak Installer"
@@ -72,6 +66,11 @@ msgstr "Instalátor flatpak"
 #: data/sideload.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
+
+#~ msgid "Use system Flatpak runtimes for locally installed apps"
+#~ msgstr ""
+#~ "Použít systémová Flatpak běhová prostředí pro aplikace nainstalované z "
+#~ "lokálních zdrojů"
 
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."

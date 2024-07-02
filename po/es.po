@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:37+0000\n"
-"PO-Revision-Date: 2021-04-29 01:19+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
+"POT-Creation-Date: 2024-05-20 17:36+0000\n"
+"PO-Revision-Date: 2024-06-08 01:13+0000\n"
+"Last-Translator: Alvaro Romano <alvaroromanook@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/sideload/"
 "es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -47,7 +47,7 @@ msgstr "No se encontró un repositorio remoto de Flatpak obligatorio."
 
 #: src/Views/ErrorView.vala:76
 msgid "A required runtime dependency could not be found."
-msgstr "No se encontró una dependencia de tiempo de ejecución obligatoria."
+msgstr "No se encontró una dependencia de entorno de ejecución obligatoria."
 
 #: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
@@ -60,94 +60,91 @@ msgstr "La aplicación no está firmada con una firma de confianza."
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
 msgstr ""
-"El nombre de la aplicación, del tiempo de ejecución o del repositorio remoto "
-"no es válido."
+"El nombre de la aplicación, del entorno de ejecución o del repositorio "
+"remoto no es válido."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
-msgstr "Se produjo un error desconocido."
+msgstr "Se ha producido un error desconocido."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Installed “%s”"
+#, c-format
 msgid "Trust and install “%s”?"
-msgstr "Se instaló «%s»"
+msgstr "¿Desea confiar e instalar «%s»?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "¿Desea confiar e instalar esta aplicación?"
 
 #: src/Views/MainView.vala:40
-#, fuzzy
-#| msgid ""
-#| "This app is provided solely by its developer and has not been reviewed "
-#| "for security, privacy, or system integration."
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
 msgstr ""
-"Esta aplicación la ha proporcionado únicamente su desarrollador y no se ha "
-"revisado con respecto a su seguridad, su respeto de la privacidad o su "
-"integración con el sistema."
+"Esta aplicación la ha proporcionado únicamente su desarrollador, y "
+"elementary no la ha verificado por su seguridad, su respeto de la privacidad "
+"o su integración con el sistema."
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
-msgstr "Recuperando datos"
+msgstr "Obteniendo datos"
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
 msgstr "Comprendo"
 
-#: src/Views/MainView.vala:74
-#, fuzzy
-#| msgid "Updates to this app will not be reviewed"
+#: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr "No se revisarán las actualizaciones de esta aplicación"
+msgstr ""
+"No se verificarán las actualizaciones de esta aplicación por parte de "
+"elementary"
 
-#: src/Views/MainView.vala:89
+#: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
 msgstr "Otras aplicaciones de este distribuidor pueden aparecer en %s"
 
-#: src/Views/MainView.vala:123 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/MainView.vala:126
+#: src/Views/MainView.vala:123
 msgid "Install Anyway"
 msgstr "Instalar de todos modos"
 
-#: src/Views/MainView.vala:141
+#: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
 msgstr "El tamaño de la instalación puede ser de hasta %s"
 
-#: src/Views/MainView.vala:158
+#: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
 msgstr "El tamaño de descarga puede ser de hasta %s"
 
-#: src/Views/MainView.vala:160
+#: src/Views/MainView.vala:157
 msgid "Unknown download size"
 msgstr "Tamaño de descarga desconocido"
 
-#: src/Views/MainView.vala:170
+#: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Solicita permisos avanzado que pueden usarse para violar su seguridad o "
+"privacidad"
 
-#: src/Views/MainView.vala:181
+#: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Solicita permisos de archivos y carpetas que pueden usarse para violar su "
+"privacidad"
 
-#: src/Views/MainView.vala:185
+#: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "No solicita permisos avanzados del sistema"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -189,12 +186,12 @@ msgstr "No se realizaron cambios."
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
 "Visite %s para obtener información sobre la aplicación, actualizaciones y "
-"como desinstalarla."
+"cómo desinstalarla."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr "Configuración del sistema → Aplicaciones…"
+msgstr "Configuración del Sistema → Aplicaciones…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
@@ -204,13 +201,13 @@ msgstr "Los permisos se pueden cambiar en %s"
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr "Mover ”%s” a la papelera"
+msgstr "Mover «%s» a la papelera"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
 msgstr "Abrir aplicación"
 
-#: src/Application.vala:131
+#: src/Application.vala:145
 msgid "your software center"
 msgstr "su centro de aplicaciones"
 
@@ -218,25 +215,23 @@ msgstr "su centro de aplicaciones"
 msgid "Install Untrusted App"
 msgstr "Instalar aplicación no confiable"
 
-#: src/MainWindow.vala:96
+#: src/MainWindow.vala:87
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Instalando %s. No se puede estimar el tiempo restante."
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:177
 msgid "App installed"
-msgstr "Se ha instalado la aplicación"
+msgstr "Aplicación instalada"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:179
 #, c-format
 msgid "Installed “%s”"
 msgstr "Se instaló «%s»"
 
-#: src/MainWindow.vala:190
-#, fuzzy
-#| msgid "The app has been installed"
+#: src/MainWindow.vala:181
 msgid "The app was installed"
-msgstr "Se instaló la aplicación"
+msgstr "Se ha instalado la aplicación"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
@@ -246,7 +241,7 @@ msgstr "No se encontró la instalación adecuada de Flatpak."
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Error en la construcción del paquete Flatpak: %s"
 
 #, c-format
 #~ msgid "Install untrusted app “%s”?"
