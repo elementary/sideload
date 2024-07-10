@@ -1,3 +1,9 @@
+io.elementary.sideload (6.2.2) jammy; urgency=medium
+
+  * Release 6.2.2
+
+ -- Danielle Foré <danielle@elementary.io>  Wed, 10 Jul 2024 15:02:00 -0700
+
 io.elementary.sideload (6.2.1) jammy; urgency=medium
 
   * New upstream release
