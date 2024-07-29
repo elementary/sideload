@@ -64,9 +64,9 @@ public class Sideload.Application : Gtk.Application {
             );
 
             var remote_file = File.new_for_uri (uri);
-            File local_file = File.new_for_path(path);
+            File local_file = File.new_for_path (path);
             try {
-                if (!remote_file.copy(local_file, FileCopyFlags.OVERWRITE)) {
+                if (!remote_file.copy (local_file, FileCopyFlags.OVERWRITE)) {
                     warning ("Failed to download file from %s", uri);
                     release ();
                     return;
