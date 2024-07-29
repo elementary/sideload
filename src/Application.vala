@@ -21,9 +21,11 @@
 public class Sideload.Application : Gtk.Application {
     private const string BUNDLE_CONTENT_TYPE = "application/vnd.flatpak";
     private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
+    private const string FLATPAK_HTTPS_CONTENT_TYPE = "x-scheme-handler/flatpak+https";
     private const string[] SUPPORTED_CONTENT_TYPES = {
         BUNDLE_CONTENT_TYPE,
-        REF_CONTENT_TYPE
+        REF_CONTENT_TYPE,
+        FLATPAK_HTTPS_CONTENT_TYPE
     };
 
     public Application () {
@@ -54,6 +56,30 @@ public class Sideload.Application : Gtk.Application {
     }
 
     private async void open_file (File file) {
+        if (file.get_uri ().has_prefix ("flatpak+https://")) {
+            var uri = file.get_uri ().replace ("flatpak+https://", "https://");
+            var path = Path.build_filename (
+                Environment.get_user_special_dir (UserDirectory.DOWNLOAD),
+                Path.get_basename (uri)
+            );
+
+            var remote_file = File.new_for_uri (uri);
+            File local_file = File.new_for_path(path);
+            try {
+                if (!remote_file.copy(local_file, FileCopyFlags.OVERWRITE)) {
+                    warning ("Failed to download file from %s", uri);
+                    release ();
+                    return;
+                }
+            } catch (Error e) {
+                critical ("Failed to download file from %s: %s", uri, e.message);
+                release ();
+                return;
+            }
+
+            file = local_file;
+        }
+
         FileInfo? file_info = null;
         try {
             file_info = yield file.query_info_async (
@@ -92,6 +118,8 @@ public class Sideload.Application : Gtk.Application {
             flatpak_file = new FlatpakRefFile (file);
         } else if (content_type == BUNDLE_CONTENT_TYPE) {
             flatpak_file = new FlatpakBundleFile (file);
+        } else if (content_type == FLATPAK_HTTPS_CONTENT_TYPE) {
+            flatpak_file = new FlatpakRefFile (file);
         }
 
         main_window = new MainWindow (this, flatpak_file);
