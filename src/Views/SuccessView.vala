@@ -36,7 +36,7 @@ public class Sideload.SuccessView : AbstractView {
 
         var app = (Sideload.Application) GLib.Application.get_default ();
         var appstore_name = app.get_appstore_name ();
-        var file = ((Sideload.MainWindow) app.active_window).file;
+        var file = ((Sideload.MainWindow) app.active_window).flatpak_file;
         string? secondary_label_string;
 
         if (view_type == SuccessType.INSTALLED) {
