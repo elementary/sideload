@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-20 17:36+0000\n"
+"POT-Creation-Date: 2024-07-31 18:46+0000\n"
 "PO-Revision-Date: 2022-10-27 18:57+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -199,29 +199,52 @@ msgstr "把 “%s” 移动到回收站"
 msgid "Open App"
 msgstr "打开应用"
 
-#: src/Application.vala:145
+#: src/Application.vala:100
 msgid "your software center"
 msgstr "软件中心"
 
-#: src/MainWindow.vala:37
+#: src/MainWindow.vala:47
 msgid "Install Untrusted App"
 msgstr "安装未被信任的应用"
 
-#: src/MainWindow.vala:87
+#: src/MainWindow.vala:99
+#, c-format
+msgid "Failed to download file from %s"
+msgstr ""
+
+#: src/MainWindow.vala:106
+#, c-format
+msgid "Failed to download file from %s: %s"
+msgstr ""
+
+#: src/MainWindow.vala:123
+#, c-format
+msgid "Unable to query content type of provided file: %s"
+msgstr ""
+
+#: src/MainWindow.vala:131 src/MainWindow.vala:140
+msgid "Unable to query content type of provided file"
+msgstr ""
+
+#: src/MainWindow.vala:148
+msgid "This does not appear to be a valid flatpak/flatpakref file"
+msgstr ""
+
+#: src/MainWindow.vala:172
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "正在安装 %s。无法估计剩余时间。"
 
-#: src/MainWindow.vala:177
+#: src/MainWindow.vala:262
 msgid "App installed"
 msgstr "软件已安装"
 
-#: src/MainWindow.vala:179
+#: src/MainWindow.vala:264
 #, c-format
 msgid "Installed “%s”"
 msgstr "“%s”已安装"
 
-#: src/MainWindow.vala:181
+#: src/MainWindow.vala:266
 msgid "The app was installed"
 msgstr "应用已安装"
 

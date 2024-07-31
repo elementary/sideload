@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-20 17:36+0000\n"
+"POT-Creation-Date: 2024-07-31 18:46+0000\n"
 "PO-Revision-Date: 2021-08-16 03:00+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -192,29 +192,52 @@ msgstr ""
 msgid "Open App"
 msgstr ""
 
-#: src/Application.vala:145
+#: src/Application.vala:100
 msgid "your software center"
 msgstr ""
 
-#: src/MainWindow.vala:37
+#: src/MainWindow.vala:47
 msgid "Install Untrusted App"
 msgstr ""
 
-#: src/MainWindow.vala:87
+#: src/MainWindow.vala:99
+#, c-format
+msgid "Failed to download file from %s"
+msgstr ""
+
+#: src/MainWindow.vala:106
+#, c-format
+msgid "Failed to download file from %s: %s"
+msgstr ""
+
+#: src/MainWindow.vala:123
+#, c-format
+msgid "Unable to query content type of provided file: %s"
+msgstr ""
+
+#: src/MainWindow.vala:131 src/MainWindow.vala:140
+msgid "Unable to query content type of provided file"
+msgstr ""
+
+#: src/MainWindow.vala:148
+msgid "This does not appear to be a valid flatpak/flatpakref file"
+msgstr ""
+
+#: src/MainWindow.vala:172
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr ""
 
-#: src/MainWindow.vala:177
+#: src/MainWindow.vala:262
 msgid "App installed"
 msgstr ""
 
-#: src/MainWindow.vala:179
+#: src/MainWindow.vala:264
 #, c-format
 msgid "Installed “%s”"
 msgstr ""
 
-#: src/MainWindow.vala:181
+#: src/MainWindow.vala:266
 msgid "The app was installed"
 msgstr ""
 
