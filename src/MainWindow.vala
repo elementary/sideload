@@ -19,7 +19,17 @@
 */
 
 public class Sideload.MainWindow : Gtk.ApplicationWindow {
-    public FlatpakFile file { get; construct; }
+    private const string BUNDLE_CONTENT_TYPE = "application/vnd.flatpak";
+    private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
+    private const string FLATPAK_HTTPS_CONTENT_TYPE = "x-scheme-handler/flatpak+https";
+    private const string[] SUPPORTED_CONTENT_TYPES = {
+        BUNDLE_CONTENT_TYPE,
+        REF_CONTENT_TYPE,
+        FLATPAK_HTTPS_CONTENT_TYPE
+    };
+
+    public File file { get; construct; }
+    public FlatpakFile flatpak_file { get; construct; }
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
@@ -29,7 +39,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     private string? app_name = null;
     private string? app_id = null;
 
-    public MainWindow (Gtk.Application application, FlatpakFile file) {
+    public MainWindow (Gtk.Application application, File file) {
         Object (
             application: application,
             icon_name: "io.elementary.sideload",
@@ -75,35 +85,110 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             }
         });
 
-        if (file.size == "0") {
-            var error_view = new ErrorView (file.error_code, file.error_message);
+        if (file.get_uri ().has_prefix ("flatpak+https://")) {
+            var uri = file.get_uri ().replace ("flatpak+https://", "https://");
+            var path = Path.build_filename (
+                Environment.get_user_special_dir (UserDirectory.DOWNLOAD),
+                Path.get_basename (uri)
+            );
+
+            var remote_file = File.new_for_uri (uri);
+            var local_file = File.new_for_path (path);
+            try {
+                if (!remote_file.copy (local_file, FileCopyFlags.OVERWRITE)) {
+                    var message = (_("Failed to download file from %s")).printf (uri);
+                    var error_view = new ErrorView (-1, message);
+                    stack.add_child (error_view);
+                    stack.visible_child = error_view;
+                    return;
+                }
+            } catch (Error e) {
+                var message = (_("Failed to download file from %s: %s")).printf (uri, e.message);
+                var error_view = new ErrorView (-1, message);
+                stack.add_child (error_view);
+                stack.visible_child = error_view;
+                return;
+            }
+
+            file = local_file;
+        }
+
+        FileInfo? file_info = null;
+        try {
+            file_info = file.query_info (
+                FileAttribute.STANDARD_CONTENT_TYPE,
+                FileQueryInfoFlags.NONE
+            );
+        } catch (Error e) {
+            var message = (_("Unable to query content type of provided file: %s")).printf (e.message);
+            var error_view = new ErrorView (-1, message);
             stack.add_child (error_view);
             stack.visible_child = error_view;
             return;
-        } else if (file is FlatpakRefFile) {
+        }
+
+        if (file_info == null) {
+            var message = _("Unable to query content type of provided file");
+            var error_view = new ErrorView (-1, message);
+            stack.add_child (error_view);
+            stack.visible_child = error_view;
+            return;
+        }
+
+        var content_type = file_info.get_attribute_as_string (FileAttribute.STANDARD_CONTENT_TYPE);
+        if (content_type == null) {
+            var message = _("Unable to query content type of provided file");
+            var error_view = new ErrorView (-1, message);
+            stack.add_child (error_view);
+            stack.visible_child = error_view;
+            return;
+        }
+
+        if (!(content_type in SUPPORTED_CONTENT_TYPES)) {
+            var message = _("This does not appear to be a valid flatpak/flatpakref file");
+            var error_view = new ErrorView (-1, message);
+            stack.add_child (error_view);
+            stack.visible_child = error_view;
+            return;
+        }
+
+        if (content_type == REF_CONTENT_TYPE) {
+            flatpak_file = new FlatpakRefFile (file);
+        } else if (content_type == BUNDLE_CONTENT_TYPE) {
+            flatpak_file = new FlatpakBundleFile (file);
+        } else if (content_type == FLATPAK_HTTPS_CONTENT_TYPE) {
+            flatpak_file = new FlatpakRefFile (file);
+        }
+
+        if (flatpak_file.size == "0") {
+            var error_view = new ErrorView (flatpak_file.error_code, flatpak_file.error_message);
+            stack.add_child (error_view);
+            stack.visible_child = error_view;
+            return;
+        } else if (flatpak_file is FlatpakRefFile) {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
         } else {
             progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
-            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (file.size);
+            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (flatpak_file.size);
         }
 
         stack.add_child (progress_view);
 
         main_view.install_request.connect (on_install_button_clicked);
-        file.progress_changed.connect (on_progress_changed);
-        file.installation_failed.connect (on_install_failed);
-        file.installation_succeeded.connect (on_install_succeeded);
-        file.details_ready.connect (() => {
-            if (file.already_installed) {
+        flatpak_file.progress_changed.connect (on_progress_changed);
+        flatpak_file.installation_failed.connect (on_install_failed);
+        flatpak_file.installation_succeeded.connect (on_install_succeeded);
+        flatpak_file.details_ready.connect (() => {
+            if (flatpak_file.already_installed) {
                 var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
 
                 stack.add_child (success_view);
                 stack.visible_child = success_view;
             } else {
-                if (file is FlatpakRefFile) {
-                    main_view.display_ref_details (file.size, file.extra_remotes_needed, file.permissions_flags);
+                if (flatpak_file is FlatpakRefFile) {
+                    main_view.display_ref_details (flatpak_file.size, flatpak_file.extra_remotes_needed, flatpak_file.permissions_flags);
                 } else {
-                    main_view.display_bundle_details (file.size, ((FlatpakBundleFile) file).has_remote, file.extra_remotes_needed);
+                    main_view.display_bundle_details (flatpak_file.size, ((FlatpakBundleFile) file).has_remote, flatpak_file.extra_remotes_needed);
                 }
             }
         });
@@ -112,9 +197,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private async void get_details () {
-        yield file.get_details ();
-        app_name = yield file.get_name ();
-        app_id = yield file.get_id ();
+        yield flatpak_file.get_details ();
+        app_name = yield flatpak_file.get_name ();
+        app_id = yield flatpak_file.get_id ();
 
         if (app_name != null) {
             progress_view.app_name = app_name;
@@ -124,10 +209,10 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private void on_install_button_clicked () {
         current_cancellable = new Cancellable ();
-        file.install.begin (current_cancellable);
+        flatpak_file.install.begin (current_cancellable);
         stack.visible_child = progress_view;
 
-        if (file is FlatpakRefFile) {
+        if (flatpak_file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (true);
         }
     }
@@ -158,7 +243,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 break;
         }
 
-        if (file is FlatpakRefFile) {
+        if (flatpak_file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (false);
         }
     }
@@ -169,7 +254,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         stack.add_child (success_view);
         stack.visible_child = success_view;
 
-        if (file is FlatpakRefFile) {
+        if (flatpak_file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (false);
         }
 
