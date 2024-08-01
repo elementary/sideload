@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2023-03-31 19:59+0000\n"
+"PO-Revision-Date: 2024-08-01 22:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/sideload/"
 "ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -213,25 +213,25 @@ msgstr "Instal·la l'aplicació de no confiança"
 #: src/MainWindow.vala:99
 #, c-format
 msgid "Failed to download file from %s"
-msgstr ""
+msgstr "Ha fallat baixar el fitxer de %s"
 
 #: src/MainWindow.vala:106
 #, c-format
 msgid "Failed to download file from %s: %s"
-msgstr ""
+msgstr "Ha fallat baixar el fitxer de %s: %s"
 
 #: src/MainWindow.vala:123
 #, c-format
 msgid "Unable to query content type of provided file: %s"
-msgstr ""
+msgstr "No es pot consultar el tipus de contingut del fitxer proporcionat: %s"
 
 #: src/MainWindow.vala:131 src/MainWindow.vala:140
 msgid "Unable to query content type of provided file"
-msgstr ""
+msgstr "No es pot consultar el tipus de contingut del fitxer proporcionat."
 
 #: src/MainWindow.vala:148
 msgid "This does not appear to be a valid flatpak/flatpakref file"
-msgstr ""
+msgstr "No sembla que sigui un fitxer flatpak / flatpakref vàlid."
 
 #: src/MainWindow.vala:172
 #, c-format
