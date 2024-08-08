@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2023-03-31 19:59+0000\n"
+"PO-Revision-Date: 2024-08-09 19:16+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/sideload/"
 "de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -214,25 +214,26 @@ msgstr "Unbekannte Anwendung installieren"
 #: src/MainWindow.vala:99
 #, c-format
 msgid "Failed to download file from %s"
-msgstr ""
+msgstr "Herunterladen der Datei von %s fehlgeschlagen"
 
 #: src/MainWindow.vala:106
 #, c-format
 msgid "Failed to download file from %s: %s"
-msgstr ""
+msgstr "Herunterladen der Datei von %s fehlgeschlagen: %s"
 
 #: src/MainWindow.vala:123
 #, c-format
 msgid "Unable to query content type of provided file: %s"
-msgstr ""
+msgstr "Ermitteln des inhaltstyps der bereitgestellten Datei nicht möglich: %s"
 
 #: src/MainWindow.vala:131 src/MainWindow.vala:140
 msgid "Unable to query content type of provided file"
-msgstr ""
+msgstr "Ermitteln des inhaltstyps der bereitgestellten Datei nicht möglich"
 
 #: src/MainWindow.vala:148
 msgid "This does not appear to be a valid flatpak/flatpakref file"
 msgstr ""
+"Es scheint sich nicht um eine gültige Flatpak/Flatpakref-Datei zu handeln"
 
 #: src/MainWindow.vala:172
 #, c-format
