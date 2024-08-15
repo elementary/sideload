@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2020-03-29 21:09+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"PO-Revision-Date: 2024-08-15 23:10+0000\n"
+"Last-Translator: Max2020 <alcizmaxpereira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
 msgid "Sideload"
@@ -43,14 +43,16 @@ msgstr "Traduções atualizadas"
 #: data/sideload.metainfo.xml.in:82
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
+"Mostrar se os aplicativos solicitam ou não permissões avançadas do sistema"
 
 #: data/sideload.metainfo.xml.in:95
 msgid "Use updated Flatpak branding"
-msgstr ""
+msgstr "Use a marca Flatpak atualizada"
 
 #: data/sideload.metainfo.xml.in:96
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
+"Notificações de emblemas com o ícone do aplicativo carregado lateralmente"
 
 #: data/sideload.metainfo.xml.in:108
 msgid "Fix blurry app icon in multitasking view"
