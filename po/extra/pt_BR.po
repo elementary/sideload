@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
 "PO-Revision-Date: 2024-08-16 23:16+0000\n"
-"Last-Translator: Max2020 <alcizmaxpereira@gmail.com>\n"
+"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/sideload-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -55,8 +55,7 @@ msgstr "Use a marca Flatpak atualizada"
 
 #: data/sideload.metainfo.xml.in:96
 msgid "Badge notifications with the sideloaded app's icon"
-msgstr ""
-"Notificações de emblemas com o ícone do aplicativo carregado lateralmente"
+msgstr "Notificações badge com o ícone do aplicativo"
 
 #: data/sideload.metainfo.xml.in:108
 msgid "Fix blurry app icon in multitasking view"
