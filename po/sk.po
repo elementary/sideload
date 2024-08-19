@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2022-05-07 15:04+0000\n"
+"PO-Revision-Date: 2024-08-20 11:26+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/sideload/"
 "sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
-msgstr ""
+msgstr "Podrobnosti"
 
 #: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
