@@ -29,7 +29,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     };
 
     public File file { get; construct; }
-    public FlatpakFile flatpak_file { get; construct; }
+
+    public FlatpakFile flatpak_file { get; private set; }
+
     private Cancellable? current_cancellable = null;
 
     private Gtk.Stack stack;
@@ -152,12 +154,18 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             return;
         }
 
-        if (content_type == REF_CONTENT_TYPE) {
-            flatpak_file = new FlatpakRefFile (file);
-        } else if (content_type == BUNDLE_CONTENT_TYPE) {
-            flatpak_file = new FlatpakBundleFile (file);
-        } else if (content_type == FLATPAK_HTTPS_CONTENT_TYPE) {
-            flatpak_file = new FlatpakRefFile (file);
+        switch (content_type) {
+            case REF_CONTENT_TYPE:
+                flatpak_file = new FlatpakRefFile (file);
+                progress_view = new ProgressView (REF_INSTALL);
+                break;
+            case BUNDLE_CONTENT_TYPE:
+                flatpak_file = new FlatpakBundleFile (file);
+                progress_view = new ProgressView (BUNDLE_INSTALL);
+                break;
+            case FLATPAK_HTTPS_CONTENT_TYPE:
+                flatpak_file = new FlatpakRefFile (file);
+                break;
         }
 
         if (flatpak_file.size == "0") {
@@ -165,16 +173,14 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             stack.add_child (error_view);
             stack.visible_child = error_view;
             return;
-        } else if (flatpak_file is FlatpakRefFile) {
-            progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
-        } else {
-            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
+        } else if (flatpak_file is FlatpakBundleFile) {
             progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (flatpak_file.size);
         }
 
         stack.add_child (progress_view);
 
         main_view.install_request.connect (on_install_button_clicked);
+
         flatpak_file.progress_changed.connect (on_progress_changed);
         flatpak_file.installation_failed.connect (on_install_failed);
         flatpak_file.installation_succeeded.connect (on_install_succeeded);
@@ -187,8 +193,8 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             } else {
                 if (flatpak_file is FlatpakRefFile) {
                     main_view.display_ref_details (flatpak_file.size, flatpak_file.extra_remotes_needed, flatpak_file.permissions_flags);
-                } else {
-                    main_view.display_bundle_details (flatpak_file.size, ((FlatpakBundleFile) file).has_remote, flatpak_file.extra_remotes_needed);
+                } else if (flatpak_file is FlatpakBundleFile) {
+                    main_view.display_bundle_details (flatpak_file.size, ((FlatpakBundleFile) flatpak_file).has_remote, flatpak_file.extra_remotes_needed);
                 }
             }
         });
