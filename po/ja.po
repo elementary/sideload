@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2024-08-01 22:16+0000\n"
+"PO-Revision-Date: 2024-09-01 08:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -58,7 +58,7 @@ msgstr "アプリに信頼できる署名が付与されていません。"
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr "アプリケーション名、ランタイム名、リモート名のいずれかが不適切です。"
+msgstr "アプリケーション名、ランタイム名、リモート名のいずれかが無効です。"
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
