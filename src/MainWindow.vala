@@ -156,13 +156,11 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
         switch (content_type) {
             case REF_CONTENT_TYPE:
+            case FLATPAK_HTTPS_CONTENT_TYPE:
                 flatpak_file = new FlatpakRefFile (file);
                 break;
             case BUNDLE_CONTENT_TYPE:
                 flatpak_file = new FlatpakBundleFile (file);
-                break;
-            case FLATPAK_HTTPS_CONTENT_TYPE:
-                flatpak_file = new FlatpakRefFile (file);
                 break;
         }
 
