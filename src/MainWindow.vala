@@ -169,7 +169,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             stack.add_child (error_view);
             stack.visible_child = error_view;
             return;
-        } else if (flatpak_file is FlatpakRefFile) {
+        }
+
+        if (flatpak_file is FlatpakRefFile) {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
         } else {
             progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
