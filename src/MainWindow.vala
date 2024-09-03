@@ -157,11 +157,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         switch (content_type) {
             case REF_CONTENT_TYPE:
                 flatpak_file = new FlatpakRefFile (file);
-                progress_view = new ProgressView (REF_INSTALL);
                 break;
             case BUNDLE_CONTENT_TYPE:
                 flatpak_file = new FlatpakBundleFile (file);
-                progress_view = new ProgressView (BUNDLE_INSTALL);
                 break;
             case FLATPAK_HTTPS_CONTENT_TYPE:
                 flatpak_file = new FlatpakRefFile (file);
@@ -173,7 +171,10 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
             stack.add_child (error_view);
             stack.visible_child = error_view;
             return;
-        } else if (flatpak_file is FlatpakBundleFile) {
+        } else if (flatpak_file is FlatpakRefFile) {
+            progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
+        } else {
+            progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
             progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (flatpak_file.size);
         }
 
