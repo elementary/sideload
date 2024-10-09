@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2024-09-01 08:16+0000\n"
+"PO-Revision-Date: 2024-10-10 12:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
 "sideload/ja/>\n"
@@ -190,7 +190,7 @@ msgstr "システム設定→アプリケーション…"
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr "権限は%sで変更できます。"
+msgstr "権限は%sで変更できます"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
