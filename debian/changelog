@@ -1,3 +1,9 @@
+io.elementary.sideload (6.3.0) jammy; urgency=medium
+
+  * Release 6.3.0 (#174)
+
+ -- elementary, Inc. <builds@elementary.io>  Mon, 18 Nov 2024 20:08:11 +0000
+
 io.elementary.sideload (6.2.2) jammy; urgency=medium
 
   * Release 6.2.2
