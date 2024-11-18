@@ -1,7 +1,7 @@
 project(
     'io.elementary.sideload', 
     'vala', 'c',
-    version: '6.2.2',
+    version: '6.3.0',
     meson_version: '>= 0.59'
 )
 
