@@ -8,33 +8,37 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-03-20 07:55+0000\n"
+"Last-Translator: Carmina16 <mistresssilvara@hotmail.com>\n"
+"Language-Team: Occidental <https://l10n.elementaryos.org/projects/desktop/"
+"sideload/ie/>\n"
 "Language: ie\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
-msgstr ""
+msgstr "Installation ne successat"
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
-msgstr ""
+msgstr "Detallies"
 
 #: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
-msgstr ""
+msgstr "Cluder"
 
 #: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
-msgstr ""
+msgstr "Ti application es ja installat."
 
 #: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
 msgstr ""
+"Un plu nov version de Flatpak es besonat por installar ci-ti application."
 
 #: src/Views/ErrorView.vala:73
 msgid "A required Flatpak remote was not found."
@@ -58,16 +62,16 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
-msgstr ""
+msgstr "Un ínconosset errore evenit."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Trust and install “%s”?"
-msgstr ""
+msgstr "Fider e installar «%s»?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Fider e installar ti-ci application?"
 
 #: src/Views/MainView.vala:40
 msgid ""
@@ -77,11 +81,11 @@ msgstr ""
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
-msgstr ""
+msgstr "Obtenente li detallies"
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
-msgstr ""
+msgstr "Yo comprende"
 
 #: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
@@ -94,25 +98,25 @@ msgstr ""
 
 #: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
-msgstr ""
+msgstr "Anullar"
 
 #: src/Views/MainView.vala:123
 msgid "Install Anyway"
-msgstr ""
+msgstr "Installar sin egarda"
 
 #: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "Li grandor de installation posse extender a %s"
 
 #: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Li grandor de descarga posse extender a %s"
 
 #: src/Views/MainView.vala:157
 msgid "Unknown download size"
-msgstr ""
+msgstr "Ínconosset grandor de descarga"
 
 #: src/Views/MainView.vala:167
 msgid ""
@@ -133,20 +137,20 @@ msgstr ""
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Installante «%s»"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "Preparation…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "«%s» sta installat"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr ""
+msgstr "Ti application sta installat"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
@@ -155,11 +159,11 @@ msgstr ""
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "«%s» es ja installat"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "Ti application es ja installat"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
@@ -183,15 +187,15 @@ msgstr ""
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Mover «%s» al Paper-corb"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "Aperter li application"
 
 #: src/Application.vala:100
 msgid "your software center"
-msgstr ""
+msgstr "vor centre de programmas"
 
 #: src/MainWindow.vala:47
 msgid "Install Untrusted App"
