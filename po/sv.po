@@ -8,24 +8,24 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2024-08-06 23:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Swedish <https://l10n.elementary.io/projects/desktop/sideload/"
-"sv/>\n"
+"PO-Revision-Date: 2025-10-22 09:58+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
+"sideload/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
-msgstr ""
+msgstr "Installationen misslyckades"
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
-msgstr ""
+msgstr "Detaljer"
 
 #: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
@@ -33,67 +33,69 @@ msgstr "Stäng"
 
 #: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
-msgstr ""
+msgstr "Den här appen är redan installerad."
 
 #: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr ""
+msgstr "En nyare version av Flatpak krävs för att installera den här appen."
 
 #: src/Views/ErrorView.vala:73
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "En nödvändig Flatpak-fjärrkontroll hittades inte."
 
 #: src/Views/ErrorView.vala:76
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Ett nödvändigt runtime-beroende kunde inte hittas."
 
 #: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Den medföljande .flatpakref-filen verkar inte vara giltig."
 
 #: src/Views/ErrorView.vala:82
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Appen är inte signerad med en betrodd signatur."
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Namnet på programmet, körtiden eller fjärrkontrollen är ogiltigt."
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
-msgstr ""
+msgstr "Ett okänt fel uppstod."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Trust and install “%s”?"
-msgstr ""
+msgstr "Lita på och installera \"%s\"?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Lita på och installera den här appen?"
 
 #: src/Views/MainView.vala:40
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
 msgstr ""
+"Denna app tillhandahålls enbart av dess utvecklare och har inte granskats av "
+"elementary med avseende på säkerhet, integritet eller systemintegration."
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
-msgstr ""
+msgstr "Hämta detaljer"
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
-msgstr ""
+msgstr "Jag förstår"
 
 #: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr ""
+msgstr "Uppdateringar av denna app kommer inte att granskas av elementary"
 
 #: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Andra appar från denna distributör kan förekomma i %s"
 
 #: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
@@ -101,152 +103,158 @@ msgstr "Avbryt"
 
 #: src/Views/MainView.vala:123
 msgid "Install Anyway"
-msgstr ""
+msgstr "Installera ändå"
 
 #: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "Installationsstorleken kan vara upp till %s"
 
 #: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Nedladdningsstorleken kan vara upp till %s"
 
 #: src/Views/MainView.vala:157
 msgid "Unknown download size"
-msgstr ""
+msgstr "Okänd nedladdningsstorlek"
 
 #: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Begär avancerade behörigheter som kan användas för att kränka din integritet "
+"eller säkerhet"
 
 #: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Begär fil- och mappbehörigheter som kan användas för att kränka din "
+"integritet"
 
 #: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "Kräver inte avancerade systembehörigheter"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Installera \"%s\""
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "Förbereder…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "\"%s\" har installerats"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr ""
+msgstr "Appen har installerats"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Öppna den när som helst från applikationsmenyn."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "\"%s\" är redan installerat"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "Den här appen är redan installerad"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Inga förändringar gjordes."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Besök %s för information om appen, uppdateringar och för att avinstallera "
+"den."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "Systeminställningar → Program…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Behörigheter kan ändras i %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Flytta \"%s\" till papperskorgen"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "Öppna app"
 
 #: src/Application.vala:100
 msgid "your software center"
-msgstr ""
+msgstr "ditt programvarucenter"
 
 #: src/MainWindow.vala:47
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Installera en icke betrodd app"
 
 #: src/MainWindow.vala:99
 #, c-format
 msgid "Failed to download file from %s"
-msgstr ""
+msgstr "Misslyckades med att ladda ner fil från %s"
 
 #: src/MainWindow.vala:106
 #, c-format
 msgid "Failed to download file from %s: %s"
-msgstr ""
+msgstr "Misslyckades med att ladda ner fil från %s: %s"
 
 #: src/MainWindow.vala:123
 #, c-format
 msgid "Unable to query content type of provided file: %s"
-msgstr ""
+msgstr "Det går inte att fråga efter innehållstyp för den angivna filen: %s"
 
 #: src/MainWindow.vala:131 src/MainWindow.vala:140
 msgid "Unable to query content type of provided file"
-msgstr ""
+msgstr "Det går inte att fråga efter innehållstyp för den angivna filen"
 
 #: src/MainWindow.vala:148
 msgid "This does not appear to be a valid flatpak/flatpakref file"
-msgstr ""
+msgstr "Detta verkar inte vara en giltig flatpak/flatpakref-fil"
 
 #: src/MainWindow.vala:172
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Installera %s. Det går inte att uppskatta återstående tid."
 
 #: src/MainWindow.vala:262
 msgid "App installed"
-msgstr ""
+msgstr "App installerad"
 
 #: src/MainWindow.vala:264
 #, c-format
 msgid "Installed “%s”"
-msgstr ""
+msgstr "Installerade \"%s\""
 
 #: src/MainWindow.vala:266
 msgid "The app was installed"
-msgstr ""
+msgstr "Appen installerades"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Hittade ingen lämplig Flatpak-installation."
 
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Fel vid konstruktion av Flatpak-bunt: %s"
