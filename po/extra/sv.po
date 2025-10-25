@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2025-10-22 05:26+0000\n"
+"PO-Revision-Date: 2025-10-26 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "sideload-extra/sv/>\n"
@@ -25,7 +25,7 @@ msgstr "Sidoladdning"
 
 #: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
-msgstr "Installera appar som laddats ner från Internet"
+msgstr "Installera appar som hämtats ner från Internet"
 
 #: data/sideload.metainfo.xml.in:12
 msgid ""
