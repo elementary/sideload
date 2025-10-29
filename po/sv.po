@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2025-10-23 13:55+0000\n"
+"PO-Revision-Date: 2025-10-30 18:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "sideload/sv/>\n"
@@ -41,11 +41,11 @@ msgstr "En nyare version av Flatpak krävs för att installera den här appen."
 
 #: src/Views/ErrorView.vala:73
 msgid "A required Flatpak remote was not found."
-msgstr "En nödvändig Flatpak-fjärrkontroll hittades inte."
+msgstr "En nödvändig Flatpak-fjärrserver hittades inte."
 
 #: src/Views/ErrorView.vala:76
 msgid "A required runtime dependency could not be found."
-msgstr "Ett nödvändigt runtime-beroende kunde inte hittas."
+msgstr "Ett nödvändigt körtidsberoende kunde inte hittas."
 
 #: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
@@ -57,7 +57,7 @@ msgstr "Appen är inte signerad med en betrodd signatur."
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr "Namnet på programmet, körtiden eller fjärrkontrollen är ogiltigt."
+msgstr "Namnet på programmet, körtiden eller fjärrservern är ogiltigt."
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
@@ -82,7 +82,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
-msgstr "Hämta detaljer"
+msgstr "Hämtar detaljer"
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
@@ -142,7 +142,7 @@ msgstr "Kräver inte avancerade systembehörigheter"
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr "Installera \"%s\""
+msgstr "Installerar \"%s\""
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
@@ -206,7 +206,7 @@ msgstr "ditt programvarucenter"
 
 #: src/MainWindow.vala:47
 msgid "Install Untrusted App"
-msgstr "Installera en icke betrodd app"
+msgstr "Installera en icke-betrodd app"
 
 #: src/MainWindow.vala:99
 #, c-format
@@ -234,7 +234,7 @@ msgstr "Detta verkar inte vara en giltig flatpak/flatpakref-fil"
 #: src/MainWindow.vala:172
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr "Installera %s. Det går inte att uppskatta återstående tid."
+msgstr "Installerar %s. Det går inte att uppskatta återstående tid."
 
 #: src/MainWindow.vala:262
 msgid "App installed"
@@ -257,4 +257,4 @@ msgstr "Hittade ingen lämplig Flatpak-installation."
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr "Fel vid konstruktion av Flatpak-bunt: %s"
+msgstr "Fel vid konstruktion av Flatpak-bundle: %s"
