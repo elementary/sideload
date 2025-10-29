@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2025-10-26 09:55+0000\n"
+"PO-Revision-Date: 2025-10-30 18:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "sideload-extra/sv/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr "Sidoladdning"
+msgstr "Sidoladda"
 
 #: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
@@ -33,9 +33,9 @@ msgid ""
 "AppCenter. Sideload shows important information about apps before you "
 "install like their download size."
 msgstr ""
-"Sidoladda Flatpak-appar per användare och lägg automatiskt till deras fjärr "
-"i AppCenter. Sidoladdning visar viktig information om appar innan du "
-"installerar dem, t.ex. nedladdningsstorleken."
+"Sidoladda Flatpak-appar per användare och lägg automatiskt till deras "
+"fjärrservrar i AppCenter. Sidoladdning visar viktig information om appar "
+"innan du installerar dem, t.ex. nedladdningsstorleken."
 
 #: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
 #: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
