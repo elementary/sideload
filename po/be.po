@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2025-08-02 20:55+0000\n"
+"PO-Revision-Date: 2025-12-05 05:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
 "sideload/be/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
-msgstr ""
+msgstr "Не ўдалося ўсталяваць"
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
@@ -34,67 +34,70 @@ msgstr "Закрыць"
 
 #: src/Views/ErrorView.vala:67
 msgid "This app is already installed."
-msgstr ""
+msgstr "Гэта праграма ўжо ўсталяваная."
 
 #: src/Views/ErrorView.vala:70
 msgid "A newer version of Flatpak is needed to install this app."
-msgstr ""
+msgstr "Для ўсталявання гэтай праграмы патрабуецца больш новая версія Flatpak."
 
 #: src/Views/ErrorView.vala:73
+#, fuzzy
 msgid "A required Flatpak remote was not found."
-msgstr ""
+msgstr "Патрэбны рэпазіторый Flatpak не знойдзены."
 
 #: src/Views/ErrorView.vala:76
 msgid "A required runtime dependency could not be found."
-msgstr ""
+msgstr "Не ўдалося знайсці патрэбнае асяроддзе выканання."
 
 #: src/Views/ErrorView.vala:79
 msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr ""
+msgstr "Дадзены файл .flatpakref, здаецца, памылковы."
 
 #: src/Views/ErrorView.vala:82
 msgid "The app is not signed with a trusted signature."
-msgstr ""
+msgstr "Праграма не падпісана давераным подпісам."
 
 #: src/Views/ErrorView.vala:85
 msgid "The application, runtime, or remote name is invalid."
-msgstr ""
+msgstr "Назва праграмы, асяроддзя выканання або рэпазіторыя памылковая."
 
 #: src/Views/ErrorView.vala:89
 msgid "An unknown error occurred."
-msgstr ""
+msgstr "Паўстала невядомая памылка."
 
 #: src/Views/MainView.vala:23
 #, c-format
 msgid "Trust and install “%s”?"
-msgstr ""
+msgstr "Даверыцца і ўсталяваць «%s»?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Даверыцца і ўсталяваць гэту праграму?"
 
 #: src/Views/MainView.vala:40
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
 msgstr ""
+"Гэта праграма дадзена толькі яе распрацоўшчыкам і не правяралася elementary "
+"на бяспеку, прыватнасць або інтэграцыю з сістэмай."
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
-msgstr ""
+msgstr "Атрыманне падрабязнасцей"
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
-msgstr ""
+msgstr "Я разумею"
 
 #: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr ""
+msgstr "Абнаўленні гэтай праграмы не будуць правярацца elementary"
 
 #: src/Views/MainView.vala:86
 #, c-format
 msgid "Other apps from this distributor may appear in %s"
-msgstr ""
+msgstr "Іншыя праграмы распрацоўшчыка могуць з'явіцца ў %s"
 
 #: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
 msgid "Cancel"
@@ -102,152 +105,157 @@ msgstr "Скасаваць"
 
 #: src/Views/MainView.vala:123
 msgid "Install Anyway"
-msgstr ""
+msgstr "Усё роўна ўсталяваць"
 
 #: src/Views/MainView.vala:138
 #, c-format
 msgid "Install size may be up to %s"
-msgstr ""
+msgstr "Памер усталявання можа быць да %s"
 
 #: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
-msgstr ""
+msgstr "Памер спампоўвання можа быць да %s"
 
 #: src/Views/MainView.vala:157
 msgid "Unknown download size"
-msgstr ""
+msgstr "Невядомы памер спампоўвання"
 
 #: src/Views/MainView.vala:167
 msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Запытвае пашыраныя дазволы, гэта можа быць выкарыстана для парушэння вашай "
+"прыватнасці або бяспекі"
 
 #: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
 msgstr ""
+"Запытвае дазвол на доступ да файлаў і папак, гэта можа быць выкарыстана для "
+"парушэння вашай прыватнасці"
 
 #: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "Не запытвае пашыраных сістэмных дазволаў"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Усталяванне «%s»"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "Падрыхтоўка…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
 msgid "“%s” has been installed"
-msgstr ""
+msgstr "«%s» было усталявана"
 
 #: src/Views/SuccessView.vala:46
 msgid "The app has been installed"
-msgstr ""
+msgstr "Праграма была ўсталявана"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Адкрыйце яго ў любы час з меню праграм."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr ""
+msgstr "«%s» ужо ўсталявана"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
-msgstr ""
+msgstr "Гэтая праграма ўжо ўсталяваная"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Змен не адбылося."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
+msgstr "Наведайце %s для інфармацыі аб праграме, абнаўленняў і выдалення."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "Налады сістэмы → Праграмы…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Дазволы можна змяніць у %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Перамясціць «%s» у сметніцу"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
-msgstr ""
+msgstr "Адкрыць праграму"
 
 #: src/Application.vala:100
 msgid "your software center"
-msgstr ""
+msgstr "ваш цэнтр праграм"
 
 #: src/MainWindow.vala:47
 msgid "Install Untrusted App"
-msgstr ""
+msgstr "Усталяваць недавераную праграму"
 
 #: src/MainWindow.vala:99
 #, c-format
 msgid "Failed to download file from %s"
-msgstr ""
+msgstr "Не ўдалося спампаваць файл з %s"
 
 #: src/MainWindow.vala:106
 #, c-format
 msgid "Failed to download file from %s: %s"
-msgstr ""
+msgstr "Не ўдалося спампаваць файл з %s: %s"
 
 #: src/MainWindow.vala:123
 #, c-format
 msgid "Unable to query content type of provided file: %s"
-msgstr ""
+msgstr "Не ўдалося запытаць тып зместу дадзенага файла: %s"
 
 #: src/MainWindow.vala:131 src/MainWindow.vala:140
 msgid "Unable to query content type of provided file"
-msgstr ""
+msgstr "Не ўдалося запытаць тып зместу дадзенага файла"
 
 #: src/MainWindow.vala:148
 msgid "This does not appear to be a valid flatpak/flatpakref file"
-msgstr ""
+msgstr "Здаецца, гэта памылковы файл flatpak/flatpakref"
 
 #: src/MainWindow.vala:172
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Усталяванне %s. Немагчыма вызначыць пазасталы час."
 
 #: src/MainWindow.vala:262
 msgid "App installed"
-msgstr ""
+msgstr "Праграма ўсталявана"
 
 #: src/MainWindow.vala:264
 #, c-format
 msgid "Installed “%s”"
-msgstr ""
+msgstr "«%s» усталявана"
 
 #: src/MainWindow.vala:266
 msgid "The app was installed"
-msgstr ""
+msgstr "Праграма была ўсталяваная"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
+#, fuzzy
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Не знойдзена прыгоднай усталёўкі Flatpak."
 
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Памылка пры стварэнні пакета Flatpak: %s"
