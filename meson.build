@@ -40,7 +40,7 @@ executable(
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),
         dependency ('gobject-2.0'),
-        dependency ('granite-7'),
+        dependency ('granite-7', version: '>=7.7.0'),
         dependency ('gtk4'),
         dependency ('libxml-2.0'),
     ],

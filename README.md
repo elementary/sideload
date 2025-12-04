@@ -9,7 +9,7 @@ Flatpak Installer
 
 You'll need the following dependencies:
 * libflatpak-dev
-* libgranite-7-dev
+* libgranite-7-dev (>= 7.7.0)
 * libgtk-4-dev
 * libxml2-dev
 * meson

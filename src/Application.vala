@@ -70,15 +70,6 @@ public class Sideload.Application : Gtk.Application {
         base.startup ();
         Granite.init ();
 
-        var granite_settings = Granite.Settings.get_default ();
-        var gtk_settings = Gtk.Settings.get_default ();
-
-        gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == DARK;
-        });
-
         var quit_action = new SimpleAction ("quit", null);
 
         add_action (quit_action);
