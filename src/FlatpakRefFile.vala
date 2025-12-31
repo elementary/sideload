@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.FlatpakRefFile : FlatpakFile {
+public class Sideload.FlatpakRefFile : PackageFlatpakFile {
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
 
@@ -307,8 +307,9 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
 
     private struct FilesystemsAccess {
         public string key;
-        public FlatpakFile.PermissionsFlags permission;
+        public PackageFlatpakFile.PermissionsFlags permission;
     }
+
 
     // Based on: https://github.com/GNOME/gnome-software/blob/fdb8568693d9d62f0480e558775f70cd83f6cf4f/plugins/flatpak/gs-flatpak.c#L238
     private void set_permissionflags_from_metadata (KeyFile keyfile) {
@@ -317,43 +318,43 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
                 var sockets_context = keyfile.get_string_list ("Context", "sockets");
                 if (sockets_context != null) {
                     if ("system-bus" in sockets_context) {
-                        permissions_flags |= FlatpakFile.PermissionsFlags.SYSTEM_BUS;
+                        permissions_flags |= PackageFlatpakFile.PermissionsFlags.SYSTEM_BUS;
                     }
                     if ("session-bus" in sockets_context) {
-                        permissions_flags |= FlatpakFile.PermissionsFlags.SESSION_BUS;
+                        permissions_flags |= PackageFlatpakFile.PermissionsFlags.SESSION_BUS;
                     }
                     if (!("fallback-x11" in sockets_context) && "x11" in sockets_context) {
-                        permissions_flags |= FlatpakFile.PermissionsFlags.X11;
+                        permissions_flags |= PackageFlatpakFile.PermissionsFlags.X11;
                     }
                 }
 
                 var devices_context = keyfile.get_string_list ("Context", "devices");
                 if (devices_context != null && "all" in devices_context) {
-                    permissions_flags |= FlatpakFile.PermissionsFlags.DEVICES;
+                    permissions_flags |= PackageFlatpakFile.PermissionsFlags.DEVICES;
                 }
 
                 var shared_context = keyfile.get_string_list ("Context", "shared");
                 if (shared_context != null && "network" in shared_context) {
-                    permissions_flags |= FlatpakFile.PermissionsFlags.NETWORK;
+                    permissions_flags |= PackageFlatpakFile.PermissionsFlags.NETWORK;
                 }
 
                 var filesystems_context = keyfile.get_string_list ("Context", "filesystems");
                 if (filesystems_context != null) {
                     FilesystemsAccess filesystems_access[] = {
                         /* Reference: https://docs.flatpak.org/en/latest/flatpak-command-reference.html#idm45858571325264 */
-                        { "home", FlatpakFile.PermissionsFlags.HOME_FULL },
-                        { "home:rw", FlatpakFile.PermissionsFlags.HOME_FULL },
-                        { "home:ro", FlatpakFile.PermissionsFlags.HOME_READ },
-                        { "~", FlatpakFile.PermissionsFlags.HOME_FULL },
-                        { "~:rw", FlatpakFile.PermissionsFlags.HOME_FULL },
-                        { "~:ro", FlatpakFile.PermissionsFlags.HOME_READ },
-                        { "host", FlatpakFile.PermissionsFlags.FILESYSTEM_FULL },
-                        { "host:rw", FlatpakFile.PermissionsFlags.FILESYSTEM_FULL },
-                        { "host:ro", FlatpakFile.PermissionsFlags.FILESYSTEM_READ },
-                        { "xdg-download", FlatpakFile.PermissionsFlags.DOWNLOADS_FULL },
-                        { "xdg-download:rw", FlatpakFile.PermissionsFlags.DOWNLOADS_FULL },
-                        { "xdg-download:ro", FlatpakFile.PermissionsFlags.DOWNLOADS_READ },
-                        { "xdg-data/flatpak/overrides:create", FlatpakFile.PermissionsFlags.ESCAPE_SANDBOX }
+                        { "home", PackageFlatpakFile.PermissionsFlags.HOME_FULL },
+                        { "home:rw", PackageFlatpakFile.PermissionsFlags.HOME_FULL },
+                        { "home:ro", PackageFlatpakFile.PermissionsFlags.HOME_READ },
+                        { "~", PackageFlatpakFile.PermissionsFlags.HOME_FULL },
+                        { "~:rw", PackageFlatpakFile.PermissionsFlags.HOME_FULL },
+                        { "~:ro", PackageFlatpakFile.PermissionsFlags.HOME_READ },
+                        { "host", PackageFlatpakFile.PermissionsFlags.FILESYSTEM_FULL },
+                        { "host:rw", PackageFlatpakFile.PermissionsFlags.FILESYSTEM_FULL },
+                        { "host:ro", PackageFlatpakFile.PermissionsFlags.FILESYSTEM_READ },
+                        { "xdg-download", PackageFlatpakFile.PermissionsFlags.DOWNLOADS_FULL },
+                        { "xdg-download:rw", PackageFlatpakFile.PermissionsFlags.DOWNLOADS_FULL },
+                        { "xdg-download:ro", PackageFlatpakFile.PermissionsFlags.DOWNLOADS_READ },
+                        { "xdg-data/flatpak/overrides:create", PackageFlatpakFile.PermissionsFlags.ESCAPE_SANDBOX }
                     };
 
                     var filesystems_hits = 0;
@@ -365,19 +366,19 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
                     }
 
                     if (filesystems_context.length > filesystems_hits) {
-                        permissions_flags |= FlatpakFile.PermissionsFlags.FILESYSTEM_OTHER;
+                        permissions_flags |= PackageFlatpakFile.PermissionsFlags.FILESYSTEM_OTHER;
                     }
 
-                    if ((permissions_flags & FlatpakFile.PermissionsFlags.HOME_FULL) != 0) {
-                        permissions_flags = permissions_flags & ~FlatpakFile.PermissionsFlags.HOME_READ;
+                    if ((permissions_flags & PackageFlatpakFile.PermissionsFlags.HOME_FULL) != 0) {
+                        permissions_flags = permissions_flags & ~PackageFlatpakFile.PermissionsFlags.HOME_READ;
                     }
 
-                    if ((permissions_flags & FlatpakFile.PermissionsFlags.FILESYSTEM_FULL) != 0) {
-                        permissions_flags = permissions_flags & ~FlatpakFile.PermissionsFlags.FILESYSTEM_READ;
+                    if ((permissions_flags & PackageFlatpakFile.PermissionsFlags.FILESYSTEM_FULL) != 0) {
+                        permissions_flags = permissions_flags & ~PackageFlatpakFile.PermissionsFlags.FILESYSTEM_READ;
                     }
 
-                    if ((permissions_flags & FlatpakFile.PermissionsFlags.DOWNLOADS_FULL) != 0) {
-                        permissions_flags = permissions_flags & ~FlatpakFile.PermissionsFlags.DOWNLOADS_READ;
+                    if ((permissions_flags & PackageFlatpakFile.PermissionsFlags.DOWNLOADS_FULL) != 0) {
+                        permissions_flags = permissions_flags & ~PackageFlatpakFile.PermissionsFlags.DOWNLOADS_READ;
                     }
                 }
             }
@@ -385,16 +386,16 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
             if (keyfile.has_group ("Session Bus Policy")) {
                 var dconf_policy = keyfile.get_string ("Session Bus Policy", "ca.desrt.dconf");
                 if (dconf_policy != null && dconf_policy == "talk") {
-                    permissions_flags |= FlatpakFile.PermissionsFlags.SETTINGS;
+                    permissions_flags |= PackageFlatpakFile.PermissionsFlags.SETTINGS;
                 }
 
                 var flatpak_policy = keyfile.get_string ("Session Bus Policy", "org.freedesktop.Flatpak");
                 if (flatpak_policy != null && flatpak_policy == "talk") {
-                    permissions_flags |= FlatpakFile.PermissionsFlags.ESCAPE_SANDBOX;
+                    permissions_flags |= PackageFlatpakFile.PermissionsFlags.ESCAPE_SANDBOX;
                 } else {
                     var portal_policy = keyfile.get_string ("Session Bus Policy", "org.freedesktop.impl.portal.PermissionStore");
                     if (portal_policy != null && portal_policy == "talk") {
-                        permissions_flags |= FlatpakFile.PermissionsFlags.ESCAPE_SANDBOX;
+                        permissions_flags |= PackageFlatpakFile.PermissionsFlags.ESCAPE_SANDBOX;
                     }
                 }
             }
@@ -403,8 +404,8 @@ public class Sideload.FlatpakRefFile : FlatpakFile {
         }
 
         // We didn't find anything, so call it NONE
-        if (permissions_flags == FlatpakFile.PermissionsFlags.UNKNOWN) {
-            permissions_flags = FlatpakFile.PermissionsFlags.NONE;
+        if (permissions_flags == PackageFlatpakFile.PermissionsFlags.UNKNOWN) {
+            permissions_flags = PackageFlatpakFile.PermissionsFlags.NONE;
         }
     }
 }

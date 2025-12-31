@@ -36,7 +36,7 @@ public class Sideload.SuccessView : AbstractView {
 
         var app = (Sideload.Application) GLib.Application.get_default ();
         var appstore_name = app.get_appstore_name ();
-        var file = ((Sideload.MainWindow) app.active_window).flatpak_file;
+        var file = ((Sideload.MainWindow) app.active_window).package_file;
         string? secondary_label_string;
 
         if (view_type == SuccessType.INSTALLED) {
@@ -107,7 +107,7 @@ public class Sideload.SuccessView : AbstractView {
         });
     }
 
-    private void trash_file (FlatpakFile file) {
+    private void trash_file (PackageFile file) {
         file.file.trash_async.begin (GLib.Priority.DEFAULT, null, (obj, res) => {
             try {
                 file.file.trash_async.end (res);

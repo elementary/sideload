@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.FlatpakBundleFile : FlatpakFile {
+public class Sideload.FlatpakBundleFile : PackageFlatpakFile {
     public bool has_remote { get; private set; default = false; }
 
     private Flatpak.BundleRef bundle = null;

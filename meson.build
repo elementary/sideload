@@ -12,6 +12,7 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 
 vapi_dir = join_paths(meson.current_source_dir(), 'vapi')
 add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
+add_project_arguments(['--pkg', 'posix'], language: 'vala')
 
 config_data = configuration_data()
 config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
@@ -33,9 +34,11 @@ executable(
     'src/Views/SuccessView.vala',
     'src/Application.vala',
     'src/MainWindow.vala',
-    'src/FlatpakFile.vala',
+    'src/PackageFile.vala',
+    'src/PackageFlatpakFile.vala',
     'src/FlatpakRefFile.vala',
     'src/FlatpakBundleFile.vala',
+    'src/DebFile.vala',
     dependencies: [
         dependency ('flatpak', version: '>=1.1.2'),
         dependency ('glib-2.0'),
@@ -43,6 +46,7 @@ executable(
         dependency ('granite-7', version: '>=7.7.0'),
         dependency ('gtk4'),
         dependency ('libxml-2.0'),
+        dependency ('gee-0.8'),
     ],
     install : true
 )

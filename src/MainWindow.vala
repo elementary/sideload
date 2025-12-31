@@ -22,15 +22,17 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     private const string BUNDLE_CONTENT_TYPE = "application/vnd.flatpak";
     private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
     private const string FLATPAK_HTTPS_CONTENT_TYPE = "x-scheme-handler/flatpak+https";
+    private const string DEB_CONTENT_TYPE = "application/vnd.debian.binary-package";
     private const string[] SUPPORTED_CONTENT_TYPES = {
         BUNDLE_CONTENT_TYPE,
         REF_CONTENT_TYPE,
-        FLATPAK_HTTPS_CONTENT_TYPE
+        FLATPAK_HTTPS_CONTENT_TYPE,
+        DEB_CONTENT_TYPE
     };
 
     public File file { get; construct; }
 
-    public FlatpakFile flatpak_file { get; private set; }
+    public PackageFile? package_file { get; private set; }
 
     private Cancellable? current_cancellable = null;
 
@@ -147,7 +149,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         }
 
         if (!(content_type in SUPPORTED_CONTENT_TYPES)) {
-            var message = _("This does not appear to be a valid flatpak/flatpakref file");
+            var message = _("This does not appear to be a valid flatpak/flatpakref/deb file");
             var error_view = new ErrorView (-1, message);
             stack.add_child (error_view);
             stack.visible_child = error_view;
@@ -157,45 +159,54 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
         switch (content_type) {
             case REF_CONTENT_TYPE:
             case FLATPAK_HTTPS_CONTENT_TYPE:
-                flatpak_file = new FlatpakRefFile (file);
+                package_file = new FlatpakRefFile (file);
                 break;
             case BUNDLE_CONTENT_TYPE:
-                flatpak_file = new FlatpakBundleFile (file);
+                package_file = new FlatpakBundleFile (file);
+                break;
+            case DEB_CONTENT_TYPE:
+                package_file = new DebFile (file);
                 break;
         }
 
-        if (flatpak_file.size == "0") {
-            var error_view = new ErrorView (flatpak_file.error_code, flatpak_file.error_message);
+        if (package_file.size == null || package_file.size == "0") {
+            var error_view = new ErrorView (package_file.error_code, package_file.error_message);
             stack.add_child (error_view);
             stack.visible_child = error_view;
             return;
         }
 
-        if (flatpak_file is FlatpakRefFile) {
+        if (package_file is FlatpakRefFile) {
             progress_view = new ProgressView (ProgressView.ProgressType.REF_INSTALL);
+        } else if (package_file is DebFile) {
+            progress_view = new ProgressView (ProgressView.ProgressType.DEB_INSTALL);  // USE NEW TYPE
         } else {
             progress_view = new ProgressView (ProgressView.ProgressType.BUNDLE_INSTALL);
-            progress_view.status = (_("Installing %s. Unable to estimate time remaining.")).printf (flatpak_file.size);
+            progress_view.status = (_("Installing %s").printf (package_file.size));
         }
 
         stack.add_child (progress_view);
 
         main_view.install_request.connect (on_install_button_clicked);
 
-        flatpak_file.progress_changed.connect (on_progress_changed);
-        flatpak_file.installation_failed.connect (on_install_failed);
-        flatpak_file.installation_succeeded.connect (on_install_succeeded);
-        flatpak_file.details_ready.connect (() => {
-            if (flatpak_file.already_installed) {
+        package_file.progress_changed.connect (on_progress_changed);
+        package_file.installation_failed.connect (on_install_failed);
+        package_file.installation_succeeded.connect (on_install_succeeded);
+        package_file.details_ready.connect (() => {
+            if (package_file.already_installed) {
                 var success_view = new SuccessView (app_name, SuccessView.SuccessType.ALREADY_INSTALLED);
-
                 stack.add_child (success_view);
                 stack.visible_child = success_view;
             } else {
-                if (flatpak_file is FlatpakRefFile) {
-                    main_view.display_ref_details (flatpak_file.size, flatpak_file.extra_remotes_needed, flatpak_file.permissions_flags);
-                } else if (flatpak_file is FlatpakBundleFile) {
-                    main_view.display_bundle_details (flatpak_file.size, ((FlatpakBundleFile) flatpak_file).has_remote, flatpak_file.extra_remotes_needed);
+                // Display appropriate details based on type
+                if (package_file is FlatpakRefFile) {
+                    var flatpak = (PackageFlatpakFile) package_file;
+                    main_view.display_ref_details (flatpak.size, flatpak.extra_remotes_needed, flatpak.permissions_flags);
+                } else if (package_file is FlatpakBundleFile) {
+                    var flatpak = (FlatpakBundleFile) package_file;
+                    main_view.display_bundle_details (flatpak.size, flatpak.has_remote, flatpak.extra_remotes_needed);
+                } else if (package_file is DebFile) {
+                    main_view.display_deb_details (package_file.size);
                 }
             }
         });
@@ -204,9 +215,9 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     private async void get_details () {
-        yield flatpak_file.get_details ();
-        app_name = yield flatpak_file.get_name ();
-        app_id = yield flatpak_file.get_id ();
+        app_name = yield package_file.get_name ();
+        app_id = yield package_file.get_id ();
+        yield package_file.get_details ();
 
         if (app_name != null) {
             progress_view.app_name = app_name;
@@ -216,10 +227,10 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
 
     private void on_install_button_clicked () {
         current_cancellable = new Cancellable ();
-        flatpak_file.install.begin (current_cancellable);
+        package_file.install.begin (current_cancellable);
         stack.visible_child = progress_view;
 
-        if (flatpak_file is FlatpakRefFile) {
+        if (package_file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (true);
         }
     }
@@ -250,18 +261,17 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
                 break;
         }
 
-        if (flatpak_file is FlatpakRefFile) {
+        if (package_file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (false);
         }
     }
 
     private void on_install_succeeded () {
         var success_view = new SuccessView (app_name);
-
         stack.add_child (success_view);
         stack.visible_child = success_view;
 
-        if (flatpak_file is FlatpakRefFile) {
+        if (package_file is FlatpakRefFile) {
             Granite.Services.Application.set_progress_visible.begin (false);
         }
 

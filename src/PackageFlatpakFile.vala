@@ -18,9 +18,7 @@
 *
 */
 
-public abstract class Sideload.FlatpakFile : Object {
-    public File file { get; construct; }
-
+public abstract class Sideload.PackageFlatpakFile : PackageFile {
     [Flags]
     public enum PermissionsFlags {
         DEVICES,
@@ -42,19 +40,9 @@ public abstract class Sideload.FlatpakFile : Object {
     }
 
     public PermissionsFlags permissions_flags { get; set; default = PermissionsFlags.UNKNOWN; }
-    public string? size { get; protected set; default = null; }
-    public bool already_installed { get; protected set; default = false; }
     public bool extra_remotes_needed { get; protected set; default = false; }
 
     protected string? appdata_name = null;
-    public int error_code = -1;
-    public string error_message = "";
-
-    public signal void progress_changed (string description, double progress);
-    public signal void installation_failed (int error_code, string? message);
-    public signal void installation_succeeded ();
-    public signal void details_ready ();
-
     protected static Flatpak.Installation? installation;
 
     static construct {
@@ -64,16 +52,6 @@ public abstract class Sideload.FlatpakFile : Object {
             warning (e.message);
         }
     }
-
-    public abstract async string? get_id ();
-
-    public abstract async string? get_name ();
-
-    public abstract async void get_details (Cancellable? cancellable = null);
-
-    public abstract async void install (Cancellable cancellable) throws Error;
-
-    public abstract async void launch ();
 
     protected bool parse_xml (GLib.File appstream_file, string id) {
         var path = appstream_file.get_path ();

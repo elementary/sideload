@@ -36,3 +36,14 @@ install_data(
     install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas'),
     rename: meson.project_name() + '.gschema.xml'
 )
+
+install_data(
+    'deb_helper.sh',
+    install_dir: get_option('prefix') / 'lib' / 'io.elementary.sideload',
+    install_mode: 'rwxr-xr-x'
+)
+
+install_data(
+    'io.elementary.sideload.policy',
+    install_dir: get_option('datadir') / 'polkit-1' / 'actions'
+)

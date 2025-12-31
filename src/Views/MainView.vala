@@ -150,7 +150,7 @@ public class Sideload.MainView : AbstractView {
         details_stack.visible_child_name = "details";
     }
 
-    public void display_ref_details (string? size, bool extra_repo, FlatpakFile.PermissionsFlags permissions_flags) {
+    public void display_ref_details (string? size, bool extra_repo, PackageFlatpakFile.PermissionsFlags permissions_flags) {
         if (size != null) {
             download_size_label.label = _("Download size may be up to %s").printf (size);
         } else {
@@ -158,20 +158,20 @@ public class Sideload.MainView : AbstractView {
         }
 
         if (
-            FlatpakFile.PermissionsFlags.ESCAPE_SANDBOX in permissions_flags ||
-            FlatpakFile.PermissionsFlags.FILESYSTEM_FULL in permissions_flags ||
-            FlatpakFile.PermissionsFlags.SYSTEM_BUS in permissions_flags
+            PackageFlatpakFile.PermissionsFlags.ESCAPE_SANDBOX in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.FILESYSTEM_FULL in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.SYSTEM_BUS in permissions_flags
         ) {
             permissions_image.icon_name = "security-low-symbolic";
             permissions_image.add_css_class ("red");
             permissions_label.label = _("Requests advanced permissions that could be used to violate your privacy or security");
         } else if (
-            FlatpakFile.PermissionsFlags.DOWNLOADS_FULL in permissions_flags ||
-            FlatpakFile.PermissionsFlags.DOWNLOADS_READ in permissions_flags ||
-            FlatpakFile.PermissionsFlags.FILESYSTEM_OTHER in permissions_flags ||
-            FlatpakFile.PermissionsFlags.FILESYSTEM_READ in permissions_flags ||
-            FlatpakFile.PermissionsFlags.HOME_FULL in permissions_flags ||
-            FlatpakFile.PermissionsFlags.HOME_READ in permissions_flags
+            PackageFlatpakFile.PermissionsFlags.DOWNLOADS_FULL in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.DOWNLOADS_READ in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.FILESYSTEM_OTHER in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.FILESYSTEM_READ in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.HOME_FULL in permissions_flags ||
+            PackageFlatpakFile.PermissionsFlags.HOME_READ in permissions_flags
         ) {
             permissions_image.icon_name = "security-low-symbolic";
             permissions_image.add_css_class ("yellow");
@@ -191,6 +191,15 @@ public class Sideload.MainView : AbstractView {
             details_grid.attach (repo_icon, 0, 3);
             details_grid.attach (repo_label, 1, 3);
         }
+        details_stack.visible_child_name = "details";
+    }
+
+    public void display_deb_details (string size) {
+        download_size_label.label = _("Install size: %s").printf (size);
+
+        details_grid.attach (updates_icon, 0, 1);
+        details_grid.attach (updates_label, 1, 1);
+
         details_stack.visible_child_name = "details";
     }
 }

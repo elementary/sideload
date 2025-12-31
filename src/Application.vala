@@ -57,8 +57,8 @@ public class Sideload.Application : Gtk.Application {
         add_action (launch_action);
 
         launch_action.activate.connect (() => {
-            main_window.flatpak_file.launch.begin ((obj, res) => {
-                main_window.flatpak_file.launch.end (res);
+            main_window.package_file.launch.begin ((obj, res) => {
+                main_window.package_file.launch.end (res);
                 main_window.close ();
             });
         });
@@ -94,7 +94,7 @@ public class Sideload.Application : Gtk.Application {
 
     public static int main (string[] args) {
         if (args.length < 2) {
-            print ("Usage: %s /path/to/flatpakref or /path/to/flatpak\n", args[0]);
+            print ("Usage: %s /path/to/package\n", args[0]);
             return 1;
         }
 
