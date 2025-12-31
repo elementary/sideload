@@ -1,7 +1,7 @@
 # Sideload
 [![Translation status](https://l10n.elementary.io/widgets/desktop/-/sideload/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
 
-Flatpak Installer
+Installer for applications that aren't in repositories or the app market.
 
 ![screenshot](data/screenshot.png?raw=true)
 
