@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2020-04-05 13:09+0000\n"
+"PO-Revision-Date: 2026-01-19 16:55+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
+"Language-Team: Slovenian <https://l10n.elementaryos.org/projects/desktop/"
 "sideload/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -61,26 +61,19 @@ msgid "The application, runtime, or remote name is invalid."
 msgstr "Aplikacija, izvajalno okolje ali strežniško ime ni pravilno."
 
 #: src/Views/ErrorView.vala:89
-#, fuzzy
-#| msgid "An unknown error occured."
 msgid "An unknown error occurred."
 msgstr "Pojavila se je neznana napaka."
 
 #: src/Views/MainView.vala:23
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Trust and install “%s”?"
-msgstr "Nameščanje \"%s\""
+msgstr "Zaupaj in namesti “%s”?"
 
 #: src/Views/MainView.vala:38
 msgid "Trust and install this app?"
-msgstr ""
+msgstr "Zaupaj in namesti to aplikacijo?"
 
 #: src/Views/MainView.vala:40
-#, fuzzy
-#| msgid ""
-#| "This app is provided solely by its developer and has not been reviewed "
-#| "for security, privacy, or system integration."
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
@@ -97,10 +90,8 @@ msgid "I understand"
 msgstr "Razumem"
 
 #: src/Views/MainView.vala:72
-#, fuzzy
-#| msgid "Updates to this app will not be reviewed"
 msgid "Updates to this app will not be reviewed by elementary"
-msgstr "Posodobitve za to aplikacijo ne bodo pregledane"
+msgstr "Posodobitve za to aplikacijo ne bodo pregledane s strani elementary"
 
 #: src/Views/MainView.vala:86
 #, c-format
@@ -116,15 +107,14 @@ msgid "Install Anyway"
 msgstr "Vseeno namesti"
 
 #: src/Views/MainView.vala:138
-#, fuzzy, c-format
-#| msgid "Download size may be up to %s"
+#, c-format
 msgid "Install size may be up to %s"
-msgstr "Velikost prenosa je lahko do %s"
+msgstr "Velikost namestitve je lahko do %s"
 
 #: src/Views/MainView.vala:155
 #, c-format
 msgid "Download size may be up to %s"
-msgstr "Velikost prenosa je lahko do %s"
+msgstr "Velikost prenosa z interneta je lahko do %s"
 
 #: src/Views/MainView.vala:157
 msgid "Unknown download size"
@@ -135,16 +125,17 @@ msgid ""
 "Requests advanced permissions that could be used to violate your privacy or "
 "security"
 msgstr ""
+"Zahteva napredna dovoljenja, ki bi lahko kršila vašo zasebnost ali varnost"
 
 #: src/Views/MainView.vala:178
 msgid ""
 "Requests file and folder permissions that could be used to violate your "
 "privacy"
-msgstr ""
+msgstr "Zahteva dostop do datotek in map in bi lahko kršila vašo zasebnost"
 
 #: src/Views/MainView.vala:182
 msgid "Doesn't request advanced system permissions"
-msgstr ""
+msgstr "Ne zahteva naprednih dovoljenj"
 
 #: src/Views/ProgressView.vala:31
 #, c-format
@@ -156,25 +147,22 @@ msgid "Preparing…"
 msgstr "Pripravljanje…"
 
 #: src/Views/SuccessView.vala:44
-#, fuzzy, c-format
-#| msgid "“%s” is already installed"
+#, c-format
 msgid "“%s” has been installed"
-msgstr "“%s” je že nameščeno"
+msgstr "“%s” je bila nameščena"
 
 #: src/Views/SuccessView.vala:46
-#, fuzzy
-#| msgid "The app was installed successfully"
 msgid "The app has been installed"
 msgstr "Aplikacija je bila uspešno nameščena"
 
 #: src/Views/SuccessView.vala:49
 msgid "Open it any time from the Applications Menu."
-msgstr ""
+msgstr "Odprite jo kadarkoli z aplikacijskega menija."
 
 #: src/Views/SuccessView.vala:53
 #, c-format
 msgid "“%s” is already installed"
-msgstr "“%s” je že nameščeno"
+msgstr "“%s” je že nameščena"
 
 #: src/Views/SuccessView.vala:55
 msgid "This app is already installed"
@@ -182,27 +170,28 @@ msgstr "Ta aplikacija je že nameščena"
 
 #: src/Views/SuccessView.vala:58
 msgid "No changes were made."
-msgstr ""
+msgstr "Narejenih ni bilo nobenih sprememb."
 
 #: src/Views/SuccessView.vala:63
 #, c-format
 msgid "Visit %s for app information, updates, and to uninstall."
 msgstr ""
+"Obiščite %s za informacije o aplikaciji, posodobitvah ali za odnamestitev."
 
 #. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
 #: src/Views/SuccessView.vala:69
 msgid "System Settings → Applications…"
-msgstr ""
+msgstr "Sistemske nastavitve → Aplikacije…"
 
 #: src/Views/SuccessView.vala:73
 #, c-format
 msgid "Permissions can be changed in %s"
-msgstr ""
+msgstr "Dovoljenja lahko spremenite v %s"
 
 #: src/Views/SuccessView.vala:77
 #, c-format
 msgid "Move ”%s” to Trash"
-msgstr ""
+msgstr "Premakni”%s” v smeti"
 
 #: src/Views/SuccessView.vala:85
 msgid "Open App"
@@ -219,56 +208,53 @@ msgstr "Namesti nezaupljivo aplikacijo"
 #: src/MainWindow.vala:99
 #, c-format
 msgid "Failed to download file from %s"
-msgstr ""
+msgstr "Ni bilo mogoče prenesti datoteke z %s"
 
 #: src/MainWindow.vala:106
 #, c-format
 msgid "Failed to download file from %s: %s"
-msgstr ""
+msgstr "Ni bilo mogoče prenesti datoteke z %s: %s"
 
 #: src/MainWindow.vala:123
 #, c-format
 msgid "Unable to query content type of provided file: %s"
-msgstr ""
+msgstr "Ni bilo mogoče pridobiti vsebine datoteke: %s"
 
 #: src/MainWindow.vala:131 src/MainWindow.vala:140
 msgid "Unable to query content type of provided file"
-msgstr ""
+msgstr "Ni bilo mogoče pridobiti vsebine datoteke"
 
 #: src/MainWindow.vala:148
 msgid "This does not appear to be a valid flatpak/flatpakref file"
-msgstr ""
+msgstr "To ne zgleda kot veljavna flatpak/flatpakref datoteka"
 
 #: src/MainWindow.vala:172
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
-msgstr ""
+msgstr "Nameščanje %s. Trajanje namestitve ni znano."
 
 #: src/MainWindow.vala:262
 msgid "App installed"
 msgstr "Aplikacija nameščena"
 
 #: src/MainWindow.vala:264
-#, fuzzy, c-format
-#| msgid "Installing “%s”"
+#, c-format
 msgid "Installed “%s”"
-msgstr "Nameščanje \"%s\""
+msgstr "\"%s\" nameščena"
 
 #: src/MainWindow.vala:266
-#, fuzzy
-#| msgid "The app was installed successfully"
 msgid "The app was installed"
-msgstr "Aplikacija je bila uspešno nameščena"
+msgstr "Aplikacija je bila nameščena"
 
 #: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
 #: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
 msgid "Did not find suitable Flatpak installation."
-msgstr ""
+msgstr "Ni bilo mogoče najti ustrezne Flatpak namestitve."
 
 #: src/FlatpakBundleFile.vala:38
 #, c-format
 msgid "Error constructing Flatpak bundle: %s"
-msgstr ""
+msgstr "Napaka pri gradnji Flatpak paketa: %s"
 
 #, c-format
 #~ msgid "Install untrusted app “%s”?"
