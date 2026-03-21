@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2023-04-11 16:59+0000\n"
+"PO-Revision-Date: 2026-03-22 15:55+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/sideload/"
-"fi/>\n"
+"Language-Team: Finnish <https://l10n.elementaryos.org/projects/desktop/"
+"sideload/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -213,12 +213,12 @@ msgstr "Asenna ei-luotettu sovellus"
 #: src/MainWindow.vala:99
 #, c-format
 msgid "Failed to download file from %s"
-msgstr ""
+msgstr "Tiedoston lataaminen kohteesta %s epäonnistui"
 
 #: src/MainWindow.vala:106
 #, c-format
 msgid "Failed to download file from %s: %s"
-msgstr ""
+msgstr "Tiedoston lataaminen kohteesta %s epäonnistui: %s"
 
 #: src/MainWindow.vala:123
 #, c-format
@@ -231,7 +231,7 @@ msgstr ""
 
 #: src/MainWindow.vala:148
 msgid "This does not appear to be a valid flatpak/flatpakref file"
-msgstr ""
+msgstr "Tämä ei vaikuta olevan kelvollinen Flatpak-/flatpakref-tiedosto"
 
 #: src/MainWindow.vala:172
 #, c-format
