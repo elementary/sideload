@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2024-08-06 23:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Greek <https://l10n.elementary.io/projects/desktop/sideload/"
-"el/>\n"
+"PO-Revision-Date: 2026-06-29 13:56+0000\n"
+"Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
+"Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/"
+"sideload/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/Views/ErrorView.vala:32
 msgid "Install failed"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/Views/ErrorView.vala:50
 msgid "Details"
-msgstr ""
+msgstr "Λεπτομέρειες"
 
 #: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
 msgid "Close"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/Views/MainView.vala:51
 msgid "I understand"
-msgstr ""
+msgstr "Καταλαβαίνω"
 
 #: src/Views/MainView.vala:72
 msgid "Updates to this app will not be reviewed by elementary"
@@ -140,7 +140,7 @@ msgstr ""
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
-msgstr ""
+msgstr "Προετοιμασία…"
 
 #: src/Views/SuccessView.vala:44
 #, c-format
