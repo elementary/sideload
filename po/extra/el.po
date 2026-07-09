@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2026-06-29 13:56+0000\n"
+"PO-Revision-Date: 2026-07-10 08:09+0000\n"
 "Last-Translator: kalligator <kalligator+github@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/"
 "sideload-extra/el/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
 msgid "Sideload"
-msgstr ""
+msgstr "Παράπλευρη φόρτωση"
 
 #: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
 msgid "Install apps downloaded from the Internet"
