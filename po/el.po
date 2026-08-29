@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
-"PO-Revision-Date: 2026-07-25 20:01+0000\n"
+"PO-Revision-Date: 2026-08-30 19:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/"
 "sideload/el/>\n"
@@ -136,7 +136,7 @@ msgstr ""
 #: src/Views/ProgressView.vala:31
 #, c-format
 msgid "Installing “%s”"
-msgstr ""
+msgstr "Εγκατάσταση του «%s»"
 
 #: src/Views/ProgressView.vala:55
 msgid "Preparing…"
