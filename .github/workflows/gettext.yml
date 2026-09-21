@@ -1,4 +1,5 @@
 name: Gettext Updates
+
 on:
   push:
     branches: [main]
