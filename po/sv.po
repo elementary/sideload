@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2025-10-30 18:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
@@ -200,52 +200,52 @@ msgstr "Flytta \"%s\" till papperskorgen"
 msgid "Open App"
 msgstr "Öppna app"
 
-#: src/Application.vala:100
+#: src/Application.vala:91
 msgid "your software center"
 msgstr "ditt programvarucenter"
 
-#: src/MainWindow.vala:47
+#: src/MainWindow.vala:49
 msgid "Install Untrusted App"
 msgstr "Installera en icke-betrodd app"
 
-#: src/MainWindow.vala:99
+#: src/MainWindow.vala:101
 #, c-format
 msgid "Failed to download file from %s"
 msgstr "Misslyckades med att ladda ner fil från %s"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 #, c-format
 msgid "Failed to download file from %s: %s"
 msgstr "Misslyckades med att ladda ner fil från %s: %s"
 
-#: src/MainWindow.vala:123
+#: src/MainWindow.vala:125
 #, c-format
 msgid "Unable to query content type of provided file: %s"
 msgstr "Det går inte att fråga efter innehållstyp för den angivna filen: %s"
 
-#: src/MainWindow.vala:131 src/MainWindow.vala:140
+#: src/MainWindow.vala:133 src/MainWindow.vala:142
 msgid "Unable to query content type of provided file"
 msgstr "Det går inte att fråga efter innehållstyp för den angivna filen"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "This does not appear to be a valid flatpak/flatpakref file"
 msgstr "Detta verkar inte vara en giltig flatpak/flatpakref-fil"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:178
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Installerar %s. Det går inte att uppskatta återstående tid."
 
-#: src/MainWindow.vala:262
+#: src/MainWindow.vala:269
 msgid "App installed"
 msgstr "App installerad"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:271
 #, c-format
 msgid "Installed “%s”"
 msgstr "Installerade \"%s\""
 
-#: src/MainWindow.vala:266
+#: src/MainWindow.vala:273
 msgid "The app was installed"
 msgstr "Appen installerades"
 

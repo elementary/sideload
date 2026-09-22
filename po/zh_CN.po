@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2025-08-14 08:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
@@ -76,8 +76,9 @@ msgstr "要信任并安装这个应用程序吗？"
 msgid ""
 "This app is provided solely by its developer and has not been reviewed by "
 "elementary for security, privacy, or system integration."
-msgstr "此应用由其开发者单独提供，且未经过 elementary "
-"在安全、隐私或系统集成方面的认证。"
+msgstr ""
+"此应用由其开发者单独提供，且未经过 elementary 在安全、隐私或系统集成方面的认"
+"证。"
 
 #: src/Views/MainView.vala:45
 msgid "Fetching details"
@@ -193,52 +194,52 @@ msgstr "把 “%s” 移动到回收站"
 msgid "Open App"
 msgstr "打开应用"
 
-#: src/Application.vala:100
+#: src/Application.vala:91
 msgid "your software center"
 msgstr "软件中心"
 
-#: src/MainWindow.vala:47
+#: src/MainWindow.vala:49
 msgid "Install Untrusted App"
 msgstr "安装未被信任的应用"
 
-#: src/MainWindow.vala:99
+#: src/MainWindow.vala:101
 #, c-format
 msgid "Failed to download file from %s"
 msgstr "从 %s 下载文件失败了"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 #, c-format
 msgid "Failed to download file from %s: %s"
 msgstr "从 %s 下载文件失败了：%s"
 
-#: src/MainWindow.vala:123
+#: src/MainWindow.vala:125
 #, c-format
 msgid "Unable to query content type of provided file: %s"
 msgstr "无法获取提供的文件的内容类型：%s"
 
-#: src/MainWindow.vala:131 src/MainWindow.vala:140
+#: src/MainWindow.vala:133 src/MainWindow.vala:142
 msgid "Unable to query content type of provided file"
 msgstr "无法获取提供的文件的内容类型"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "This does not appear to be a valid flatpak/flatpakref file"
 msgstr "这看起来不是有效的 flatpak/flatpakref 文件"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:178
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "正在安装 %s。无法估计剩余时间。"
 
-#: src/MainWindow.vala:262
+#: src/MainWindow.vala:269
 msgid "App installed"
 msgstr "软件已安装"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:271
 #, c-format
 msgid "Installed “%s”"
 msgstr "“%s”已安装"
 
-#: src/MainWindow.vala:266
+#: src/MainWindow.vala:273
 msgid "The app was installed"
 msgstr "应用已安装"
 

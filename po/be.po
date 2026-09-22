@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2025-12-05 05:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
@@ -200,52 +200,52 @@ msgstr "Перамясціць «%s» у сметніцу"
 msgid "Open App"
 msgstr "Адкрыць праграму"
 
-#: src/Application.vala:100
+#: src/Application.vala:91
 msgid "your software center"
 msgstr "ваш цэнтр праграм"
 
-#: src/MainWindow.vala:47
+#: src/MainWindow.vala:49
 msgid "Install Untrusted App"
 msgstr "Усталяваць недавераную праграму"
 
-#: src/MainWindow.vala:99
+#: src/MainWindow.vala:101
 #, c-format
 msgid "Failed to download file from %s"
 msgstr "Не ўдалося спампаваць файл з %s"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 #, c-format
 msgid "Failed to download file from %s: %s"
 msgstr "Не ўдалося спампаваць файл з %s: %s"
 
-#: src/MainWindow.vala:123
+#: src/MainWindow.vala:125
 #, c-format
 msgid "Unable to query content type of provided file: %s"
 msgstr "Не ўдалося запытаць тып зместу дадзенага файла: %s"
 
-#: src/MainWindow.vala:131 src/MainWindow.vala:140
+#: src/MainWindow.vala:133 src/MainWindow.vala:142
 msgid "Unable to query content type of provided file"
 msgstr "Не ўдалося запытаць тып зместу дадзенага файла"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "This does not appear to be a valid flatpak/flatpakref file"
 msgstr "Здаецца, гэта памылковы файл flatpak/flatpakref"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:178
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Усталяванне %s. Немагчыма вызначыць пазасталы час."
 
-#: src/MainWindow.vala:262
+#: src/MainWindow.vala:269
 msgid "App installed"
 msgstr "Праграма ўсталявана"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:271
 #, c-format
 msgid "Installed “%s”"
 msgstr "«%s» усталявана"
 
-#: src/MainWindow.vala:266
+#: src/MainWindow.vala:273
 msgid "The app was installed"
 msgstr "Праграма была ўсталяваная"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.sideload\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2024-08-03 09:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/sideload/"
@@ -200,52 +200,52 @@ msgstr "Переместить «%s» в корзину"
 msgid "Open App"
 msgstr "Открыть приложение"
 
-#: src/Application.vala:100
+#: src/Application.vala:91
 msgid "your software center"
 msgstr "ваш центр приложений"
 
-#: src/MainWindow.vala:47
+#: src/MainWindow.vala:49
 msgid "Install Untrusted App"
 msgstr "Установить недоверенное приложение"
 
-#: src/MainWindow.vala:99
+#: src/MainWindow.vala:101
 #, c-format
 msgid "Failed to download file from %s"
 msgstr "Не удалось загрузить файл из %s"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 #, c-format
 msgid "Failed to download file from %s: %s"
 msgstr "Не удалось загрузить файл из %s: %s"
 
-#: src/MainWindow.vala:123
+#: src/MainWindow.vala:125
 #, c-format
 msgid "Unable to query content type of provided file: %s"
 msgstr "Не удалось запросить тип содержимого предоставленного файла: %s"
 
-#: src/MainWindow.vala:131 src/MainWindow.vala:140
+#: src/MainWindow.vala:133 src/MainWindow.vala:142
 msgid "Unable to query content type of provided file"
 msgstr "Не удалось запросить тип содержимого предоставленного файла"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "This does not appear to be a valid flatpak/flatpakref file"
 msgstr "Похоже, это не является корректным flatpak/flatpakref-файлом"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:178
 #, c-format
 msgid "Installing %s. Unable to estimate time remaining."
 msgstr "Установка %s. Невозможно оценить оставшееся время."
 
-#: src/MainWindow.vala:262
+#: src/MainWindow.vala:269
 msgid "App installed"
 msgstr "Приложение установлено"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:271
 #, c-format
 msgid "Installed “%s”"
 msgstr "Приложение «%s» установлено"
 
-#: src/MainWindow.vala:266
+#: src/MainWindow.vala:273
 msgid "The app was installed"
 msgstr "Приложение установлено"
 
