@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2024-08-16 23:16+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/desktop/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.6.2\n"
 
-#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
+#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:2
 msgid "Sideload"
 msgstr "Sideload"
 
-#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
+#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:3
 msgid "Install apps downloaded from the Internet"
 msgstr ""
 
@@ -34,35 +34,37 @@ msgid ""
 "install like their download size."
 msgstr ""
 
+#: data/sideload.metainfo.xml.in:53
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
-#: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
-#: data/sideload.metainfo.xml.in:109
+#: data/sideload.metainfo.xml.in:81 data/sideload.metainfo.xml.in:89
+#: data/sideload.metainfo.xml.in:102 data/sideload.metainfo.xml.in:116
+#: data/sideload.metainfo.xml.in:128
 msgid "Updated translations"
 msgstr "განახლებული თარგმანები"
 
-#: data/sideload.metainfo.xml.in:82
+#: data/sideload.metainfo.xml.in:101
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:95
+#: data/sideload.metainfo.xml.in:114
 msgid "Use updated Flatpak branding"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:96
+#: data/sideload.metainfo.xml.in:115
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:127
 msgid "Fix blurry app icon in multitasking view"
 msgstr ""
 
-#: data/sideload.desktop.in:5
+#: data/sideload.desktop.in:4
 msgid "Flatpak Installer"
 msgstr "Flatpak-ის დაყენება"
 
-#: data/sideload.desktop.in:8
+#: data/sideload.desktop.in:7
 msgid "flatpak;"
 msgstr "flatpak;"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

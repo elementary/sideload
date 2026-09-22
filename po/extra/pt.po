@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2021-11-17 14:30+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/desktop/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
+#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:2
 msgid "Sideload"
 msgstr "Sideload"
 
-#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
+#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:3
 msgid "Install apps downloaded from the Internet"
 msgstr "Instalar aplicações transferidas da Internet"
 
@@ -37,33 +37,38 @@ msgstr ""
 "seus remotos ao AppCenter. O Sideload mostra informação importante sobre "
 "aplicações antes de instalar, como o seu tamanho de transferência."
 
+#: data/sideload.metainfo.xml.in:53
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
-#: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
-#: data/sideload.metainfo.xml.in:109
+#: data/sideload.metainfo.xml.in:81 data/sideload.metainfo.xml.in:89
+#: data/sideload.metainfo.xml.in:102 data/sideload.metainfo.xml.in:116
+#: data/sideload.metainfo.xml.in:128
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/sideload.metainfo.xml.in:82
+#: data/sideload.metainfo.xml.in:101
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:95
+#: data/sideload.metainfo.xml.in:114
 msgid "Use updated Flatpak branding"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:96
+#: data/sideload.metainfo.xml.in:115
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr ""
 
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:127
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Corrige ícone de aplicação desfocada em vista de tarefas"
 
-#: data/sideload.desktop.in:5
+#: data/sideload.desktop.in:4
 msgid "Flatpak Installer"
 msgstr "Instalador Flatpak"
 
-#: data/sideload.desktop.in:8
+#: data/sideload.desktop.in:7
 msgid "flatpak;"
 msgstr "flatpak;"
 
@@ -71,9 +76,6 @@ msgstr "flatpak;"
 #~ msgstr ""
 #~ "Usar o tempo de execução do sistema Flatpak para aplicações instaladas "
 #~ "localmente"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Control notifications in System Settings"
 #~ msgstr "Controlar as notificações nas Definições do Sistema"

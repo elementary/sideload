@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2026-09-22 01:15+0000\n"
 "PO-Revision-Date: 2024-09-20 09:43+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.6.2\n"
 
-#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
+#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:2
 msgid "Sideload"
 msgstr "側載"
 
-#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
+#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:3
 msgid "Install apps downloaded from the Internet"
 msgstr "安裝從網際網路下載的應用程式"
 
@@ -36,35 +36,37 @@ msgstr ""
 "為個別使用者側載 Flatpak 應用程式並自動將其遠端加入《應用程式中心》。《側載》"
 "也會在您安裝前顯示應用程式的重要資訊，像是需要下載的資料量等等。"
 
+#: data/sideload.metainfo.xml.in:53
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
-#: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
-#: data/sideload.metainfo.xml.in:109
+#: data/sideload.metainfo.xml.in:81 data/sideload.metainfo.xml.in:89
+#: data/sideload.metainfo.xml.in:102 data/sideload.metainfo.xml.in:116
+#: data/sideload.metainfo.xml.in:128
 msgid "Updated translations"
 msgstr "更新翻譯"
 
-#: data/sideload.metainfo.xml.in:82
+#: data/sideload.metainfo.xml.in:101
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr "顯示應用程式是否要求進階系統權限"
 
-#: data/sideload.metainfo.xml.in:95
+#: data/sideload.metainfo.xml.in:114
 msgid "Use updated Flatpak branding"
 msgstr "使用新的 Flatpak 品牌設計"
 
-#: data/sideload.metainfo.xml.in:96
+#: data/sideload.metainfo.xml.in:115
 msgid "Badge notifications with the sideloaded app's icon"
 msgstr "在通知上顯示被側載的應用程式的圖示"
 
-#: data/sideload.metainfo.xml.in:108
+#: data/sideload.metainfo.xml.in:127
 msgid "Fix blurry app icon in multitasking view"
 msgstr "修正在多工作業檢視時應用程式圖示模糊的問題"
 
-#: data/sideload.desktop.in:5
+#: data/sideload.desktop.in:4
 msgid "Flatpak Installer"
 msgstr "Flatpak 安裝工具"
 
-#: data/sideload.desktop.in:8
+#: data/sideload.desktop.in:7
 msgid "flatpak;"
 msgstr "flatpak;"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
