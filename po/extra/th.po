@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-22 01:15+0000\n"
-"PO-Revision-Date: 2025-12-14 04:55+0000\n"
-"Last-Translator: Aefgh Threenine <aefgh39622@gmail.com>\n"
+"PO-Revision-Date: 2026-09-23 02:03+0000\n"
+"Last-Translator: Automatic translation add-on <noreply-addon-"
+"autotranslate@weblate.org>\n"
 "Language-Team: Thai <https://l10n.elementaryos.org/projects/desktop/sideload-"
 "extra/th/>\n"
 "Language: th\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:2
 msgid "Sideload"
@@ -36,7 +37,7 @@ msgstr ""
 
 #: data/sideload.metainfo.xml.in:53
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
 #: data/sideload.metainfo.xml.in:81 data/sideload.metainfo.xml.in:89
