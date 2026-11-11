@@ -98,6 +98,11 @@ public class Sideload.Application : Gtk.Application {
             return 1;
         }
 
+        // xdg-desktop-portal leaks GIO_USE_VFS=local to apps it launches, which
+        // breaks downloading flatpak+https links opened from sandboxed browsers.
+        // See https://github.com/flatpak/xdg-desktop-portal/issues/2146
+        Environment.unset_variable ("GIO_USE_VFS");
+
         var app = new Application ();
         return app.run (args);
     }
